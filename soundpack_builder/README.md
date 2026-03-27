@@ -21,6 +21,7 @@ Non-goal: runtime playback logic under `.cursor/hooks/`.
 
 - `config.py` - shared path config and CLI/env overrides
 - `tier1_candidates.py` - manifest candidate builder
+- `phased_sourcing.py` - print phased sourcing plan (`manifests/phased-sourcing.json`)
 - `templates.py` - template generator
 - `validate.py` - template validator
 - `downloader.py` - manifest downloader/converter
@@ -71,6 +72,9 @@ Run from repository root so `soundpack_builder` imports resolve cleanly.
 
 - Build tier-1 candidates:
   - `uv run --project soundpack_builder python -m soundpack_builder.tier1_candidates`
+- Print phased sourcing plan (video games → cartoons → movies):
+  - `uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing`
+  - `uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --phase 2 --json`
 - Generate templates:
   - `uv run --project soundpack_builder python -m soundpack_builder.templates`
 - Validate templates + WAV duration constraints:
@@ -128,5 +132,5 @@ Useful flags:
 There is a small regression test suite under `soundpack_builder/tests`.
 
 - Run all tests from repo root:
-  - `python -m unittest discover -s soundpack_builder/tests -p "test_*.py"`
+  - `uv run --project soundpack_builder python -m unittest discover -s soundpack_builder/tests -p "test_*.py"`
 

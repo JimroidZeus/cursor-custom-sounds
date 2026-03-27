@@ -1,9 +1,9 @@
 """CLI: print phased sourcing plan merged with optional discovery manifest.
 
-Usage (repo root):
-  python -m soundpack_builder.phased_sourcing
-  python -m soundpack_builder.phased_sourcing --phase 2
-  python -m soundpack_builder.phased_sourcing --json
+Usage (repo root, with uv):
+  uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing
+  uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --phase 2
+  uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --json
 """
 
 from __future__ import annotations

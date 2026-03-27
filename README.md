@@ -56,12 +56,12 @@ it resolves under `soundRoot/<soundPack>/<soundSubdir>/`.
 
 ## Manifest workflow
 
-For a phased plan (video games → cartoons/anime → movies) and approved source sites, see `docs/phased-sourcing-plan.md`. The same plan is machine-readable in `manifests/phased-sourcing.json`. Print it from repo root:
+For a phased plan (video games → cartoons/anime → movies) and approved source sites, see `docs/phased-sourcing-plan.md`. The same plan is machine-readable in `manifests/phased-sourcing.json`. Dependencies and the virtualenv are managed under `soundpack_builder/` with **uv** (see that folder’s README). From repo root:
 
 ```bash
-python -m soundpack_builder.phased_sourcing
-python -m soundpack_builder.phased_sourcing --phase 2
-python -m soundpack_builder.phased_sourcing --json
+uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing
+uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --phase 2
+uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --json
 ```
 
 Builder manifests are used to separate "candidate discovery" from "approved downloads":
@@ -74,26 +74,26 @@ Builder manifests are used to separate "candidate discovery" from "approved down
   - Curated subset of approved entries from candidates.
   - Used by the downloader to fetch files into `sounds/<universe>/<character>/`.
 
-Typical flow from repo root:
+Typical flow from repo root (after `uv sync --project soundpack_builder`):
 
 ```bash
 # 1) Build or refresh candidates
-python -m soundpack_builder.tier1_candidates
+uv run --project soundpack_builder python -m soundpack_builder.tier1_candidates
 
 # 2) Manually review/edit manifests/tier1-approved.json
 #    (copy approved entries from tier1-candidates.json)
 
 # 3) Download approved clips
-python -m soundpack_builder.downloader --manifest manifests/tier1-approved.json
+uv run --project soundpack_builder python -m soundpack_builder.downloader --manifest manifests/tier1-approved.json
 
 # 4) Generate/update config templates
-python -m soundpack_builder.templates
+uv run --project soundpack_builder python -m soundpack_builder.templates
 
 # 5) Validate template structure + WAV duration limits
-python -m soundpack_builder.validate
+uv run --project soundpack_builder python -m soundpack_builder.validate
 
 # Optional thresholds (default warn=10s, fail=15s)
-python -m soundpack_builder.validate --warn-wav-seconds 12 --max-wav-seconds 18
+uv run --project soundpack_builder python -m soundpack_builder.validate --warn-wav-seconds 12 --max-wav-seconds 18
 ```
 
 Notes:
