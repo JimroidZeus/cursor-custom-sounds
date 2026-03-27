@@ -1,0 +1,18 @@
+[project]
+name = "soundpack-builder"
+version = "0.1.0"
+description = "Internal soundpack builder pipeline for cursor-custom-sounds"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "numpy<2.3; platform_system == 'Windows'",
+  "numpy; platform_system != 'Windows'",
+  "faster-whisper",
+  "python-dotenv",
+  "transformers",
+  "torch",
+]
+
+[tool.uv]
+package = false
+
