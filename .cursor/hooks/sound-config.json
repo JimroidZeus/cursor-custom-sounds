@@ -1,23 +1,24 @@
 {
   "enabled": true,
   "soundRoot": "sounds",
-  "soundPack": "wc3-orc-soundpack",
+  "soundPack": "star-wars",
+  "soundSubdir": "c-3po",
   "events": {
     "beforeSubmitPrompt": [
-      "PeonReady1.wav",
-      "PeonWhat2.wav"
+      "THP0108.wav",
+      "THP0104.wav"
     ],
     "afterAgentThought": [
-      "PeonWhat3.wav",
-      "PeonWhat4.wav"
+      "THP0108.wav",
+      "THP0103.wav"
     ],
     "afterAgentResponse": [
-      "PeonYes3.wav",
-      "PeonYes4.wav"
+      "THP0104.wav",
+      "THP0108.wav"
     ],
-    "preToolUse": "GruntYes4.wav",
-    "postToolUse": "PeonYesAttack3.wav",
-    "postToolUseFailure": "PeonWarcry1.wav",
-    "stop": "PeonYes4.wav"
+    "preToolUse": "THP0108.wav",
+    "postToolUse": "THP0108.wav",
+    "postToolUseFailure": "THP0108.wav",
+    "stop": "THP0108.wav"
   }
 }
