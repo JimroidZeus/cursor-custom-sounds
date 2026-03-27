@@ -9,6 +9,16 @@
   "tier1UniverseAliases": {
     "dragon-ball": "dragon-ball-z"
   },
+  "discovery": {
+    "description": "URL handling for phased_candidates: patterns are applied in order; extend this object as you add sources (no code changes required).",
+    "soundPageUrlRegexes": [
+      "freesound\\.org/s/\\d+"
+    ],
+    "htmlEmbeddedAudioRegexes": [
+      "https://cdn\\.freesound\\.org/previews/[^\"'\\s<>]+\\.(?:mp3|ogg|wav)",
+      "https://[^\"'\\s<>]*freesound\\.org/data/previews/[^\"'\\s<>]+\\.(?:mp3|ogg|wav)"
+    ]
+  },
   "extraSourceSites": [
     {
       "id": "hanna-barbera-wiki",

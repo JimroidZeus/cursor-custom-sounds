@@ -68,8 +68,8 @@ uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing -
 
 ```bash
 uv run --project soundpack_builder python -m soundpack_builder.phased_candidates
-# Optional: resolve Freesound /s/id/ pages to preview MP3 URLs (network)
-uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --resolve-freesound
+# Optional: fetch sound detail pages and extract direct media URLs (network; patterns in phased-sourcing.json)
+uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --fetch-sound-pages
 ```
 
 Copy reviewed rows from `manifests/phased/` into `manifests/tier1-approved.json` (or point the downloader at `phased-downloadable-all.json` with `--manifest`).

@@ -2,14 +2,13 @@
 
 Outputs under `manifests/phased/`:
   - phase-{1,2,3}-candidates.json — downloader-ready {entries: [...]} where possible
-  - phase-{1,2,3}-review.json — portals / ZIPs without path / unresolved Freesound
+  - phase-{1,2,3}-review.json — portals, archives without path, sound pages without fetch
   - phased-downloadable-all.json — merged downloadable entries (deduped)
 
 Phase for a candidate link is the minimum phase id whose sourceSiteIds contains that siteId.
 
-Does not scrape Voicy or movie sites; direct audio URLs and Spriters ZIP + tier1 path
-hints are supported. Optional: --resolve-freesound fetches Freesound /s/{id}/ HTML for
-cdn.freesound.org preview links (best-effort).
+URL behavior is driven by the ``discovery`` object in phased-sourcing.json (sound-page
+regexes and HTML embedded-audio regexes), not by hard-coded hosts.
 """
 
 from __future__ import annotations
@@ -20,13 +19,21 @@ import re
 import urllib.error
 import urllib.request
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, List, Optional, Pattern, Sequence, Set, Tuple
 
 from .config import BuilderConfig, add_output_path_args, build_config_from_args
 from .templates import EVENT_FILES
 from .tier1_candidates import EVENT_ORDER, build as tier1_build
 
 AUDIO_EXT = frozenset({".wav", ".mp3", ".ogg", ".flac", ".m4a"})
+
+DEFAULT_PHASED_MANIFEST = "phased-sourcing.json"
+DEFAULT_DISCOVERY_MANIFEST = "universe-character-hook-candidates.json"
+
+URL_KIND_ARCHIVE_ZIP = "archive_zip"
+URL_KIND_SOUND_PAGE = "sound_page"
+URL_KIND_DIRECT_MEDIA = "direct_media"
+URL_KIND_PORTAL = "portal"
 
 
 def _load_json(path: Path) -> Dict[str, Any]:
@@ -37,16 +44,64 @@ def _norm_url(url: str) -> str:
     return url.split("?", 1)[0].strip()
 
 
-def _url_kind(url: str) -> str:
-    u = _norm_url(url).lower()
-    if "spriters-resource.com" in u and u.endswith(".zip"):
-        return "spriters_zip"
-    if "/s/" in u and "freesound.org" in u:
-        return "freesound_page"
-    path = Path(u)
+def _compile_regex_list(patterns: Sequence[Any], *, label: str) -> List[Pattern[str]]:
+    out: List[Pattern[str]] = []
+    for i, p in enumerate(patterns):
+        if not isinstance(p, str) or not p.strip():
+            continue
+        try:
+            out.append(re.compile(p))
+        except re.error as e:
+            raise ValueError(f"Invalid {label} regex at index {i}: {p!r} ({e})") from e
+    return out
+
+
+def _discovery_rules(phased: Dict[str, Any]) -> Dict[str, List[Pattern[str]]]:
+    raw = phased.get("discovery") if isinstance(phased.get("discovery"), dict) else {}
+    sound_page = _compile_regex_list(raw.get("soundPageUrlRegexes") or [], label="soundPageUrlRegexes")
+    html_audio = _compile_regex_list(
+        raw.get("htmlEmbeddedAudioRegexes") or [], label="htmlEmbeddedAudioRegexes"
+    )
+    return {"soundPage": sound_page, "htmlAudio": html_audio}
+
+
+def classify_url(url: str, rules: Dict[str, List[Pattern[str]]]) -> str:
+    """Return URL_KIND_* using structure and patterns from ``rules`` (from phased config)."""
+    n = _norm_url(url)
+    low = n.lower()
+    path = Path(low)
+    if path.suffix == ".zip":
+        return URL_KIND_ARCHIVE_ZIP
     if path.suffix in AUDIO_EXT:
-        return "direct_audio"
-    return "portal"
+        return URL_KIND_DIRECT_MEDIA
+    for pat in rules.get("soundPage") or []:
+        if pat.search(n):
+            return URL_KIND_SOUND_PAGE
+    return URL_KIND_PORTAL
+
+
+def fetch_first_embedded_audio_url(
+    page_url: str,
+    rules: Dict[str, List[Pattern[str]]],
+    *,
+    timeout: float = 20.0,
+    user_agent: str = "cursor-custom-sounds-phased_candidates/1.0",
+) -> Optional[str]:
+    """GET ``page_url`` and return first match from configured ``htmlAudio`` regexes."""
+    req = urllib.request.Request(
+        page_url,
+        headers={"User-Agent": user_agent},
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            html = resp.read().decode("utf-8", errors="ignore")
+    except (urllib.error.URLError, OSError):
+        return None
+    for pat in rules.get("htmlAudio") or []:
+        m: Optional[Match[str]] = pat.search(html)
+        if m:
+            return m.group(0)
+    return None
 
 
 def _site_min_phase(phases: List[Dict[str, Any]], site_id: str) -> Optional[int]:
@@ -84,7 +139,7 @@ def _tier1_entry_keys() -> Set[Tuple[str, str, str, str]]:
 
 
 def _tier1_primary_zip_by_character() -> Dict[Tuple[str, str], str]:
-    """Canonical Spriters ZIP URL per tier-1 pack (all rows share one ZIP)."""
+    """Primary .zip URL per tier-1 pack (all rows share one archive)."""
     out: Dict[Tuple[str, str], str] = {}
     for row in tier1_build():
         z = _norm_url(str(row["url"]))
@@ -100,25 +155,6 @@ def _universe_aliases(phased: Dict[str, Any]) -> Dict[str, str]:
 
 def _resolve_universe(u: str, aliases: Dict[str, str]) -> str:
     return aliases.get(u, u)
-
-
-def try_freesound_preview_url(page_url: str, *, timeout: float = 20.0) -> Optional[str]:
-    if _url_kind(page_url) != "freesound_page":
-        return None
-    req = urllib.request.Request(
-        page_url,
-        headers={"User-Agent": "cursor-custom-sounds-phased_candidates/1.0"},
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=timeout) as resp:
-            html = resp.read().decode("utf-8", errors="ignore")
-    except (urllib.error.URLError, OSError):
-        return None
-    m = re.search(r'https://cdn\.freesound\.org/previews/[^"\'\s<>]+\.(?:mp3|ogg|wav)', html)
-    if m:
-        return m.group(0)
-    m = re.search(r"https://freesound\.org/data/previews/[^\"'\s<>]+\.(?:mp3|ogg|wav)", html)
-    return m.group(0) if m else None
 
 
 def _nth_target_for_event(event: str, idx: int) -> str:
@@ -164,17 +200,22 @@ def _iter_discovery_links(
     return rows
 
 
+def _slug_for_phase(phase: int) -> str:
+    return {1: "video-games", 2: "cartoons-anime", 3: "movies"}.get(phase, "unknown")
+
+
 def build_phase_manifests(
     cfg: BuilderConfig,
     *,
     phased_path: Path,
     universe_path: Path,
     out_dir: Path,
-    resolve_freesound: bool,
+    fetch_sound_pages: bool,
     event_counters: Optional[Dict[Tuple[str, str, str], int]] = None,
 ) -> Dict[str, Any]:
     phased = _load_json(phased_path)
     phases_config = list(phased.get("phases") or [])
+    url_rules = _discovery_rules(phased)
 
     out_dir.mkdir(parents=True, exist_ok=True)
     aliases = _universe_aliases(phased)
@@ -182,17 +223,15 @@ def build_phase_manifests(
     tier1_keys = _tier1_entry_keys()
     tier1_zip_url = _tier1_primary_zip_by_character()
 
-    # Per (universe, character, hookEvent) → next index for target slot
     counters: Dict[Tuple[str, str, str], int] = event_counters or {}
 
     downloadable_by_phase: Dict[int, List[Dict[str, Any]]] = {1: [], 2: [], 3: []}
     review_by_phase: Dict[int, List[Dict[str, Any]]] = {1: [], 2: [], 3: []}
 
-    # Phase 1: tier1 packs (video-game primary)
     for row in tier1_build():
         entry = dict(row)
         entry["sourcingPhase"] = 1
-        entry["sourcingSlug"] = "video-games"
+        entry["sourcingSlug"] = _slug_for_phase(1)
         downloadable_by_phase[1].append(entry)
 
     universe_rows: List[Dict[str, Any]] = []
@@ -212,7 +251,7 @@ def build_phase_manifests(
         c = item["character"]
         u_res = _resolve_universe(u_raw, aliases)
         ev = item["hookEvent"]
-        kind = _url_kind(url)
+        kind = classify_url(url, url_rules)
 
         counter_key = (u_raw, c, ev)
 
@@ -222,15 +261,19 @@ def build_phase_manifests(
             "urlKind": kind,
         }
 
-        if kind == "portal":
+        if kind == URL_KIND_PORTAL:
             idx = counters.get(counter_key, 0)
             review_by_phase[phase].append(
-                {**review_base, "proposedTargetFile": _nth_target_for_event(ev, idx), "reason": "portal_or_search_page"}
+                {
+                    **review_base,
+                    "proposedTargetFile": _nth_target_for_event(ev, idx),
+                    "reason": "portal_or_search_page",
+                }
             )
             counters[counter_key] = idx + 1
             continue
 
-        if kind == "spriters_zip":
+        if kind == URL_KIND_ARCHIVE_ZIP:
             z = _norm_url(url)
             t1_zip = tier1_zip_url.get((u_res, c))
             if t1_zip and z == t1_zip:
@@ -244,8 +287,8 @@ def build_phase_manifests(
                     {
                         **review_base,
                         "proposedTargetFile": _nth_target_for_event(ev, idx),
-                        "reason": "spriters_zip_needs_pathInArchive",
-                        "hint": "Add pathInArchive from ZIP listing or copy from tier1_candidates for this pack.",
+                        "reason": "archive_zip_missing_pathInArchive",
+                        "hint": "Add pathInArchive after inspecting the archive listing, or reuse paths from an existing pack manifest.",
                     }
                 )
                 counters[counter_key] = idx + 1
@@ -266,31 +309,27 @@ def build_phase_manifests(
                         "event": ev,
                         "url": url,
                         "pathInArchive": p,
-                        "source_page": url.rsplit("/", 1)[0] + "/"
-                        if "/asset/" in url
-                        else url,
-                        "note": f"Discovery + tier1 ZIP paths (phase {phase}); label={item.get('label')}",
+                        "source_page": _infer_source_page(url),
+                        "note": f"Discovery + tier1 archive paths (phase {phase}); label={item.get('label')}",
                         "sourcingPhase": phase,
-                        "sourcingSlug": {1: "video-games", 2: "cartoons-anime", 3: "movies"}.get(
-                            phase, "unknown"
-                        ),
+                        "sourcingSlug": _slug_for_phase(phase),
                     }
                 )
             continue
 
-        if kind == "freesound_page":
+        if kind == URL_KIND_SOUND_PAGE:
             idx = counters.get(counter_key, 0)
             target_file = _nth_target_for_event(ev, idx)
             direct: Optional[str] = None
-            if resolve_freesound:
-                direct = try_freesound_preview_url(url)
+            if fetch_sound_pages:
+                direct = fetch_first_embedded_audio_url(url, url_rules)
             if not direct:
                 review_by_phase[phase].append(
                     {
                         **review_base,
                         "proposedTargetFile": target_file,
-                        "reason": "freesound_needs_direct_url",
-                        "hint": "Re-run with --resolve-freesound or set a direct preview/file URL from freesound.org.",
+                        "reason": "sound_page_needs_direct_url",
+                        "hint": "Re-run with --fetch-sound-pages or replace the link with a direct media URL.",
                     }
                 )
                 counters[counter_key] = idx + 1
@@ -307,17 +346,15 @@ def build_phase_manifests(
                     "event": ev,
                     "url": direct,
                     "source_page": url,
-                    "note": f"Freesound preview resolved from {url}; label={item.get('label')}",
+                    "note": f"Embedded audio resolved from page {url}; label={item.get('label')}",
                     "sourcingPhase": phase,
-                    "sourcingSlug": {1: "video-games", 2: "cartoons-anime", 3: "movies"}.get(
-                        phase, "unknown"
-                    ),
+                    "sourcingSlug": _slug_for_phase(phase),
                 }
             )
             counters[counter_key] = idx + 1
             continue
 
-        if kind == "direct_audio":
+        if kind == URL_KIND_DIRECT_MEDIA:
             idx = counters.get(counter_key, 0)
             target_file = _nth_target_for_event(ev, idx)
             dk = (u_raw, c, _norm_url(url), "")
@@ -333,21 +370,18 @@ def build_phase_manifests(
                     "event": ev,
                     "url": url,
                     "source_page": url,
-                    "note": f"Direct audio; label={item.get('label')}",
+                    "note": f"Direct media; label={item.get('label')}",
                     "sourcingPhase": phase,
-                    "sourcingSlug": {1: "video-games", 2: "cartoons-anime", 3: "movies"}.get(
-                        phase, "unknown"
-                    ),
+                    "sourcingSlug": _slug_for_phase(phase),
                 }
             )
             counters[counter_key] = idx + 1
 
-    # Write per-phase files
     meta = {
         "schemaVersion": 1,
         "phasedConfig": str(phased_path),
         "universeManifest": str(universe_path) if universe_path.is_file() else None,
-        "resolveFreesound": resolve_freesound,
+        "fetchSoundPages": fetch_sound_pages,
     }
 
     for pid in (1, 2, 3):
@@ -362,7 +396,6 @@ def build_phase_manifests(
             encoding="utf-8",
         )
 
-    # Merge downloadable (dedupe by universe/character/targetFile/ url norm)
     all_entries: List[Dict[str, Any]] = []
     merge_seen: Set[Tuple[str, str, str, str, str]] = set()
     for pid in (1, 2, 3):
@@ -394,6 +427,14 @@ def build_phase_manifests(
     }
 
 
+def _infer_source_page(url: str) -> str:
+    """Derive a listing page URL from a typical archive asset URL without host-specific logic."""
+    n = url.rstrip("/")
+    if "/asset/" in n:
+        return n.rsplit("/", 1)[0] + "/"
+    return url
+
+
 def main(argv: Optional[List[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Build phased candidate manifests for sourcing.")
     add_output_path_args(parser)
@@ -401,13 +442,13 @@ def main(argv: Optional[List[str]] = None) -> int:
         "--phased-manifest",
         type=str,
         default=None,
-        help="Path to phased-sourcing.json (default: <manifests>/phased-sourcing.json).",
+        help=f"Path to phased config JSON (default: <manifests>/{DEFAULT_PHASED_MANIFEST}).",
     )
     parser.add_argument(
         "--universe-manifest",
         type=str,
         default=None,
-        help="Path to universe-character-hook-candidates.json (default: <manifests>/...).",
+        help=f"Path to character discovery JSON (default: <manifests>/{DEFAULT_DISCOVERY_MANIFEST}).",
     )
     parser.add_argument(
         "--out-dir",
@@ -416,21 +457,21 @@ def main(argv: Optional[List[str]] = None) -> int:
         help="Output directory (default: <manifests>/phased).",
     )
     parser.add_argument(
-        "--resolve-freesound",
+        "--fetch-sound-pages",
         action="store_true",
-        help="Fetch Freesound /s/id/ pages to find cdn.freesound.org preview URLs (network).",
+        help="HTTP-fetch sound detail pages and extract direct media URLs via patterns in phased config (network).",
     )
     args = parser.parse_args(argv)
     cfg = build_config_from_args(args)
     phased_path = (
         Path(args.phased_manifest).expanduser().resolve()
         if args.phased_manifest
-        else (cfg.manifests_dir / "phased-sourcing.json")
+        else (cfg.manifests_dir / DEFAULT_PHASED_MANIFEST)
     )
     universe_path = (
         Path(args.universe_manifest).expanduser().resolve()
         if args.universe_manifest
-        else (cfg.manifests_dir / "universe-character-hook-candidates.json")
+        else (cfg.manifests_dir / DEFAULT_DISCOVERY_MANIFEST)
     )
     out_dir = (
         Path(args.out_dir).expanduser().resolve()
@@ -443,7 +484,7 @@ def main(argv: Optional[List[str]] = None) -> int:
         phased_path=phased_path,
         universe_path=universe_path,
         out_dir=out_dir,
-        resolve_freesound=bool(args.resolve_freesound),
+        fetch_sound_pages=bool(args.fetch_sound_pages),
     )
     print(json.dumps(report, indent=2))
     return 0

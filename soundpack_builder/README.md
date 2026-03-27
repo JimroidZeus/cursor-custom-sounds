@@ -78,7 +78,7 @@ Run from repository root so `soundpack_builder` imports resolve cleanly.
   - `uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --phase 2 --json`
 - Build phased downloader manifests + review lists (`manifests/phased/`):
   - `uv run --project soundpack_builder python -m soundpack_builder.phased_candidates`
-  - `uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --resolve-freesound`
+  - `uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --fetch-sound-pages`
 - Generate templates:
   - `uv run --project soundpack_builder python -m soundpack_builder.templates`
 - Validate templates + WAV duration constraints:
