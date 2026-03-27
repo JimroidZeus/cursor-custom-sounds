@@ -56,6 +56,8 @@ it resolves under `soundRoot/<soundPack>/<soundSubdir>/`.
 
 ## Manifest workflow
 
+For a phased plan (video games → cartoons/anime → movies) and approved source sites, see `docs/phased-sourcing-plan.md`.
+
 Builder manifests are used to separate "candidate discovery" from "approved downloads":
 
 - `manifests/tier1-candidates.json`
