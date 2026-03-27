@@ -2,9 +2,11 @@
 
 Approved resources only. Order matters: **video games first** (indexed rips), then **cartoons/anime**, then **movies** (quote sites; review each clip).
 
+**Machine-readable config:** `manifests/phased-sourcing.json` (phase list, portal URLs, `sourceSiteIds`). **CLI** (repo root): `python -m soundpack_builder.phased_sourcing` (add `--phase 2` or `--json` as needed).
+
 Repo workflow stays: discover → `manifests/tier1-approved.json` → `python -m soundpack_builder.downloader` → `python -m soundpack_builder.templates` → `python -m soundpack_builder.validate`.
 
-Discovery metadata and extra site IDs also live in `manifests/universe-character-hook-candidates.json` (`sourceSites`, per-character `candidateLinks`).
+Discovery metadata and extra site IDs also live in `manifests/universe-character-hook-candidates.json` (`sourceSites`, per-character `candidateLinks`). When that file is present, the CLI enriches phase output with names/URLs for shared `sourceSiteIds`.
 
 ---
 

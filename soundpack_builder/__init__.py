@@ -1,5 +1,6 @@
 """
-Soundpack builder pipeline: manifests, templates, validation, downloads.
+Soundpack builder pipeline: manifests, templates, validation, downloads,
+and phased sourcing (`python -m soundpack_builder.phased_sourcing`).
 
 This package is intentionally separate from Cursor hook runtime (`.cursor/hooks/`).
 """

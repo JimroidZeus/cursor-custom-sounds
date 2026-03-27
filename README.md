@@ -56,7 +56,13 @@ it resolves under `soundRoot/<soundPack>/<soundSubdir>/`.
 
 ## Manifest workflow
 
-For a phased plan (video games → cartoons/anime → movies) and approved source sites, see `docs/phased-sourcing-plan.md`.
+For a phased plan (video games → cartoons/anime → movies) and approved source sites, see `docs/phased-sourcing-plan.md`. The same plan is machine-readable in `manifests/phased-sourcing.json`. Print it from repo root:
+
+```bash
+python -m soundpack_builder.phased_sourcing
+python -m soundpack_builder.phased_sourcing --phase 2
+python -m soundpack_builder.phased_sourcing --json
+```
 
 Builder manifests are used to separate "candidate discovery" from "approved downloads":
 

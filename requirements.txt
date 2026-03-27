@@ -1,0 +1,2 @@
+# Soundpack builder (manifests, downloader, phased_sourcing CLI)
+python-dotenv>=1.0.0
