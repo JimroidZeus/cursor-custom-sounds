@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "hooks": {
+    "beforeSubmitPrompt": [
+      {
+        "command": "python .cursor/hooks/play-sound.py beforeSubmitPrompt"
+      }
+    ],
+    "afterAgentThought": [
+      {
+        "command": "python .cursor/hooks/play-sound.py afterAgentThought"
+      }
+    ],
+    "afterAgentResponse": [
+      {
+        "command": "python .cursor/hooks/play-sound.py afterAgentResponse"
+      }
+    ],
+    "preToolUse": [
+      {
+        "command": "python .cursor/hooks/play-sound.py preToolUse"
+      }
+    ],
+    "postToolUse": [
+      {
+        "command": "python .cursor/hooks/play-sound.py postToolUse"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "command": "python .cursor/hooks/play-sound.py postToolUseFailure"
+      }
+    ],
+    "stop": [
+      {
+        "command": "python .cursor/hooks/play-sound.py stop"
+      }
+    ]
+  }
+}

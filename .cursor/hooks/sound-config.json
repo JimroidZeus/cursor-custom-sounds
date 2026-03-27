@@ -1,0 +1,23 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "wc3-orc-soundpack",
+  "events": {
+    "beforeSubmitPrompt": [
+      "PeonReady1.wav",
+      "PeonWhat2.wav"
+    ],
+    "afterAgentThought": [
+      "PeonWhat3.wav",
+      "PeonWhat4.wav"
+    ],
+    "afterAgentResponse": [
+      "PeonYes3.wav",
+      "PeonYes4.wav"
+    ],
+    "preToolUse": "GruntYes4.wav",
+    "postToolUse": "PeonYesAttack3.wav",
+    "postToolUseFailure": "PeonWarcry1.wav",
+    "stop": "PeonYes4.wav"
+  }
+}
