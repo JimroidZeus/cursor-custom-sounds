@@ -64,6 +64,16 @@ uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing -
 uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --json
 ```
 
+**Phased download manifests** (per-phase `phase-{1,2,3}-candidates.json`, review queues, and merged `phased-downloadable-all.json` under `manifests/phased/`):
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.phased_candidates
+# Optional: resolve Freesound /s/id/ pages to preview MP3 URLs (network)
+uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --resolve-freesound
+```
+
+Copy reviewed rows from `manifests/phased/` into `manifests/tier1-approved.json` (or point the downloader at `phased-downloadable-all.json` with `--manifest`).
+
 Builder manifests are used to separate "candidate discovery" from "approved downloads":
 
 - `manifests/tier1-candidates.json`

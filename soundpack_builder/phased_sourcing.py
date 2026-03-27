@@ -93,6 +93,7 @@ def build_report(cfg: BuilderConfig, *, phased_path: Optional[Path] = None) -> D
 
 def _print_text(report: Dict[str, Any], *, phase_filter: Optional[int]) -> None:
     print("Phased sourcing (approved resources only)")
+    print("Build downloader manifests: uv run --project soundpack_builder python -m soundpack_builder.phased_candidates")
     doc = report.get("humanDoc")
     if doc:
         print(f"Doc: {doc}")

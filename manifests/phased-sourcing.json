@@ -6,6 +6,9 @@
     "primaryPhase": 1,
     "note": "Tier-1 characters (see soundpack_builder.templates.TIER1_CHARACTERS) default to Phase 1 game rips; use Phase 2/3 only to fill missing hook events."
   },
+  "tier1UniverseAliases": {
+    "dragon-ball": "dragon-ball-z"
+  },
   "extraSourceSites": [
     {
       "id": "hanna-barbera-wiki",
