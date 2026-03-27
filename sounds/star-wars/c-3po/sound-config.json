@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "star-wars",
+  "soundSubdir": "c-3po",
+  "events": {
+    "beforeSubmitPrompt": [
+      "THP0108.wav",
+      "THP0104.wav"
+    ],
+    "afterAgentThought": [
+      "THP0108.wav",
+      "THP0103.wav"
+    ],
+    "afterAgentResponse": [
+      "THP0104.wav",
+      "THP0108.wav"
+    ],
+    "preToolUse": "THP0108.wav",
+    "postToolUse": "THP0108.wav",
+    "postToolUseFailure": "THP0108.wav",
+    "stop": "THP0108.wav"
+  }
+}

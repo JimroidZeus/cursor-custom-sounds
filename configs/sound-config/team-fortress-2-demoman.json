@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "debounceMs": 500,
+  "soundRoot": "sounds",
+  "soundPack": "team-fortress-2",
+  "soundSubdir": "demoman",
+  "events": {
+    "beforeSubmitPrompt": [
+      "activatecharge01.wav",
+      "activatecharge02.wav"
+    ],
+    "afterAgentThought": [
+      "autocappedintelligence01.wav",
+      "autocappedintelligence02.wav"
+    ],
+    "afterAgentResponse": [
+      "yes01.wav",
+      "yes02.wav"
+    ],
+    "preToolUse": "activatecharge03.wav",
+    "postToolUse": "yes03.wav",
+    "postToolUseFailure": "no01.wav",
+    "stop": "battlecry01.wav"
+  }
+}

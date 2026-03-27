@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "team-fortress-2",
+  "soundSubdir": "demoman",
+  "events": {
+    "beforeSubmitPrompt": [
+      "yes01.wav",
+      "activatecharge03.wav"
+    ],
+    "afterAgentThought": [
+      "yes01.wav",
+      "yes03.wav"
+    ],
+    "afterAgentResponse": [
+      "yes01.wav",
+      "yes02.wav"
+    ],
+    "preToolUse": "yes01.wav",
+    "postToolUse": "yes01.wav",
+    "postToolUseFailure": "yes01.wav",
+    "stop": "yes01.wav"
+  }
+}

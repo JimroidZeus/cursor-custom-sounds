@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "spongebob",
+  "soundSubdir": "mr-krabs",
+  "events": {
+    "beforeSubmitPrompt": [
+      "CINE_1_KRABS_LINE2.wav",
+      "CINE_1_KRABS_LINE3.wav"
+    ],
+    "afterAgentThought": [
+      "CINE_1_KRABS_LINE2.wav",
+      "CINE_1_KRABS_LINE1.wav"
+    ],
+    "afterAgentResponse": [
+      "CINE_1_KRABS_LINE2.wav",
+      "CINE_7_KRABS_LINE5.wav"
+    ],
+    "preToolUse": "CINE_1_KRABS_LINE2.wav",
+    "postToolUse": "CINE_1_KRABS_LINE2.wav",
+    "postToolUseFailure": "CINE_1_KRABS_LINE2.wav",
+    "stop": "CINE_1_KRABS_LINE2.wav"
+  }
+}

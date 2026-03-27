@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "warcraft",
+  "soundSubdir": "orc-peon",
+  "events": {
+    "beforeSubmitPrompt": [
+      "PeonReady1.wav",
+      "PeonYes3.wav"
+    ],
+    "afterAgentThought": [
+      "PeonWhat2.wav",
+      "PeonWarcry1.wav"
+    ],
+    "afterAgentResponse": [
+      "PeonYes4.wav",
+      "PeonWhat2.wav"
+    ],
+    "preToolUse": "PeonReady1.wav",
+    "postToolUse": "PeonWhat2.wav",
+    "postToolUseFailure": "PeonWhat2.wav",
+    "stop": "PeonWhat2.wav"
+  }
+}

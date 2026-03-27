@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "debounceMs": 500,
+  "soundRoot": "sounds",
+  "soundPack": "one-piece",
+  "soundSubdir": "luffy",
+  "events": {
+    "beforeSubmitPrompt": [
+      "cv_000500_jp.wav",
+      "cv_000501_jp.wav"
+    ],
+    "afterAgentThought": [
+      "cv_000502_jp.wav",
+      "cv_000503_jp.wav"
+    ],
+    "afterAgentResponse": [
+      "cv_000504_jp.wav",
+      "cv_000505_jp.wav"
+    ],
+    "preToolUse": "cv_000506_jp.wav",
+    "postToolUse": "cv_000507_jp.wav",
+    "postToolUseFailure": "cv_000508_jp.wav",
+    "stop": "cv_000509_jp.wav"
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "clips": [
+    {
+      "file": "1.wav",
+      "transcript": "Ha ha ha ha!"
+    },
+    {
+      "file": "12.wav",
+      "transcript": "Oh yeah!"
+    },
+    {
+      "file": "13.wav",
+      "transcript": "I feel you."
+    },
+    {
+      "file": "2.wav",
+      "transcript": "Nice work!"
+    },
+    {
+      "file": "3.wav",
+      "transcript": "Two out of three ain't bad, right?"
+    },
+    {
+      "file": "5.wav",
+      "transcript": "Bye!"
+    },
+    {
+      "file": "6.wav",
+      "transcript": "Everybody, come on!"
+    },
+    {
+      "file": "7.wav",
+      "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+    },
+    {
+      "file": "8.wav",
+      "transcript": "Yes!"
+    },
+    {
+      "file": "9.wav",
+      "transcript": "Yes."
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "9.wav",
+        "8.wav"
+      ],
+      "candidates": [
+        {
+          "file": "9.wav",
+          "score": 3.1101942539215086,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6120388507843018,
+          "transcript": "Yes."
+        },
+        {
+          "file": "8.wav",
+          "score": 2.849481153488159,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5598962306976318,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "12.wav",
+          "score": 2.699231505393982,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5398463010787964,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "13.wav",
+          "score": 2.166142761707306,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4332285523414612,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "5.wav",
+          "score": 1.6740027070045471,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3348005414009094,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "6.wav",
+          "score": 1.095707044005394,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2191414088010788,
+          "transcript": "Everybody, come on!"
+        },
+        {
+          "file": "1.wav",
+          "score": 1.0577289760112762,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21154579520225525,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "2.wav",
+          "score": 0.9978803247213364,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.19957606494426727,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.25093650445342064,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05018730089068413,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        },
+        {
+          "file": "3.wav",
+          "score": 0.24285754188895226,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04857150837779045,
+          "transcript": "Two out of three ain't bad, right?"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "8.wav",
+        "9.wav"
+      ],
+      "candidates": [
+        {
+          "file": "8.wav",
+          "score": 2.911982238292694,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5823964476585388,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "9.wav",
+          "score": 2.868303954601288,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5736607909202576,
+          "transcript": "Yes."
+        },
+        {
+          "file": "12.wav",
+          "score": 2.6461899280548096,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5292379856109619,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "2.wav",
+          "score": 2.1607190370559692,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.43214380741119385,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "13.wav",
+          "score": 1.6165249049663544,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3233049809932709,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "1.wav",
+          "score": 1.173015981912613,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.23460319638252258,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "5.wav",
+          "score": 0.818789154291153,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1637578308582306,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "3.wav",
+          "score": 0.4226848855614662,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08453697711229324,
+          "transcript": "Two out of three ain't bad, right?"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.40685828775167465,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08137165755033493,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        },
+        {
+          "file": "6.wav",
+          "score": 0.31748421490192413,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06349684298038483,
+          "transcript": "Everybody, come on!"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "12.wav",
+        "5.wav"
+      ],
+      "candidates": [
+        {
+          "file": "12.wav",
+          "score": 3.115214705467224,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6230429410934448,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "5.wav",
+          "score": 3.089441955089569,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6178883910179138,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "8.wav",
+          "score": 3.1054574728012083,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6110914945602417,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "9.wav",
+          "score": 3.0199566960334776,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5939913392066956,
+          "transcript": "Yes."
+        },
+        {
+          "file": "2.wav",
+          "score": 1.6538426280021667,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.33076852560043335,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "13.wav",
+          "score": 1.6099990904331207,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.32199981808662415,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "1.wav",
+          "score": 1.5059691667556763,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.30119383335113525,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "6.wav",
+          "score": 0.866808146238327,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1733616292476654,
+          "transcript": "Everybody, come on!"
+        },
+        {
+          "file": "3.wav",
+          "score": 0.45941490679979324,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.09188298135995865,
+          "transcript": "Two out of three ain't bad, right?"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.28632182627916336,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05726436525583267,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "9.wav"
+      ],
+      "candidates": [
+        {
+          "file": "9.wav",
+          "score": 2.852974966594151,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5691664218902588,
+          "transcript": "Yes."
+        },
+        {
+          "file": "8.wav",
+          "score": 2.1031987522329603,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.41921117901802063,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "12.wav",
+          "score": 1.7721357796873365,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.3529985845088959,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "2.wav",
+          "score": 1.2982208758592606,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2496441751718521,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "1.wav",
+          "score": 0.9253609780754362,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.1836436241865158,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "13.wav",
+          "score": 0.8456773166145597,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.16770689189434052,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "6.wav",
+          "score": 0.6222549308623586,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.1230224147439003,
+          "transcript": "Everybody, come on!"
+        },
+        {
+          "file": "5.wav",
+          "score": 0.5826037977422986,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.1150921881198883,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "3.wav",
+          "score": 0.19232193008065224,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03846438601613045,
+          "transcript": "Two out of three ain't bad, right?"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.1439130026847124,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.028782600536942482,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "9.wav"
+      ],
+      "candidates": [
+        {
+          "file": "9.wav",
+          "score": 3.804244235583714,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.7594202756881714,
+          "transcript": "Yes."
+        },
+        {
+          "file": "8.wav",
+          "score": 3.6130075011934553,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.7211729288101196,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "2.wav",
+          "score": 3.2688805937767027,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6437761187553406,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "12.wav",
+          "score": 2.8822447214807783,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5750203728675842,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "1.wav",
+          "score": 1.5889851604189191,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.3163684606552124,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "5.wav",
+          "score": 1.5754356835569654,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.31365856528282166,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "13.wav",
+          "score": 1.1548326764787946,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.2295379638671875,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "3.wav",
+          "score": 0.7370315492153168,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.14740630984306335,
+          "transcript": "Two out of three ain't bad, right?"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.6325345486402512,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.12650690972805023,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        },
+        {
+          "file": "6.wav",
+          "score": 0.49797131163733344,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.09816569089889526,
+          "transcript": "Everybody, come on!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "9.wav"
+      ],
+      "candidates": [
+        {
+          "file": "9.wav",
+          "score": 3.5526779770851133,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7005355954170227,
+          "transcript": "Yes."
+        },
+        {
+          "file": "8.wav",
+          "score": 2.7979711174964903,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5495942234992981,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "12.wav",
+          "score": 2.322154241800308,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.45443084836006165,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "1.wav",
+          "score": 1.6555628657341004,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.32111257314682007,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "13.wav",
+          "score": 1.4329784095287323,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.27659568190574646,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "2.wav",
+          "score": 0.9210503578186036,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.1742100715637207,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "5.wav",
+          "score": 0.8875129848718644,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.16750259697437286,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.3745006397366524,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.07490012794733047,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        },
+        {
+          "file": "6.wav",
+          "score": 0.40016771405935286,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.07003354281187057,
+          "transcript": "Everybody, come on!"
+        },
+        {
+          "file": "3.wav",
+          "score": 0.341886430978775,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.068377286195755,
+          "transcript": "Two out of three ain't bad, right?"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "9.wav"
+      ],
+      "candidates": [
+        {
+          "file": "9.wav",
+          "score": 2.5904974818229674,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5080994963645935,
+          "transcript": "Yes."
+        },
+        {
+          "file": "8.wav",
+          "score": 2.2459106624126433,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4391821324825287,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "5.wav",
+          "score": 2.231388437747955,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.43627768754959106,
+          "transcript": "Bye!"
+        },
+        {
+          "file": "12.wav",
+          "score": 1.8570274591445923,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.36140549182891846,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "2.wav",
+          "score": 1.019250500202179,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.1938501000404358,
+          "transcript": "Nice work!"
+        },
+        {
+          "file": "1.wav",
+          "score": 0.9372323483228684,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.17744646966457367,
+          "transcript": "Ha ha ha ha!"
+        },
+        {
+          "file": "7.wav",
+          "score": 0.48015039414167404,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.09603007882833481,
+          "transcript": "Yeah, I had to pull over to take a call in the middle of that one."
+        },
+        {
+          "file": "13.wav",
+          "score": 0.4676723212003708,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.08353446424007416,
+          "transcript": "I feel you."
+        },
+        {
+          "file": "3.wav",
+          "score": 0.3683895245194435,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0736779049038887,
+          "transcript": "Two out of three ain't bad, right?"
+        },
+        {
+          "file": "6.wav",
+          "score": 0.3908509865403175,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.06817019730806351,
+          "transcript": "Everybody, come on!"
+        }
+      ]
+    }
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (valhalla/distilbart-mnli-12-1)",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "disney",
+    "character": "genie"
+  }
+}

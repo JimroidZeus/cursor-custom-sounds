@@ -1,0 +1,738 @@
+{
+  "clips": [
+    {
+      "file": "cv_000500_jp.wav",
+      "transcript": "I'm a member of the whole world! I was a member of the world!"
+    },
+    {
+      "file": "cv_000501_jp.wav",
+      "transcript": "Lush, get out of the way! EXA!"
+    },
+    {
+      "file": "cv_000502_jp.wav",
+      "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+    },
+    {
+      "file": "cv_000503_jp.wav",
+      "transcript": "Oh, that's it, that's it, that's it!"
+    },
+    {
+      "file": "cv_000504_jp.wav",
+      "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+    },
+    {
+      "file": "cv_000505_jp.wav",
+      "transcript": "This is what I want you to do! This is what I want you to do!"
+    },
+    {
+      "file": "cv_000506_jp.wav",
+      "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+    },
+    {
+      "file": "cv_000507_jp.wav",
+      "transcript": "Kaivoukou ni oreo naru!"
+    },
+    {
+      "file": "cv_000508_jp.wav",
+      "transcript": "Kaivoukou ni oreo naru!"
+    },
+    {
+      "file": "cv_000509_jp.wav",
+      "transcript": "That's it for today. Are you okay with that?"
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "cv_000501_jp.wav",
+        "cv_000505_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 4.590243101119995,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.918048620223999,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.155573396682739,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.6251146793365479,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 3.0274054408073425,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6054810881614685,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 3.0274054408073425,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6054810881614685,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.478231110572815,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 0.8,
+          "modelScore": 0.487646222114563,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 2.1650803089141846,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4330160617828369,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 1.719871360063553,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.33397427201271057,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.5894394356012345,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.11188788712024689,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.5812296375632287,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.10624592751264572,
+          "transcript": "That's it for today. Are you okay with that?"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.5094989761710167,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.10189979523420334,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "cv_000503_jp.wav",
+        "cv_000504_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 2.3653769493103027,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.47307538986206055,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.266761213541031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4533522427082062,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.9916993379592896,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3983398675918579,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.9916993379592896,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3983398675918579,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 1.5569767832756043,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.30139535665512085,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 0.9834107756614685,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1966821551322937,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.9771956503391266,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.19543913006782532,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 0.7987993687391282,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.14975987374782562,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.37306380569934844,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.06461276113986969,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.18515877425670624,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03703175485134125,
+          "transcript": "That's it for today. Are you okay with that?"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "cv_000503_jp.wav",
+        "cv_000501_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 4.113841652870178,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8227683305740356,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 3.313135504722595,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.662627100944519,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 3.1718456745147705,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6343691349029541,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 2.2855618596076965,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4571123719215393,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.9369381666183472,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.38738763332366943,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.9369381666183472,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.38738763332366943,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 1.3895931839942932,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.27791863679885864,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.8479029685258865,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1695805937051773,
+          "transcript": "That's it for today. Are you okay with that?"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.7878679782152176,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.15757359564304352,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.505014705657959,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.0910029411315918,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "cv_000501_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.4568945169448853,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.49137890338897705,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.1317619800567627,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.22385239601135254,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.1317619800567627,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.22385239601135254,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 0.9632202982902527,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.19264405965805054,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 0.29933433160185813,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.04986686632037163,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 0.2544444717466831,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.040888894349336624,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.15902942046523094,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03180588409304619,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.15159846283495426,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.030319692566990852,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 0.1259142905473709,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.025182858109474182,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.1156073808670044,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02312147617340088,
+          "transcript": "That's it for today. Are you okay with that?"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "cv_000501_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 3.1694000959396362,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6338800191879272,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.927335160970688,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3754670321941376,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.927335160970688,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3754670321941376,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 1.4171254634857178,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.28342509269714355,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 1.0996988415718079,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21993976831436157,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 1.014457643032074,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2028915286064148,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.7665349543094635,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1533069908618927,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 0.32888900488615036,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06577780097723007,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.2913120202720165,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.058262404054403305,
+          "transcript": "That's it for today. Are you okay with that?"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.22970648482441902,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.045941296964883804,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "cv_000507_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.2762550741434098,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.24525101482868195,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.2762550741434098,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.24525101482868195,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 0.9381377696990967,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18762755393981934,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 0.7875926792621613,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.15751853585243225,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 0.6466039270162582,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.12932078540325165,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 0.5081184580922127,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.10162369161844254,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.3807327523827553,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.07614655047655106,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.22820975631475449,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0456419512629509,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.19978076219558716,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03995615243911743,
+          "transcript": "That's it for today. Are you okay with that?"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 0.19047340378165245,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03809468075633049,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "cv_000501_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 3.1247511506080627,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6249502301216125,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 1.4728612184524537,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2845722436904907,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 1.4728612184524537,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2845722436904907,
+          "transcript": "Kaivoukou ni oreo naru!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 1.0267624258995056,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20535248517990112,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 0.5772268772125244,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11544537544250488,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 0.41298598051071167,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08259719610214233,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 0.2977742999792099,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05955485999584198,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 0.23341484367847443,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.046682968735694885,
+          "transcript": "I'm sure you'll be able to use it. What do you mean? I'm so..."
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 0.2048524096608162,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04097048193216324,
+          "transcript": "I'm a member of the whole world! I was a member of the world!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 0.1652209274470806,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03304418548941612,
+          "transcript": "That's it for today. Are you okay with that?"
+        }
+      ]
+    }
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (valhalla/distilbart-mnli-12-1)",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "one-piece",
+    "character": "luffy"
+  }
+}

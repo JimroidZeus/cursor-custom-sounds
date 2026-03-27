@@ -1,0 +1,738 @@
+{
+  "clips": [
+    {
+      "file": "Goku_3(49174).wav",
+      "transcript": "This is exciting!"
+    },
+    {
+      "file": "Goku_3(49175).wav",
+      "transcript": "Let's do this!"
+    },
+    {
+      "file": "Goku_3(49177).wav",
+      "transcript": "You did pretty good!"
+    },
+    {
+      "file": "Goku_3(49178).wav",
+      "transcript": "You sure talk tough, but you can use more training."
+    },
+    {
+      "file": "Goku_3(49180).wav",
+      "transcript": "My name is Goku, and I'm from Earth."
+    },
+    {
+      "file": "Goku_3(49181).wav",
+      "transcript": "It's been a long time since we fought seriously, huh?"
+    },
+    {
+      "file": "Goku_3(49182).wav",
+      "transcript": "You're not a very true fellow, are you?"
+    },
+    {
+      "file": "Goku_3(49183).wav",
+      "transcript": "Haven't you learned your lesson yet?"
+    },
+    {
+      "file": "Goku_3(49184).wav",
+      "transcript": "Krillin, how about we go around for a whole time sake?"
+    },
+    {
+      "file": "Goku_3(49185).wav",
+      "transcript": "If you don't mind, I will."
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "Goku_3(49175).wav",
+        "Goku_3(49185).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 3.789155611991882,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7558311223983765,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 1.978187689781189,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3936375379562378,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 1.5899008309841156,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3159801661968231,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.6372032451629639,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.12144064903259277,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 0.5017261344194412,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.09434522688388824,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.2517845278978348,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.048356905579566956,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.2666430838406086,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.04332861676812172,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.1283350756764412,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.02366701513528824,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.1095138566941023,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.019902771338820457,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.06411364138126374,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.010822728276252747,
+          "transcript": "Haven't you learned your lesson yet?"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "Goku_3(49175).wav",
+        "Goku_3(49177).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 1.3852132856845856,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2770426571369171,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 1.2461506575345993,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.24923013150691986,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 0.6518081575632095,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1303616315126419,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 0.5822198465466499,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11644396930932999,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.5152547836303711,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.09305095672607422,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.3340902552008629,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06681805104017258,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.3246140480041504,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06492280960083008,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.3011108376085758,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.060222167521715164,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.2816290594637394,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05632581189274788,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.09648026898503304,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.019296053797006607,
+          "transcript": "Haven't you learned your lesson yet?"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "Goku_3(49175).wav",
+        "Goku_3(49185).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 2.6528167843818666,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.5280633568763733,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 2.274317753314972,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.4523635506629944,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 1.2451180934906005,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.24652361869812012,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 0.9262757122516632,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.18275514245033264,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.6229540079832077,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.12209080159664154,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.4788966953754425,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.0857793390750885,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.33304301351308824,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.06410860270261765,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.2992868542671204,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.05735737085342407,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.28124298229813577,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.05374859645962715,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.12335180565714836,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.022170361131429672,
+          "transcript": "Haven't you learned your lesson yet?"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "Goku_3(49175).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 1.9780529601233345,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.42857142857142855,
+          "modelScore": 0.39132487773895264,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 1.6614432198660714,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.42857142857142855,
+          "modelScore": 0.3280029296875,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 0.7338960945606232,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.13677921891212463,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 0.4493440398148128,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.0870116651058197,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.30016458492193904,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.05717577412724495,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.17817641305071968,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.8571428571428571,
+          "modelScore": 0.027063854038715363,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.11263919893120017,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.019670696929097176,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.09908081862543311,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.016959020867943764,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.06519490751836982,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.010181838646531105,
+          "transcript": "Haven't you learned your lesson yet?"
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.08609712751848357,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.8571428571428571,
+          "modelScore": 0.008647996932268143,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "Goku_3(49174).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 2.7106419682502745,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5321283936500549,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 1.9481470167636872,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3796294033527374,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 1.325734305381775,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.255146861076355,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 0.8631495386362076,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17262990772724152,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.8394812047481537,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.16789624094963074,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.2635987661778927,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05271975323557854,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.19499201327562332,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.038998402655124664,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.19221778959035873,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03844355791807175,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.17110202461481094,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03422040492296219,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.12960901483893394,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02592180296778679,
+          "transcript": "Haven't you learned your lesson yet?"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "Goku_3(49175).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 1.1521974325180053,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.22793948650360107,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.7865160703659058,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.15730321407318115,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 0.6156662479043007,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.12313324958086014,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 0.42942446917295457,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.08338489383459091,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 0.2965612828731537,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.05681225657463074,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.27110880240797997,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.05422176048159599,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.2340923808515072,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04681847617030144,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.24982634112238883,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03996526822447777,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.17812857404351234,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03562571480870247,
+          "transcript": "Haven't you learned your lesson yet?"
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.1258082501590252,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02516165003180504,
+          "transcript": "My name is Goku, and I'm from Earth."
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "Goku_3(49175).wav"
+      ],
+      "candidates": [
+        {
+          "file": "Goku_3(49175).wav",
+          "score": 0.7849687069654465,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.1469937413930893,
+          "transcript": "Let's do this!"
+        },
+        {
+          "file": "Goku_3(49178).wav",
+          "score": 0.7118897140026093,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.14237794280052185,
+          "transcript": "You sure talk tough, but you can use more training."
+        },
+        {
+          "file": "Goku_3(49177).wav",
+          "score": 0.5201333865523339,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.09402667731046677,
+          "transcript": "You did pretty good!"
+        },
+        {
+          "file": "Goku_3(49185).wav",
+          "score": 0.4488471522927284,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08976943045854568,
+          "transcript": "If you don't mind, I will."
+        },
+        {
+          "file": "Goku_3(49174).wav",
+          "score": 0.47508263140916823,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.08501652628183365,
+          "transcript": "This is exciting!"
+        },
+        {
+          "file": "Goku_3(49181).wav",
+          "score": 0.20415563136339188,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.040831126272678375,
+          "transcript": "It's been a long time since we fought seriously, huh?"
+        },
+        {
+          "file": "Goku_3(49183).wav",
+          "score": 0.1490588579326868,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02981177158653736,
+          "transcript": "Haven't you learned your lesson yet?"
+        },
+        {
+          "file": "Goku_3(49180).wav",
+          "score": 0.13539910316467285,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02707982063293457,
+          "transcript": "My name is Goku, and I'm from Earth."
+        },
+        {
+          "file": "Goku_3(49182).wav",
+          "score": 0.1114617008715868,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02229234017431736,
+          "transcript": "You're not a very true fellow, are you?"
+        },
+        {
+          "file": "Goku_3(49184).wav",
+          "score": 0.08317610248923302,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.016635220497846603,
+          "transcript": "Krillin, how about we go around for a whole time sake?"
+        }
+      ]
+    }
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (valhalla/distilbart-mnli-12-1)",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "dragon-ball-z",
+    "character": "goku"
+  }
+}

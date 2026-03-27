@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "disney",
+  "soundSubdir": "genie",
+  "events": {
+    "beforeSubmitPrompt": [
+      "9.wav",
+      "8.wav"
+    ],
+    "afterAgentThought": [
+      "8.wav",
+      "9.wav"
+    ],
+    "afterAgentResponse": [
+      "12.wav",
+      "5.wav"
+    ],
+    "preToolUse": "9.wav",
+    "postToolUse": "9.wav",
+    "postToolUseFailure": "9.wav",
+    "stop": "9.wav"
+  }
+}

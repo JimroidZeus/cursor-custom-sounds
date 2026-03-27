@@ -1,0 +1,738 @@
+{
+  "clips": [
+    {
+      "file": "activatecharge01.wav",
+      "transcript": "Hit it, doc!"
+    },
+    {
+      "file": "activatecharge02.wav",
+      "transcript": "Charge it, Doc!"
+    },
+    {
+      "file": "activatecharge03.wav",
+      "transcript": "Go on, then duck!"
+    },
+    {
+      "file": "autocappedintelligence01.wav",
+      "transcript": "Ah, that's the way you do it!"
+    },
+    {
+      "file": "autocappedintelligence02.wav",
+      "transcript": "Time to get blotered!"
+    },
+    {
+      "file": "battlecry01.wav",
+      "transcript": "FLEED UP!"
+    },
+    {
+      "file": "no01.wav",
+      "transcript": "NO!"
+    },
+    {
+      "file": "yes01.wav",
+      "transcript": "I-"
+    },
+    {
+      "file": "yes02.wav",
+      "transcript": "Yeah!"
+    },
+    {
+      "file": "yes03.wav",
+      "transcript": "Yes!"
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "yes01.wav",
+        "activatecharge03.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 3.798684493700663,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.7564035654067993,
+          "transcript": "I-"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 3.4064495881398518,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.6746232509613037,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.849481153488159,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5598962306976318,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.2543274025122324,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.44753214716911316,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 1.8243595957756042,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.36487191915512085,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 1.5545271337032318,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.31090542674064636,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 1.4140026271343231,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2828005254268646,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 1.3762740790843964,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2752548158168793,
+          "transcript": "Ah, that's the way you do it!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 0.9269357472658157,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18538714945316315,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 0.8619239926338196,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17238479852676392,
+          "transcript": "NO!"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "yes01.wav",
+        "yes03.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 4.309828579425812,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8619657158851624,
+          "transcript": "I-"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.911982238292694,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5823964476585388,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.704657018184662,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5409314036369324,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 1.8934887647628784,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3786977529525757,
+          "transcript": "NO!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 1.5187309682369232,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.30374619364738464,
+          "transcript": "Ah, that's the way you do it!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 1.1319704353809357,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.22639408707618713,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 1.1040976643562317,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.22081953287124634,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 0.7247917354106903,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.14495834708213806,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 0.7126323878765106,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.14252647757530212,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 0.49642492085695267,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.09928498417139053,
+          "transcript": "Go on, then duck!"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "yes01.wav",
+        "yes02.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 4.060728565851847,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.8088123798370361,
+          "transcript": "I-"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 3.278428332010905,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6523523330688477,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 3.1054574728012083,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6110914945602417,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 2.4639107286930084,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4927821457386017,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 2.2613148391246796,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4522629678249359,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 2.0174413919448853,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.40348827838897705,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 1.7921222746372223,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.35842445492744446,
+          "transcript": "Ah, that's the way you do it!"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 1.6628153622150421,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3325630724430084,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 1.6454096138477325,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3290819227695465,
+          "transcript": "NO!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 1.013375148177147,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20267502963542938,
+          "transcript": "Time to get blotered!"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "yes01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 3.50460977156957,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.6992552876472473,
+          "transcript": "I-"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 3.0517921249071756,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 0.8333333333333334,
+          "modelScore": 0.6020250916481018,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.1043892284234365,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.41921117901802063,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 1.652185328801473,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.32877039909362793,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 1.5051965494950612,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.2993726432323456,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 1.3665282805760701,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.27163898944854736,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 1.1070390870173772,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.21974115073680878,
+          "transcript": "NO!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 0.9993478735287984,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.19820290803909302,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 0.7684756149848302,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.15202845633029938,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 0.7032303243875504,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.13064606487751007,
+          "transcript": "Ah, that's the way you do it!"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "yes01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 4.249288487434387,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8398576974868774,
+          "transcript": "I-"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 3.6678016344706217,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.730226993560791,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 3.655864644050598,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7211729288101196,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 3.400851504007975,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6768369674682617,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 3.3750150084495543,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6650030016899109,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 2.4554422656695047,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.4877551198005676,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 1.5069580237070719,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.29805827140808105,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 1.115814314285914,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.2198295295238495,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 1.1000746647516886,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.2166815996170044,
+          "transcript": "NO!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 0.8562889695167542,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17125779390335083,
+          "transcript": "Ah, that's the way you do it!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "yes01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 3.917737737723759,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.7821189761161804,
+          "transcript": "I-"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 2.836977675982884,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5659669637680054,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.7551139746393476,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5495942234992981,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 2.400897341966629,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4701794683933258,
+          "transcript": "NO!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 1.8515644822801862,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.3688843250274658,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 1.3240671013082776,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.2633848488330841,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 1.306470320054463,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.25986549258232117,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 0.9148560319628034,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.18154263496398926,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 0.9132475261177335,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.18122093379497528,
+          "transcript": "Charge it, Doc!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 0.4460732638835907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08921465277671814,
+          "transcript": "Ah, that's the way you do it!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "yes01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "yes01.wav",
+          "score": 3.83365159034729,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.756730318069458,
+          "transcript": "I-"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 3.0018401622772215,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5903680324554443,
+          "transcript": "Go on, then duck!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 2.2764103591442106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.44528207182884216,
+          "transcript": "NO!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.2459106624126433,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4391821324825287,
+          "transcript": "Yes!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 1.4503849029541016,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2800769805908203,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "autocappedintelligence02.wav",
+          "score": 1.1128385841846467,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.21256771683692932,
+          "transcript": "Time to get blotered!"
+        },
+        {
+          "file": "activatecharge01.wav",
+          "score": 0.9142916381359101,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.172858327627182,
+          "transcript": "Hit it, doc!"
+        },
+        {
+          "file": "battlecry01.wav",
+          "score": 0.5509901523590088,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.10019803047180176,
+          "transcript": "FLEED UP!"
+        },
+        {
+          "file": "autocappedintelligence01.wav",
+          "score": 0.4959278926253319,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.09918557852506638,
+          "transcript": "Ah, that's the way you do it!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 0.1681776914745569,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.023635538294911385,
+          "transcript": "Charge it, Doc!"
+        }
+      ]
+    }
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (valhalla/distilbart-mnli-12-1)",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "team-fortress-2",
+    "character": "demoman"
+  }
+}

@@ -1,0 +1,738 @@
+{
+  "clips": [
+    {
+      "file": "BOOT_nudge_Krabs.wav",
+      "transcript": ""
+    },
+    {
+      "file": "CINE_1_KRABS_LINE1.wav",
+      "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+    },
+    {
+      "file": "CINE_1_KRABS_LINE2.wav",
+      "transcript": "Oh yeah!"
+    },
+    {
+      "file": "CINE_1_KRABS_LINE3.wav",
+      "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+    },
+    {
+      "file": "CINE_7_KRABS_LINE1.wav",
+      "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+    },
+    {
+      "file": "CINE_7_KRABS_LINE2.wav",
+      "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+    },
+    {
+      "file": "CINE_7_KRABS_LINE4.wav",
+      "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+    },
+    {
+      "file": "CINE_7_KRABS_LINE5.wav",
+      "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+    },
+    {
+      "file": "CINE_7_KRABS_LINE6.wav",
+      "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+    },
+    {
+      "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+      "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav",
+        "CINE_1_KRABS_LINE3.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 2.699231505393982,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5398463010787964,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.9394143839677175,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.18121621012687683,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.888088271021843,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1776176542043686,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.42121800978978474,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.07757693529129028,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.13670098036527634,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.027340196073055267,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.1313723623752594,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02627447247505188,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.10880335234105587,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.021760670468211174,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.115227379091084,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.0130454758182168,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.08632026491686702,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.0072640529833734035,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav",
+        "CINE_1_KRABS_LINE1.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 2.6461899280548096,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5292379856109619,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.6607262045145035,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1321452409029007,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.49957994371652603,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0999159887433052,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.5494840174913407,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.09989680349826813,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.24405375123023987,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.048810750246047974,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.21989282220602036,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04397856444120407,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.2275200106203556,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03550400212407112,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.16614871099591255,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03322974219918251,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.14750977158546447,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.019501954317092896,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav",
+        "CINE_7_KRABS_LINE5.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 3.115214705467224,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6230429410934448,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.879288837313652,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1758577674627304,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.5889104306697845,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11778208613395691,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.47613926231861115,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.09522785246372223,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.2095058187842369,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04190116375684738,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.23229134380817412,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03645826876163483,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.22601290717720984,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03520258143544197,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.17059054225683212,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.034118108451366425,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.10415639728307724,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.020831279456615448,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 1.7774929225444793,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.3529985845088959,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.09977206587791443,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.019954413175582886,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.14493790566921233,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.018987581133842468,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.0689466530457139,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.01378933060914278,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.056312987580895424,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.011262597516179085,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.03569938475266099,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.007139876950532198,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.03309299470856786,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0066185989417135715,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.023680313024669886,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.004736062604933977,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.022301673889160156,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.004460334777832031,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 2.925101864337921,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5750203728675842,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.23308439180254936,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.04661687836050987,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.18507227301597595,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03701445460319519,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.12765677645802498,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.025531355291604996,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.11928359977900982,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.023856719955801964,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.11124307289719582,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.022248614579439163,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.1020161435008049,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02040322870016098,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.07098000962287188,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.014196001924574375,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.04854245111346245,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.00970849022269249,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 2.2846542418003084,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.25,
+          "modelScore": 0.45443084836006165,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.20874648466706275,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03174929693341255,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.1683909550309181,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.023678191006183624,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.10728273540735245,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.02145654708147049,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.10158365592360497,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.020316731184720993,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.08967011235654354,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.017934022471308708,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.0887394230812788,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.01774788461625576,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.08022650144994259,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.016045300289988518,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.02961924532428384,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.005923849064856768,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "CINE_1_KRABS_LINE2.wav"
+      ],
+      "candidates": [
+        {
+          "file": "CINE_1_KRABS_LINE2.wav",
+          "score": 1.8570274591445923,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.36140549182891846,
+          "transcript": "Oh yeah!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE4.wav",
+          "score": 0.19700560718774796,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03940112143754959,
+          "transcript": "Lost the secret formula! I told you to put it in the safe! This is a mute knee!"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE3.wav",
+          "score": 0.19316431134939194,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03863286226987839,
+          "transcript": "Good thinking, lad. You never know when plankton's pry and eye might be watching. Here, take the formula and put it somewhere safe."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE5.wav",
+          "score": 0.09713612496852875,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.01942722499370575,
+          "transcript": "Hey, that's me lottery ticket! Oops! I guess I never gave you the formula after all."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE2.wav",
+          "score": 0.09460301138460636,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.018920602276921272,
+          "transcript": "What are you talking about that? What kind of crazy calamity have you been up to this time?"
+        },
+        {
+          "file": "CINE_1_KRABS_LINE1.wav",
+          "score": 0.08976781740784645,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.01795356348156929,
+          "transcript": "SpongeBob, look, shut me boy! Tomorrow's a very important day! For Kashi! Think of all the crappy patties will sell. Now, who are those made again?"
+        },
+        {
+          "file": "CINE_PB_SL04_KRABS_LINE1.wav",
+          "score": 0.06260200403630733,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.012520400807261467,
+          "transcript": "We served over 200 crabby patties that day, and only one case of indigestion. We never had statistics like that before."
+        },
+        {
+          "file": "CINE_7_KRABS_LINE6.wav",
+          "score": 0.05613447166979313,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.011226894333958626,
+          "transcript": "Ah, here it is! It was in my backpack at the whole time!"
+        },
+        {
+          "file": "CINE_7_KRABS_LINE1.wav",
+          "score": 0.05177756305783987,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.010355512611567974,
+          "transcript": "SpongeBob, what is this? Some kind of mutiny? Why aren't you flipping patties for the big celebration? Time is money!"
+        },
+        {
+          "file": "BOOT_nudge_Krabs.wav",
+          "score": 0.0,
+          "rankingTier": "heuristic_fallback",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0,
+          "transcript": ""
+        }
+      ]
+    }
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (valhalla/distilbart-mnli-12-1)",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "spongebob",
+    "character": "mr-krabs"
+  }
+}

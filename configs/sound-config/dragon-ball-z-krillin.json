@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "debounceMs": 500,
+  "soundRoot": "sounds",
+  "soundPack": "dragon-ball-z",
+  "soundSubdir": "krillin",
+  "events": {
+    "beforeSubmitPrompt": [
+      "BCKLLSND2_00000.wav",
+      "BCKLLSND_00009.wav"
+    ],
+    "afterAgentThought": [
+      "BCKLLSND_00010.wav",
+      "BCKLLSND_00011.wav"
+    ],
+    "afterAgentResponse": [
+      "BCKLLSND_00012.wav",
+      "BCKLLSND_00013.wav"
+    ],
+    "preToolUse": "BCKLLSND_00014.wav",
+    "postToolUse": "BCKLLSND_00015.wav",
+    "postToolUseFailure": "BCKLLSND_00016.wav",
+    "stop": "BCKLLSND_00017.wav"
+  }
+}

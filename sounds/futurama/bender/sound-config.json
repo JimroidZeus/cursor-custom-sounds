@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "futurama",
+  "soundSubdir": "bender",
+  "events": {
+    "beforeSubmitPrompt": [
+      "button_push.wav",
+      "destalarm.wav"
+    ],
+    "afterAgentThought": [
+      "button_push.wav",
+      "destalarm.wav"
+    ],
+    "afterAgentResponse": [
+      "button_push.wav",
+      "destalarm.wav"
+    ],
+    "preToolUse": "button_push.wav",
+    "postToolUse": "alarmloop.wav",
+    "postToolUseFailure": "destalarm.wav",
+    "stop": "destalarm.wav"
+  }
+}

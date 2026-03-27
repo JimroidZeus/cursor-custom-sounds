@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "debounceMs": 500,
+  "soundRoot": "sounds",
+  "soundPack": "futurama",
+  "soundSubdir": "bender",
+  "events": {
+    "beforeSubmitPrompt": [
+      "alarmloop.wav",
+      "button_push.wav"
+    ],
+    "afterAgentThought": [
+      "clock_loop.wav",
+      "destalarm.wav"
+    ],
+    "afterAgentResponse": [
+      "door-small-close.wav",
+      "door-small-open.wav"
+    ],
+    "preToolUse": "fence-blipp.wav",
+    "postToolUse": "gas-fire.wav",
+    "postToolUseFailure": "laser-charge.wav",
+    "stop": "laser-fence-activate.wav"
+  }
+}
