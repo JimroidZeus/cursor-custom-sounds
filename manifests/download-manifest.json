@@ -1,4 +1,6 @@
 {
+  "schemaVersion": 2,
+  "description": "Downloader entries (ZIP + pathInArchive or direct media). Edit this file or merge from manifests/candidates/downloadable-all.json after review.",
   "entries": [
     {
       "universe": "warcraft",
@@ -7,7 +9,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonReady1.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -16,7 +20,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonWhat2.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -25,7 +31,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonWhat3.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -34,7 +42,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonWhat4.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -43,7 +53,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonYes3.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -52,7 +64,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonYes4.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -61,7 +75,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Grunt/GruntYes4.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -70,7 +86,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonYesAttack3.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -79,7 +97,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonWarcry1.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "warcraft",
@@ -88,7 +108,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
       "pathInArchive": "Orc/Peon/PeonYes4.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
-      "note": "Picked from filename semantics (Ready/What/Yes/Warcry)."
+      "note": "Picked from filename semantics (Ready/What/Yes/Warcry).",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -97,7 +119,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/activatecharge01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -106,7 +130,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/activatecharge02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -115,7 +141,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/autocappedintelligence01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -124,7 +152,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/autocappedintelligence02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -133,7 +163,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/yes01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -142,7 +174,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/yes02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -151,7 +185,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/activatecharge03.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -160,7 +196,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/yes03.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -169,7 +207,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/no01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -178,7 +218,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412046.zip?updated=1755538031",
       "pathInArchive": "demoman/battlecry01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -187,7 +229,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/activatecharge01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -196,7 +240,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/activatecharge02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -205,7 +251,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/invinciblenotready01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -214,7 +262,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/invinciblenotready02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -223,7 +273,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/yes01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -232,7 +284,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/yes02.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -241,7 +295,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/activatecharge03.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -250,7 +306,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/yes03.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -259,7 +317,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/no01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "team-fortress-2",
@@ -268,7 +328,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/409/412051.zip?updated=1755538033",
       "pathInArchive": "scout/award01.mp3",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412051/",
-      "note": "Best-effort semantic mapping from TF2 clip name prefixes."
+      "note": "Best-effort semantic mapping from TF2 clip name prefixes.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -277,7 +339,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49174).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -286,7 +350,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49175).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -295,7 +361,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49177).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -304,7 +372,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49178).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -313,7 +383,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49180).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -322,7 +394,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49181).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -331,7 +405,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49182).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -340,7 +416,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49183).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -349,7 +427,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49184).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -358,7 +438,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
       "pathInArchive": "Base form/Main Voice Files/Goku_3(49185).wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
-      "note": "Best-effort: selected first available Goku voice clips."
+      "note": "Best-effort: selected first available Goku voice clips.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -367,7 +449,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND2_00000.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -376,7 +460,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00009.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -385,7 +471,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00010.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -394,7 +482,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00011.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -403,7 +493,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00012.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -412,7 +504,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00013.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -421,7 +515,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00014.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -430,7 +526,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00015.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -439,7 +537,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00016.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "dragon-ball-z",
@@ -448,7 +548,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/439/442190.zip?updated=1755552420",
       "pathInArchive": "Krillin (US)/00Normal/BCKLLSND_00017.wav",
       "source_page": "https://sounds.spriters-resource.com/psp/dragonballzshinbudokai2/asset/442190/",
-      "note": "Best-effort: selected first available Krillin voice clips."
+      "note": "Best-effort: selected first available Krillin voice clips.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -457,7 +559,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000500_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -466,7 +570,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000501_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -475,7 +581,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000502_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -484,7 +592,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000503_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -493,7 +603,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000504_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -502,7 +614,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000505_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -511,7 +625,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000506_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -520,7 +636,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000507_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -529,7 +647,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000508_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "one-piece",
@@ -538,7 +658,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
       "pathInArchive": "Luffy/cv_000509_jp.wav",
       "source_page": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
-      "note": "Best-effort: selected first available Luffy voice clips."
+      "note": "Best-effort: selected first available Luffy voice clips.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -547,7 +669,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/alarmloop.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -556,7 +680,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/button_push.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -565,7 +691,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/clock_loop.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -574,7 +702,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/destalarm.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -583,7 +713,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/door-small-close.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -592,7 +724,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/door-small-open.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -601,7 +735,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/fence-blipp.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -610,7 +746,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/gas-fire.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -619,7 +757,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/laser-charge.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "futurama",
@@ -628,7 +768,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
       "pathInArchive": "Bender Breaks Out/laser-fence-activate.wav",
       "source_page": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
-      "note": "Best-effort: level SFX mapped into the event slots."
+      "note": "Best-effort: level SFX mapped into the event slots.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -637,7 +779,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/BOOT_nudge_Krabs.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -646,7 +790,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_1_KRABS_LINE1.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -655,7 +801,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_1_KRABS_LINE2.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -664,7 +812,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_1_KRABS_LINE3.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -673,7 +823,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_7_KRABS_LINE1.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -682,7 +834,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_7_KRABS_LINE2.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -691,7 +845,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_7_KRABS_LINE4.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -700,7 +856,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_7_KRABS_LINE5.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -709,7 +867,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_7_KRABS_LINE6.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "spongebob",
@@ -718,7 +878,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/395/398221.zip?updated=1755529389",
       "pathInArchive": "Mr. Krabs/CINE_PB_SL04_KRABS_LINE1.wav",
       "source_page": "https://sounds.spriters-resource.com/wii/spongebobstruthorsquare/asset/398221/",
-      "note": "Best-effort: selected early Mr. Krabs voice clips."
+      "note": "Best-effort: selected early Mr. Krabs voice clips.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -727,7 +889,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0101.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -736,7 +900,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0102.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -745,7 +911,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0103.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -754,7 +922,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0104.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -763,7 +933,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0105.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -772,7 +944,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0107.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -781,7 +955,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0108.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -790,7 +966,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0109.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -799,7 +977,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0110.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "star-wars",
@@ -808,7 +988,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/418/421698.zip?updated=1755542663",
       "pathInArchive": "C-3PO/THP0111.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyinfinity30/asset/421698/",
-      "note": "Best-effort: first 10 C-3PO dialogue clips."
+      "note": "Best-effort: first 10 C-3PO dialogue clips.",
+      "event": "stop",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -817,7 +999,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/1.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -826,7 +1010,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/2.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "beforeSubmitPrompt",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -835,7 +1021,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/3.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -844,7 +1032,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/5.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "afterAgentThought",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -853,7 +1043,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/6.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -862,7 +1054,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/7.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "afterAgentResponse",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -871,7 +1065,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/8.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "preToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -880,7 +1076,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/9.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "postToolUse",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -889,7 +1087,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/12.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "postToolUseFailure",
+      "source": "download-manifest"
     },
     {
       "universe": "disney",
@@ -898,7 +1098,9 @@
       "url": "https://sounds.spriters-resource.com/media/assets/509/524134.zip?updated=1771955873",
       "pathInArchive": "Genie/13.wav",
       "source_page": "https://sounds.spriters-resource.com/pc_computer/disneyspeedstorm/asset/524134/",
-      "note": "Best-effort: selected first available Genie SFX/clips."
+      "note": "Best-effort: selected first available Genie SFX/clips.",
+      "event": "stop",
+      "source": "download-manifest"
     }
   ]
 }

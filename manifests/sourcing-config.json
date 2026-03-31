@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "humanDoc": "docs/sound-sourcing.md",
+  "universeAliases": {},
+  "fetch": {
+    "maxRetries": 2,
+    "delayBetweenRequestsSec": 0.25
+  },
+  "discovery": {
+    "soundPageUrlRegexes": [
+      "fandom\\.com/wiki/",
+      "voicy\\.network/(?:official-soundboards(?:/[^/\\s?#]+)+|pages/[^/\\s?#]+)",
+      "sounds\\.spriters-resource\\.com/[^/]+/[^/]+/asset/\\d+",
+      "movie-sounds\\.org/[^\\s]+/[^\\s]+\\.html",
+      "moviesoundclips\\.net/",
+      "freesound\\.org/s/\\d+",
+      "freesound\\.org/people/[^/]+/sounds/\\d+"
+    ],
+    "htmlEmbeddedAudioRegexes": [
+      "https?://[^\\s\"<>]+\\.(?:wav|mp3|ogg|flac|m4a)(?:\\?[^\\s\"<>]*)?",
+      "src=[\"']([^\"']+\\.(?:wav|mp3|ogg))"
+    ]
+  }
+}

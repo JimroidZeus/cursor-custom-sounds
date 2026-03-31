@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "description": "Canonical paths under manifests/ for soundpack sourcing and downloads. See README.md in this folder. sourcing-config.json may include discovery regexes, universeAliases, and optional fetch settings for candidates --fetch-sound-pages.",
+  "canonical": {
+    "soundSites": "sound-sites.json",
+    "sourcingConfig": "sourcing-config.json",
+    "downloadManifest": "download-manifest.json",
+    "discoveryCharacters": "universe-character-hook-candidates.json"
+  },
+  "generated": {
+    "archiveEntries": "generated/archive-entries.json",
+    "candidatePipelineOutput": "candidates/"
+  },
+  "deprecatedRemoved": {
+    "inlineTier1Json": "Use generated/archive-entries.json (archive_entries) for ZIP reference rows; download-manifest.json for the downloader.",
+    "inlineSourceSitesInDiscovery": "Use sound-sites.json via sourceSitesRef in universe-character-hook-candidates.json.",
+    "phasedSourcingPhasedCandidatesModules": "Removed; use workflow --sourcing-report and soundpack_builder.candidates."
+  }
+}

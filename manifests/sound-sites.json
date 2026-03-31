@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "description": "Sound sample sites for hunting clips. Each id must match candidateLinks.siteId in universe-character-hook-candidates.json. Rows marked review terms need your approval before relying on redistribution. Optional per-site discovery.soundPageUrlRegexes and discovery.htmlEmbeddedAudioRegexes are used by the candidates pipeline; when a site omits a list, manifests/sourcing-config.json discovery.*Regexes are used as fallback.",
+  "sites": [
+    {
+      "id": "bbc-sfx",
+      "name": "BBC Sound Effects",
+      "url": "https://sound-effects.bbcrewind.co.uk",
+      "notes": "Archive SFX; mostly non-dialogue; strict BBC reuse rules."
+    },
+    {
+      "id": "curseforge",
+      "name": "CurseForge",
+      "url": "https://www.curseforge.com",
+      "notes": "Game mods and packs; per-project license."
+    },
+    {
+      "id": "freesound",
+      "name": "Freesound",
+      "url": "https://freesound.org",
+      "notes": "Per-clip CC licenses; strong for short voice lines and SFX."
+    },
+    {
+      "id": "gamebanana",
+      "name": "GameBanana",
+      "url": "https://gamebanana.com",
+      "notes": "Skins/mods including audio."
+    },
+    {
+      "id": "hanna-barbera-wiki",
+      "name": "Hanna-Barbera Sound Effects (Fandom)",
+      "url": "https://soundeffects.fandom.com/wiki/Hanna-Barbera_Sound_Effects_Library",
+      "notes": "Classic cartoon SFX reference pages."
+    },
+    {
+      "id": "internet-archive",
+      "name": "Internet Archive",
+      "url": "https://archive.org",
+      "notes": "Huge mix of uploads; copyright and quality vary\u2014verify each item."
+    },
+    {
+      "id": "itch-audio",
+      "name": "itch.io game audio",
+      "url": "https://itch.io/game-assets/audio",
+      "notes": "Indie packs; creator license per page."
+    },
+    {
+      "id": "kenney",
+      "name": "Kenney",
+      "url": "https://kenney.nl/assets",
+      "notes": "CC0 game assets; mostly non-dialogue SFX."
+    },
+    {
+      "id": "mixkit",
+      "name": "Mixkit",
+      "url": "https://mixkit.co/free-sound-effects/",
+      "notes": "Curated free SFX; check if dialogue clips fit your use case."
+    },
+    {
+      "id": "moddb",
+      "name": "ModDB",
+      "url": "https://www.moddb.com",
+      "notes": "Mod bundles; verify author license."
+    },
+    {
+      "id": "movie-sounds-org",
+      "name": "movie-sounds.org",
+      "url": "https://movie-sounds.org/",
+      "notes": "Film quote pages; read site terms before download."
+    },
+    {
+      "id": "moviesoundclips-net",
+      "name": "Movie Sound Clips (.net)",
+      "url": "https://www.moviesoundclips.net",
+      "notes": "Large movie/TV/game quote index (wav/mp3). Verify copyright and site terms for your use."
+    },
+    {
+      "id": "nexus-mods",
+      "name": "Nexus Mods",
+      "url": "https://www.nexusmods.com",
+      "notes": "Per-game mod permissions; franchise voice replacements sometimes."
+    },
+    {
+      "id": "opengameart",
+      "name": "OpenGameArt",
+      "url": "https://opengameart.org",
+      "notes": "Community assets; often CC; verify per file."
+    },
+    {
+      "id": "pixabay",
+      "name": "Pixabay SFX",
+      "url": "https://pixabay.com/sound-effects/",
+      "notes": "License shown per asset; mix of SFX and occasional voice."
+    },
+    {
+      "id": "sonniss-gdc",
+      "name": "Sonniss GDC giveaways",
+      "url": "https://sonniss.com/gameaudiogdc",
+      "notes": "Professional SFX bundles; not franchise dialogue."
+    },
+    {
+      "id": "spriters-resource-sounds",
+      "name": "The Sounds Resource",
+      "url": "https://sounds.spriters-resource.com",
+      "notes": "Game hubs \u2192 character asset pages; ZIPs with VO and SFX.",
+      "discovery": {
+        "soundPageUrlRegexes": [
+          "sounds\\.spriters-resource\\.com/[^/]+/[^/]+/asset/\\d+"
+        ],
+        "zipPackUrlRegexes": [
+          "sounds\\.spriters-resource\\.com/media/assets/\\d+/\\d+\\.zip"
+        ],
+        "exampleUrls": [
+          "https://sounds.spriters-resource.com/media/assets/423/426421.zip?updated=1755545056",
+          "https://sounds.spriters-resource.com/media/assets/418/421305.zip?updated=1755542441"
+        ]
+      }
+    },
+    {
+      "id": "steam-workshop",
+      "name": "Steam Workshop",
+      "url": "https://steamcommunity.com/workshop",
+      "notes": "Game-dependent audio mods; Workshop EULA applies."
+    },
+    {
+      "id": "voicy",
+      "name": "Voicy",
+      "url": "https://www.voicy.network/",
+      "notes": "Character-tagged clips; verify license per clip. Soundboard pages embed links to audio; fetch resolves src/href in HTML.",
+      "discovery": {
+        "soundPageUrlRegexes": [
+          "voicy\\.network/(?:official-soundboards(?:/[^/\\s?#]+)+|pages/[^/\\s?#]+)"
+        ],
+        "exampleUrls": [
+          "https://www.voicy.network/official-soundboards/series/jonathan-frakes"
+        ]
+      }
+    },
+    {
+      "id": "zapsplat",
+      "name": "Zapsplat",
+      "url": "https://www.zapsplat.com",
+      "notes": "Large SFX library; account often required; check redistribution terms."
+    }
+  ]
+}

@@ -1,0 +1,1233 @@
+{
+  "schemaVersion": 3,
+  "description": "Character discovery: flat candidateLinks per character (page URLs or direct media). Legacy manifests may still use events.*.candidateLinks; run this tool to merge into candidateLinks. Site ids must match manifests/sound-sites.json. Optional discoveryHints hold search helpers.",
+  "sourceSitesRef": "sound-sites.json",
+  "sourceSitesNote": "Canonical verified site list with stable ids for candidateLinks.siteId. Do not duplicate full site rows here.",
+  "cursorHookEvents": [
+    "beforeSubmitPrompt",
+    "afterAgentThought",
+    "afterAgentResponse",
+    "preToolUse",
+    "postToolUse",
+    "postToolUseFailure",
+    "stop"
+  ],
+  "characters": [
+    {
+      "universe": "star-trek",
+      "character": "jean-luc-picard",
+      "displayName": "Jean-Luc Picard",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/243601/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] miked312 \u2014 Borg Voices (Star Trek franchise VO pack; not \u201cmake it so\u201d)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/search/?q=picard+make+it+so",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound search (text): picard make it so",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "lord-of-the-rings",
+      "character": "gandalf",
+      "displayName": "Gandalf",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/401/403989.zip?updated=1771024125",
+          "siteId": "spriters-resource-sounds",
+          "label": "Gandalf, The Lord of the Rings",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/181221/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] unfa \u2014 You Shall Not Pass (multi-voice line read)",
+          "matchQuality": "paraphrase_quote"
+        },
+        {
+          "url": "https://freesound.org/s/402072/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] chestnutjam \u2014 \u201cyou shall not pass\u201d ORC voice (LOTR-tagged)",
+          "matchQuality": "paraphrase_quote"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/gandalf/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound tag browse: gandalf",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "one-piece",
+      "character": "luffy",
+      "displayName": "Monkey D. Luffy",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] J-Stars Victory VS \u2014 Luffy VO asset page (ZIP on page; same source as archive_entries)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/396/399610.zip?updated=1755530000",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Direct ZIP (from archive_entries) \u2014 verify license",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/search/?q=one+piece+luffy",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound search: one piece luffy",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "dragon-ball",
+      "character": "goku",
+      "displayName": "Son Goku",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/playstation_2/dragonballzbudokaitenkaichi3/asset/425476/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] DBZ Budokai Tenkaichi 3 \u2014 Goku VO page (game-archive manifest)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/422/425476.zip?updated=1755544614",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Direct ZIP (archive_entries)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/168908/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] erickjohanzm \u2014 DBZ saiyan aura + kamehameha (long; NC license on page)",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/649661/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] potato_on_bacon \u2014 short Goku drip-style tagged DBZ",
+          "matchQuality": "franchise_adjacent"
+        }
+      ]
+    },
+    {
+      "universe": "marvel",
+      "character": "captain-america",
+      "displayName": "Captain America",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/342603/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] oscaraudiogeek \u2014 \u201cshield-like\u201d metallic ring (film-inspired SFX, not a spoken line)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/avengers/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Tag: avengers",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=captain+america+all+day",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound search: captain america all day",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "portal",
+      "character": "glados",
+      "displayName": "GLaDOS",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/392/395531.zip?updated=1755527941",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Portal 2 \u2014 GLaDOS asset bundle page (download from site)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/391/394489.zip?updated=1755527387",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Portal 2 GLaDOS lines (pick failure / sarcastic clip from bundle)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/391/394490.zip?updated=1755527388",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Portal 2 GLaDOS lines (pick failure / sarcastic clip from bundle)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/391/394491.zip?updated=1755527389",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Portal 2 GLaDOS lines (pick failure / sarcastic clip from bundle)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/391/394492.zip?updated=1755527389",
+          "siteId": "spriters-resource-sounds",
+          "label": "[beforeSubmitPrompt] Portal 2 GLaDOS lines (pick failure / sarcastic clip from bundle)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/718337/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] moodyfingers \u2014 GLaDOS (Snare) synthesized voice snippet (Portal-tagged)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/search/?q=cake+is+a+lie+glados",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound search: cake is a lie glados",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://www.nexusmods.com/portal2/mods/",
+          "siteId": "nexus-mods",
+          "label": "[beforeSubmitPrompt] Nexus \u2014 Portal 2 mods (search voice / audio)",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/portal2/asset/395531/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[postToolUseFailure] Portal 2 GLaDOS lines (pick failure / sarcastic clip from bundle)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/718337/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] GLaDOS-ish synthesized snippet (not \u201ctriumph\u201d line)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/search/?q=glados+triumph+portal",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Freesound search: glados triumph portal",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://www.nexusmods.com/portal2/mods/",
+          "siteId": "nexus-mods",
+          "label": "[postToolUseFailure] Nexus \u2014 Portal 2 mods hub (search GLaDOS / VO)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "mass-effect",
+      "character": "commander-shepard",
+      "displayName": "Commander Shepard",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/345870/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] cylon8472 \u2014 Reaper voice effect (Mass Effect\u2013inspired)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/s/248261/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] cylon8472 \u2014 Reaper voice impression",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/Mass-Effect/",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Tag: Mass-Effect",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=shepard+i+should+go",
+          "siteId": "freesound",
+          "label": "[beforeSubmitPrompt] Freesound search: shepard i should go",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://www.nexusmods.com/masseffectlegendaryedition/mods/",
+          "siteId": "nexus-mods",
+          "label": "[beforeSubmitPrompt] Nexus \u2014 Mass Effect LE mods (search audio / voice)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "sherlock-holmes",
+      "character": "sherlock",
+      "displayName": "Sherlock Holmes",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/25481/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] FreqMan \u2014 violin minuet for Sherlock play (not a spoken \u201celementary\u201d)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/detective/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Tag: detective",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=sherlock+elementary",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Freesound search: sherlock elementary",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "star-trek",
+      "character": "spock",
+      "displayName": "Spock",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/635160/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Timbre \u2014 UberDuck Leonard Nimoy replicated (synthetic; check license/ethics)",
+          "matchQuality": "synthetic_voice"
+        },
+        {
+          "url": "https://freesound.org/s/670637/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Timbre \u2014 UberDuck Spock deepfake cleaned",
+          "matchQuality": "synthetic_voice"
+        },
+        {
+          "url": "https://freesound.org/s/846331/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Iceofdoom \u2014 fascinated male reaction (\u201cwhoah, no way\u201d)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "watchmen",
+      "character": "rorschach",
+      "displayName": "Rorschach",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/388208/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] nioczkus \u2014 1911 Comedian Pistol (Watchmen Comedian weapon SFX)",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/830480/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Ultra-Edward \u2014 ominous ticking (Watchmen-tagged on site)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/search/?q=rorschach",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Freesound search: rorschach",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "hitchhikers-guide",
+      "character": "marvin",
+      "displayName": "Marvin the Paranoid Android",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=depressed+robot+voice",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Freesound search: depressed robot voice",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=marvin+hitchhiker",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Freesound search: marvin hitchhiker",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "batman",
+      "character": "batman-animated",
+      "displayName": "Batman (animated series tone)",
+      "candidateLinks": [
+        {
+          "url":"https://sounds.spriters-resource.com/media/assets/401/403988.zip?updated=1771003103",
+          "siteId": "spriters-resource-sounds",
+          "label": "Batman (LEGO Dimensions)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url":"https://sounds.spriters-resource.com/media/assets/417/420135.zip?updated=1755541963",
+          "siteId": "spriters-resource-sounds",
+          "label": "Batman (Mortal Kombat vs. DC Universe)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url":"https://sounds.spriters-resource.com/media/assets/427/430150.zip?updated=1755546903",
+          "siteId": "spriters-resource-sounds",
+          "label": "Batman (The Telltale Series)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/205936/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] pikachu09 \u2014 \u201cI'm Batman\u201d impression (gravelly)",
+          "matchQuality": "paraphrase_quote"
+        },
+        {
+          "url": "https://freesound.org/s/334058/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] randomP_J_G \u2014 Bane line (gravelly DC)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "doctor-who",
+      "character": "the-doctor",
+      "displayName": "The Doctor",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/186675/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Dimi194 \u2014 TARDIS-like noise",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/582329/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] EvanSki \u2014 tardis_noise",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/dr-who/",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Tag: dr-who",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=allons+y+doctor+who",
+          "siteId": "freesound",
+          "label": "[afterAgentThought] Freesound search: allons y doctor who",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/dr-who/",
+          "siteId": "freesound",
+          "label": "[stop] Tag: dr-who (browse for farewell / run lines)",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=doctor+who+run",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: doctor who run",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "marvel",
+      "character": "tony-stark",
+      "displayName": "Tony Stark / Iron Man",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/749816/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] drvgcvltvre \u2014 Black Sabbath \u201cIron Man\u201d intro vocoder (song, not MCU Tony)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/s/759715/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] Artninja \u2014 MCU-inspired Iron Man chest attach SFX",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/iron-man/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] Tag: iron-man",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "ace-attorney",
+      "character": "phoenix-wright",
+      "displayName": "Phoenix Wright",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/351809/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] plasterbrain \u2014 Press Start Phoenix Wright (music sting)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/s/580684/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] GamingWithJumbo \u2014 edgeworth desk slam SFX",
+          "matchQuality": "game_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/580683/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] GamingWithJumbo \u2014 witness testimony clip",
+          "matchQuality": "game_voice"
+        },
+        {
+          "url": "https://freesound.org/s/364835/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] KenRT \u2014 Table slam (courtroom bang substitute)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/people/pfranzen/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] pfranzen profile \u2014 includes \u201cBanging a table (Phoenix Wright style)\u201d (open profile, pick sound)",
+          "matchQuality": "game_sfx"
+        }
+      ]
+    },
+    {
+      "universe": "monty-python",
+      "character": "holy-grail-narrator-knight",
+      "displayName": "Monty Python (Arthur / Patsy / narrator tone)",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/696511/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] mythmade \u2014 Much Rejoicing.wav (Monty Python\u2013tagged crowd \u201cyay\u201d)",
+          "matchQuality": "paraphrase_quote"
+        }
+      ]
+    },
+    {
+      "universe": "star-wars",
+      "character": "obi-wan",
+      "displayName": "Obi-Wan Kenobi",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/people/s4568769/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] s4568769 profile \u2014 clip titled Hello There / General Kenobi (verify content + license)",
+          "matchQuality": "paraphrase_quote"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/Kenobi/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] Tag: Kenobi",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/s/50780/",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] smcameron \u2014 hello.ogg (generic, weak)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "futurama",
+      "character": "bender",
+      "displayName": "Bender",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/xbox/futurama/asset/525333/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[afterAgentResponse] Futurama (Xbox) asset page \u2014 mostly level SFX; game-archive manifest uses this ZIP",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/511/525333.zip?updated=1772343108",
+          "siteId": "spriters-resource-sounds",
+          "label": "[afterAgentResponse] Direct ZIP (archive_entries)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/search/?q=bender+futurama",
+          "siteId": "freesound",
+          "label": "[afterAgentResponse] Freesound search: bender futurama",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "team-fortress-2",
+      "character": "engineer",
+      "displayName": "TF2 Engineer",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412047/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[preToolUse] TF2 Engineer full VO archive page",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/245604/",
+          "siteId": "freesound",
+          "label": "[preToolUse] unfa \u2014 TF2 Demoman \u201cKa-Boom!\u201d (wrong class; proves Freesound has TF2 vo)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://www.nexusmods.com/teamfortress2/mods/",
+          "siteId": "nexus-mods",
+          "label": "[preToolUse] Nexus \u2014 TF2 mods (search engineer / VO)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "star-trek",
+      "character": "scotty",
+      "displayName": "Montgomery Scott",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=scotty+star+trek+all+she+got",
+          "siteId": "freesound",
+          "label": "[preToolUse] Freesound search: scotty star trek all she got",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/Star-Trek/",
+          "siteId": "freesound",
+          "label": "[preToolUse] Tag: Star-Trek (if present)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "ghostbusters",
+      "character": "venkman-team",
+      "displayName": "Ghostbusters (Venkman / team)",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/478849/",
+          "siteId": "freesound",
+          "label": "[preToolUse] JadeJohnsonIndustries \u2014 Ghost Busters.wav (C64-style shout)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/s/98524/",
+          "siteId": "freesound",
+          "label": "[preToolUse] xXlegendXx \u2014 Ecto-1 siren long",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/98530/",
+          "siteId": "freesound",
+          "label": "[preToolUse] xXlegendXx \u2014 ecto 1 siren short wav",
+          "matchQuality": "franchise_sfx"
+        }
+      ]
+    },
+    {
+      "universe": "warcraft",
+      "character": "orc-peon",
+      "displayName": "Warcraft Orc Peon",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[postToolUseFailure] Same bundle \u2014 pick PeonPissed / PeonDeath / error barks",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[preToolUse] WC3 voices bundle (Peon + others) \u2014 archive_entries page",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/422/425494.zip?updated=1755544622",
+          "siteId": "spriters-resource-sounds",
+          "label": "[preToolUse] Direct ZIP (archive_entries)",
+          "matchQuality": "game_archive"
+        }
+      ]
+    },
+    {
+      "universe": "james-bond",
+      "character": "bond",
+      "displayName": "James Bond",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/464142/",
+          "siteId": "freesound",
+          "label": "[preToolUse] TheRealAmandaStone \u2014 shakennotstirred.wav (drink shake, not spoken line)",
+          "matchQuality": "thematic_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/71415/",
+          "siteId": "freesound",
+          "label": "[preToolUse] philberts \u2014 martini_shake_pour.wav",
+          "matchQuality": "thematic_sfx"
+        }
+      ]
+    },
+    {
+      "universe": "the-a-team",
+      "character": "hannibal",
+      "displayName": "John \u201cHannibal\u201d Smith",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=a+team+plan+comes+together",
+          "siteId": "freesound",
+          "label": "[preToolUse] Freesound search: a team plan comes together",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://pixabay.com/sound-effects/search/military%20radio/",
+          "siteId": "pixabay",
+          "label": "[preToolUse] Pixabay: military radio SFX (tone substitute for Hannibal ops chatter)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "star-wars",
+      "character": "han-solo",
+      "displayName": "Han Solo",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/browse/tags/star-wars/",
+          "siteId": "freesound",
+          "label": "[postToolUse] Tag: star-wars (109+ clips \u2014 browse)",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/s/466867/",
+          "siteId": "freesound",
+          "label": "[postToolUse] MikeE63 \u2014 blaster shot (franchise SFX, not Han\u2019s voice)",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/search/?q=han+solo+great+kid",
+          "siteId": "freesound",
+          "label": "[postToolUse] Freesound search: han solo great kid",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "toy-story",
+      "character": "buzz-lightyear",
+      "displayName": "Buzz Lightyear",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=infinity+and+beyond",
+          "siteId": "freesound",
+          "label": "[postToolUse] Freesound search: infinity and beyond",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://pixabay.com/sound-effects/search/hooray/",
+          "siteId": "pixabay",
+          "label": "[postToolUse] Pixabay search: hooray (kids cheer substitute)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "portal",
+      "character": "wheatley",
+      "displayName": "Wheatley",
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/portal2/asset/395527/",
+          "siteId": "spriters-resource-sounds",
+          "label": "[postToolUse] Portal 2 Wheatley VO archive page",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/s/648147/",
+          "siteId": "freesound",
+          "label": "[postToolUse] EpicAllay \u2014 \u201cThat was easy\u201d staples-style button (not Wheatley)",
+          "matchQuality": "weak_substitute"
+        }
+      ]
+    },
+    {
+      "universe": "mario",
+      "character": "mario",
+      "displayName": "Mario",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/448256/",
+          "siteId": "freesound",
+          "label": "[postToolUse] awhhhyeah \u2014 Mario.mp3 (Mario-tagged SFX / voice)",
+          "matchQuality": "franchise_adjacent"
+        },
+        {
+          "url": "https://freesound.org/s/362328/",
+          "siteId": "freesound",
+          "label": "[postToolUse] Jofae \u2014 Platform Jump (Mario-tagged)",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://opengameart.org/content/level-up-power-up-coin-get-13-sounds",
+          "siteId": "opengameart",
+          "label": "[postToolUse] OpenGameArt \u2014 coin / level-up pack (CC0)",
+          "matchQuality": "thematic_sfx"
+        },
+        {
+          "url": "https://pixabay.com/sound-effects/search/success/",
+          "siteId": "pixabay",
+          "label": "[postToolUse] Pixabay search: success",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "lord-of-the-rings",
+      "character": "sam-frodo",
+      "displayName": "Sam & Frodo (Shire tone)",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=well+i%27m+back+sam",
+          "siteId": "freesound",
+          "label": "[postToolUse] Freesound search: well i'm back sam",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/LOTR/",
+          "siteId": "freesound",
+          "label": "[postToolUse] Tag browse: LOTR (if indexed)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "star-wars",
+      "character": "c3po",
+      "displayName": "C-3PO",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/browse/tags/C-3PO/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Tag: C-3PO (robot servo sounds; may not be \u201cwe\u2019re doomed\u201d)",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/s/506722/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] PitchyWobble \u2014 dying droid by Tony (generic droid fail)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/search/?q=c3po+doomed",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Freesound search: c3po doomed",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "simpsons",
+      "character": "homer",
+      "displayName": "Homer Simpson",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/828385/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] riippumattog \u2014 D'oh (unhappy sound) \u2014 not official cast",
+          "matchQuality": "paraphrase_quote"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/Simpsons/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Tag: Simpsons",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "dark-souls",
+      "character": "solaire",
+      "displayName": "Solaire of Astora",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=praise+the+sun",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Freesound search: praise the sun",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=dark+souls+you+died",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] Freesound search: dark souls you died",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "metal-gear",
+      "character": "snake",
+      "displayName": "Solid Snake",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/531750/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] PixelProphecy \u2014 MGS guard alert exclamation",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/413641/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] djlprojects \u2014 MGS-inspired alert surprise",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/s/493941/",
+          "siteId": "freesound",
+          "label": "[postToolUseFailure] jozef_sound \u2014 Metal Gear Solid Alarm",
+          "matchQuality": "franchise_sfx"
+        }
+      ]
+    },
+    {
+      "universe": "terminator",
+      "character": "t800",
+      "displayName": "Terminator (T-800)",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/431605/",
+          "siteId": "freesound",
+          "label": "[stop] owly-bee \u2014 I'm Baaaack! (female singsong; not Arnold)",
+          "matchQuality": "weak_substitute"
+        },
+        {
+          "url": "https://freesound.org/s/157969/",
+          "siteId": "freesound",
+          "label": "[stop] jobro \u2014 Terminator slam (T2 truck sting, no dialogue)",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/search/?q=ill+be+back+terminator",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: ill be back terminator",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://www.voicy.network/official-soundboards/movies/the-terminator",
+          "siteId": "voicy",
+          "label": "[stop] Voicy Terminator Soundboard",
+          "matchQuality": "franchise_sfx"
+        }
+      ]
+    },
+    {
+      "universe": "the-princess-bride",
+      "character": "inigo-vizzini",
+      "displayName": "Inigo / Vizzini (Princess Bride)",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=inconceivable",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: inconceivable",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/search/?q=princess+bride",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: princess bride",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "looney-tunes",
+      "character": "porky-pig",
+      "displayName": "Porky Pig",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=that%27s+all+folks",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: that's all folks",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/browse/tags/cartoon/",
+          "siteId": "freesound",
+          "label": "[stop] Tag: cartoon \u2014 browse for classic-era outros",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "marvel",
+      "character": "loki",
+      "displayName": "Loki",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/search/?q=loki+avengers+falling",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: loki avengers falling",
+          "matchQuality": "search_portal"
+        }
+      ]
+    },
+    {
+      "universe": "halo",
+      "character": "cortana",
+      "displayName": "Cortana",
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/browse/tags/Halo/",
+          "siteId": "freesound",
+          "label": "[stop] Tag: Halo \u2014 shield / UI SFX (not Cortana VO)",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://freesound.org/s/501750/",
+          "siteId": "freesound",
+          "label": "[stop] Pablobd \u2014 Halo-style sci-fi shield wav",
+          "matchQuality": "franchise_sfx"
+        },
+        {
+          "url": "https://freesound.org/search/?q=cortana+halo+voice",
+          "siteId": "freesound",
+          "label": "[stop] Freesound search: cortana halo voice",
+          "matchQuality": "search_portal"
+        },
+        {
+          "url": "https://www.nexusmods.com/halothemasterchiefcollection/mods/",
+          "siteId": "nexus-mods",
+          "label": "[stop] Nexus \u2014 Halo MCC mods (search audio / Cortana)",
+          "matchQuality": "search_portal"
+        }
+      ]
+    }
+  ],
+  "crossFranchiseOneVoicePacks": [
+    {
+      "universe": "team-fortress-2",
+      "character": "_nine-classes-overview",
+      "displayName": "TF2 \u2014 nine classes (one franchise, many voices)",
+      "mappingIdeas": {
+        "beforeSubmitPrompt": [
+          "Scout battlecry / hype line",
+          "Soldier attack yell"
+        ],
+        "afterAgentThought": [
+          "Medic \"Interesting\" / Heavy short grunt",
+          "Spy calm line"
+        ],
+        "afterAgentResponse": [
+          "Demoman cheer",
+          "Sniper \"job done\""
+        ],
+        "preToolUse": [
+          "Engineer building lines",
+          "Pyro muffled ack"
+        ],
+        "postToolUse": [
+          "Engineer \"eureka\" / success tone",
+          "Scout \"Bonk\""
+        ],
+        "postToolUseFailure": [
+          "Failed uber / negative vo",
+          "Engineer \"dammit\""
+        ],
+        "stop": [
+          "Spy \"Gentlemen\" farewell",
+          "Soldier short outro"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/tf2/",
+          "siteId": "spriters-resource-sounds",
+          "label": "TF2 master list \u2014 all class VO bundles",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412046/",
+          "siteId": "spriters-resource-sounds",
+          "label": "Demoman archive (game-archive manifest)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/tf2/asset/412047/",
+          "siteId": "spriters-resource-sounds",
+          "label": "Engineer archive",
+          "matchQuality": "game_archive"
+        }
+      ],
+      "discoveryHints": {
+        "suggestedSourceSiteIds": [
+          "spriters-resource-sounds",
+          "nexus-mods",
+          "gamebanana"
+        ]
+      }
+    },
+    {
+      "universe": "warcraft",
+      "character": "_orc-unit-set",
+      "displayName": "Warcraft Orc faction (Peon + Grunt + buildings)",
+      "mappingIdeas": {
+        "preToolUse": [
+          "Peon ready / work",
+          "Grunt yes attack"
+        ],
+        "postToolUse": [
+          "Work complete / yes attack success"
+        ],
+        "postToolUseFailure": [
+          "Pissed / death / needs gold"
+        ],
+        "stop": [
+          "Orc warcry stop"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/pc_computer/warcraft3reignofchaos/asset/425494/",
+          "siteId": "spriters-resource-sounds",
+          "label": "WC3 voices (orc peon + other units)",
+          "matchQuality": "game_archive"
+        }
+      ],
+      "discoveryHints": {
+        "suggestedSourceSiteIds": [
+          "spriters-resource-sounds"
+        ]
+      }
+    },
+    {
+      "universe": "one-piece",
+      "character": "_straw-hat-crew",
+      "displayName": "One Piece \u2014 Straw Hat crew callouts",
+      "mappingIdeas": {
+        "beforeSubmitPrompt": [
+          "Luffy king of pirates",
+          "Zoro nothing happened (cool commit)"
+        ],
+        "afterAgentThought": [
+          "Sanji mellorine?",
+          "Nami annoyed mutter",
+          "Chopper scared hmm"
+        ],
+        "afterAgentResponse": [
+          "Usopp brag",
+          "Robin cold line"
+        ],
+        "stop": [
+          "Brook skull joke outro (keep short)"
+        ]
+      },
+      "candidateLinks": [
+        {
+          "url": "https://sounds.spriters-resource.com/playstation_3/jstarsvictoryvs/asset/399610/",
+          "siteId": "spriters-resource-sounds",
+          "label": "J-Stars \u2014 Luffy bundle (other crew may need different game assets)",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/395/397853.zip?updated=1755529198",
+          "siteId": "spriters-resource-sounds",
+          "label": "Monkey D. Luffy, One Piece: Unlimited",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://sounds.spriters-resource.com/media/assets/437/439853.zip?updated=1755551350",
+          "siteId": "spriters-resource-sounds",
+          "label": "Luffy (Normal) One Piece: Unlimited",
+          "matchQuality": "game_archive"
+        },
+        {
+          "url": "https://freesound.org/search/?q=one+piece+zoro",
+          "siteId": "freesound",
+          "label": "Freesound search: one piece zoro",
+          "matchQuality": "search_portal"
+        }
+      ],
+      "discoveryHints": {
+        "suggestedSourceSiteIds": [
+          "freesound",
+          "nexus-mods",
+          "gamebanana"
+        ]
+      }
+    },
+    {
+      "universe": "ace-attorney",
+      "character": "_courtroom-kit",
+      "displayName": "Ace Attorney \u2014 objection kit for phases",
+      "mappingIdeas": {
+        "beforeSubmitPrompt": [
+          "Hold it (interrupt yourself before send \u2014 optional)"
+        ],
+        "afterAgentThought": [
+          "Thinking courtroom murmur"
+        ],
+        "afterAgentResponse": [
+          "Take that / Objection depending on assertiveness"
+        ],
+        "postToolUseFailure": [
+          "Wrong answer / damage sfx"
+        ]
+      },
+      "suggestedWavFilesExamples": [
+        "objection.wav",
+        "hold_it.wav",
+        "take_that.wav",
+        "gotcha.wav"
+      ],
+      "candidateLinks": [
+        {
+          "url": "https://freesound.org/s/580683/",
+          "siteId": "freesound",
+          "label": "Ace Attorney witness testimony",
+          "matchQuality": "game_voice"
+        },
+        {
+          "url": "https://freesound.org/s/580684/",
+          "siteId": "freesound",
+          "label": "Ace Attorney desk slam",
+          "matchQuality": "game_sfx"
+        }
+      ],
+      "discoveryHints": {
+        "suggestedSourceSiteIds": [
+          "spriters-resource-sounds",
+          "itch-audio",
+          "opengameart"
+        ]
+      }
+    }
+  ],
+  "soundConfigTemplate": {
+    "_comment": "After you place WAVs under sounds/<universe>/<character>/, point events at those filenames (arrays = random pick).",
+    "enabled": true,
+    "soundRoot": "sounds",
+    "soundPack": "<universe-slug>",
+    "soundSubdir": "<character-slug>",
+    "events": {
+      "beforeSubmitPrompt": [
+        "before_send_1.wav",
+        "before_send_2.wav"
+      ],
+      "afterAgentThought": [
+        "after_thought_1.wav",
+        "after_thought_2.wav"
+      ],
+      "afterAgentResponse": [
+        "after_response_1.wav",
+        "after_response_2.wav"
+      ],
+      "preToolUse": "pre_tool.wav",
+      "postToolUse": "post_tool.wav",
+      "postToolUseFailure": "post_tool_fail.wav",
+      "stop": "stop.wav"
+    }
+  }
+}
