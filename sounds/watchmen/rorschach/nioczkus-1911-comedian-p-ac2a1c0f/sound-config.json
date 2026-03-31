@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "watchmen",
+  "soundSubdir": "rorschach/nioczkus-1911-comedian-p-ac2a1c0f",
+  "events": {
+    "beforeSubmitPrompt": [
+      "388208_932959-lq.wav",
+      "388208_932959-lq.wav"
+    ],
+    "afterAgentThought": [
+      "388208_932959-lq.wav",
+      "388208_932959-lq.wav"
+    ],
+    "afterAgentResponse": [
+      "388208_932959-lq.wav",
+      "388208_932959-lq.wav"
+    ],
+    "preToolUse": "388208_932959-lq.wav",
+    "postToolUse": "388208_932959-lq.wav",
+    "postToolUseFailure": "388208_932959-lq.wav",
+    "stop": "388208_932959-lq.wav"
+  }
+}

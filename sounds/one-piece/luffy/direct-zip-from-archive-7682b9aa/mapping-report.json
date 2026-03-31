@@ -1,0 +1,756 @@
+{
+  "clips": [
+    {
+      "file": "cv_000500_jp.wav",
+      "transcript": "I got a lot of money! I got a lot of money!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000501_jp.wav",
+      "transcript": "Lush, get out of the way! EXA!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000502_jp.wav",
+      "transcript": "What? Mangybeel fee? I'm going to have to go to the store!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000503_jp.wav",
+      "transcript": "Oh, that's it, that's it, that's it!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000504_jp.wav",
+      "transcript": "Oh! Hangok and Nadji Jimka! You're right!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000505_jp.wav",
+      "transcript": "This is what I want you to do! This is what I want you to do!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000506_jp.wav",
+      "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right.",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000507_jp.wav",
+      "transcript": "I'm going to be a monster! I'm going to be a monster!",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000508_jp.wav",
+      "transcript": "I'll be right back. I'll be right back.",
+      "speechEligible": true
+    },
+    {
+      "file": "cv_000509_jp.wav",
+      "transcript": "That's it for today! Are you okay with that?",
+      "speechEligible": true
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "cv_000507_jp.wav",
+        "cv_000502_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.07823100566864,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.609646201133728,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 2.9158350080251694,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5831670016050339,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 2.899944633245468,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5799889266490936,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.7950565111637116,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.4,
+          "modelScore": 0.5550113022327423,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 2.785851891338825,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.547170378267765,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.708142325282097,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5416284650564194,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.7185121858119965,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 0.8,
+          "modelScore": 0.5357024371623993,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 2.695662189722061,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.4,
+          "modelScore": 0.5351324379444122,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 2.699799495488405,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.6,
+          "modelScore": 0.533959899097681,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.716323259472847,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5332646518945694,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "cv_000508_jp.wav",
+        "cv_000506_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 3.259618878364563,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6519237756729126,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 3.193580284714699,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6387160569429398,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 3.110179528594017,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6220359057188034,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 3.101496323943138,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6202992647886276,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.146850588917732,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6193701177835464,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 3.0946001410484314,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6189200282096863,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 3.1235853314399717,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6147170662879944,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 3.0082160606980324,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6016432121396065,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 3.0189084738492964,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5937816947698593,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.8379257023334503,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5675851404666901,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "cv_000505_jp.wav",
+        "cv_000509_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.1967078894376755,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6393415778875351,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 3.1701257824897766,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6340251564979553,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 3.1508268415927887,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6301653683185577,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 3.0898282781243323,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6079656556248665,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 3.0241481214761734,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6048296242952347,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 3.014599531888962,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6029199063777924,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 2.991836369037628,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5983672738075256,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.906075492501259,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5812150985002518,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.8864699602127075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5772939920425415,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.784640993922949,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5569281987845898,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "cv_000500_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.06011363863945,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.61202272772789,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 3.0439700931310654,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6087940186262131,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.880646362900734,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5761292725801468,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 2.866951711475849,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5733903422951698,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 2.862417511641979,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5724835023283958,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 2.859265021979809,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5718530043959618,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 2.905933457612991,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5711866915225983,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.89962959587574,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.569925919175148,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.876358862221241,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5652717724442482,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.8735790878534315,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5647158175706863,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "cv_000504_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 3.0363930761814117,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6072786152362823,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.0345377326011658,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6069075465202332,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 2.9693301767110825,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5938660353422165,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.9385821893811226,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5877164378762245,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 2.9219194501638412,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5843838900327682,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.8634191304445267,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5726838260889053,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 2.853141874074936,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5706283748149872,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 2.838999703526497,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5677999407052994,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.7659290470182896,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5531858094036579,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.7650166489183903,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.553003329783678,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "cv_000501_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 2.954714410007,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5909428820014,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 2.943771071732044,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5887542143464088,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 2.9186497256159782,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5837299451231956,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 2.8853798657655716,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5770759731531143,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 2.843080461025238,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5686160922050476,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 2.8317680209875107,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5663536041975021,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.8154047578573227,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5630809515714645,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.780511546880007,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5561023093760014,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 2.7718359977006912,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5543671995401382,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 2.7650164999067783,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5530032999813557,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "cv_000503_jp.wav"
+      ],
+      "candidates": [
+        {
+          "file": "cv_000503_jp.wav",
+          "score": 3.2911352813243866,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6582270562648773,
+          "transcript": "Oh, that's it, that's it, that's it!"
+        },
+        {
+          "file": "cv_000505_jp.wav",
+          "score": 3.2323338091373444,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6464667618274689,
+          "transcript": "This is what I want you to do! This is what I want you to do!"
+        },
+        {
+          "file": "cv_000504_jp.wav",
+          "score": 3.21018248796463,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.642036497592926,
+          "transcript": "Oh! Hangok and Nadji Jimka! You're right!"
+        },
+        {
+          "file": "cv_000508_jp.wav",
+          "score": 3.1643641740083694,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6328728348016739,
+          "transcript": "I'll be right back. I'll be right back."
+        },
+        {
+          "file": "cv_000506_jp.wav",
+          "score": 3.160572797060013,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6321145594120026,
+          "transcript": "I'm sure you can use this for a long time. What kind of person is that? That's right."
+        },
+        {
+          "file": "cv_000509_jp.wav",
+          "score": 3.159799575805664,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6319599151611328,
+          "transcript": "That's it for today! Are you okay with that?"
+        },
+        {
+          "file": "cv_000500_jp.wav",
+          "score": 3.1434209644794464,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6286841928958893,
+          "transcript": "I got a lot of money! I got a lot of money!"
+        },
+        {
+          "file": "cv_000501_jp.wav",
+          "score": 3.133290410041809,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6266580820083618,
+          "transcript": "Lush, get out of the way! EXA!"
+        },
+        {
+          "file": "cv_000507_jp.wav",
+          "score": 2.9795946553349495,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5959189310669899,
+          "transcript": "I'm going to be a monster! I'm going to be a monster!"
+        },
+        {
+          "file": "cv_000502_jp.wav",
+          "score": 2.960967533290386,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5921935066580772,
+          "transcript": "What? Mangybeel fee? I'm going to have to go to the store!"
+        }
+      ]
+    }
+  },
+  "speechVerification": {
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 10,
+    "excludedClips": []
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "one-piece",
+    "character": "luffy",
+    "packLabelSlug": "direct-zip-from-archive-7682b9aa"
+  }
+}

@@ -1,6 +1,5 @@
 {
   "enabled": true,
-  "debounceMs": 500,
   "soundRoot": "sounds",
   "soundPack": "team-fortress-2",
   "soundSubdir": "demoman",

@@ -1,6 +1,5 @@
 {
   "enabled": true,
-  "debounceMs": 500,
   "soundRoot": "sounds",
   "soundPack": "spongebob",
   "soundSubdir": "mr-krabs",

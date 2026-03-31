@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "batman",
+  "soundSubdir": "batman-animated/batman-the-telltale-series",
+  "events": {
+    "beforeSubmitPrompt": [
+      "377568914.wav",
+      "377622858.wav"
+    ],
+    "afterAgentThought": [
+      "377568960.wav",
+      "377568714.wav"
+    ],
+    "afterAgentResponse": [
+      "377568994.wav",
+      "377568606.wav"
+    ],
+    "preToolUse": "377568859.wav",
+    "postToolUse": "377623122.wav",
+    "postToolUseFailure": "377568651.wav",
+    "stop": "377568789.wav"
+  }
+}

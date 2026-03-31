@@ -1,0 +1,144 @@
+{
+  "clips": [
+    {
+      "file": "388208_932959-lq.wav",
+      "transcript": "THE END",
+      "speechEligible": true
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "388208_932959-lq.wav",
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 2.8167086467146873,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5633417293429375,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "388208_932959-lq.wav",
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 3.254121318459511,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6508242636919022,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "388208_932959-lq.wav",
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 3.2451294362545013,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6490258872509003,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 3.041129644215107,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5982259288430214,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 3.159050020575523,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6218100041151047,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 2.996127280592918,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5892254561185837,
+          "transcript": "THE END"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "388208_932959-lq.wav"
+      ],
+      "candidates": [
+        {
+          "file": "388208_932959-lq.wav",
+          "score": 3.54974125623703,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.699948251247406,
+          "transcript": "THE END"
+        }
+      ]
+    }
+  },
+  "speechVerification": {
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 1,
+    "excludedClips": []
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "watchmen",
+    "character": "rorschach",
+    "packLabelSlug": "nioczkus-1911-comedian-p-ac2a1c0f"
+  }
+}

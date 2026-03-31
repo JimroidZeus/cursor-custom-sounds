@@ -1,24 +1,24 @@
 {
   "enabled": true,
   "soundRoot": "sounds",
-  "soundPack": "star-wars",
-  "soundSubdir": "c-3po",
+  "soundPack": "warcraft",
+  "soundSubdir": "orc-peon",
   "events": {
     "beforeSubmitPrompt": [
-      "THP0108.wav",
-      "THP0104.wav"
+      "PeonReady1.wav",
+      "PeonYes3.wav"
     ],
     "afterAgentThought": [
-      "THP0108.wav",
-      "THP0103.wav"
+      "PeonWhat2.wav",
+      "PeonWarcry1.wav"
     ],
     "afterAgentResponse": [
-      "THP0104.wav",
-      "THP0108.wav"
+      "PeonYes4.wav",
+      "PeonWhat2.wav"
     ],
-    "preToolUse": "THP0108.wav",
-    "postToolUse": "THP0108.wav",
-    "postToolUseFailure": "THP0108.wav",
-    "stop": "THP0108.wav"
+    "preToolUse": "PeonReady1.wav",
+    "postToolUse": "PeonWhat2.wav",
+    "postToolUseFailure": "PeonWhat2.wav",
+    "stop": "PeonWhat2.wav"
   }
 }

@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "dragon-ball",
+  "soundSubdir": "goku/direct-zip-archive-entries",
+  "events": {
+    "beforeSubmitPrompt": [
+      "Goku_3(49250).wav",
+      "24.wav"
+    ],
+    "afterAgentThought": [
+      "Goku_5(49439).wav",
+      "Goku_5(49445).wav"
+    ],
+    "afterAgentResponse": [
+      "Goku_4(49339).wav",
+      "Goku_4(49345).wav"
+    ],
+    "preToolUse": "Goku_3(49236).wav",
+    "postToolUse": "Goku_3(49271).wav",
+    "postToolUseFailure": "Goku_3(49247).wav",
+    "stop": "Goku_4(49323).wav"
+  }
+}

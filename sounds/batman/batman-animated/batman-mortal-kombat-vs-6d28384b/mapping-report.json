@@ -1,0 +1,5731 @@
+{
+  "clips": [
+    {
+      "file": "atk_hit01.wav",
+      "transcript": "Pfft.",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_hit02.wav",
+      "transcript": "rrrr",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_hit03.wav",
+      "transcript": ".",
+      "speechEligible": false,
+      "exclusionReason": "non_lexical_only"
+    },
+    {
+      "file": "atk_hit04.wav",
+      "transcript": "Pfft",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_hit05.wav",
+      "transcript": "Thanks for watching and I'll see you in the next video.",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_hit_med01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "atk_hit_med02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "atk_hit_med03.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_hit_med04.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_kick01.wav",
+      "transcript": "Yeah.",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_kick02.wav",
+      "transcript": "NO!",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_kick03.wav",
+      "transcript": "Ha!",
+      "speechEligible": true
+    },
+    {
+      "file": "atk_kick04.wav",
+      "transcript": "Yeah.",
+      "speechEligible": true
+    },
+    {
+      "file": "bat_beep.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "bat_bite_loop.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "bat_swarm_loop.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_draw01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_draw02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_hit01.wav",
+      "transcript": "THE END",
+      "speechEligible": true
+    },
+    {
+      "file": "batarang_hit02.wav",
+      "transcript": "AHH!",
+      "speechEligible": true
+    },
+    {
+      "file": "batarang_hit03.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    },
+    {
+      "file": "batarang_loop.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_miss01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_miss02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_miss03.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_out02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_out03.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_out04.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_throw01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_throw02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "batarang_throw03.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    },
+    {
+      "file": "blasted01.wav",
+      "transcript": "Arrgh!",
+      "speechEligible": true
+    },
+    {
+      "file": "blasted02.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "bod_land_hard01.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "bod_land_hard02.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "bod_land_med01.wav",
+      "transcript": "Oh!",
+      "speechEligible": true
+    },
+    {
+      "file": "bod_land_med02.wav",
+      "transcript": "Don't!",
+      "speechEligible": true
+    },
+    {
+      "file": "bomb_beep.wav",
+      "transcript": ".",
+      "speechEligible": false,
+      "exclusionReason": "non_lexical_only"
+    },
+    {
+      "file": "bomb_sweet.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "cape_block01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "cape_block02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "cape_whoosh01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "cape_whoosh02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "death01.wav",
+      "transcript": "Aaaaa!",
+      "speechEligible": true
+    },
+    {
+      "file": "falling01.wav",
+      "transcript": "Aaaaaaah!",
+      "speechEligible": true
+    },
+    {
+      "file": "falling02.wav",
+      "transcript": "Aaaaaaah!",
+      "speechEligible": true
+    },
+    {
+      "file": "fatality_growl.wav",
+      "transcript": "AAAAAAAA!",
+      "speechEligible": true
+    },
+    {
+      "file": "getup01.wav",
+      "transcript": "Yeah.",
+      "speechEligible": true
+    },
+    {
+      "file": "getup02.wav",
+      "transcript": "Yeah.",
+      "speechEligible": true
+    },
+    {
+      "file": "getup03.wav",
+      "transcript": "Hmm.",
+      "speechEligible": true
+    },
+    {
+      "file": "grab01.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "grab02.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "grab03.wav",
+      "transcript": "No.",
+      "speechEligible": true
+    },
+    {
+      "file": "grapple01.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "grapple02.wav",
+      "transcript": "All right.",
+      "speechEligible": true
+    },
+    {
+      "file": "grapple03.wav",
+      "transcript": "Yeah!",
+      "speechEligible": true
+    },
+    {
+      "file": "grapple_fire.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "grapple_out.wav",
+      "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel.",
+      "speechEligible": true
+    },
+    {
+      "file": "grapple_up.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    },
+    {
+      "file": "ground_pound.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "hit_face_hard01.wav",
+      "transcript": "Huh?",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_hard02.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_hard03.wav",
+      "transcript": "ah",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_hard04.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_med01.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_med02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "hit_face_med03.wav",
+      "transcript": "ah",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_med04.wav",
+      "transcript": "Haha!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_face_med05.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_gut_hard01.wav",
+      "transcript": "Oh.",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_gut_hard02.wav",
+      "transcript": "Oh!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_gut_hard03.wav",
+      "transcript": "Go!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_gut_med01.wav",
+      "transcript": "BOOM!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_gut_med02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "hit_gut_med03.wav",
+      "transcript": "ah",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_leg01.wav",
+      "transcript": "Oh!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_leg02.wav",
+      "transcript": "Oh!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_leg03.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "hit_leg04.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "jump01.wav",
+      "transcript": "Ha!",
+      "speechEligible": true
+    },
+    {
+      "file": "jump02.wav",
+      "transcript": "ah",
+      "speechEligible": true
+    },
+    {
+      "file": "jump03.wav",
+      "transcript": "Boom!",
+      "speechEligible": true
+    },
+    {
+      "file": "land01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "land02.wav",
+      "transcript": "Oh.",
+      "speechEligible": true
+    },
+    {
+      "file": "land03.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "on_fire01.wav",
+      "transcript": "AAAAAAAA!",
+      "speechEligible": true
+    },
+    {
+      "file": "on_fire02.wav",
+      "transcript": "Go!",
+      "speechEligible": true
+    },
+    {
+      "file": "rage_on.wav",
+      "transcript": "AAAAAAAA!",
+      "speechEligible": true
+    },
+    {
+      "file": "retching01.wav",
+      "transcript": "Pfff",
+      "speechEligible": true
+    },
+    {
+      "file": "retching02.wav",
+      "transcript": "Haha. Haha.",
+      "speechEligible": true
+    },
+    {
+      "file": "smoke_bomb01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "smoke_bomb02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "spatk01.wav",
+      "transcript": "Out!",
+      "speechEligible": true
+    },
+    {
+      "file": "spatk02.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "spatk03.wav",
+      "transcript": "Ugh!",
+      "speechEligible": true
+    },
+    {
+      "file": "stabbed01.wav",
+      "transcript": "Ah!",
+      "speechEligible": true
+    },
+    {
+      "file": "stabbed02.wav",
+      "transcript": "Now...",
+      "speechEligible": true
+    },
+    {
+      "file": "tazer.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "teleport01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "teleport02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "teleport03.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    },
+    {
+      "file": "teleport04.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "throw01.wav",
+      "transcript": "ah",
+      "speechEligible": true
+    },
+    {
+      "file": "throw02.wav",
+      "transcript": "NO!",
+      "speechEligible": true
+    },
+    {
+      "file": "thrown01.wav",
+      "transcript": "No.",
+      "speechEligible": true
+    },
+    {
+      "file": "thrown02.wav",
+      "transcript": "NO!",
+      "speechEligible": true
+    },
+    {
+      "file": "tripped01.wav",
+      "transcript": "No.",
+      "speechEligible": true
+    },
+    {
+      "file": "tripped02.wav",
+      "transcript": "Oh no!",
+      "speechEligible": true
+    },
+    {
+      "file": "tripped03.wav",
+      "transcript": "Who?",
+      "speechEligible": true
+    },
+    {
+      "file": "tripped04.wav",
+      "transcript": "What?",
+      "speechEligible": true
+    },
+    {
+      "file": "whoosh_sweet01.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    },
+    {
+      "file": "whoosh_sweet02.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "windup_long01.wav",
+      "transcript": "Whoop!",
+      "speechEligible": true
+    },
+    {
+      "file": "windup_med01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "windup_short01.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "blasted02.wav",
+        "bod_land_hard01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "stabbed02.wav",
+          "score": 3.830415904521942,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7660831809043884,
+          "transcript": "Now..."
+        },
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 3.785811960697174,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7571623921394348,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 3.6284989436467487,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.7190331220626831,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 3.6284989436467487,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.7190331220626831,
+          "transcript": "Go!"
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.462798297405243,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6925596594810486,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 3.351370096206665,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.670274019241333,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 3.351370096206665,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.670274019241333,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 3.351370096206665,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.670274019241333,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 3.351370096206665,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.670274019241333,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 3.351370096206665,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.670274019241333,
+          "transcript": "ah"
+        },
+        {
+          "file": "retching02.wav",
+          "score": 3.282427191734314,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6564854383468628,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 3.2565131783485413,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6513026356697083,
+          "transcript": "Out!"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 2.9896998405456543,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5979399681091309,
+          "transcript": "All right."
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 2.979363799095154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5958727598190308,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 2.979363799095154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5958727598190308,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 2.979363799095154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5958727598190308,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 2.979363799095154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5958727598190308,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 2.953283190727234,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5906566381454468,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "falling01.wav",
+          "score": 2.6193800568580627,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5238760113716125,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 2.6193800568580627,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5238760113716125,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 2.488164007663727,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.49763280153274536,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.486865818500519,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.49737316370010376,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 2.3357443511486053,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.46714887022972107,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 2.237660735845566,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.44753214716911316,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 2.180880308151245,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.436176061630249,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 2.180880308151245,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.436176061630249,
+          "transcript": "Oh."
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 2.0366644859313965,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4073328971862793,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 2.0366644859313965,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4073328971862793,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 2.0366644859313965,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4073328971862793,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 2.0366644859313965,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4073328971862793,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup03.wav",
+          "score": 2.0618895014127094,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.40571123361587524,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "jump03.wav",
+          "score": 1.9785843789577484,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3957168757915497,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 1.8635207414627075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3727041482925415,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 1.6159315407276154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.32318630814552307,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 1.6159315407276154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.32318630814552307,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 1.4718453586101532,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.29436907172203064,
+          "transcript": "THE END"
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 1.450154185295105,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.290030837059021,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 1.450154185295105,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.290030837059021,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 1.450154185295105,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.290030837059021,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 1.4178549230098725,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2735709846019745,
+          "transcript": "What?"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 1.2128101289272308,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.24256202578544617,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.209164559841156,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2418329119682312,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 1.0518649965524673,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21037299931049347,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 1.0518649965524673,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21037299931049347,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 1.0518649965524673,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21037299931049347,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 1.0518649965524673,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21037299931049347,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 1.0518649965524673,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.21037299931049347,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 1.0462941974401474,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20925883948802948,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 1.0462941974401474,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20925883948802948,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 1.0462941974401474,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20925883948802948,
+          "transcript": "No."
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 0.8619239926338196,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17238479852676392,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 0.8619239926338196,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17238479852676392,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 0.8619239926338196,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17238479852676392,
+          "transcript": "NO!"
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 0.765959620475769,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1531919240951538,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 0.7051518559455872,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.14103037118911743,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.6866583973169327,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.13733167946338654,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.5488807708024979,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.10977615416049957,
+          "transcript": "Who?"
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.44093526899814606,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.08818705379962921,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.3303259611129761,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06606519222259521,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 0.2526419423520565,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0505283884704113,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.16141433268785477,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03228286653757095,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.07854364812374115,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.01570872962474823,
+          "transcript": "Don't!"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "hit_face_hard03.wav",
+        "hit_face_med03.wav"
+      ],
+      "candidates": [
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 4.1559284925460815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8311856985092163,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 4.1559284925460815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8311856985092163,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 4.1559284925460815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8311856985092163,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 4.1559284925460815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8311856985092163,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 4.1559284925460815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8311856985092163,
+          "transcript": "ah"
+        },
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 4.138486981391907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8276973962783813,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed02.wav",
+          "score": 4.119661748409271,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8239323496818542,
+          "transcript": "Now..."
+        },
+        {
+          "file": "retching02.wav",
+          "score": 3.854166865348816,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7708333730697632,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.7686720490455627,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7537344098091125,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 3.4045010805130005,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6809002161026001,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "getup03.wav",
+          "score": 3.4259045362472533,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.5,
+          "modelScore": 0.6801809072494507,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "falling01.wav",
+          "score": 3.3780628442764282,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6756125688552856,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 3.3780628442764282,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6756125688552856,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 3.342549502849579,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6685099005699158,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 3.140619993209839,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6281239986419678,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 3.140619993209839,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6281239986419678,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 3.140619993209839,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6281239986419678,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 3.140619993209839,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6281239986419678,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 2.9464632749557493,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5792926549911499,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 2.704657018184662,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5409314036369324,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 2.6729869842529297,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5345973968505859,
+          "transcript": "All right."
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 2.5472405552864075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5094481110572815,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 2.5472405552864075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5094481110572815,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 2.5472405552864075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5094481110572815,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 2.5472405552864075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5094481110572815,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 2.524576783180237,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5049153566360474,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 2.524576783180237,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5049153566360474,
+          "transcript": "Oh."
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 2.518973648548126,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5037947297096252,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 2.4039261400699616,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 0.75,
+          "modelScore": 0.4732852280139923,
+          "transcript": "What?"
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 2.038250118494034,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.40765002369880676,
+          "transcript": "Out!"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 2.0343419909477234,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4068683981895447,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 2.0343419909477234,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4068683981895447,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 2.004399299621582,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4008798599243164,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 2.004399299621582,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4008798599243164,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 2.004399299621582,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4008798599243164,
+          "transcript": "No."
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 1.8934887647628784,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3786977529525757,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 1.8934887647628784,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3786977529525757,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 1.8934887647628784,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3786977529525757,
+          "transcript": "NO!"
+        },
+        {
+          "file": "retching01.wav",
+          "score": 1.6204051673412323,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.32408103346824646,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.546550691127777,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3093101382255554,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 1.4408007264137268,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.28816014528274536,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 1.4408007264137268,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.28816014528274536,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 1.4408007264137268,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.28816014528274536,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 1.3999001681804657,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.27998003363609314,
+          "transcript": "THE END"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 1.2123942375183105,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2424788475036621,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 1.1583296954631805,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2316659390926361,
+          "transcript": "Who?"
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 1.132826954126358,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2265653908252716,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 0.9207623451948166,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18415246903896332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 0.9207623451948166,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18415246903896332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 0.9207623451948166,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18415246903896332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 0.9207623451948166,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18415246903896332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 0.9207623451948166,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18415246903896332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 0.880577564239502,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1761155128479004,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 0.880577564239502,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1761155128479004,
+          "transcript": "Go!"
+        },
+        {
+          "file": "jump03.wav",
+          "score": 0.8093571662902832,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.16187143325805664,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.6401796638965607,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.12803593277931213,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 0.6031496822834015,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1206299364566803,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.551726222038269,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11034524440765381,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 0.539606474339962,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1079212948679924,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.33866941928863525,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06773388385772705,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.23596078157424927,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.047192156314849854,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.15610285103321075,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.03122057020664215,
+          "transcript": "Don't!"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "stabbed02.wav",
+        "death01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "stabbed02.wav",
+          "score": 4.411619007587433,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.8823238015174866,
+          "transcript": "Now..."
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.9068087935447693,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7813617587089539,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 3.839729428291321,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7679458856582642,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "jump03.wav",
+          "score": 3.8319912552833557,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7663982510566711,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "retching02.wav",
+          "score": 3.817894756793976,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7635789513587952,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 3.8002434372901917,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7600486874580383,
+          "transcript": "THE END"
+        },
+        {
+          "file": "falling01.wav",
+          "score": 3.7385928630828857,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7477185726165771,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 3.7385928630828857,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7477185726165771,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 3.626790940761566,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.7253581881523132,
+          "transcript": "Out!"
+        },
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 3.54641854763031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.709283709526062,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 3.54641854763031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.709283709526062,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 3.54641854763031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.709283709526062,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 3.54641854763031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.709283709526062,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 3.54641854763031,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.709283709526062,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 3.341338634490967,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6682677268981934,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 3.2617616653442383,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6523523330688477,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 3.216423988342285,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.643284797668457,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 3.135344386100769,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6270688772201538,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 3.135344386100769,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6270688772201538,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 3.135344386100769,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6270688772201538,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 3.135344386100769,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6270688772201538,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 3.1263011693954468,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6252602338790894,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 3.055121052265167,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6010242104530334,
+          "transcript": "All right."
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 2.9184332489967346,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5836866497993469,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 2.9184332489967346,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5836866497993469,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 2.9184332489967346,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5836866497993469,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 2.9184332489967346,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5836866497993469,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 2.666161358356476,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5332322716712952,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 2.5546953082084656,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5109390616416931,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 2.5193998217582703,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.503879964351654,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 2.5193998217582703,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.503879964351654,
+          "transcript": "Oh."
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.313128709793091,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.46262574195861816,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 2.2207778692245483,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.44415557384490967,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 2.2207778692245483,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.44415557384490967,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 2.2207778692245483,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.44415557384490967,
+          "transcript": "No."
+        },
+        {
+          "file": "getup03.wav",
+          "score": 2.159401774406433,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.4318803548812866,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 1.943795084953308,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3887590169906616,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 1.943795084953308,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3887590169906616,
+          "transcript": "Go!"
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 1.9238579273223877,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.38477158546447754,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 1.9238579273223877,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.38477158546447754,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 1.9238579273223877,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.38477158546447754,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 1.8150052428245544,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3630010485649109,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 1.68202742934227,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.336405485868454,
+          "transcript": "What?"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 1.6624242067337036,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3324848413467407,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 1.6624242067337036,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3324848413467407,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 1.6454096138477325,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3290819227695465,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 1.6454096138477325,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3290819227695465,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 1.6454096138477325,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.3290819227695465,
+          "transcript": "NO!"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.4161570370197296,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.2832314074039459,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 0.9228627383708954,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18457254767417908,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 0.9228627383708954,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18457254767417908,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 0.9228627383708954,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18457254767417908,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 0.9228627383708954,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18457254767417908,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 0.9228627383708954,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18457254767417908,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 0.8418484777212143,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.16836969554424286,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.8018549531698227,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.16037099063396454,
+          "transcript": "Who?"
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 0.7713655382394791,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1542731076478958,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.5682234466075897,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11364468932151794,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.5109535902738571,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.10219071805477142,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.4545847699046135,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.0909169539809227,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.38196779787540436,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.07639355957508087,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.2830543555319309,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.056610871106386185,
+          "transcript": "Don't!"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "hit_gut_med03.wav"
+      ],
+      "candidates": [
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 3.406468162536621,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6792936325073242,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 3.406468162536621,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6792936325073242,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 3.406468162536621,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6792936325073242,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 3.406468162536621,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6792936325073242,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 3.406468162536621,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6792936325073242,
+          "transcript": "ah"
+        },
+        {
+          "file": "stabbed02.wav",
+          "score": 3.4034095501899717,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6786819100379944,
+          "transcript": "Now..."
+        },
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 3.294773230552673,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6569546461105347,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 3.2746816158294676,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6449363231658936,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 3.2746816158294676,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6449363231658936,
+          "transcript": "Go!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 2.9183156585693357,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5816631317138672,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 2.9028509354591367,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5785701870918274,
+          "transcript": "All right."
+        },
+        {
+          "file": "retching02.wav",
+          "score": 2.724167833328247,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5428335666656494,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 2.6095364785194395,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5199072957038879,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "death01.wav",
+          "score": 2.591978142261505,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.516395628452301,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.3280042207241056,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.46360084414482117,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "getup03.wav",
+          "score": 2.2045053339004514,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.43890106678009033,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 2.19427374958992,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.436854749917984,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 2.19427374958992,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.436854749917984,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 2.19427374958992,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.436854749917984,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 2.19427374958992,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.436854749917984,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "jump03.wav",
+          "score": 2.151257673501968,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4282515347003937,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 2.0088192617893217,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3997638523578644,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 2.007227221727371,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.39944544434547424,
+          "transcript": "Out!"
+        },
+        {
+          "file": "falling01.wav",
+          "score": 1.8738613820075989,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3727722764015198,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 1.8738613820075989,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3727722764015198,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 1.8505276536941528,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.36810553073883057,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 1.8505276536941528,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.36810553073883057,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 1.8505276536941528,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.36810553073883057,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 1.811316887140274,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3602633774280548,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 1.7623504793643952,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.35047009587287903,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 1.7623504793643952,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.35047009587287903,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 1.7623504793643952,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.35047009587287903,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 1.7623504793643952,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.35047009587287903,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 1.588257977962494,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3156515955924988,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 1.588257977962494,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3156515955924988,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 1.5723678267002106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3124735653400421,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 1.5723678267002106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3124735653400421,
+          "transcript": "Oh."
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 1.506863216161728,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2993726432323456,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.124054098725319,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.22281081974506378,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 1.108705753684044,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.21974115073680878,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 1.108705753684044,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.21974115073680878,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 1.108705753684044,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.21974115073680878,
+          "transcript": "NO!"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 0.8528081125020981,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.16856162250041962,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 0.8217125928401947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.16234251856803894,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 0.7535355335474014,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.14870710670948029,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 0.7535355335474014,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.14870710670948029,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 0.7535355335474014,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.14870710670948029,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 0.7535355335474014,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.14870710670948029,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 0.7535355335474014,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.14870710670948029,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 0.6912221556901932,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.13624443113803864,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 0.6075284799933434,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.11950569599866867,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 0.6075284799933434,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.11950569599866867,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 0.6075284799933434,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.11950569599866867,
+          "transcript": "No."
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.5835933983325958,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11671867966651917,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.5729667097330093,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.11459334194660187,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 0.3555173596739769,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.06910347193479538,
+          "transcript": "What?"
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 0.34359285444021226,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.06671857088804245,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.2893695963919163,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.055873919278383255,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.2736227197945118,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.05272454395890236,
+          "transcript": "Who?"
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 0.23785065695643426,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.04557013139128685,
+          "transcript": "THE END"
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.1989735832810402,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.03779471665620804,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.13872667983174325,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.025745335966348648,
+          "transcript": "Don't!"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "batarang_hit01.wav"
+      ],
+      "candidates": [
+        {
+          "file": "batarang_hit01.wav",
+          "score": 4.565971839427948,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.9031943678855896,
+          "transcript": "THE END"
+        },
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 4.361377108097076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8622754216194153,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 4.331259477138519,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8562518954277039,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 4.274701523780823,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8449403047561646,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 4.2553303122520445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8410660624504089,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 4.2553303122520445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8410660624504089,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 4.2553303122520445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8410660624504089,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 4.2553303122520445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8410660624504089,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 4.2553303122520445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8410660624504089,
+          "transcript": "ah"
+        },
+        {
+          "file": "stabbed02.wav",
+          "score": 4.228361892700195,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8356723785400391,
+          "transcript": "Now..."
+        },
+        {
+          "file": "jump03.wav",
+          "score": 4.0581697702407835,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.8016339540481567,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 3.885548460483551,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7671096920967102,
+          "transcript": "All right."
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 3.8119900703430174,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7523980140686035,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.7797067046165465,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7459413409233093,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "retching02.wav",
+          "score": 3.722037124633789,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7344074249267578,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "falling01.wav",
+          "score": 3.530240702629089,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6960481405258179,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 3.530240702629089,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6960481405258179,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 3.3750150084495543,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6650030016899109,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 3.2465672969818113,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6393134593963623,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 3.2465672969818113,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6393134593963623,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 3.2465672969818113,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6393134593963623,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 3.2465672969818113,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6393134593963623,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 3.0769715189933775,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6053943037986755,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "getup03.wav",
+          "score": 2.9985952854156492,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5897190570831299,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 2.812046456336975,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.552409291267395,
+          "transcript": "Out!"
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 2.6051527738571165,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5110305547714233,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 2.6051527738571165,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5110305547714233,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 2.6051527738571165,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5110305547714233,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 2.6051527738571165,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5110305547714233,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.3510382056236265,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.46020764112472534,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 2.3347497463226317,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.45694994926452637,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 2.3347497463226317,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.45694994926452637,
+          "transcript": "Oh."
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 2.0476137578487394,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3995227515697479,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 2.0476137578487394,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3995227515697479,
+          "transcript": "Go!"
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 2.0051308453083037,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.39102616906166077,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 2.0051308453083037,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.39102616906166077,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 2.0051308453083037,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.39102616906166077,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 2.000823366641998,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.39016467332839966,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 2.000823366641998,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.39016467332839966,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.7682065546512604,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3436413109302521,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 1.7120856523513794,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3324171304702759,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 1.465865421295166,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2831730842590332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 1.465865421295166,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2831730842590332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 1.465865421295166,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2831730842590332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 1.465865421295166,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2831730842590332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 1.465865421295166,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2831730842590332,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 1.4191595196723938,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.27383190393447876,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 1.133407998085022,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2166815996170044,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 1.133407998085022,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2166815996170044,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 1.133407998085022,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2166815996170044,
+          "transcript": "NO!"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 1.0852595895528794,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20705191791057587,
+          "transcript": "What?"
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.9404531121253967,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18809062242507935,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.8751237392425537,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.17502474784851074,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 0.8392856001853943,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.15785712003707886,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.4878489404916763,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.08756978809833527,
+          "transcript": "Who?"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 0.41368388682603835,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.07273677736520767,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 0.41368388682603835,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.07273677736520767,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 0.41368388682603835,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.07273677736520767,
+          "transcript": "No."
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.381655777990818,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.0663311555981636,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.2190683327615261,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.03381366655230522,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.1726780656725168,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.024535613134503365,
+          "transcript": "Don't!"
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 0.13852233178913592,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.017704466357827187,
+          "transcript": "Oh no!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "atk_hit_med03.wav"
+      ],
+      "candidates": [
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 3.982536027431488,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7945072054862976,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 3.8722063398361204,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7724412679672241,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 3.8722063398361204,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7724412679672241,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 3.8722063398361204,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7724412679672241,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 3.8722063398361204,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7724412679672241,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 3.8722063398361204,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7724412679672241,
+          "transcript": "ah"
+        },
+        {
+          "file": "stabbed02.wav",
+          "score": 3.860659646987915,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.762131929397583,
+          "transcript": "Now..."
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 3.697045872211456,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7374091744422913,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 3.697045872211456,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7374091744422913,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 3.697045872211456,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7374091744422913,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 3.66745335817337,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.7314906716346741,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 3.474543521404266,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6929087042808533,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.4228370881080625,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6825674176216125,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "retching02.wav",
+          "score": 3.3940730786323545,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.676814615726471,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 3.240369389057159,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6460738778114319,
+          "transcript": "All right."
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 3.194564113616943,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6369128227233887,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 3.1487886404991148,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.627757728099823,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "getup03.wav",
+          "score": 3.1365410780906675,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6253082156181335,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 3.0992252922058103,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6178450584411621,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 3.0992252922058103,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6178450584411621,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 3.0992252922058103,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6178450584411621,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 3.0992252922058103,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6178450584411621,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "falling01.wav",
+          "score": 3.0477036333084104,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6075407266616821,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 3.0477036333084104,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.6075407266616821,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 2.7534653043746946,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.548693060874939,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.7368090844154356,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5453618168830872,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "jump03.wav",
+          "score": 2.4553406035900114,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4890681207180023,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 2.400897341966629,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4701794683933258,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 2.400897341966629,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4701794683933258,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 2.400897341966629,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4701794683933258,
+          "transcript": "NO!"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 2.310847917795181,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.46016958355903625,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 2.310847917795181,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.46016958355903625,
+          "transcript": "Oh."
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 2.1047654545307157,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4189530909061432,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 2.1047654545307157,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4189530909061432,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 2.1047654545307157,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4189530909061432,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 2.1047654545307157,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.4189530909061432,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 1.9390068745613098,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.38580137491226196,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 1.892910132408142,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3765820264816284,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 1.892910132408142,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3765820264816284,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 1.854421625137329,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3688843250274658,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 1.842655817270279,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.3665311634540558,
+          "transcript": "Out!"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.7228263413906098,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.34256526827812195,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 1.7072757065296174,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.33145514130592346,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 1.351245025396347,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2682490050792694,
+          "transcript": "THE END"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 1.2320942974090576,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.24441885948181152,
+          "transcript": "What?"
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 1.2181102281808853,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.24162204563617706,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 1.205223405957222,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2390446811914444,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 1.205223405957222,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2390446811914444,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 1.205223405957222,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2390446811914444,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 1.205223405957222,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2390446811914444,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 1.205223405957222,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2390446811914444,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 1.13052321434021,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.224104642868042,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 1.13052321434021,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.224104642868042,
+          "transcript": "Go!"
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 1.0126584023237228,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.20253168046474457,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 1.0220150446891785,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.2024030089378357,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 1.0481254488229752,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.19962508976459503,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 1.0481254488229752,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.19962508976459503,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 1.0481254488229752,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.19962508976459503,
+          "transcript": "No."
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.9316673874855042,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.18633347749710083,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.5857584050297737,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.11515168100595474,
+          "transcript": "Who?"
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.40633873850107194,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.07926774770021439,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 0.30876386746764184,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.059752773493528366,
+          "transcript": "Don't!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "atk_hit_med04.wav"
+      ],
+      "candidates": [
+        {
+          "file": "atk_hit_med03.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "atk_hit_med04.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "blasted02.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard01.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "bod_land_hard02.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab01.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grab02.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "grapple01.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard02.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_hard04.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med01.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_face_med05.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg03.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "hit_leg04.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk02.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "stabbed01.wav",
+          "score": 3.850338804721832,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7600677609443665,
+          "transcript": "Ah!"
+        },
+        {
+          "file": "spatk01.wav",
+          "score": 3.7968177080154417,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7493635416030884,
+          "transcript": "Out!"
+        },
+        {
+          "file": "stabbed02.wav",
+          "score": 3.7736464023590086,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.7447292804718018,
+          "transcript": "Now..."
+        },
+        {
+          "file": "hit_face_hard03.wav",
+          "score": 3.43006317615509,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6760126352310181,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_face_med03.wav",
+          "score": 3.43006317615509,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6760126352310181,
+          "transcript": "ah"
+        },
+        {
+          "file": "hit_gut_med03.wav",
+          "score": 3.43006317615509,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6760126352310181,
+          "transcript": "ah"
+        },
+        {
+          "file": "jump02.wav",
+          "score": 3.43006317615509,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6760126352310181,
+          "transcript": "ah"
+        },
+        {
+          "file": "throw01.wav",
+          "score": 3.43006317615509,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6760126352310181,
+          "transcript": "ah"
+        },
+        {
+          "file": "death01.wav",
+          "score": 3.2146859645843504,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6329371929168701,
+          "transcript": "Aaaaa!"
+        },
+        {
+          "file": "falling01.wav",
+          "score": 3.031293499469757,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5962586998939514,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "falling02.wav",
+          "score": 3.031293499469757,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5962586998939514,
+          "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "bod_land_med01.wav",
+          "score": 2.9514852643013,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.58029705286026,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_gut_hard02.wav",
+          "score": 2.9514852643013,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.58029705286026,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg01.wav",
+          "score": 2.9514852643013,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.58029705286026,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "hit_leg02.wav",
+          "score": 2.9514852643013,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.58029705286026,
+          "transcript": "Oh!"
+        },
+        {
+          "file": "batarang_hit02.wav",
+          "score": 2.9439029574394224,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5787805914878845,
+          "transcript": "AHH!"
+        },
+        {
+          "file": "atk_hit02.wav",
+          "score": 2.88021867275238,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5660437345504761,
+          "transcript": "rrrr"
+        },
+        {
+          "file": "grapple02.wav",
+          "score": 2.8768897533416746,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.565377950668335,
+          "transcript": "All right."
+        },
+        {
+          "file": "fatality_growl.wav",
+          "score": 2.617821145057678,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5135642290115356,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "on_fire01.wav",
+          "score": 2.617821145057678,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5135642290115356,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "rage_on.wav",
+          "score": 2.617821145057678,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5135642290115356,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "retching02.wav",
+          "score": 2.380796271562576,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.46615925431251526,
+          "transcript": "Haha. Haha."
+        },
+        {
+          "file": "getup03.wav",
+          "score": 2.3310786962509153,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4562157392501831,
+          "transcript": "Hmm."
+        },
+        {
+          "file": "atk_kick02.wav",
+          "score": 2.2764103591442106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.44528207182884216,
+          "transcript": "NO!"
+        },
+        {
+          "file": "throw02.wav",
+          "score": 2.2764103591442106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.44528207182884216,
+          "transcript": "NO!"
+        },
+        {
+          "file": "thrown02.wav",
+          "score": 2.2764103591442106,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.44528207182884216,
+          "transcript": "NO!"
+        },
+        {
+          "file": "windup_long01.wav",
+          "score": 2.274402129650116,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4448804259300232,
+          "transcript": "Whoop!"
+        },
+        {
+          "file": "batarang_hit01.wav",
+          "score": 2.1105045557022093,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4121009111404419,
+          "transcript": "THE END"
+        },
+        {
+          "file": "retching01.wav",
+          "score": 2.0966616749763487,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.4093323349952698,
+          "transcript": "Pfff"
+        },
+        {
+          "file": "hit_gut_hard01.wav",
+          "score": 1.8235256254673005,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3547051250934601,
+          "transcript": "Oh."
+        },
+        {
+          "file": "land02.wav",
+          "score": 1.8235256254673005,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.3547051250934601,
+          "transcript": "Oh."
+        },
+        {
+          "file": "blasted01.wav",
+          "score": 1.6980758786201477,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.32961517572402954,
+          "transcript": "Arrgh!"
+        },
+        {
+          "file": "atk_kick03.wav",
+          "score": 1.4748579740524292,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.28497159481048584,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "jump01.wav",
+          "score": 1.4748579740524292,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.28497159481048584,
+          "transcript": "Ha!"
+        },
+        {
+          "file": "grapple03.wav",
+          "score": 1.4503849029541016,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2800769805908203,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "hit_face_hard01.wav",
+          "score": 1.435171264410019,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2770342528820038,
+          "transcript": "Huh?"
+        },
+        {
+          "file": "grab03.wav",
+          "score": 1.4141716539859772,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.27283433079719543,
+          "transcript": "No."
+        },
+        {
+          "file": "thrown01.wav",
+          "score": 1.4141716539859772,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.27283433079719543,
+          "transcript": "No."
+        },
+        {
+          "file": "tripped01.wav",
+          "score": 1.4141716539859772,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.27283433079719543,
+          "transcript": "No."
+        },
+        {
+          "file": "atk_kick01.wav",
+          "score": 1.3926825404167176,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2685365080833435,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "atk_kick04.wav",
+          "score": 1.3926825404167176,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2685365080833435,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup01.wav",
+          "score": 1.3926825404167176,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2685365080833435,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "getup02.wav",
+          "score": 1.3926825404167176,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2685365080833435,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "bod_land_med02.wav",
+          "score": 1.2887917935848237,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.24775835871696472,
+          "transcript": "Don't!"
+        },
+        {
+          "file": "hit_gut_med01.wav",
+          "score": 1.266338723897934,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2432677447795868,
+          "transcript": "BOOM!"
+        },
+        {
+          "file": "tripped02.wav",
+          "score": 1.2599307030439377,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.24198614060878754,
+          "transcript": "Oh no!"
+        },
+        {
+          "file": "hit_face_med04.wav",
+          "score": 1.107867631316185,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.211573526263237,
+          "transcript": "Haha!"
+        },
+        {
+          "file": "tripped04.wav",
+          "score": 1.0714217007160187,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20428434014320374,
+          "transcript": "What?"
+        },
+        {
+          "file": "atk_hit04.wav",
+          "score": 1.0632719576358796,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.2026543915271759,
+          "transcript": "Pfft"
+        },
+        {
+          "file": "batarang_hit03.wav",
+          "score": 1.0592243552207947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20184487104415894,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "batarang_throw03.wav",
+          "score": 1.0592243552207947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20184487104415894,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "grapple_up.wav",
+          "score": 1.0592243552207947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20184487104415894,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "teleport03.wav",
+          "score": 1.0592243552207947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20184487104415894,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "whoosh_sweet01.wav",
+          "score": 1.0592243552207947,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.20184487104415894,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "atk_hit05.wav",
+          "score": 0.5218566581606865,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.1043713316321373,
+          "transcript": "Thanks for watching and I'll see you in the next video."
+        },
+        {
+          "file": "jump03.wav",
+          "score": 0.5364564910531044,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.09729129821062088,
+          "transcript": "Boom!"
+        },
+        {
+          "file": "tripped03.wav",
+          "score": 0.4712662950158119,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.08425325900316238,
+          "transcript": "Who?"
+        },
+        {
+          "file": "atk_hit01.wav",
+          "score": 0.4307087615132332,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.07614175230264664,
+          "transcript": "Pfft."
+        },
+        {
+          "file": "grapple_out.wav",
+          "score": 0.3459128737449646,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.06918257474899292,
+          "transcript": "Thanks for watching, and don't forget to like, share, and subscribe to our channel."
+        },
+        {
+          "file": "spatk03.wav",
+          "score": 0.37902728766202926,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.06580545753240585,
+          "transcript": "Ugh!"
+        },
+        {
+          "file": "hit_gut_hard03.wav",
+          "score": 0.33357859700918197,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.056715719401836395,
+          "transcript": "Go!"
+        },
+        {
+          "file": "on_fire02.wav",
+          "score": 0.33357859700918197,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.056715719401836395,
+          "transcript": "Go!"
+        }
+      ]
+    }
+  },
+  "speechVerification": {
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 77,
+    "excludedClips": [
+      {
+        "file": "atk_hit03.wav",
+        "reason": "non_lexical_only",
+        "transcript": "."
+      },
+      {
+        "file": "atk_hit_med01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "atk_hit_med02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "bat_beep.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "bat_bite_loop.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "bat_swarm_loop.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_draw01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_draw02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_loop.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_miss01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_miss02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_miss03.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_out02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_out03.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_out04.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_throw01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "batarang_throw02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "bomb_beep.wav",
+        "reason": "non_lexical_only",
+        "transcript": "."
+      },
+      {
+        "file": "bomb_sweet.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "cape_block01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "cape_block02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "cape_whoosh01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "cape_whoosh02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "grapple_fire.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "ground_pound.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "hit_face_med02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "hit_gut_med02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "land01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "land03.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "smoke_bomb01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "smoke_bomb02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "tazer.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "teleport01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "teleport02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "teleport04.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "whoosh_sweet02.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "windup_med01.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "windup_short01.wav",
+        "reason": "empty",
+        "transcript": ""
+      }
+    ]
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (zero-shot: valhalla/distilbart-mnli-12-1)",
+    "backend": "zero-shot",
+    "model": "valhalla/distilbart-mnli-12-1",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "batman",
+    "character": "batman-animated",
+    "packLabelSlug": "batman-mortal-kombat-vs-6d28384b"
+  }
+}

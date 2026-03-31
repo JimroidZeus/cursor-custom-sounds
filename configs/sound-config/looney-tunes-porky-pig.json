@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "looney-tunes",
+  "soundSubdir": "porky-pig",
+  "events": {
+    "beforeSubmitPrompt": [
+      "beforeSubmitPrompt_1.wav",
+      "beforeSubmitPrompt_2.wav"
+    ],
+    "afterAgentThought": [
+      "afterAgentThought_1.wav",
+      "afterAgentThought_2.wav"
+    ],
+    "afterAgentResponse": [
+      "afterAgentResponse_1.wav",
+      "afterAgentResponse_2.wav"
+    ],
+    "preToolUse": "preToolUse.wav",
+    "postToolUse": "postToolUse.wav",
+    "postToolUseFailure": "postToolUseFailure.wav",
+    "stop": "stop.wav"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "clips": [
+    {
+      "file": "alarmloop.wav",
+      "transcript": "Woo!",
+      "speechEligible": true
+    },
+    {
+      "file": "button_push.wav",
+      "transcript": "Okay.",
+      "speechEligible": true
+    },
+    {
+      "file": "clock_loop.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "destalarm.wav",
+      "transcript": "AAAAAAAAAAAAAAAA",
+      "speechEligible": true
+    },
+    {
+      "file": "door-small-close.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "door-small-open.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "fence-blipp.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "gas-fire.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "laser-charge.wav",
+      "transcript": "",
+      "speechEligible": false,
+      "exclusionReason": "empty"
+    },
+    {
+      "file": "laser-fence-activate.wav",
+      "transcript": "Thanks for watching!",
+      "speechEligible": true
+    }
+  ],
+  "events": {
+    "beforeSubmitPrompt": {
+      "selected": [
+        "button_push.wav",
+        "button_push.wav"
+      ],
+      "candidates": [
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 2.8085490502417088,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5617098100483418,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 2.793099209666252,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5586198419332504,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 2.828309695422649,
+          "rankingTier": "model",
+          "heuristicScore": 5.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5556619390845299,
+          "transcript": "Okay."
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 2.729279901832342,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5458559803664684,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        }
+      ]
+    },
+    "afterAgentThought": {
+      "selected": [
+        "alarmloop.wav",
+        "destalarm.wav"
+      ],
+      "candidates": [
+        {
+          "file": "alarmloop.wav",
+          "score": 3.1860560178756714,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6372112035751343,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 3.1717394292354584,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6343478858470917,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 3.113119937479496,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6226239874958992,
+          "transcript": "Okay."
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 3.1027867272496223,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6205573454499245,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        }
+      ]
+    },
+    "afterAgentResponse": {
+      "selected": [
+        "button_push.wav",
+        "laser-fence-activate.wav"
+      ],
+      "candidates": [
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 3.238702192902565,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.647740438580513,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 3.1517859548330307,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6303571909666061,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 3.1158143281936646,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6231628656387329,
+          "transcript": "Okay."
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 3.07467233389616,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.614934466779232,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        }
+      ]
+    },
+    "preToolUse": {
+      "selected": [
+        "laser-fence-activate.wav"
+      ],
+      "candidates": [
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 3.0026417702436445,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5905283540487289,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 2.979248251020908,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5858496502041817,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 2.9464089229702948,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.579281784594059,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 2.9220869123935698,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.574417382478714,
+          "transcript": "Okay."
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "laser-fence-activate.wav"
+      ],
+      "candidates": [
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 3.0671788111329077,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6034357622265816,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 2.987406115233898,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5874812230467796,
+          "transcript": "Okay."
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 2.937693829834461,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5775387659668922,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 2.9102586314082144,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5720517262816429,
+          "transcript": "Woo!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "button_push.wav"
+      ],
+      "candidates": [
+        {
+          "file": "button_push.wav",
+          "score": 2.9426767781376837,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5785353556275368,
+          "transcript": "Okay."
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 2.918891358375549,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5737782716751099,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 2.90544253885746,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.571088507771492,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 2.898948985338211,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5697897970676422,
+          "transcript": "Thanks for watching!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "laser-fence-activate.wav"
+      ],
+      "candidates": [
+        {
+          "file": "laser-fence-activate.wav",
+          "score": 3.3547303557395933,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6609460711479187,
+          "transcript": "Thanks for watching!"
+        },
+        {
+          "file": "alarmloop.wav",
+          "score": 3.330813544988632,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6561627089977264,
+          "transcript": "Woo!"
+        },
+        {
+          "file": "destalarm.wav",
+          "score": 3.2993719458580015,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6498743891716003,
+          "transcript": "AAAAAAAAAAAAAAAA"
+        },
+        {
+          "file": "button_push.wav",
+          "score": 3.274521055817604,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6449042111635208,
+          "transcript": "Okay."
+        }
+      ]
+    }
+  },
+  "speechVerification": {
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 4,
+    "excludedClips": [
+      {
+        "file": "clock_loop.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "door-small-close.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "door-small-open.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "fence-blipp.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "gas-fire.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "laser-charge.wav",
+        "reason": "empty",
+        "transcript": ""
+      }
+    ]
+  },
+  "transcription": "ok",
+  "classifier": {
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "weight": 5.0
+  },
+  "pack": {
+    "universe": "futurama",
+    "character": "bender",
+    "packLabelSlug": "direct-zip-archive-entries"
+  }
+}

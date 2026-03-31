@@ -5,20 +5,20 @@
   "soundSubdir": "bender",
   "events": {
     "beforeSubmitPrompt": [
-      "button_push.wav",
+      "alarmloop.wav",
       "destalarm.wav"
     ],
     "afterAgentThought": [
-      "button_push.wav",
-      "destalarm.wav"
+      "door-small-close.wav",
+      "fence-blipp.wav"
     ],
     "afterAgentResponse": [
-      "button_push.wav",
-      "destalarm.wav"
+      "laser-charge.wav",
+      "laser-fence-activate.wav"
     ],
-    "preToolUse": "button_push.wav",
+    "preToolUse": "alarmloop.wav",
     "postToolUse": "alarmloop.wav",
-    "postToolUseFailure": "destalarm.wav",
-    "stop": "destalarm.wav"
+    "postToolUseFailure": "alarmloop.wav",
+    "stop": "alarmloop.wav"
   }
 }

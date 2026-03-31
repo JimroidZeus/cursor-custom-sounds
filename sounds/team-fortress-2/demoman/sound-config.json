@@ -6,19 +6,19 @@
   "events": {
     "beforeSubmitPrompt": [
       "yes01.wav",
-      "activatecharge03.wav"
-    ],
-    "afterAgentThought": [
-      "yes01.wav",
-      "yes03.wav"
-    ],
-    "afterAgentResponse": [
-      "yes01.wav",
       "yes02.wav"
     ],
-    "preToolUse": "yes01.wav",
-    "postToolUse": "yes01.wav",
-    "postToolUseFailure": "yes01.wav",
-    "stop": "yes01.wav"
+    "afterAgentThought": [
+      "activatecharge01.wav",
+      "activatecharge02.wav"
+    ],
+    "afterAgentResponse": [
+      "yes03.wav",
+      "activatecharge03.wav"
+    ],
+    "preToolUse": "autocappedintelligence01.wav",
+    "postToolUse": "autocappedintelligence02.wav",
+    "postToolUseFailure": "no01.wav",
+    "stop": "battlecry01.wav"
   }
 }

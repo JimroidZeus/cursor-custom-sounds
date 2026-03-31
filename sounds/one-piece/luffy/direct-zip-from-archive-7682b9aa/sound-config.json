@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "one-piece",
+  "soundSubdir": "luffy/direct-zip-from-archive-7682b9aa",
+  "events": {
+    "beforeSubmitPrompt": [
+      "cv_000507_jp.wav",
+      "cv_000502_jp.wav"
+    ],
+    "afterAgentThought": [
+      "cv_000508_jp.wav",
+      "cv_000506_jp.wav"
+    ],
+    "afterAgentResponse": [
+      "cv_000505_jp.wav",
+      "cv_000509_jp.wav"
+    ],
+    "preToolUse": "cv_000500_jp.wav",
+    "postToolUse": "cv_000504_jp.wav",
+    "postToolUseFailure": "cv_000501_jp.wav",
+    "stop": "cv_000503_jp.wav"
+  }
+}

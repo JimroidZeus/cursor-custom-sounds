@@ -5,20 +5,20 @@
   "soundSubdir": "luffy",
   "events": {
     "beforeSubmitPrompt": [
-      "cv_000501_jp.wav",
-      "cv_000505_jp.wav"
+      "cv_000507_jp.wav",
+      "cv_000506_jp.wav"
     ],
     "afterAgentThought": [
-      "cv_000503_jp.wav",
-      "cv_000504_jp.wav"
-    ],
-    "afterAgentResponse": [
-      "cv_000503_jp.wav",
+      "cv_000504_jp.wav",
       "cv_000501_jp.wav"
     ],
-    "preToolUse": "cv_000501_jp.wav",
-    "postToolUse": "cv_000501_jp.wav",
-    "postToolUseFailure": "cv_000507_jp.wav",
-    "stop": "cv_000501_jp.wav"
+    "afterAgentResponse": [
+      "cv_000505_jp.wav",
+      "cv_000508_jp.wav"
+    ],
+    "preToolUse": "cv_000502_jp.wav",
+    "postToolUse": "cv_000500_jp.wav",
+    "postToolUseFailure": "cv_000509_jp.wav",
+    "stop": "cv_000503_jp.wav"
   }
 }

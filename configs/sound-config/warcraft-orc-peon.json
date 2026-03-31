@@ -1,6 +1,5 @@
 {
   "enabled": true,
-  "debounceMs": 500,
   "soundRoot": "sounds",
   "soundPack": "warcraft",
   "soundSubdir": "orc-peon",

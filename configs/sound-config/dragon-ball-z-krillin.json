@@ -1,6 +1,5 @@
 {
   "enabled": true,
-  "debounceMs": 500,
   "soundRoot": "sounds",
   "soundPack": "dragon-ball-z",
   "soundSubdir": "krillin",
