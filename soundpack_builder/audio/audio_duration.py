@@ -4,9 +4,10 @@ Helpers for checking WAV playback duration constraints.
 
 from __future__ import annotations
 
+import sys
 import wave
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, TextIO, Tuple
 
 
 def read_wav_duration_seconds(path: Path) -> float:
@@ -28,6 +29,8 @@ def validate_wav_durations(
     *,
     max_seconds: float,
     warn_seconds: float,
+    progress: bool = False,
+    progress_file: TextIO = sys.stderr,
 ) -> Tuple[bool, Dict[str, object]]:
     """
     Validate all WAV files under sound_dir against duration limits.
@@ -41,7 +44,29 @@ def validate_wav_durations(
     warnings: List[Dict[str, object]] = []
     failures: List[Dict[str, object]] = []
 
-    for wav_path in wav_files:
+    if progress and wav_files:
+        from .console_progress import print_status
+
+        print_status(
+            f"Checking WAV duration for {len(wav_files)} file{'s' if len(wav_files) != 1 else ''}...",
+            file=progress_file,
+        )
+
+    for i, wav_path in enumerate(wav_files, start=1):
+        if progress:
+            from .console_progress import print_progress_line
+
+            rel = str(wav_path)
+            if len(rel) > 56:
+                rel = "..." + rel[-53:]
+            print_progress_line(
+                index=i,
+                total=len(wav_files),
+                label="wav-duration",
+                detail=rel,
+                file=progress_file,
+            )
+
         try:
             seconds = read_wav_duration_seconds(wav_path)
         except Exception as ex:

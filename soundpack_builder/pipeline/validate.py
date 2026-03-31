@@ -1,24 +1,25 @@
 """
-Sanity-check Tier 1 sound config templates.
+Pipeline step 5: sanity-check hook-pack sound config templates.
 
-Because we are not generating placeholder WAVs, this only validates that
-template JSON is structurally correct and references the standardized event
-filenames under `sounds/<universe>/<character>/...`.
+Validates template JSON shape and references under
+``sounds/<universe>/<character>/...`` (WAV duration limits optional).
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import sys
 from typing import Any, List, Optional
 
-from .audio_duration import validate_wav_durations
-from .config import (
+from soundpack_builder.audio.audio_duration import validate_wav_durations
+from soundpack_builder.core.config import (
     BuilderConfig,
     add_output_path_args,
     add_wav_duration_args,
     build_config_from_args,
 )
+from soundpack_builder.core.console_progress import print_progress_line, print_status
 
 EXPECTED_EVENTS = {
     "beforeSubmitPrompt",
@@ -45,14 +46,29 @@ def validate_templates(
     check_wav_duration: bool,
     max_wav_seconds: float,
     warn_wav_seconds: float,
+    progress: bool = True,
 ) -> int:
     tmpl_dir = cfg.sound_config_dir
     templates = sorted(tmpl_dir.glob("*.json"))
     if not templates:
         raise SystemExit(f"No templates found under {tmpl_dir}/.")
 
+    if progress:
+        print_status(
+            f"Validating {len(templates)} template JSON file(s)...",
+            file=sys.stderr,
+        )
+
     ok = True
-    for p in templates:
+    for i, p in enumerate(templates, start=1):
+        if progress:
+            print_progress_line(
+                index=i,
+                total=len(templates),
+                label="template",
+                detail=p.name,
+                file=sys.stderr,
+            )
         payload = json.loads(p.read_text(encoding="utf-8"))
 
         root = payload.get("soundRoot")
@@ -86,10 +102,14 @@ def validate_templates(
 
     duration_payload = {}
     if check_wav_duration:
+        if progress:
+            print(file=sys.stderr)
         durations_ok, duration_payload = validate_wav_durations(
             cfg.sound_dir,
             max_seconds=max_wav_seconds,
             warn_seconds=warn_wav_seconds,
+            progress=progress,
+            progress_file=sys.stderr,
         )
         for warning in duration_payload.get("warnings", []):
             print(
@@ -131,9 +151,14 @@ def validate_templates(
 
 
 def main(argv: Optional[list[str]] = None) -> int:
-    parser = argparse.ArgumentParser(description="Validate Tier 1 sound config templates.")
+    parser = argparse.ArgumentParser(description="Validate hook-pack sound config templates.")
     add_output_path_args(parser)
     add_wav_duration_args(parser)
+    parser.add_argument(
+        "--no-progress",
+        action="store_true",
+        help="Disable stderr progress bars (JSON result still on stdout).",
+    )
     args = parser.parse_args(argv)
     cfg = build_config_from_args(args)
     return validate_templates(
@@ -141,6 +166,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         check_wav_duration=not args.skip_wav_duration_check,
         max_wav_seconds=args.max_wav_seconds,
         warn_wav_seconds=args.warn_wav_seconds,
+        progress=not args.no_progress,
     )
 
 

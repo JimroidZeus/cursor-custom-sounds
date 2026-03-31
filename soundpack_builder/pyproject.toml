@@ -1,7 +1,7 @@
 [project]
 name = "soundpack-builder"
 version = "0.1.0"
-description = "Internal soundpack builder pipeline for cursor-custom-sounds"
+description = "Soundpack builder: search_hints → candidates → downloader → templates → validate (see soundpack_builder.workflow)"
 readme = "README.md"
 requires-python = ">=3.10,<3.14"
 dependencies = [
@@ -9,9 +9,21 @@ dependencies = [
   "numpy; platform_system != 'Windows'",
   "faster-whisper",
   "python-dotenv",
-  "transformers",
-  "torch",
+  "typing-extensions>=4.0",
+  "sentence-transformers>=2.6.0",
+  "transformers>=4.46.0,<4.50.0",
+  "torch>=2.4.0,<2.6.0",
 ]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cu118", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu118"
+url = "https://download.pytorch.org/whl/cu118"
+explicit = true
 
 [tool.uv]
 package = false

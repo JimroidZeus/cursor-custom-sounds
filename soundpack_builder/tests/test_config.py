@@ -7,7 +7,7 @@ import os
 import unittest
 from unittest.mock import patch
 
-import soundpack_builder.config as config
+import soundpack_builder.core.config as config
 
 
 class TestHfToken(unittest.TestCase):

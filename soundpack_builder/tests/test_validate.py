@@ -3,7 +3,7 @@ import unittest
 import wave
 from pathlib import Path
 
-from soundpack_builder.audio_duration import validate_wav_durations
+from soundpack_builder.audio.audio_duration import validate_wav_durations
 
 
 def _write_silent_wav(path: Path, *, seconds: float, sample_rate: int = 8000) -> None:

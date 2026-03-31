@@ -21,11 +21,12 @@ ENV_SOUNDS_DIR = "SOUNDPACK_BUILDER_SOUNDS_DIR"
 ENV_WAV_DURATION_WARN_SECONDS = "SOUNDPACK_BUILDER_WAV_DURATION_WARN_SECONDS"
 ENV_WAV_DURATION_MAX_SECONDS = "SOUNDPACK_BUILDER_WAV_DURATION_MAX_SECONDS"
 ENV_HF_TOKEN = "HF_TOKEN"
+ENV_FREESOUND_API_KEY = "FREESOUND_API_KEY"
 
 
 def _load_dotenv_if_present() -> None:
     """Load soundpack_builder/.env into os.environ (does not override existing keys)."""
-    env_path = Path(__file__).resolve().parent / ".env"
+    env_path = Path(__file__).resolve().parent.parent / ".env"
     if env_path.is_file():
         load_dotenv(env_path, override=False)
 
@@ -39,8 +40,15 @@ def hf_token() -> Optional[str]:
     return v or None
 
 
+def freesound_api_key() -> Optional[str]:
+    """Freesound API v2 token from FREESOUND_API_KEY (e.g. soundpack_builder/.env)."""
+    v = os.environ.get(ENV_FREESOUND_API_KEY, "").strip()
+    return v or None
+
+
 def _default_repo_root() -> Path:
-    return Path(__file__).resolve().parents[1]
+    # core/config.py -> soundpack_builder -> repo root
+    return Path(__file__).resolve().parents[2]
 
 
 def _env_path(key: str) -> Optional[Path]:
@@ -62,7 +70,7 @@ def env_float(key: str, default: float) -> float:
 
 @dataclass(frozen=True)
 class BuilderConfig:
-    """Paths used by tier1 candidates, templates, validate, downloader."""
+    """Paths used by archive_entries, templates, validate, downloader."""
 
     repo_root: Path
     manifests_dir: Path
