@@ -1,33 +1,82 @@
 # soundpack_builder
 
-Internal builder pipeline for generating and validating sound pack artifacts.
+Internal pipeline for generating and validating sound pack artifacts. It is separate from the Cursor hook runtime so it can be split out later with minimal churn.
 
-This module is intentionally separate from the Cursor hook runtime so it can be
-split into its own repository later with minimal churn.
+## Canonical pipeline
+
+Run **`python -m soundpack_builder.pipeline.workflow`** (or **`--json`**) to print the ordered steps.
+
+| Step | Module | Role |
+|------|--------|------|
+| 1 | **`search_hints`** | DuckDuckGo URL lines for **hook-pack × verified sites** (no HTTP in the tool). |
+| 2 | **`candidates`** | Merges **game-archive** rows with **discovery** links → `manifests/candidates/` (`candidates.json`, `review.json`, `downloadable-all.json`). |
+| 3 | **`downloader`** | Fetches/converts into `sounds/<universe>/<character>/` (default **`manifests/download-manifest.json`**). |
+| 4 | **`templates`** | Writes per-pack hook config stubs under `configs/` from the manifest. |
+| 5 | **`validate`** | Checks template shape + WAV duration limits. |
+
+**Between 1 and 2 (human):** maintain **`manifests/sound-sites.json`**, add **`candidateLinks`** in **`manifests/universe-character-hook-candidates.json`**.
+
+**Between 2 and 3 (human):** read **`manifests/candidates/review.json`**, curate **`manifests/download-manifest.json`**, or pass **`--manifest manifests/candidates/downloadable-all.json`** to the downloader. For **Freesound** links in review, run **`freesound_resolve`** (needs **`FREESOUND_API_KEY`**) and merge **`freesound-resolved.json`** into the download manifest.
+
+**Optional:** **`archive_entries`** (regenerate `generated/archive-entries.json`), **`normalize_manifests`**, **`inject_hook_candidate_links`**, **`freesound_resolve`** (Freesound API → preview URLs), **`repair_wavs`** (re-encode bad `.wav` files that fail validate — needs ffmpeg). Use **`workflow --sourcing-report`** to print verified sites + hook-pack roster.
+
+Full narrative: **`../docs/sound-sourcing.md`** and **`../manifests/README.md`**.
 
 ## Scope
 
-- Builds candidate manifests
-- Generates per-character sound config templates
-- Validates template structure and event filename conventions
-- Validates WAV playback duration limits under `sounds/`
-- Downloads and converts approved clips into `sounds/<universe>/<character>/`
-  - Preserves source clip basenames (normalizes extension to `.wav`)
-  - Generates recommended per-pack `sound-config.json` using transcript + filename mapping
+- Search + classify + download + template + validate for hook soundpacks
+- Non-goal: runtime playback under `.cursor/hooks/`
 
-Non-goal: runtime playback logic under `.cursor/hooks/`.
+## Breaking change (Option C)
 
-## Project Layout
+Root-module entry points and imports have been removed. Use package paths only:
 
-- `config.py` - shared path config and CLI/env overrides
-- `tier1_candidates.py` - manifest candidate builder
-- `phased_sourcing.py` - print phased sourcing plan (`manifests/phased-sourcing.json`)
-- `phased_candidates.py` - write `manifests/phased/phase-*-candidates.json` and review queues from tier1 + discovery JSON
-- `templates.py` - template generator
-- `validate.py` - template validator
-- `downloader.py` - manifest downloader/converter
+- CLI: `python -m soundpack_builder.pipeline.<name>` for pipeline steps, `python -m soundpack_builder.tools.<name>` for utilities.
+- Imports: `soundpack_builder.core.*`, `soundpack_builder.audio.*`, `soundpack_builder.pipeline.*`, `soundpack_builder.tools.*`.
 
-## Path Configuration
+Examples:
+
+- `python -m soundpack_builder.pipeline.downloader`
+- `python -m soundpack_builder.pipeline.transcriber`
+- `python -m soundpack_builder.pipeline.classifier`
+
+## Project layout
+
+All modules are package-native under the subpackages below (no root compatibility shims):
+
+| Package | Role |
+|---------|------|
+| **`soundpack_builder.core`** | `config`, `console_progress`, `hook_events`, `manifest_io`, `media_urls`, `pack_label` |
+| **`soundpack_builder.audio`** | `audio_duration`, `transcript_mapper`, `wav_convert` (RIFF/ffmpeg helpers) |
+| **`soundpack_builder.crawlers`** | site-specific crawler framework + implementations (`sites/`) |
+| **`soundpack_builder.pipeline`** | `workflow`, `search_hints`, `candidates`, `downloader`, `templates`, `validate`, **`transcriber`**, **`classifier`** |
+| **`soundpack_builder.tools`** | `archive_entries`, `normalize_manifests`, `freesound_resolve`, `repair_wavs`, `inject_hook_candidate_links` |
+
+| Module | Purpose |
+|------|---------|
+| `pipeline.workflow` | **Pipeline summary** + **`--sourcing-report`** (sites + hook roster) |
+| `core.config` | Paths, CLI/env overrides |
+| `core.console_progress` | Shared stderr progress |
+| `core.hook_events` | Single source for hook event names, per-event WAV filenames, and slot counts |
+| `core.manifest_io` | Shared JSON read/write helpers for manifests |
+| `tools.archive_entries` | Curated game ZIP rows → `manifests/generated/archive-entries.json` |
+| `pipeline.candidates` | Archive rows + discovery → `manifests/candidates/` |
+| `tools.freesound_resolve` | Optional: Freesound **`review.json`** rows → `freesound-resolved.json` |
+| `pipeline.search_hints` | Step 1 of pipeline |
+| `crawl` | Optional crawler entrypoint (`python -m soundpack_builder.crawl`) that discovers site links and can append deduped `candidateLinks` |
+| `pipeline.templates` | Step 4; uses **`HOOK_PACK_CHARACTERS`** + `download-manifest.json` |
+| `pipeline.validate` | Step 5 |
+| `pipeline.downloader` | Step 3 |
+| `tools.normalize_manifests` | Schema v2 normalization |
+| `tools.repair_wavs` | Re-encode `sounds/**/*.wav` that are not PCM RIFF |
+| `tools.inject_hook_candidate_links` | Advanced bulk edits to universe JSON |
+| `audio.transcript_mapper` | Whisper + zero-shot labels + global per-slot mapping |
+| `pipeline.transcriber` | Transcribe a pack folder → per-pack **`transcripts.json`** sidecar |
+| `pipeline.classifier` | Classify from **`transcripts.json`** → **`classifier-scores.json`** |
+
+**Sidecar files (per pack directory under `sounds/`):** **`transcripts.json`**, **`classifier-scores.json`**. The downloader can load them with **`--use-existing-transcripts`** and **`--use-existing-classifier-scores`** instead of re-running inference when present.
+
+## Path configuration
 
 Defaults are repository-relative:
 
@@ -35,106 +84,154 @@ Defaults are repository-relative:
 - configs: `configs/`
 - sounds: `sounds/`
 
-Override using env vars:
+Override with **`SOUNDPACK_BUILDER_*`** env vars or **`--repo-root`**, **`--out-manifests-dir`**, **`--out-configs-dir`**, **`--out-sounds-dir`** on CLIs that support them.
 
-- `SOUNDPACK_BUILDER_REPO_ROOT`
-- `SOUNDPACK_BUILDER_MANIFESTS_DIR`
-- `SOUNDPACK_BUILDER_CONFIGS_DIR`
-- `SOUNDPACK_BUILDER_SOUNDS_DIR`
-- `SOUNDPACK_BUILDER_WAV_DURATION_WARN_SECONDS` (default warning threshold: `10.0`)
-- `SOUNDPACK_BUILDER_WAV_DURATION_MAX_SECONDS` (default failure threshold: `15.0`)
+**Other env (optional):**
 
-Override using CLI flags (supported by all builder entry points):
+| Variable | Used by |
+|----------|---------|
+| **`FREESOUND_API_KEY`** | **`freesound_resolve`** — [Freesound API v2](https://freesound.org/help/developers/) token (same as `Authorization: Token …`). Load from `soundpack_builder/.env` via **`config.freesound_api_key()`**. |
+| **`HF_TOKEN`** | Downloader transcript / zero-shot classifier — see **`config.hf_token()`**. |
 
-- `--repo-root`
-- `--out-manifests-dir`
-- `--out-configs-dir`
-- `--out-sounds-dir`
+**Two GPUs (typical setup):** run the downloader with e.g. **`--whisper-device cuda:0`** and **`--classifier-device cuda:1`** so Whisper and the Hugging Face classifier use different devices. File-level parallel inference across GPUs is not built in; run separate **`transcriber`** / **`classifier`** processes with different **`CUDA_VISIBLE_DEVICES`** if you need that.
+
+## Candidate manifests (`candidates`)
+
+**Inputs:** `manifests/sound-sites.json`, `manifests/sourcing-config.json`, `manifests/universe-character-hook-candidates.json`.
+
+**`sourcing-config.json`** supplies:
+
+- **`discovery`** — Regexes for classifying URLs (ZIP vs direct media vs sound-page hosts) and for **fallback** extraction of media URLs from raw HTML when structured parsing does not find a link. Includes **Freesound** single-sound URL patterns (`freesound.org/s/<id>/`, `freesound.org/people/.../sounds/<id>/`) so those links are treated as sound pages (not generic portals). Search, tag, and pack URLs stay **portal** until you resolve them (see **`freesound_resolve`** below).
+- **`universeAliases`** — Map discovery universe slugs to archive rows when needed.
+- **`fetch`** (optional) — **`maxRetries`** and **`delayBetweenRequestsSec`** for HTTP when using **`--fetch-sound-pages`** (GET sound pages, parse HTML for `src` / `href` / `data-src`, resolve relative URLs, then regex fallback).
+
+**What it does**
+
+1. Stages **game-archive** rows (same source as `archive_entries.build()`), tagged **`source`: `archive`**.
+2. If the universe manifest exists, classifies each **`candidateLinks`** URL (ZIP, direct, sound page, portal) for approved **`siteId`**s and appends downloader rows or **`review.json`** items (**`source`: `discovery`**). Discovery rows use neutral **`discovery_NNN.wav`** names (no hook preclassification). Optional **`matchQuality`** on a link is copied onto downloader-ready rows when present.
+3. Writes **`manifests/candidates/`** outputs.
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.candidates
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.candidates --fetch-sound-pages
+```
+
+- `--sourcing-config`, `--sound-sites`, `--universe-manifest`, `--out-dir` — see `--help`.
+- `--no-progress` — JSON summary on stdout only.
+
+## Crawler module (`crawl`)
+
+Crawler support is additive: it helps populate discovery links but does not bypass manifest review.
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.crawl --site-id spriters-resource-sounds --universe dc --character batman --max-results 5 --json
+uv run --project soundpack_builder python -m soundpack_builder.crawl --site-id spriters-resource-sounds --universe dc --character batman --apply
+```
+
+- Generated output defaults to `manifests/candidates/<site-id>-crawl.json`.
+- `--apply` appends deduped URLs to `manifests/universe-character-hook-candidates.json`.
+- Current first crawler: **The Sounds Resource** (`sounds.spriters-resource.com`) search page -> asset page -> ZIP URL discovery.
+- Keep `download-manifest.json` curation as the gate before `downloader`.
+
+## Freesound resolver (`freesound_resolve`)
+
+After **`candidates`**, **`review.json`** may list Freesound portals, search pages, tag browse URLs, packs, or sound pages that still need a direct media URL. **`freesound_resolve`** reads every row with **`siteId: freesound`**, calls the **Freesound API v2**, and writes **`manifests/candidates/freesound-resolved.json`** with downloader-shaped **`entries`** plus **`skipped`** (unrecognized URL, no search hit, API error, etc.). Search/tag/pack modes take the **first** API result (same idea as the top hit on the site).
+
+**Requires** **`FREESOUND_API_KEY`** in the environment or **`--token`**.
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.tools.freesound_resolve
+uv run --project soundpack_builder python -m soundpack_builder.tools.freesound_resolve --help
+```
+
+**Common flags:** `--review <path>`, `--out <path>`, `--delay-sec` (default `0.25` between API calls).
+
+Merge **`entries`** from **`freesound-resolved.json`** into **`manifests/download-manifest.json`** (or combine with **`downloadable-all.json`**) before **`downloader`**.
+
+## Console output and `--no-progress`
+
+| Module | stdout | stderr | `--no-progress` |
+|--------|--------|--------|-----------------|
+| `workflow` | pipeline text or `--json` | — | n/a |
+| `archive_entries` | `{"ok","count","out"}` | status | yes |
+| `candidates` | JSON report | progress | yes |
+| `validate` | JSON on exit | progress | yes |
+| `templates` | — | per-template lines | yes |
+| `downloader` | structured logs | progress | yes |
+| `workflow --sourcing-report` | text or `--json` | — | n/a |
+| `search_hints` | lines or `--json` | — | n/a |
+| `freesound_resolve` | JSON summary (`ok`, `out`, `resolved`, `skipped`) | — | n/a |
 
 ## Using uv
 
-`soundpack_builder` has its own `pyproject.toml` so it can be managed as a
-standalone Python project even while living in this repo.
+From repo root:
 
-From the repository root:
+```bash
+uv sync --project soundpack_builder
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.workflow
+```
 
-1. Install uv (one-time):
-   - PowerShell: `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-2. Install/select a compatible Python for this project (recommended 3.12):
-   - `uv python install 3.12`
-3. Create the local environment:
-   - `uv sync --project soundpack_builder`
-   - If you previously synced with incompatible wheels, force a refresh:
-     - `uv sync --project soundpack_builder --refresh`
+## Suggested commands (copy-paste)
 
-## Running the Builder
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.search_hints
+# Edit universe manifests + sound-sites
 
-Run from repository root so `soundpack_builder` imports resolve cleanly.
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.candidates
+# Review manifests/candidates/review.json; optional Freesound API resolution:
+#   uv run --project soundpack_builder python -m soundpack_builder.tools.freesound_resolve
+# Merge freesound-resolved.json entries into download-manifest.json
 
-- Build tier-1 candidates:
-  - `uv run --project soundpack_builder python -m soundpack_builder.tier1_candidates`
-- Print phased sourcing plan (video games → cartoons → movies):
-  - `uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing`
-  - `uv run --project soundpack_builder python -m soundpack_builder.phased_sourcing --phase 2 --json`
-- Build phased downloader manifests + review lists (`manifests/phased/`):
-  - `uv run --project soundpack_builder python -m soundpack_builder.phased_candidates`
-  - `uv run --project soundpack_builder python -m soundpack_builder.phased_candidates --fetch-sound-pages`
-- Generate templates:
-  - `uv run --project soundpack_builder python -m soundpack_builder.templates`
-- Validate templates + WAV duration constraints:
-  - `uv run --project soundpack_builder python -m soundpack_builder.validate`
-  - Default thresholds:
-    - warning at `10.0s` (`--warn-wav-seconds`)
-    - failure at `15.0s` (`--max-wav-seconds`)
-  - Configure/disable:
-    - `--warn-wav-seconds 12`
-    - `--max-wav-seconds 18`
-    - `--skip-wav-duration-check` (template-only validation)
-- Download approved clips:
-  - `uv run --project soundpack_builder python -m soundpack_builder.downloader`
-  - Shows progress/status lines by default (disable with `--no-progress`)
-  - Also writes `sounds/<universe>/<character>/sound-config.json` recommendations by default
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.downloader
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.templates
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.validate
+```
 
-Examples with output overrides:
+**Reference only (game ZIP dump):**
 
-- `uv run --project soundpack_builder python -m soundpack_builder.tier1_candidates --out-manifests-dir ".tmp/manifests"`
-- `uv run --project soundpack_builder python -m soundpack_builder.templates --out-configs-dir ".tmp/configs"`
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.tools.archive_entries
+```
 
 ## ffmpeg
 
-`soundpack_builder.downloader` may need ffmpeg when the source is not already WAV.
+Downloader may use ffmpeg when the source is not already WAV (`ffmpeg -version`).
 
-- Verify: `ffmpeg -version`
+## Transcript-driven recommendations (downloader)
 
-## Transcript-driven recommendations
+When **`--no-recommended-config`** is not set, the downloader can generate **`sounds/<universe>/<character>/sound-config.json`** and **`mapping-report.json`** per pack:
 
-Downloader now attempts local speech-to-text transcription (Whisper) to improve event mapping quality.
-
-- Dependency is managed in `soundpack_builder/pyproject.toml` (`faster-whisper`).
-- Optional zero-shot event classifier uses `transformers`. Ranking is **tiered**: clips with a non-empty transcript **and** classifier scores for that clip are ordered by `modelScore` first (with a small heuristic tie-break); all other clips use normalized filename + text heuristics only.
-- If transcription fails or is unavailable for a clip, or the classifier did not produce scores for that clip, that clip uses the heuristic tier.
-- `mapping-report.json` lists each candidate with `rankingTier` set to `model` or `heuristic_fallback`, and `score` reflects the tier (`modelScore * classifier-weight` plus a tiny tie-break for the model tier, or normalized heuristic score for the fallback tier).
-- Generated recommendation path:
-  - `sounds/<universe>/<character>/sound-config.json`
-  - `sounds/<universe>/<character>/mapping-report.json` (scores + transcripts + selected files)
-
-Useful flags:
-
-- `--skip-transcript-analysis` - skip Whisper and use filename heuristics only.
-- `--whisper-model tiny` - choose model size (`tiny` default).
-- `--whisper-language en` - force language (`auto` for autodetect).
-- `--whisper-device auto` - runtime device selection.
-- `--whisper-compute-type auto` - backend compute type.
-- `--overwrite-recommended-config` - replace existing generated pack config files.
-- `--no-recommended-config` - disable generation entirely.
-- `--disable-llm-classifier` - disable zero-shot event classification (heuristics only).
-- `--classifier-model valhalla/distilbart-mnli-12-1` - choose classifier model.
-- `--classifier-weight 5.0` - scales the **displayed** model contribution in `mapping-report.json` (`score` for `rankingTier: model`); ordering within the model tier is by raw `modelScore` (weight is a common factor).
+- **Transcription:** faster-whisper (default model **`tiny`**; override with **`--whisper-model`** or shorthand **`--preset fast`** / **`--preset quality`** → **`tiny`** / **`small`**).
+- **Optional classifier:** Hugging Face zero-shot NLI (unless **`--disable-llm-classifier`**). **`--classifier-weight`** blends classifier scores with filename/heuristic signals.
+- **Event mapping:** Each hook WAV is assigned to **at most one** slot when there are enough files; with fewer clips than slots, the best semantic match per slot is reused as needed. **`matchQuality`** on a manifest row (numeric 0–1 or labels like **`high`** / **`medium`**) adds a small boost when ranking clips.
+- **Speech verification (Whisper runs):** By default, clips whose transcript is empty or not lexical speech (e.g. only `[music]`-style noise) are **omitted** from the recommended `sound-config.json` and listed under **`speechVerification.excludedClips`** in **`mapping-report.json`**. If **no** clip passes, the pack config file is **not** written and the downloader reports an error. Disable with **`--no-speech-verification`** (all WAVs participate, as before this check). With **`--skip-transcript-analysis`**, verification is not run; **`speechVerification.mode`** is **`skipped`** and clips are **`notAssessed`**.
+- **Outputs:** Recommended `sound-config.json` plus **`mapping-report.json`** (scores per clip × event for review, plus speech verification metadata).
 
 ## Tests
 
-There is a small regression test suite under `soundpack_builder/tests`.
+```bash
+uv run --project soundpack_builder python -m unittest discover -s soundpack_builder/tests -p "test_*.py"
+```
 
-- Run all tests from repo root:
-  - `uv run --project soundpack_builder python -m unittest discover -s soundpack_builder/tests -p "test_*.py"`
+## Dependency smoke check (Windows)
 
+Use this quick import check after dependency upgrades to catch classifier runtime regressions early:
+
+```bash
+uv run --project soundpack_builder python -c "from transformers import pipeline; print('pipeline ok')"
+```
+
+## Windows CUDA / classifier troubleshooting
+
+- CUDA transcription requires an NVIDIA driver that is new enough for the pinned CUDA runtime (`torch` from the `cu118` index). If `nvidia-smi` reports `CUDA Version: N/A` or transcription logs `CUDA driver version is insufficient for CUDA runtime version`, use CPU flags.
+- If classifier runtime is unstable on your host, keep recommendation generation reliable with:
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.pipeline.downloader --whisper-device cpu --disable-llm-classifier
+```
+
+- Re-enable classifier only after this import gate passes:
+
+```bash
+uv run --project soundpack_builder python -c "from transformers import pipeline; print('pipeline ok')"
+```

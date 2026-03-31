@@ -101,3 +101,7 @@ python .cursor/hooks/play-sound.py --test afterAgentResponse
 ```
 
 If the script runs, it prints a JSON status object and should play a sound in the background.
+
+## See also
+
+- **Building or swapping soundpacks** (manifests, downloader, templates): [`sound-sourcing.md`](sound-sourcing.md), the repo root **README** section *Manifest workflow*, and [`soundpack_builder/README.md`](../soundpack_builder/README.md) (CLI flags, `sourcing-config` fetch options, **`freesound_resolve`**, transcript mapping).
