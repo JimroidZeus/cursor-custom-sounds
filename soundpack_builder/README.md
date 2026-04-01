@@ -171,6 +171,20 @@ uv sync --project soundpack_builder
 uv run --project soundpack_builder python -m soundpack_builder.pipeline.workflow
 ```
 
+### Hardware/software preflight (Windows, macOS, Linux)
+
+Use preflight to validate runtime compatibility and optionally install the matching torch build:
+
+```bash
+# probe only
+uv run --project soundpack_builder python -m soundpack_builder.tools.preflight
+
+# probe + run uv sync + install CUDA torch on supported NVIDIA hosts
+uv run --project soundpack_builder python -m soundpack_builder.tools.preflight --sync
+```
+
+The downloader already defaults to `--whisper-device auto` and `--classifier-device auto`, so once dependencies match the host, full capability is used automatically.
+
 ## Suggested commands (copy-paste)
 
 ```bash
@@ -223,7 +237,13 @@ uv run --project soundpack_builder python -c "from transformers import pipeline;
 
 ## Windows CUDA / classifier troubleshooting
 
-- CUDA transcription requires an NVIDIA driver that is new enough for the pinned CUDA runtime (`torch` from the `cu118` index). If `nvidia-smi` reports `CUDA Version: N/A` or transcription logs `CUDA driver version is insufficient for CUDA runtime version`, use CPU flags.
+- Run preflight first to validate host/runtime fit and apply a matching install plan:
+
+```bash
+uv run --project soundpack_builder python -m soundpack_builder.tools.preflight --sync
+```
+
+- If `nvidia-smi` reports `CUDA Version: N/A`, CUDA torch install fails, or transcription logs `CUDA driver version is insufficient for CUDA runtime version`, use CPU flags.
 - If classifier runtime is unstable on your host, keep recommendation generation reliable with:
 
 ```bash
