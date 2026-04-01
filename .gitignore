@@ -198,6 +198,9 @@ cython_debug/
 manifests/_downloads/
 .cursor/hooks/.debounce-state/
 
+# Generated raw sound downloads (keep JSON reports/configs tracked)
+sounds/**/*.wav
+
 # Cursor
 #  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
 #  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
