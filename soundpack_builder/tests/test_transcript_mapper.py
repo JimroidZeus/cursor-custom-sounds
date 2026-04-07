@@ -1,5 +1,6 @@
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from soundpack_builder.audio.transcript_mapper import (
     EVENT_LABEL_DESCRIPTIONS,
@@ -160,6 +161,65 @@ class TranscriptMapperTest(unittest.TestCase):
             classifier_weight=5.0,
         )
         self.assertIn("zzz.wav", recommendations["beforeSubmitPrompt"])
+
+
+class ZeroShotPremiseSanitizeTest(unittest.TestCase):
+    def test_empty_and_zwsp_only_skipped(self) -> None:
+        class Tok:
+            def encode(self, t: str, add_special_tokens: bool = False, truncation: bool = False):
+                return [1] if t else []
+
+        from soundpack_builder.audio.transcript_mapper import _zero_shot_safe_premise
+
+        tok = Tok()
+        self.assertIsNone(_zero_shot_safe_premise(tok, "   "))
+        self.assertIsNone(_zero_shot_safe_premise(tok, "\u200b\u200b"))
+
+    def test_nonempty_premise_preserved(self) -> None:
+        class Tok:
+            def encode(self, t: str, add_special_tokens: bool = False, truncation: bool = False):
+                return [1, 2, 3]
+
+        from soundpack_builder.audio.transcript_mapper import _zero_shot_safe_premise
+
+        self.assertEqual(_zero_shot_safe_premise(Tok(), "  hello  "), "hello")
+
+
+class DefaultZeroShotModelTest(unittest.TestCase):
+    def test_cpu_explicit_uses_distilbert_mnli(self) -> None:
+        from soundpack_builder.audio.transcript_mapper import (
+            DEFAULT_ZERO_SHOT_MODEL_CPU,
+            default_zero_shot_model_for_classifier_device,
+        )
+
+        self.assertEqual(
+            default_zero_shot_model_for_classifier_device("cpu"),
+            DEFAULT_ZERO_SHOT_MODEL_CPU,
+        )
+
+    @patch("soundpack_builder.audio.transcript_mapper.classifier_runs_on_cpu", return_value=True)
+    def test_when_classifier_runs_on_cpu_uses_distilbert(self, _mock: object) -> None:
+        from soundpack_builder.audio.transcript_mapper import (
+            DEFAULT_ZERO_SHOT_MODEL_CPU,
+            default_zero_shot_model_for_classifier_device,
+        )
+
+        self.assertEqual(
+            default_zero_shot_model_for_classifier_device("auto"),
+            DEFAULT_ZERO_SHOT_MODEL_CPU,
+        )
+
+    @patch("soundpack_builder.audio.transcript_mapper.classifier_runs_on_cpu", return_value=False)
+    def test_when_classifier_runs_on_gpu_uses_distilbart(self, _mock: object) -> None:
+        from soundpack_builder.audio.transcript_mapper import (
+            DEFAULT_ZERO_SHOT_MODEL,
+            default_zero_shot_model_for_classifier_device,
+        )
+
+        self.assertEqual(
+            default_zero_shot_model_for_classifier_device("auto"),
+            DEFAULT_ZERO_SHOT_MODEL,
+        )
 
 
 if __name__ == "__main__":

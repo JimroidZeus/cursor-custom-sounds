@@ -16,7 +16,7 @@ from typing import Optional
 
 from soundpack_builder.audio.transcript_mapper import (
     DEFAULT_SENTENCE_EMBEDDING_MODEL,
-    DEFAULT_ZERO_SHOT_MODEL,
+    default_zero_shot_model_for_classifier_device,
     classify_hook_events,
     load_transcripts_sidecar,
     save_classifier_scores_sidecar,
@@ -80,7 +80,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         resolved_model = (
             DEFAULT_SENTENCE_EMBEDDING_MODEL
             if args.classifier_backend == "sentence-embedding"
-            else DEFAULT_ZERO_SHOT_MODEL
+            else default_zero_shot_model_for_classifier_device(args.classifier_device)
         )
     scores = classify_hook_events(
         transcripts,

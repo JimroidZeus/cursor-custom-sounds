@@ -18,6 +18,7 @@ Whisper model shorthand.
 from __future__ import annotations
 
 import argparse
+import faulthandler
 import hashlib
 import json
 import sys
@@ -32,7 +33,9 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 from soundpack_builder.audio.transcript_mapper import (
     DEFAULT_SENTENCE_EMBEDDING_MODEL,
     DEFAULT_ZERO_SHOT_MODEL,
+    DEFAULT_ZERO_SHOT_MODEL_CPU,
     ClassifierBackend,
+    default_zero_shot_model_for_classifier_device,
     build_mapping_report,
     classify_hook_events,
     load_classifier_scores_sidecar,
@@ -917,6 +920,7 @@ def _write_recommended_configs(
 
 
 def main(argv: Optional[list[str]] = None) -> int:
+    faulthandler.enable(all_threads=True)
     parser = argparse.ArgumentParser(description="Download approved sound clips from manifest.")
     add_output_path_args(parser)
     parser.add_argument(
@@ -1000,7 +1004,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         default=None,
         help=(
             "Hugging Face model id for the chosen backend. "
-            f"Omitted: {DEFAULT_ZERO_SHOT_MODEL} (zero-shot) or "
+            f"Omitted: {DEFAULT_ZERO_SHOT_MODEL_CPU} (zero-shot on CPU), "
+            f"{DEFAULT_ZERO_SHOT_MODEL} (zero-shot when CUDA is used), or "
             f"{DEFAULT_SENTENCE_EMBEDDING_MODEL} (sentence-embedding)."
         ),
     )
@@ -1063,7 +1068,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         resolved_classifier_model = (
             DEFAULT_SENTENCE_EMBEDDING_MODEL
             if args.classifier_backend == "sentence-embedding"
-            else DEFAULT_ZERO_SHOT_MODEL
+            else default_zero_shot_model_for_classifier_device(args.classifier_device)
         )
     cfg = build_config_from_args(args)
     manifest_path = (

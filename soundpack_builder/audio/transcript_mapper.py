@@ -7,9 +7,12 @@ it falls back to filename-based signals and deterministic ordering.
 
 from __future__ import annotations
 
+import gc
 import json
+import os
 import re
 import sys
+import traceback
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Callable, Dict, Iterable, List, Optional, Sequence, Set, Tuple
@@ -62,8 +65,69 @@ def _transformers_pipeline_device_arg(resolved: Optional[str]) -> Optional[int]:
             return 0
     return None
 
+
+def classifier_runs_on_cpu(classifier_device: str) -> bool:
+    """
+    Return True when inference is expected to run on CPU (no usable CUDA, or ``--classifier-device cpu``).
+
+    Used to pick a smaller default zero-shot NLI checkpoint on CPU-only machines.
+    """
+    try:
+        import torch
+
+        cuda_ok = bool(torch.cuda.is_available())
+    except Exception:
+        cuda_ok = False
+    spec = (classifier_device or "auto").strip().lower()
+    if spec == "cpu":
+        return True
+    if spec.startswith("cuda"):
+        return not cuda_ok
+    return not cuda_ok
+
+
+def default_zero_shot_model_for_classifier_device(classifier_device: str) -> str:
+    """Prefer a compact DistilBERT MNLI model on CPU; DistilBART when a GPU is used."""
+    return (
+        DEFAULT_ZERO_SHOT_MODEL_CPU
+        if classifier_runs_on_cpu(classifier_device)
+        else DEFAULT_ZERO_SHOT_MODEL
+    )
+
+
+def _zero_shot_safe_premise(tokenizer: Any, text: str) -> Optional[str]:
+    """
+    Return premise text for NLI, or None if it should be skipped.
+
+    Invisible / zero-width characters can tokenize to an empty sequence; combined with
+    SDPA attention on Windows CPU that has triggered native int divide-by-zero in torch.
+    """
+    t = text.strip()
+    if not t:
+        return None
+    t = re.sub(r"[\u200b-\u200f\uFEFF]", "", t)
+    t = t.strip()
+    if not t:
+        return None
+    ids = tokenizer.encode(t, add_special_tokens=False, truncation=False)
+    if not ids:
+        return None
+    return t
+
+
+def _zero_shot_pipeline_model_kwargs() -> Dict[str, Any]:
+    """Avoid SDPA path (scaled_dot_product_attention) which can crash on Windows CPU; use float32."""
+    try:
+        import torch
+    except Exception:
+        return {"attn_implementation": "eager"}
+    return {"attn_implementation": "eager", "torch_dtype": torch.float32}
+
+
 # Default Hugging Face models for transcript → hook-event scoring (downloader `--classifier-backend`).
+# DistilBART NLI is a good default when CUDA is available; DistilBERT MNLI is smaller and faster on CPU.
 DEFAULT_ZERO_SHOT_MODEL = "valhalla/distilbart-mnli-12-1"
+DEFAULT_ZERO_SHOT_MODEL_CPU = "typeform/distilbert-base-uncased-mnli"
 DEFAULT_SENTENCE_EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 ClassifierBackend = Literal["zero-shot", "sentence-embedding"]
@@ -492,8 +556,14 @@ def classify_with_sentence_embeddings(
             sims = np.dot(text_emb, label_emb.T)
             for bi, clip_path in enumerate(paths_batch):
                 out[clip_path] = _similarities_to_event_scores(sims[bi])
-        except Exception:
+        except Exception as ex:
             batch_ok = False
+            print(
+                f"[CLASSIFY] sentence-embedding batch failed ({model_name}): {ex}",
+                file=sys.stderr,
+                flush=True,
+            )
+            traceback.print_exc(file=sys.stderr)
             for clip_path, _tx in nonempty:
                 out[clip_path] = {}
 
@@ -521,13 +591,20 @@ def classify_hook_events(
     transcripts: Dict[Path, str],
     *,
     backend: ClassifierBackend = "zero-shot",
-    model_name: str = DEFAULT_ZERO_SHOT_MODEL,
+    model_name: Optional[str] = None,
     classifier_device: Optional[str] = None,
     progress: bool = True,
     progress_context: str = "",
     progress_callback: Optional[Callable[[int, int, Path, str, str], None]] = None,
 ) -> Dict[Path, Dict[str, float]]:
     """Dispatch to zero-shot NLI or sentence-embedding similarity classifiers."""
+    if model_name is None:
+        if backend == "sentence-embedding":
+            model_name = DEFAULT_SENTENCE_EMBEDDING_MODEL
+        else:
+            model_name = default_zero_shot_model_for_classifier_device(
+                classifier_device or "auto"
+            )
     if backend == "sentence-embedding":
         return classify_with_sentence_embeddings(
             transcripts,
@@ -569,18 +646,46 @@ def classify_with_zero_shot(
             "transformers is not installed. Run `uv sync --project soundpack_builder`."
         ) from ex
 
+    gc.collect()
+
+    if sys.platform == "win32":
+        # Reduces flaky native crashes (incl. int divide-by-zero in SDPA/BLAS) on Windows CPU.
+        os.environ.setdefault("OMP_NUM_THREADS", "1")
+        os.environ.setdefault("MKL_NUM_THREADS", "1")
+        try:
+            import torch
+
+            torch.set_num_threads(1)
+        except Exception:
+            pass
+
     t = hf_token()
     resolved = resolve_classifier_device(classifier_device or "auto")
     pd = _transformers_pipeline_device_arg(resolved)
     pipe_extra: Dict[str, Any] = {}
     if pd is not None:
         pipe_extra["device"] = pd
-    classifier = pipeline(
-        "zero-shot-classification",
-        model=model_name,
-        token=t if t else True,
-        **pipe_extra,
-    )
+    elif classifier_runs_on_cpu(classifier_device or "auto"):
+        pipe_extra["device"] = -1
+    try:
+        classifier = pipeline(
+            "zero-shot-classification",
+            model=model_name,
+            token=t if t else True,
+            model_kwargs=_zero_shot_pipeline_model_kwargs(),
+            **pipe_extra,
+        )
+    except Exception as ex:
+        raise RuntimeError(
+            f"Failed to load zero-shot classifier pipeline ({model_name!r}): {ex}"
+        ) from ex
+    if progress:
+        dev_note = f"pipeline device index {pd}" if pd is not None else "default device (see log above)"
+        print(
+            f"[CLASSIFY] zero-shot model loaded ({model_name}); {dev_note}. Starting per-clip inference…",
+            file=sys.stderr,
+            flush=True,
+        )
     label_texts = [EVENT_LABEL_DESCRIPTIONS[event] for event in EVENT_ORDER]
     label_to_event = {EVENT_LABEL_DESCRIPTIONS[event]: event for event in EVENT_ORDER}
 
@@ -594,7 +699,8 @@ def classify_with_zero_shot(
             )
         if progress_callback:
             progress_callback(index + 1, total, clip_path, "classify-start", progress_context)
-        if not transcript.strip():
+        premise = _zero_shot_safe_premise(classifier.tokenizer, transcript)
+        if premise is None:
             out[clip_path] = {}
             if progress:
                 _print_inference_progress(
@@ -604,7 +710,7 @@ def classify_with_zero_shot(
                 progress_callback(index + 1, total, clip_path, "classify-skip", progress_context)
             continue
         try:
-            result = classifier(transcript, label_texts, multi_label=True)
+            result = classifier(premise, label_texts, multi_label=True)
             scores: Dict[str, float] = {}
             labels = result.get("labels", [])
             values = result.get("scores", [])
@@ -619,8 +725,14 @@ def classify_with_zero_shot(
                 )
             if progress_callback:
                 progress_callback(index + 1, total, clip_path, "classify-done", progress_context)
-        except Exception:
+        except Exception as ex:
             out[clip_path] = {}
+            print(
+                f"[CLASSIFY] inference failed for {clip_path.name}: {ex}",
+                file=sys.stderr,
+                flush=True,
+            )
+            traceback.print_exc(file=sys.stderr)
             if progress:
                 _print_inference_progress(
                     "CLASSIFY", index + 1, total, clip_path.name, "error", progress_context
@@ -656,31 +768,35 @@ def transcribe_with_whisper(
     model = WhisperModel(model_size, device=device, compute_type=compute_type)
     out: Dict[Path, str] = {}
     total = len(audio_paths)
-    for index, audio_path in enumerate(audio_paths):
-        if progress:
-            _print_inference_progress(
-                "TRANSCRIBE", index + 1, total, audio_path.name, "start", progress_context
-            )
-        if progress_callback:
-            progress_callback(index + 1, total, audio_path, "start", progress_context)
-        try:
-            segments, _info = model.transcribe(str(audio_path), language=language or None)
-            transcript = " ".join((seg.text or "").strip() for seg in segments).strip()
-            out[audio_path] = transcript
+    try:
+        for index, audio_path in enumerate(audio_paths):
             if progress:
                 _print_inference_progress(
-                    "TRANSCRIBE", index + 1, total, audio_path.name, "done", progress_context
+                    "TRANSCRIBE", index + 1, total, audio_path.name, "start", progress_context
                 )
             if progress_callback:
-                progress_callback(index + 1, total, audio_path, "done", progress_context)
-        except Exception:
-            out[audio_path] = ""
-            if progress:
-                _print_inference_progress(
-                    "TRANSCRIBE", index + 1, total, audio_path.name, "error", progress_context
-                )
-            if progress_callback:
-                progress_callback(index + 1, total, audio_path, "error", progress_context)
+                progress_callback(index + 1, total, audio_path, "start", progress_context)
+            try:
+                segments, _info = model.transcribe(str(audio_path), language=language or None)
+                transcript = " ".join((seg.text or "").strip() for seg in segments).strip()
+                out[audio_path] = transcript
+                if progress:
+                    _print_inference_progress(
+                        "TRANSCRIBE", index + 1, total, audio_path.name, "done", progress_context
+                    )
+                if progress_callback:
+                    progress_callback(index + 1, total, audio_path, "done", progress_context)
+            except Exception:
+                out[audio_path] = ""
+                if progress:
+                    _print_inference_progress(
+                        "TRANSCRIBE", index + 1, total, audio_path.name, "error", progress_context
+                    )
+                if progress_callback:
+                    progress_callback(index + 1, total, audio_path, "error", progress_context)
+    finally:
+        del model
+        gc.collect()
     return out
 
 
