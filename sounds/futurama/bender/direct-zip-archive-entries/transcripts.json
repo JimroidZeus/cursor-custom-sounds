@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "alarmloop.wav": "Woo!",
+    "destalarm.wav": "AAAAAAAAAAAAAAAAAAAAAAAA",
+    "door-small-close.wav": "",
+    "fence-blipp.wav": "",
+    "laser-charge.wav": "",
+    "laser-fence-activate.wav": "Thanks for watching!"
+  }
+}

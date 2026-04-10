@@ -5,20 +5,20 @@
   "soundSubdir": "goku/direct-zip-archive-entries",
   "events": {
     "beforeSubmitPrompt": [
-      "Goku_3(49250).wav",
-      "24.wav"
+      "14.wav",
+      "Goku_3(49185).wav"
     ],
     "afterAgentThought": [
-      "Goku_5(49439).wav",
+      "Goku_4(49345).wav",
       "Goku_5(49445).wav"
     ],
     "afterAgentResponse": [
-      "Goku_4(49339).wav",
-      "Goku_4(49345).wav"
+      "Goku_3(49246).wav",
+      "Goku_5(49457).wav"
     ],
-    "preToolUse": "Goku_3(49236).wav",
-    "postToolUse": "Goku_3(49271).wav",
-    "postToolUseFailure": "Goku_3(49247).wav",
-    "stop": "Goku_4(49323).wav"
+    "preToolUse": "Goku_3(49250).wav",
+    "postToolUse": "Goku_3(49249).wav",
+    "postToolUseFailure": "Goku_4(49359).wav",
+    "stop": "Goku_6(49550).wav"
   }
 }

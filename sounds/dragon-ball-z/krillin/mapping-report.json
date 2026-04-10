@@ -2,748 +2,637 @@
   "clips": [
     {
       "file": "BCKLLSND2_00000.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Go!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00009.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "AAAAAAAA!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00010.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Go!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00011.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "BAH!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00012.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "D-D-D-D-D!",
+      "speechEligible": false,
+      "exclusionReason": "non_lexical_only"
     },
     {
       "file": "BCKLLSND_00013.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "D-D-D-D!",
+      "speechEligible": false,
+      "exclusionReason": "non_lexical_only"
     },
     {
       "file": "BCKLLSND_00014.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "NO!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00015.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "You",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00016.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "GO!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00017.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Got me!",
+      "speechEligible": true
     }
   ],
   "events": {
     "beforeSubmitPrompt": {
       "selected": [
-        "BCKLLSND2_00000.wav",
-        "BCKLLSND_00009.wav"
+        "BCKLLSND_00014.wav",
+        "BCKLLSND_00014.wav"
       ],
       "candidates": [
         {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "BCKLLSND_00014.wav",
+          "score": 2.9219749569892883,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5843949913978577,
+          "transcript": "NO!"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "BCKLLSND2_00000.wav",
+          "score": 2.9179380193352698,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.573587603867054,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.9179380193352698,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.573587603867054,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.9179379820823668,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5735875964164734,
+          "transcript": "GO!"
+        },
+        {
+          "file": "BCKLLSND_00015.wav",
+          "score": 2.8477999567985535,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5695599913597107,
+          "transcript": "You"
         },
         {
           "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.84865313321352,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.559730626642704,
+          "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 2.7666789293289185,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5533357858657837,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 2.7322098053991795,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5464419610798359,
+          "transcript": "BAH!"
         }
       ]
     },
     "afterAgentThought": {
       "selected": [
-        "BCKLLSND_00010.wav",
-        "BCKLLSND_00011.wav"
+        "BCKLLSND_00015.wav",
+        "BCKLLSND_00014.wav"
       ],
       "candidates": [
         {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "BCKLLSND_00015.wav",
+          "score": 3.3142175525426865,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6628435105085373,
+          "transcript": "You"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "BCKLLSND2_00000.wav",
+          "score": 3.187698870897293,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6375397741794586,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.187698870897293,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6375397741794586,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.187698870897293,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6375397741794586,
+          "transcript": "GO!"
+        },
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 3.182603195309639,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6365206390619278,
+          "transcript": "NO!"
         },
         {
           "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.144379109144211,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6288758218288422,
+          "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 3.1430111825466156,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6286022365093231,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 3.1158388033509254,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6231677606701851,
+          "transcript": "BAH!"
         }
       ]
     },
     "afterAgentResponse": {
       "selected": [
-        "BCKLLSND_00012.wav",
-        "BCKLLSND_00013.wav"
-      ],
-      "candidates": [
-        {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        }
-      ]
-    },
-    "preToolUse": {
-      "selected": [
-        "BCKLLSND_00014.wav"
-      ],
-      "candidates": [
-        {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        }
-      ]
-    },
-    "postToolUse": {
-      "selected": [
-        "BCKLLSND_00015.wav"
-      ],
-      "candidates": [
-        {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        }
-      ]
-    },
-    "postToolUseFailure": {
-      "selected": [
+        "BCKLLSND_00010.wav",
         "BCKLLSND_00016.wav"
       ],
       "candidates": [
         {
-          "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "BCKLLSND_00015.wav",
+          "score": 3.2665832340717316,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6533166468143463,
+          "transcript": "You"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "BCKLLSND2_00000.wav",
+          "score": 3.195335566997528,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6390671133995056,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.195335566997528,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6390671133995056,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.195335492491722,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6390670984983444,
+          "transcript": "GO!"
         },
         {
           "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1625786423683167,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6325157284736633,
+          "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 3.1282148510217667,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6256429702043533,
+          "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 3.124515935778618,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6249031871557236,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 3.0565600097179413,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6113120019435883,
+          "transcript": "BAH!"
         }
       ]
     },
-    "stop": {
+    "preToolUse": {
       "selected": [
         "BCKLLSND_00017.wav"
       ],
       "candidates": [
         {
           "file": "BCKLLSND2_00000.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00009.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.094725731015205,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6089451462030411,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00010.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00011.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00012.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00013.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00014.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "BCKLLSND_00015.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.094725731015205,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6089451462030411,
+          "transcript": "Go!"
         },
         {
           "file": "BCKLLSND_00016.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.094725731015205,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6089451462030411,
+          "transcript": "GO!"
         },
         {
           "file": "BCKLLSND_00017.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.0133443802595137,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5926688760519028,
+          "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 2.9579648917913435,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5895929783582687,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00015.wav",
+          "score": 2.949968854188919,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5879937708377838,
+          "transcript": "You"
+        },
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 2.949718663692474,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5879437327384949,
+          "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 2.8972053697705267,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5774410739541054,
+          "transcript": "BAH!"
+        }
+      ]
+    },
+    "postToolUse": {
+      "selected": [
+        "BCKLLSND_00009.wav"
+      ],
+      "candidates": [
+        {
+          "file": "BCKLLSND2_00000.wav",
+          "score": 3.1084332719445227,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6116866543889046,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00010.wav",
+          "score": 3.1084332719445227,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6116866543889046,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00016.wav",
+          "score": 3.1084332719445227,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6116866543889046,
+          "transcript": "GO!"
+        },
+        {
+          "file": "BCKLLSND_00015.wav",
+          "score": 3.001749116182327,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5903498232364655,
+          "transcript": "You"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 2.9886590048670767,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5877318009734154,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 2.9745214909315107,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5849042981863022,
+          "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND_00017.wav",
+          "score": 2.955302233994007,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5810604467988014,
+          "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 2.9065942123532293,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5713188424706459,
+          "transcript": "BAH!"
+        }
+      ]
+    },
+    "postToolUseFailure": {
+      "selected": [
+        "BCKLLSND_00011.wav"
+      ],
+      "candidates": [
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 3.0075872793793677,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5915174558758736,
+          "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND2_00000.wav",
+          "score": 2.9604961520433424,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5900992304086685,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00010.wav",
+          "score": 2.9604961520433424,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5900992304086685,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00016.wav",
+          "score": 2.9604961520433424,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5900992304086685,
+          "transcript": "GO!"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 2.9381667619943617,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5856333523988724,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00015.wav",
+          "score": 2.8981642967462538,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5776328593492508,
+          "transcript": "You"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 2.858992347717285,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.569798469543457,
+          "transcript": "BAH!"
+        },
+        {
+          "file": "BCKLLSND_00017.wav",
+          "score": 2.8547307646274565,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5689461529254913,
+          "transcript": "Got me!"
+        }
+      ]
+    },
+    "stop": {
+      "selected": [
+        "BCKLLSND2_00000.wav"
+      ],
+      "candidates": [
+        {
+          "file": "BCKLLSND2_00000.wav",
+          "score": 3.4135096997022627,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6727019399404526,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00010.wav",
+          "score": 3.4135096997022627,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6727019399404526,
+          "transcript": "Go!"
+        },
+        {
+          "file": "BCKLLSND_00016.wav",
+          "score": 3.4135096997022627,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6727019399404526,
+          "transcript": "GO!"
+        },
+        {
+          "file": "BCKLLSND_00014.wav",
+          "score": 3.3882652699947355,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6676530539989471,
+          "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND_00015.wav",
+          "score": 3.3580185949802397,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.661603718996048,
+          "transcript": "You"
+        },
+        {
+          "file": "BCKLLSND_00009.wav",
+          "score": 3.3530293136835096,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.660605862736702,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "BCKLLSND_00011.wav",
+          "score": 3.3025708526372908,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6505141705274582,
+          "transcript": "BAH!"
+        },
+        {
+          "file": "BCKLLSND_00017.wav",
+          "score": 3.2869392365217207,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6473878473043442,
+          "transcript": "Got me!"
         }
       ]
     }
   },
   "speechVerification": {
-    "mode": "transcript_unavailable",
-    "detail": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version"
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 8,
+    "excludedClips": [
+      {
+        "file": "BCKLLSND_00012.wav",
+        "reason": "non_lexical_only",
+        "transcript": "D-D-D-D-D!"
+      },
+      {
+        "file": "BCKLLSND_00013.wav",
+        "reason": "non_lexical_only",
+        "transcript": "D-D-D-D!"
+      }
+    ]
   },
-  "transcription": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version",
+  "transcription": "ok",
   "classifier": {
-    "status": "transcript-unavailable",
-    "backend": "zero-shot",
-    "model": "valhalla/distilbart-mnli-12-1",
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
     "weight": 5.0
   },
   "pack": {

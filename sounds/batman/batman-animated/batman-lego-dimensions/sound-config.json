@@ -5,20 +5,20 @@
   "soundSubdir": "batman-animated/batman-lego-dimensions",
   "events": {
     "beforeSubmitPrompt": [
-      "DX_BATMAN_HEADSUP_ENG.wav",
-      "DX_BATMAN_HELPOUTTHECITIZENS_DAN.wav"
+      "DX_BATMAN_ROBINWILLBEJUSTAHEAD_ENG.wav",
+      "DX_BATMAN_HMMTHEREMAYBETROUBLE_ENG.wav"
     ],
     "afterAgentThought": [
-      "VO_BATMAN_EFFORTSMALL2.wav",
-      "VO_BATMAN_ATTACK6.wav"
+      "DX_BATMAN_ILLHAVETOANALYSE_ENG.wav",
+      "DX_BATMAN_NOWWHILSTSHESDISTRACTED_ENG.wav"
     ],
     "afterAgentResponse": [
-      "DX_BATMAN_HEADSUP_MEX.wav",
-      "DX_BATMAN_DRAGONDRAGON_FRE.wav"
+      "DX_BATMAN_INCOMINGWATCHOUT_ENG.wav",
+      "VO_BATMAN_ATTACK1.wav"
     ],
-    "preToolUse": "DX_BATMAN_IFWECANREACHHIM_MEX.wav",
+    "preToolUse": "DX_BATMAN_THISMIGHTLOOK_ENG.wav",
     "postToolUse": "DX_BATMAN_THATSDONEIT_ENG.wav",
-    "postToolUseFailure": "VO_BATMAN_EFFORTBIG2.wav",
-    "stop": "DX_BATMAN_IVEGOTAGADGET_MEX.wav"
+    "postToolUseFailure": "DX_BATMAN_ORACLEHOWDOIBEATTHISTHING_ENG.wav",
+    "stop": "DX_BATMAN_ROBINIFYOURESTILLYOUINTHERE_ENG.wav"
   }
 }

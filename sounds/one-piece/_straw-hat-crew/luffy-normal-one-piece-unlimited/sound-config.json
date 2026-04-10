@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "one-piece",
+  "soundSubdir": "_straw-hat-crew/luffy-normal-one-piece-unlimited",
+  "events": {
+    "beforeSubmitPrompt": [
+      "Sample_0048.wav",
+      "Sample_0045.wav"
+    ],
+    "afterAgentThought": [
+      "Sample_0028.wav",
+      "Sample_0034.wav"
+    ],
+    "afterAgentResponse": [
+      "Sample_0013.wav",
+      "Sample_0057.wav"
+    ],
+    "preToolUse": "Sample_0018.wav",
+    "postToolUse": "Sample_0063.wav",
+    "postToolUseFailure": "Sample_0010.wav",
+    "stop": "Sample_0062.wav"
+  }
+}

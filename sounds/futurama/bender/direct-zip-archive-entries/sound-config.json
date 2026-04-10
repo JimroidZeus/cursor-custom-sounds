@@ -5,20 +5,20 @@
   "soundSubdir": "bender/direct-zip-archive-entries",
   "events": {
     "beforeSubmitPrompt": [
-      "button_push.wav",
-      "button_push.wav"
+      "laser-fence-activate.wav",
+      "laser-fence-activate.wav"
     ],
     "afterAgentThought": [
       "alarmloop.wav",
       "destalarm.wav"
     ],
     "afterAgentResponse": [
-      "button_push.wav",
+      "laser-fence-activate.wav",
       "laser-fence-activate.wav"
     ],
     "preToolUse": "laser-fence-activate.wav",
     "postToolUse": "laser-fence-activate.wav",
-    "postToolUseFailure": "button_push.wav",
+    "postToolUseFailure": "alarmloop.wav",
     "stop": "laser-fence-activate.wav"
   }
 }

@@ -5,20 +5,20 @@
   "soundSubdir": "batman-animated/batman-the-telltale-series",
   "events": {
     "beforeSubmitPrompt": [
-      "377568914.wav",
-      "377622858.wav"
+      "377623007.wav",
+      "377569212.wav"
     ],
     "afterAgentThought": [
-      "377568960.wav",
-      "377568714.wav"
+      "377568290.wav",
+      "377568289.wav"
     ],
     "afterAgentResponse": [
-      "377568994.wav",
-      "377568606.wav"
+      "377568858.wav",
+      "377622858.wav"
     ],
     "preToolUse": "377568859.wav",
-    "postToolUse": "377623122.wav",
-    "postToolUseFailure": "377568651.wav",
-    "stop": "377568789.wav"
+    "postToolUse": "377568299.wav",
+    "postToolUseFailure": "377549387.wav",
+    "stop": "377568356.wav"
   }
 }

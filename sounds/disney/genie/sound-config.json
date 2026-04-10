@@ -5,20 +5,20 @@
   "soundSubdir": "genie",
   "events": {
     "beforeSubmitPrompt": [
-      "1.wav",
-      "12.wav"
+      "6.wav",
+      "3.wav"
     ],
     "afterAgentThought": [
-      "13.wav",
-      "2.wav"
+      "7.wav",
+      "13.wav"
     ],
     "afterAgentResponse": [
-      "3.wav",
-      "5.wav"
+      "8.wav",
+      "9.wav"
     ],
-    "preToolUse": "6.wav",
-    "postToolUse": "7.wav",
-    "postToolUseFailure": "8.wav",
-    "stop": "9.wav"
+    "preToolUse": "1.wav",
+    "postToolUse": "2.wav",
+    "postToolUseFailure": "12.wav",
+    "stop": "5.wav"
   }
 }

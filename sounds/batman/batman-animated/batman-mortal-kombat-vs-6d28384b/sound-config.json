@@ -5,20 +5,20 @@
   "soundSubdir": "batman-animated/batman-mortal-kombat-vs-6d28384b",
   "events": {
     "beforeSubmitPrompt": [
-      "blasted02.wav",
-      "bod_land_hard01.wav"
+      "atk_kick02.wav",
+      "throw02.wav"
     ],
     "afterAgentThought": [
-      "hit_face_hard03.wav",
-      "hit_face_med03.wav"
+      "getup03.wav",
+      "stabbed02.wav"
     ],
     "afterAgentResponse": [
-      "stabbed02.wav",
-      "death01.wav"
+      "batarang_hit01.wav",
+      "batarang_throw01.wav"
     ],
-    "preToolUse": "hit_gut_med03.wav",
-    "postToolUse": "batarang_hit01.wav",
-    "postToolUseFailure": "atk_hit_med03.wav",
-    "stop": "atk_hit_med04.wav"
+    "preToolUse": "bod_land_med02.wav",
+    "postToolUse": "jump03.wav",
+    "postToolUseFailure": "spatk01.wav",
+    "stop": "hit_gut_med01.wav"
   }
 }
