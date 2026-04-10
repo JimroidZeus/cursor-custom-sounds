@@ -15,6 +15,8 @@ from pathlib import Path
 from typing import Optional
 
 from soundpack_builder.audio.transcript_mapper import (
+    TRANSCRIPTS_JSON_NAME,
+    partition_transcription_work,
     save_transcripts_sidecar,
     transcribe_with_whisper,
 )
@@ -61,6 +63,16 @@ def main(argv: Optional[list[str]] = None) -> int:
         default="auto",
         help="Whisper compute type (auto/int8/float16/etc).",
     )
+    parser.add_argument(
+        "--no-incremental-transcript-save",
+        action="store_true",
+        help="Write transcripts.json only after all clips (default: save after each clip).",
+    )
+    parser.add_argument(
+        "--resume-transcripts",
+        action="store_true",
+        help="Skip WAVs already listed in transcripts.json; transcribe only missing files.",
+    )
     args = parser.parse_args(argv)
     _ = build_config_from_args(args)
     pack_dir = Path(args.pack_dir).expanduser().resolve()
@@ -71,15 +83,33 @@ def main(argv: Optional[list[str]] = None) -> int:
     if not audio_paths:
         print(json.dumps({"ok": False, "error": f"No WAV files in {pack_dir}"}))
         return 1
-    transcripts = transcribe_with_whisper(
+    incremental = not args.no_incremental_transcript_save
+    pending, preloaded = partition_transcription_work(
         audio_paths,
+        pack_dir,
+        resume=args.resume_transcripts,
+    )
+
+    def _clip_save(_p, _t, acc) -> None:
+        if incremental:
+            save_transcripts_sidecar(pack_dir, acc)
+
+    transcripts = transcribe_with_whisper(
+        pending,
         model_size=args.whisper_model,
         language=None if args.whisper_language == "auto" else args.whisper_language,
         device=args.whisper_device,
         compute_type=args.whisper_compute_type,
         progress=not args.no_progress,
+        initial_transcripts=preloaded if preloaded else None,
+        clip_callback=_clip_save if incremental else None,
     )
-    out_path = save_transcripts_sidecar(pack_dir, transcripts)
+    if not incremental and transcripts:
+        out_path = save_transcripts_sidecar(pack_dir, transcripts)
+    else:
+        out_path = pack_dir / TRANSCRIPTS_JSON_NAME
+        if incremental and transcripts and not out_path.is_file():
+            out_path = save_transcripts_sidecar(pack_dir, transcripts)
     print(
         json.dumps(
             {

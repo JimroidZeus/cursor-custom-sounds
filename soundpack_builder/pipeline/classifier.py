@@ -16,6 +16,8 @@ from typing import Optional
 
 from soundpack_builder.audio.transcript_mapper import (
     DEFAULT_SENTENCE_EMBEDDING_MODEL,
+    ClassifierBackend,
+    default_classifier_backend_for_environment,
     default_zero_shot_model_for_classifier_device,
     classify_hook_events,
     load_transcripts_sidecar,
@@ -42,9 +44,12 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     parser.add_argument(
         "--classifier-backend",
-        choices=("zero-shot", "sentence-embedding"),
-        default="zero-shot",
-        help="Classifier backend (default: zero-shot).",
+        choices=("auto", "zero-shot", "sentence-embedding"),
+        default="auto",
+        help=(
+            "Classifier backend. auto: sentence-embedding on Windows CPU, else zero-shot "
+            "(matches downloader defaults)."
+        ),
     )
     parser.add_argument(
         "--classifier-model",
@@ -60,6 +65,11 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     args = parser.parse_args(argv)
     _ = build_config_from_args(args)
+    resolved_backend: ClassifierBackend = (
+        default_classifier_backend_for_environment(args.classifier_device)
+        if args.classifier_backend == "auto"
+        else args.classifier_backend
+    )
     pack_dir = Path(args.pack_dir).expanduser().resolve()
     if not pack_dir.is_dir():
         print(json.dumps({"ok": False, "error": f"Not a directory: {pack_dir}"}))
@@ -79,12 +89,12 @@ def main(argv: Optional[list[str]] = None) -> int:
     if not resolved_model:
         resolved_model = (
             DEFAULT_SENTENCE_EMBEDDING_MODEL
-            if args.classifier_backend == "sentence-embedding"
+            if resolved_backend == "sentence-embedding"
             else default_zero_shot_model_for_classifier_device(args.classifier_device)
         )
     scores = classify_hook_events(
         transcripts,
-        backend=args.classifier_backend,
+        backend=resolved_backend,
         model_name=resolved_model,
         progress=not args.no_progress,
         classifier_device=args.classifier_device,
@@ -96,7 +106,7 @@ def main(argv: Optional[list[str]] = None) -> int:
                 "ok": True,
                 "packDir": str(pack_dir),
                 "written": str(out_path),
-                "backend": args.classifier_backend,
+                "backend": resolved_backend,
                 "model": resolved_model,
                 "clipCount": len(scores),
             },
