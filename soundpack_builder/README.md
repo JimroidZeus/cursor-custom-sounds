@@ -86,6 +86,8 @@ Defaults are repository-relative:
 
 Override with **`SOUNDPACK_BUILDER_*`** env vars or **`--repo-root`**, **`--out-manifests-dir`**, **`--out-configs-dir`**, **`--out-sounds-dir`** on CLIs that support them.
 
+Packs live under **`sounds/<universe>/<character>/`** and, when a row has **`packLabelSlug`**, **`sounds/<universe>/<character>/<packLabelSlug>/`**. The `character` segment keeps packs distinct when different personas share a universe (e.g. the same slug string under another character is still a different folder). If you rename a hook-pack **`character`** in **`universe-character-hook-candidates.json`**, move the matching tree under **`sounds/`** and update **`soundSubdir`** in pack **`sound-config.json`** (and any Cursor hook config that points at that pack).
+
 **Other env (optional):**
 
 | Variable | Used by |
@@ -197,6 +199,9 @@ uv run --project soundpack_builder python -m soundpack_builder.pipeline.candidat
 # Merge freesound-resolved.json entries into download-manifest.json
 
 uv run --project soundpack_builder python -m soundpack_builder.pipeline.downloader
+# One logical pack only (download + recommended config for that pack):
+#   ... pipeline.downloader --pack-key UNIVERSE/CHARACTER
+#   ... pipeline.downloader --pack-key UNIVERSE/CHARACTER/PACK_LABEL_SLUG
 uv run --project soundpack_builder python -m soundpack_builder.pipeline.templates
 uv run --project soundpack_builder python -m soundpack_builder.pipeline.validate
 ```

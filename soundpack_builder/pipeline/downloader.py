@@ -35,18 +35,28 @@ from soundpack_builder.audio.transcript_mapper import (
     DEFAULT_ZERO_SHOT_MODEL,
     DEFAULT_ZERO_SHOT_MODEL_CPU,
     ClassifierBackend,
+    default_classifier_backend_for_environment,
     default_zero_shot_model_for_classifier_device,
     build_mapping_report,
     classify_hook_events,
     load_classifier_scores_sidecar,
     load_transcripts_sidecar,
     partition_clips_by_speech,
+    partition_transcription_work,
     recommend_event_mapping,
+    save_transcripts_sidecar,
     transcribe_with_whisper,
 )
 from soundpack_builder.audio.wav_convert import convert_to_wav, is_riff_wave as _is_riff_wave
 from soundpack_builder.core.config import BuilderConfig, add_output_path_args, build_config_from_args
 from soundpack_builder.core.console_progress import render_bar
+from soundpack_builder.core.hook_events import HOOK_EVENT_ORDER
+from soundpack_builder.core.pack_paths import (
+    entry_matches_pack_key,
+    pack_dir_under_sound_root,
+    parse_pack_key,
+    sound_subdir_for_pack,
+)
 from soundpack_builder.core.language_codes import (
     DEFAULT_LANGUAGE_FILTER,
     normalize_language_code,
@@ -280,11 +290,28 @@ def _print_progress(
         return
     bar = render_bar(index, total)
     label_name = _output_filename(entry)
-    sub = entry.character
-    if entry.packLabelSlug:
-        sub = f"{entry.character}/{entry.packLabelSlug}"
+    sub = sound_subdir_for_pack(entry.character, entry.packLabelSlug or "")
     label = f"{entry.universe}/{sub}/{label_name}"
     print(f"[{bar}] {index}/{total} {status}: {label}", file=sys.stderr, flush=True)
+
+
+def _format_event_assignment(files: List[str]) -> str:
+    if not files:
+        return "(none)"
+    if len(files) == 1:
+        return files[0]
+    first = files[0]
+    return f"{first} (+{len(files) - 1} more)"
+
+
+def _log_final_hook_assignments(*, pack_label: str, event_map: Dict[str, List[str]], progress: bool) -> None:
+    if not progress:
+        return
+    print(f"[mapping] pack={pack_label} final hook assignment:", file=sys.stderr, flush=True)
+    for event_name in HOOK_EVENT_ORDER:
+        files = event_map.get(event_name) or []
+        detail = _format_event_assignment(files)
+        print(f"  {event_name}: {detail}", file=sys.stderr, flush=True)
 
 
 def download_clips(
@@ -311,6 +338,9 @@ def download_clips(
     use_existing_classifier_scores: bool = False,
     classifier_device: str = "auto",
     language_filter_codes: Optional[Set[str]] = None,
+    incremental_transcript_save: bool = True,
+    resume_transcripts: bool = False,
+    pack_key: Optional[str] = None,
 ) -> int:
     if not manifest_path.exists():
         raise FileNotFoundError(f"Manifest does not exist: {manifest_path}")
@@ -333,6 +363,20 @@ def download_clips(
         return passes_language_filter(resolved, lang_allowed)
 
     entries = [e for e in entries if _entry_lang_ok(e)]
+    if pack_key is not None and str(pack_key).strip():
+        key_u, key_c, key_slug = parse_pack_key(str(pack_key))
+        entries = [
+            e
+            for e in entries
+            if entry_matches_pack_key(
+                e.universe,
+                e.character,
+                e.packLabelSlug,
+                key_universe=key_u,
+                key_character=key_c,
+                key_slug=key_slug,
+            )
+        ]
     if limit and limit > 0:
         entries = entries[:limit]
 
@@ -358,9 +402,12 @@ def download_clips(
     for idx, e in enumerate(entries):
         current = idx + 1
         _print_progress(index=current, total=total, entry=e, status="start", enabled=progress)
-        target_dir = cfg.sound_dir / e.universe / e.character
-        if e.packLabelSlug:
-            target_dir = target_dir / e.packLabelSlug
+        target_dir = pack_dir_under_sound_root(
+            cfg.sound_dir,
+            e.universe,
+            e.character,
+            e.packLabelSlug or "",
+        )
         target_path = target_dir / _output_filename(e)
         pack_key = (e.universe, e.character, e.packLabelSlug or "")
         packs_seen.add(pack_key)
@@ -488,6 +535,8 @@ def download_clips(
             use_existing_classifier_scores=use_existing_classifier_scores,
             classifier_device=classifier_device,
             language_filter_codes=language_filter_codes,
+            incremental_transcript_save=incremental_transcript_save,
+            resume_transcripts=resume_transcripts,
         )
         print(json.dumps({"ok": True, "recommendedConfigs": recommended}, indent=2))
     return 0
@@ -540,6 +589,8 @@ def _write_recommended_configs(
     use_existing_classifier_scores: bool = False,
     classifier_device: str = "auto",
     language_filter_codes: Optional[Set[str]] = None,
+    incremental_transcript_save: bool = True,
+    resume_transcripts: bool = False,
 ) -> List[Dict[str, Any]]:
     recommendations: List[Dict[str, Any]] = []
     lang_allowed = _lang_allowed_for_recommend(language_filter_codes)
@@ -551,9 +602,7 @@ def _write_recommended_configs(
     universe_pack_totals: Dict[str, int] = {}
     universe_audio_totals: Dict[str, int] = {}
     for universe, character, pack_slug in sorted_packs:
-        pack_dir = cfg.sound_dir / universe / character
-        if pack_slug:
-            pack_dir = pack_dir / pack_slug
+        pack_dir = pack_dir_under_sound_root(cfg.sound_dir, universe, character, pack_slug)
         pk = (universe, character, pack_slug)
         raw_wavs = list(pack_dir.glob("*.wav"))
         raw_paths_by_pack[pk] = raw_wavs
@@ -607,7 +656,7 @@ def _write_recommended_configs(
 
     for universe, character, pack_slug in sorted_packs:
         packs_done += 1
-        sub = f"{character}/{pack_slug}" if pack_slug else character
+        sub = sound_subdir_for_pack(character, pack_slug)
         pack_ctx = f"{universe}/{sub}"
         if progress:
             _print_rollup_progress(
@@ -616,9 +665,7 @@ def _write_recommended_configs(
                 total=len(sorted_packs),
             )
 
-        pack_dir = cfg.sound_dir / universe / character
-        if pack_slug:
-            pack_dir = pack_dir / pack_slug
+        pack_dir = pack_dir_under_sound_root(cfg.sound_dir, universe, character, pack_slug)
         config_path = pack_dir / "sound-config.json"
         if config_path.exists() and not overwrite:
             recommendations.append(
@@ -701,8 +748,25 @@ def _write_recommended_configs(
                 transcript_status = "ok"
             else:
                 try:
-                    transcripts = transcribe_with_whisper(
+                    pending, preloaded = partition_transcription_work(
                         audio_paths,
+                        pack_dir,
+                        resume=resume_transcripts,
+                    )
+                    if preloaded and progress:
+                        transcribed_done += len(preloaded)
+                        _print_rollup_progress(
+                            label="transcribe (all packs)",
+                            done=transcribed_done,
+                            total=total_audio,
+                        )
+
+                    def _clip_save(_p: Path, _t: str, acc: Dict[Path, str]) -> None:
+                        if incremental_transcript_save:
+                            save_transcripts_sidecar(pack_dir, acc)
+
+                    transcripts = transcribe_with_whisper(
+                        pending,
                         model_size=whisper_model,
                         language=whisper_language,
                         device=whisper_device,
@@ -710,7 +774,11 @@ def _write_recommended_configs(
                         progress=progress,
                         progress_context=pack_ctx,
                         progress_callback=_on_transcript_progress,
+                        initial_transcripts=preloaded if preloaded else None,
+                        clip_callback=_clip_save if incremental_transcript_save else None,
                     )
+                    if not incremental_transcript_save and transcripts:
+                        save_transcripts_sidecar(pack_dir, transcripts)
                     transcript_status = "ok"
                 except Exception as ex:
                     transcript_status = f"fallback: {ex}"
@@ -874,6 +942,7 @@ def _write_recommended_configs(
             classifier_weight=classifier_weight,
             clip_quality_boost=map_boost,
         )
+        _log_final_hook_assignments(pack_label=pack_ctx, event_map=event_map, progress=progress)
         report_payload = build_mapping_report(
             eligible_paths,
             transcripts=map_transcripts,
@@ -930,6 +999,15 @@ def main(argv: Optional[list[str]] = None) -> int:
         help="Manifest path (default: <manifests-dir>/download-manifest.json).",
     )
     parser.add_argument("--dry-run", action="store_true", help="Parse manifest and show actions only.")
+    parser.add_argument(
+        "--pack-key",
+        type=str,
+        default=None,
+        help=(
+            "Restrict to one logical pack after language filter: UNIVERSE/CHARACTER "
+            "or UNIVERSE/CHARACTER/PACK_LABEL_SLUG (matches manifest packLabelSlug)."
+        ),
+    )
     parser.add_argument("--limit", type=int, default=0, help="Max entries to download (0 = all).")
     parser.add_argument("--overwrite", action="store_true", help="Overwrite existing target WAVs.")
     parser.add_argument(
@@ -991,11 +1069,13 @@ def main(argv: Optional[list[str]] = None) -> int:
     )
     parser.add_argument(
         "--classifier-backend",
-        choices=("zero-shot", "sentence-embedding"),
-        default="zero-shot",
+        choices=("auto", "zero-shot", "sentence-embedding"),
+        default="auto",
         help=(
             "How to score transcripts vs hook types: NLI zero-shot (transformers) or "
-            "cosine similarity of sentence embeddings vs hook descriptions (sentence-transformers)."
+            "cosine similarity of sentence embeddings (sentence-transformers). "
+            "auto: sentence-embedding on Windows CPU (avoids known native crashes in NLI); "
+            "zero-shot otherwise unless CUDA is used with auto device."
         ),
     )
     parser.add_argument(
@@ -1014,6 +1094,21 @@ def main(argv: Optional[list[str]] = None) -> int:
         type=float,
         default=5.0,
         help="Weight applied to classifier score when blending rankings.",
+    )
+    parser.add_argument(
+        "--no-incremental-transcript-save",
+        action="store_true",
+        help=(
+            "Write each pack's transcripts.json only once after Whisper finishes that pack "
+            "(default: write after each clip so work survives classification failures)."
+        ),
+    )
+    parser.add_argument(
+        "--resume-transcripts",
+        action="store_true",
+        help=(
+            "Skip Whisper for WAVs already listed in each pack's transcripts.json; transcribe only new/missing files."
+        ),
     )
     parser.add_argument(
         "--use-existing-transcripts",
@@ -1063,11 +1158,27 @@ def main(argv: Optional[list[str]] = None) -> int:
         args.whisper_model = "small"
     elif args.preset == "fast":
         args.whisper_model = "tiny"
+    resolved_backend: ClassifierBackend = (
+        default_classifier_backend_for_environment(args.classifier_device)
+        if args.classifier_backend == "auto"
+        else args.classifier_backend
+    )
+    if (
+        args.classifier_backend == "auto"
+        and resolved_backend == "sentence-embedding"
+        and sys.platform == "win32"
+    ):
+        print(
+            "[CLASSIFY] auto backend: sentence-embedding (Windows CPU; avoids transformers NLI crashes). "
+            "Use --classifier-backend zero-shot to force NLI.",
+            file=sys.stderr,
+            flush=True,
+        )
     resolved_classifier_model = args.classifier_model
     if not resolved_classifier_model:
         resolved_classifier_model = (
             DEFAULT_SENTENCE_EMBEDDING_MODEL
-            if args.classifier_backend == "sentence-embedding"
+            if resolved_backend == "sentence-embedding"
             else default_zero_shot_model_for_classifier_device(args.classifier_device)
         )
     cfg = build_config_from_args(args)
@@ -1081,10 +1192,19 @@ def main(argv: Optional[list[str]] = None) -> int:
         no_filter=bool(args.no_language_filter),
     )
 
+    pack_key_arg = (args.pack_key or "").strip() or None
+    if pack_key_arg:
+        try:
+            parse_pack_key(pack_key_arg)
+        except ValueError as ex:
+            print(f"Invalid --pack-key: {ex}", file=sys.stderr, flush=True)
+            return 2
+
     return download_clips(
         cfg,
         manifest_path=manifest_path,
         dry_run=args.dry_run,
+        pack_key=pack_key_arg,
         limit=args.limit,
         overwrite=args.overwrite,
         progress=not args.no_progress,
@@ -1096,7 +1216,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         whisper_compute_type=args.whisper_compute_type,
         overwrite_recommended_config=args.overwrite_recommended_config,
         use_llm_classifier=not args.disable_llm_classifier,
-        classifier_backend=args.classifier_backend,
+        classifier_backend=resolved_backend,
         classifier_model=resolved_classifier_model,
         classifier_weight=args.classifier_weight,
         speech_verification_enabled=not args.no_speech_verification,
@@ -1104,6 +1224,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         use_existing_classifier_scores=args.use_existing_classifier_scores,
         classifier_device=args.classifier_device,
         language_filter_codes=lang_codes,
+        incremental_transcript_save=not args.no_incremental_transcript_save,
+        resume_transcripts=args.resume_transcripts,
     )
 
 

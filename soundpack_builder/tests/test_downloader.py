@@ -1,8 +1,10 @@
+import io
 import json
 import shutil
 import tempfile
 import unittest
 import zipfile
+from contextlib import redirect_stderr, redirect_stdout
 from pathlib import Path
 from unittest.mock import patch
 
@@ -10,11 +12,87 @@ from soundpack_builder.core.config import BuilderConfig
 from soundpack_builder.pipeline.downloader import (
     ClipEntry,
     _is_riff_wave,
+    _log_final_hook_assignments,
     _output_filename,
     _write_recommended_configs,
     download_clips,
     extract_from_zip,
 )
+
+
+class PackKeyFilterTest(unittest.TestCase):
+    def test_pack_key_limits_dry_run_rows(self) -> None:
+        with tempfile.TemporaryDirectory() as td:
+            root = Path(td)
+            manifest = root / "manifest.json"
+            manifest.write_text(
+                json.dumps(
+                    {
+                        "entries": [
+                            {
+                                "universe": "u",
+                                "character": "keep",
+                                "url": "https://example.com/a.wav",
+                            },
+                            {
+                                "universe": "u",
+                                "character": "drop",
+                                "url": "https://example.com/b.wav",
+                            },
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            cfg = BuilderConfig(
+                repo_root=root,
+                manifests_dir=root / "manifests",
+                configs_dir=root / "configs",
+                sound_dir=root / "sounds",
+            )
+            buf = io.StringIO()
+            with redirect_stdout(buf):
+                code = download_clips(
+                    cfg,
+                    manifest_path=manifest,
+                    dry_run=True,
+                    limit=0,
+                    overwrite=False,
+                    progress=False,
+                    recommend_config=False,
+                    skip_transcript=True,
+                    whisper_model="tiny",
+                    whisper_language=None,
+                    whisper_device="auto",
+                    whisper_compute_type="auto",
+                    overwrite_recommended_config=False,
+                    use_llm_classifier=False,
+                    classifier_backend="zero-shot",
+                    classifier_model="x",
+                    classifier_weight=5.0,
+                    speech_verification_enabled=False,
+                    pack_key="u/keep",
+                )
+            self.assertEqual(code, 0)
+            payload = json.loads(buf.getvalue())
+            self.assertEqual(len(payload["results"]), 1)
+            self.assertIn("keep", payload["results"][0]["target"])
+
+
+class FinalHookAssignmentLogTest(unittest.TestCase):
+    def test_log_includes_mapping_prefix_and_event(self) -> None:
+        buf = io.StringIO()
+        with redirect_stderr(buf):
+            _log_final_hook_assignments(
+                pack_label="universe/sub",
+                event_map={"stop": ["picked.wav"]},
+                progress=True,
+            )
+        err = buf.getvalue()
+        self.assertIn("[mapping]", err)
+        self.assertIn("pack=universe/sub", err)
+        self.assertIn("stop:", err)
+        self.assertIn("picked.wav", err)
 
 
 class ZipUrlDownloadCacheTest(unittest.TestCase):

@@ -29,6 +29,17 @@ from soundpack_builder.core.hook_events import EVENT_TARGET_COUNTS, HOOK_EVENT_O
 EVENT_ORDER: List[str] = list(HOOK_EVENT_ORDER)
 
 
+def provisional_classify_progress_note(scores: Dict[str, float]) -> Optional[str]:
+    """One-line stderr hint for per-clip classifier output (not final global slot assignment)."""
+    if not scores:
+        return None
+    top_event, top_score = max(scores.items(), key=lambda kv: kv[1])
+    return (
+        f"classify (provisional): top={top_event} score={top_score:.3f} "
+        "(final hook slots assigned globally after all clips)"
+    )
+
+
 def resolve_classifier_device(spec: str) -> Optional[str]:
     """
     Map CLI values ``auto`` / ``cpu`` / ``cuda`` / ``cuda:N`` to a concrete torch-style
@@ -124,6 +135,41 @@ def _zero_shot_pipeline_model_kwargs() -> Dict[str, Any]:
     return {"attn_implementation": "eager", "torch_dtype": torch.float32}
 
 
+def _sentence_transformer_model_kwargs() -> Dict[str, Any]:
+    """SentenceTransformer loads a BERT-family backbone; eager + fp32 avoids flaky Windows CPU kernels."""
+    try:
+        import torch
+    except Exception:
+        return {"attn_implementation": "eager"}
+    return {"attn_implementation": "eager", "torch_dtype": torch.float32}
+
+
+def _apply_windows_torch_cpu_stability() -> None:
+    """Single-thread BLAS + disable MKL-DNN to reduce native divide-by-zero crashes on Windows CPU."""
+    if sys.platform != "win32":
+        return
+    os.environ.setdefault("OMP_NUM_THREADS", "1")
+    os.environ.setdefault("MKL_NUM_THREADS", "1")
+    os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+    try:
+        import torch
+
+        torch.set_num_threads(1)
+        if getattr(torch.backends, "mkldnn", None) is not None:
+            try:
+                if torch.backends.mkldnn.is_available():
+                    torch.backends.mkldnn.enabled = False
+            except Exception:
+                pass
+    except Exception:
+        pass
+
+
+def _sentence_transformer_encode_batch_size() -> int:
+    """Use batch_size=1 on Windows (stability); small batches elsewhere."""
+    return 1 if sys.platform == "win32" else min(32, 8)
+
+
 # Default Hugging Face models for transcript → hook-event scoring (downloader `--classifier-backend`).
 # DistilBART NLI is a good default when CUDA is available; DistilBERT MNLI is smaller and faster on CPU.
 DEFAULT_ZERO_SHOT_MODEL = "valhalla/distilbart-mnli-12-1"
@@ -131,6 +177,23 @@ DEFAULT_ZERO_SHOT_MODEL_CPU = "typeform/distilbert-base-uncased-mnli"
 DEFAULT_SENTENCE_EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 ClassifierBackend = Literal["zero-shot", "sentence-embedding"]
+
+
+def default_classifier_backend_for_environment(classifier_device: str) -> ClassifierBackend:
+    """
+    Choose a stable classifier backend for the current OS and device.
+
+    On Windows with CPU-only inference, the Hugging Face ``zero-shot-classification`` NLI
+    pipeline (DistilBERT / DistilBART) can hit native crashes (e.g. int divide-by-zero in
+    torch Linear / attention). Sentence-embedding scoring uses sentence-transformers and
+    avoids that stack.
+    """
+    if sys.platform != "win32":
+        return "zero-shot"
+    if classifier_runs_on_cpu(classifier_device):
+        return "sentence-embedding"
+    return "zero-shot"
+
 
 EVENT_LABEL_DESCRIPTIONS = {
     "beforeSubmitPrompt": "A short confirmation or ready-to-start prompt before taking action.",
@@ -527,7 +590,9 @@ def classify_with_sentence_embeddings(
     nonempty: List[Tuple[Path, str]] = [(p, tx) for p, tx in items if tx.strip()]
     batch_ok = True
     if nonempty:
+        _apply_windows_torch_cpu_stability()
         st_dev = resolve_classifier_device(classifier_device or "auto")
+        enc_bs = _sentence_transformer_encode_batch_size()
         if progress:
             print(
                 f"[CLASSIFY] encoding {len(nonempty)} clip(s) + {len(EVENT_ORDER)} hook labels "
@@ -536,13 +601,18 @@ def classify_with_sentence_embeddings(
                 flush=True,
             )
         try:
-            st_kw: Dict[str, Any] = {"token": t if t else None}
+            st_kw: Dict[str, Any] = {
+                "token": t if t else None,
+                "model_kwargs": _sentence_transformer_model_kwargs(),
+            }
             if st_dev is not None:
                 st_kw["device"] = st_dev
             model = SentenceTransformer(model_name, **st_kw)
             label_texts = [_hook_event_criteria_for_embedding(event) for event in EVENT_ORDER]
             label_emb = model.encode(
                 label_texts,
+                batch_size=enc_bs,
+                show_progress_bar=False,
                 convert_to_numpy=True,
                 normalize_embeddings=True,
             )
@@ -550,6 +620,8 @@ def classify_with_sentence_embeddings(
             texts_batch = [_transcript_text_for_embedding_compare(tx) for _, tx in nonempty]
             text_emb = model.encode(
                 texts_batch,
+                batch_size=enc_bs,
+                show_progress_bar=False,
                 convert_to_numpy=True,
                 normalize_embeddings=True,
             )
@@ -578,10 +650,35 @@ def classify_with_sentence_embeddings(
         if progress_callback:
             progress_callback(index + 1, total, clip_path, "classify-start", progress_context)
         if not transcript.strip():
+            if progress:
+                _print_inference_progress(
+                    "CLASSIFY",
+                    index + 1,
+                    total,
+                    clip_path.name,
+                    "skip",
+                    progress_context,
+                    note="classify (provisional): skipped (empty transcript)",
+                )
             if progress_callback:
                 progress_callback(index + 1, total, clip_path, "classify-skip", progress_context)
             continue
         status = "classify-done" if batch_ok else "classify-error"
+        scores = out.get(clip_path, {})
+        if batch_ok:
+            note = provisional_classify_progress_note(scores) or "classify (provisional): no scores"
+        else:
+            note = "classify (provisional): batch failed; no scores for this clip"
+        if progress:
+            _print_inference_progress(
+                "CLASSIFY",
+                index + 1,
+                total,
+                clip_path.name,
+                "done" if batch_ok else "error",
+                progress_context,
+                note=note,
+            )
         if progress_callback:
             progress_callback(index + 1, total, clip_path, status, progress_context)
     return out
@@ -704,7 +801,13 @@ def classify_with_zero_shot(
             out[clip_path] = {}
             if progress:
                 _print_inference_progress(
-                    "CLASSIFY", index + 1, total, clip_path.name, "skip", progress_context
+                    "CLASSIFY",
+                    index + 1,
+                    total,
+                    clip_path.name,
+                    "skip",
+                    progress_context,
+                    note="classify (provisional): skipped (no tokenizable transcript)",
                 )
             if progress_callback:
                 progress_callback(index + 1, total, clip_path, "classify-skip", progress_context)
@@ -721,7 +824,13 @@ def classify_with_zero_shot(
             out[clip_path] = scores
             if progress:
                 _print_inference_progress(
-                    "CLASSIFY", index + 1, total, clip_path.name, "done", progress_context
+                    "CLASSIFY",
+                    index + 1,
+                    total,
+                    clip_path.name,
+                    "done",
+                    progress_context,
+                    note=provisional_classify_progress_note(scores),
                 )
             if progress_callback:
                 progress_callback(index + 1, total, clip_path, "classify-done", progress_context)
@@ -735,7 +844,13 @@ def classify_with_zero_shot(
             traceback.print_exc(file=sys.stderr)
             if progress:
                 _print_inference_progress(
-                    "CLASSIFY", index + 1, total, clip_path.name, "error", progress_context
+                    "CLASSIFY",
+                    index + 1,
+                    total,
+                    clip_path.name,
+                    "error",
+                    progress_context,
+                    note="classify (provisional): inference error; no scores",
                 )
             if progress_callback:
                 progress_callback(index + 1, total, clip_path, "classify-error", progress_context)
@@ -752,9 +867,14 @@ def transcribe_with_whisper(
     progress: bool = True,
     progress_context: str = "",
     progress_callback: Optional[Callable[[int, int, Path, str, str], None]] = None,
+    initial_transcripts: Optional[Dict[Path, str]] = None,
+    clip_callback: Optional[Callable[[Path, str, Dict[Path, str]], None]] = None,
 ) -> Dict[Path, str]:
     """
     Transcribe audio files using faster-whisper.
+
+    ``initial_transcripts`` is merged into the result first (e.g. resume from ``transcripts.json``).
+    ``clip_callback`` is invoked after each clip with ``(path, text, full_dict_so_far)`` for incremental persistence.
 
     Raises RuntimeError when the dependency is unavailable.
     """
@@ -765,8 +885,13 @@ def transcribe_with_whisper(
             "faster-whisper is not installed. Run `uv sync --project soundpack_builder`."
         ) from ex
 
-    model = WhisperModel(model_size, device=device, compute_type=compute_type)
     out: Dict[Path, str] = {}
+    if initial_transcripts:
+        out.update(initial_transcripts)
+    if not audio_paths:
+        return out
+
+    model = WhisperModel(model_size, device=device, compute_type=compute_type)
     total = len(audio_paths)
     try:
         for index, audio_path in enumerate(audio_paths):
@@ -780,14 +905,24 @@ def transcribe_with_whisper(
                 segments, _info = model.transcribe(str(audio_path), language=language or None)
                 transcript = " ".join((seg.text or "").strip() for seg in segments).strip()
                 out[audio_path] = transcript
+                if clip_callback:
+                    clip_callback(audio_path, transcript, out)
                 if progress:
                     _print_inference_progress(
-                        "TRANSCRIBE", index + 1, total, audio_path.name, "done", progress_context
+                        "TRANSCRIBE",
+                        index + 1,
+                        total,
+                        audio_path.name,
+                        "done",
+                        progress_context,
+                        detail=transcript,
                     )
                 if progress_callback:
                     progress_callback(index + 1, total, audio_path, "done", progress_context)
             except Exception:
                 out[audio_path] = ""
+                if clip_callback:
+                    clip_callback(audio_path, "", out)
                 if progress:
                     _print_inference_progress(
                         "TRANSCRIBE", index + 1, total, audio_path.name, "error", progress_context
@@ -807,6 +942,8 @@ def _print_inference_progress(
     filename: str,
     status: str,
     context: str,
+    detail: Optional[str] = None,
+    note: Optional[str] = None,
 ) -> None:
     width = 24
     done = int((index / max(total, 1)) * width)
@@ -817,6 +954,18 @@ def _print_inference_progress(
         file=sys.stderr,
         flush=True,
     )
+    if detail is not None:
+        line = detail.replace("\n", " ").strip()
+        if not line:
+            line = "(empty)"
+        elif len(line) > 240:
+            line = line[:237] + "..."
+        print(f"    transcript: {line}", file=sys.stderr, flush=True)
+    if note:
+        n = note.replace("\n", " ").strip()
+        if len(n) > 240:
+            n = n[:237] + "..."
+        print(f"    {n}", file=sys.stderr, flush=True)
 
 
 def recommend_event_mapping(
@@ -974,13 +1123,51 @@ def load_transcripts_sidecar(pack_dir: Path) -> Optional[Dict[Path, str]]:
     return out
 
 
+def partition_transcription_work(
+    audio_paths: Sequence[Path],
+    pack_dir: Path,
+    *,
+    resume: bool,
+) -> Tuple[List[Path], Dict[Path, str]]:
+    """
+    When ``resume`` is True, load ``transcripts.json`` and split paths into those still needing Whisper
+    vs transcripts already stored (matched by basename under ``pack_dir``).
+    """
+    if not resume:
+        return list(audio_paths), {}
+    loaded = load_transcripts_sidecar(pack_dir)
+    if not loaded:
+        return list(audio_paths), {}
+    pending: List[Path] = []
+    preloaded: Dict[Path, str] = {}
+    for p in audio_paths:
+        key = pack_dir / p.name
+        if key in loaded:
+            preloaded[p] = loaded[key]
+        elif p in loaded:
+            preloaded[p] = loaded[p]
+        else:
+            pending.append(p)
+    return pending, preloaded
+
+
 def save_transcripts_sidecar(pack_dir: Path, transcripts: Dict[Path, str]) -> Path:
-    """Write ``transcripts.json`` with basename keys for each WAV."""
+    """Write ``transcripts.json`` with basename keys for each WAV (atomic replace on the same volume)."""
     pack_dir.mkdir(parents=True, exist_ok=True)
     path = pack_dir / TRANSCRIPTS_JSON_NAME
     clips = {p.name: tx for p, tx in sorted(transcripts.items(), key=lambda kv: kv[0].name.lower())}
-    payload = {"schemaVersion": SIDECAR_SCHEMA_VERSION, "clips": clips}
-    path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
+    payload = json.dumps({"schemaVersion": SIDECAR_SCHEMA_VERSION, "clips": clips}, indent=2) + "\n"
+    tmp = path.with_name(path.name + ".tmp")
+    try:
+        tmp.write_text(payload, encoding="utf-8")
+        tmp.replace(path)
+    except OSError:
+        try:
+            if tmp.is_file():
+                tmp.unlink(missing_ok=True)
+        except OSError:
+            pass
+        raise
     return path
 
 

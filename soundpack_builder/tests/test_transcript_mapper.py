@@ -1,3 +1,5 @@
+import json
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -10,9 +12,23 @@ from soundpack_builder.audio.transcript_mapper import (
     _transcript_text_for_embedding_compare,
     build_mapping_report,
     partition_clips_by_speech,
+    provisional_classify_progress_note,
     recommend_event_mapping,
     speech_eligibility,
 )
+
+
+class ProvisionalClassifyNoteTest(unittest.TestCase):
+    def test_empty_scores_returns_none(self) -> None:
+        self.assertIsNone(provisional_classify_progress_note({}))
+
+    def test_argmax_event_in_note(self) -> None:
+        scores = {"stop": 0.2, "beforeSubmitPrompt": 0.91}
+        note = provisional_classify_progress_note(scores)
+        self.assertIsNotNone(note)
+        assert note is not None
+        self.assertIn("beforeSubmitPrompt", note)
+        self.assertIn("0.910", note)
 
 
 class EmbeddingCompareTextTest(unittest.TestCase):
@@ -163,6 +179,54 @@ class TranscriptMapperTest(unittest.TestCase):
         self.assertIn("zzz.wav", recommendations["beforeSubmitPrompt"])
 
 
+class PartitionTranscriptionWorkTest(unittest.TestCase):
+    def test_resume_false_returns_all_pending(self) -> None:
+        from soundpack_builder.audio.transcript_mapper import partition_transcription_work
+
+        with tempfile.TemporaryDirectory() as td:
+            pack = Path(td)
+            a = pack / "a.wav"
+            b = pack / "b.wav"
+            pending, pre = partition_transcription_work([a, b], pack, resume=False)
+            self.assertEqual(pending, [a, b])
+            self.assertEqual(pre, {})
+
+    def test_resume_loads_existing_into_preloaded(self) -> None:
+        from soundpack_builder.audio.transcript_mapper import (
+            partition_transcription_work,
+            save_transcripts_sidecar,
+        )
+
+        with tempfile.TemporaryDirectory() as td:
+            pack = Path(td)
+            a = pack / "a.wav"
+            b = pack / "b.wav"
+            a.write_text("x")
+            b.write_text("y")
+            save_transcripts_sidecar(pack, {a: "hello"})
+            pending, pre = partition_transcription_work([a, b], pack, resume=True)
+            self.assertEqual(pending, [b])
+            self.assertEqual(pre.get(a), "hello")
+
+
+class SaveTranscriptsSidecarTest(unittest.TestCase):
+    def test_atomic_write_produces_valid_json(self) -> None:
+        from soundpack_builder.audio.transcript_mapper import (
+            TRANSCRIPTS_JSON_NAME,
+            save_transcripts_sidecar,
+        )
+
+        with tempfile.TemporaryDirectory() as td:
+            pack = Path(td)
+            p = pack / "x.wav"
+            save_transcripts_sidecar(pack, {p: "hi"})
+            path = pack / TRANSCRIPTS_JSON_NAME
+            self.assertTrue(path.is_file())
+            self.assertFalse((pack / (TRANSCRIPTS_JSON_NAME + ".tmp")).exists())
+            data = json.loads(path.read_text(encoding="utf-8"))
+            self.assertEqual(data["clips"]["x.wav"], "hi")
+
+
 class ZeroShotPremiseSanitizeTest(unittest.TestCase):
     def test_empty_and_zwsp_only_skipped(self) -> None:
         class Tok:
@@ -183,6 +247,29 @@ class ZeroShotPremiseSanitizeTest(unittest.TestCase):
         from soundpack_builder.audio.transcript_mapper import _zero_shot_safe_premise
 
         self.assertEqual(_zero_shot_safe_premise(Tok(), "  hello  "), "hello")
+
+
+class DefaultClassifierBackendTest(unittest.TestCase):
+    @patch("soundpack_builder.audio.transcript_mapper.sys.platform", "linux")
+    @patch("soundpack_builder.audio.transcript_mapper.classifier_runs_on_cpu", return_value=True)
+    def test_non_windows_uses_zero_shot_even_on_cpu(self, _m: object) -> None:
+        from soundpack_builder.audio.transcript_mapper import default_classifier_backend_for_environment
+
+        self.assertEqual(default_classifier_backend_for_environment("cpu"), "zero-shot")
+
+    @patch("soundpack_builder.audio.transcript_mapper.sys.platform", "win32")
+    @patch("soundpack_builder.audio.transcript_mapper.classifier_runs_on_cpu", return_value=True)
+    def test_windows_cpu_uses_sentence_embedding(self, _m: object) -> None:
+        from soundpack_builder.audio.transcript_mapper import default_classifier_backend_for_environment
+
+        self.assertEqual(default_classifier_backend_for_environment("cpu"), "sentence-embedding")
+
+    @patch("soundpack_builder.audio.transcript_mapper.sys.platform", "win32")
+    @patch("soundpack_builder.audio.transcript_mapper.classifier_runs_on_cpu", return_value=False)
+    def test_windows_cuda_prefers_zero_shot(self, _m: object) -> None:
+        from soundpack_builder.audio.transcript_mapper import default_classifier_backend_for_environment
+
+        self.assertEqual(default_classifier_backend_for_environment("cuda:0"), "zero-shot")
 
 
 class DefaultZeroShotModelTest(unittest.TestCase):

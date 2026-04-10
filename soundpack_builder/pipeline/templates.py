@@ -11,6 +11,7 @@ from typing import Dict, List, Optional
 from soundpack_builder.core.config import BuilderConfig, add_output_path_args, build_config_from_args
 from soundpack_builder.core.console_progress import print_progress_line, print_status
 from soundpack_builder.core.hook_events import EVENT_FILES, TARGET_TO_EVENT
+from soundpack_builder.core.pack_paths import sound_subdir_for_pack
 
 # Packs that get template generation + search_hints. Slugs align with
 # manifests/universe-character-hook-candidates.json where a character exists there.
@@ -111,7 +112,7 @@ def make_template(
         files = (event_map or {}).get(event_name, fallback_files)
         events[event_name] = files[0] if len(files) == 1 else files
 
-    subdir = f"{character}/{pack_label_slug}" if pack_label_slug else character
+    subdir = sound_subdir_for_pack(character, pack_label_slug)
     return {
         "enabled": True,
         "soundRoot": "sounds",
