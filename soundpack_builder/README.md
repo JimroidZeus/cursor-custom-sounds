@@ -2,9 +2,17 @@
 
 Internal pipeline for generating and validating sound pack artifacts. It is separate from the Cursor hook runtime so it can be split out later with minimal churn.
 
+## Environment
+
+From the repository root, install dependencies with **`uv sync --project soundpack_builder`**. Python is constrained by [`pyproject.toml`](pyproject.toml) (`requires-python`; this directory also ships [`.python-version`](.python-version) for local tooling).
+
+Examples below use **`uv run --project soundpack_builder python -m ...`** so modules run in that managed environment. Bare **`python -m soundpack_builder...`** is equivalent only when you have activated a matching interpreter or virtualenv yourself.
+
+After install, run **`uv run --project soundpack_builder python -m soundpack_builder.tools.preflight`** to probe ffmpeg, torch, and optional NVIDIA support; add **`--sync`** to align dependencies (see **Using uv** and **Hardware/software preflight** below).
+
 ## Canonical pipeline
 
-Run **`python -m soundpack_builder.pipeline.workflow`** (or **`--json`**) to print the ordered steps.
+Run **`uv run --project soundpack_builder python -m soundpack_builder.pipeline.workflow`** from the repo root (or **`python -m soundpack_builder.pipeline.workflow`** inside an activated env) to print the ordered steps (add **`--json`** for machine-readable output).
 
 | Step | Module | Role |
 |------|--------|------|

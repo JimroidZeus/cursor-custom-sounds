@@ -2,6 +2,8 @@
 
 This project uses Cursor's official Hooks system to play sounds for agent lifecycle events.
 
+For prerequisites (which `python` hooks use vs the soundpack builder venv) and a two-track setup summary, see the root README section **[Getting started](../README.md#getting-started)**.
+
 ## Project-level setup
 
 Project hooks are already configured in:
@@ -54,13 +56,13 @@ You can override defaults with:
 
 The hook runner merges user config over project config.
 
-Example `~/.cursor/sound-hooks.json`:
+Example `~/.cursor/sound-hooks.json` (replace `<path-to-sounds>` with the absolute directory that contains your pack folders, e.g. the clone’s `sounds/`):
 
 ```json
 {
   "enabled": true,
   "debounceMs": 500,
-  "soundRoot": "C:/Users/JimroidZeus/source/repos/cursor-custom-sounds/sounds",
+  "soundRoot": "<path-to-sounds>",
   "soundPack": "warcraft",
   "soundSubdir": "orc-peon",
   "events": {
@@ -75,9 +77,9 @@ Example `~/.cursor/sound-hooks.json`:
 
 ## Optional global hook registration
 
-If you want this behavior in other projects without copying files, add a user hooks file at `~/.cursor/hooks.json` that invokes your preferred script path.
+If you want this behavior in other projects without copying files, add a user hooks file at `~/.cursor/hooks.json` that invokes your preferred script path. Cursor runs the command with your normal environment, so `python` must be on `PATH` (same caveat as project hooks — see [Getting started](../README.md#getting-started)).
 
-Example:
+Example (replace `<path-to-repo>` with the absolute path to this repository’s root):
 
 ```json
 {
@@ -85,7 +87,7 @@ Example:
   "hooks": {
     "afterAgentResponse": [
       {
-        "command": "python C:/Users/JimroidZeus/source/repos/cursor-custom-sounds/.cursor/hooks/play-sound.py afterAgentResponse"
+        "command": "python <path-to-repo>/.cursor/hooks/play-sound.py afterAgentResponse"
       }
     ]
   }

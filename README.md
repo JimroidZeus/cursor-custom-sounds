@@ -2,6 +2,21 @@
 
 This repository now uses Cursor's official Hooks system for chat lifecycle sounds.
 
+## Getting started
+
+| Track | Purpose | Prerequisites | Verify |
+|-------|---------|---------------|--------|
+| **A — Hook sounds in Cursor** | Play sounds during chat lifecycle | Python available as `python` on your PATH (see [`.cursor/hooks.json`](.cursor/hooks.json)); open this repo in Cursor | From repo root: `python .cursor/hooks/play-sound.py --test afterAgentResponse` |
+| **B — Build or validate soundpacks** | Pipeline, downloader, ML-assisted mapping | [**uv**](https://docs.astral.sh/uv/) installed; then `uv sync --project soundpack_builder` from repo root | `uv run --project soundpack_builder python -m soundpack_builder.tools.preflight` (optional `--sync` for CUDA torch — see [`soundpack_builder/README.md`](soundpack_builder/README.md)) |
+
+**Important:** Project hooks invoke the system/session `python`, not automatically the uv virtualenv under `soundpack_builder/`. Activating a venv in a terminal does not change how Cursor resolves `python` unless Cursor was launched from that environment. On Windows, if `python` is missing, use the installer option to add Python to PATH, or align [`hooks.json`](.cursor/hooks.json) with how you launch Python (for example the `py` launcher).
+
+**Doc map:** Hooks-only setup and global overrides → [`docs/hooks-setup.md`](docs/hooks-setup.md). Sourcing pipeline → [Manifest workflow](#manifest-workflow) below and [`docs/sound-sourcing.md`](docs/sound-sourcing.md).
+
+Shell examples here use POSIX style; the same `python` and `uv` commands work in PowerShell.
+
+Optional: run [`scripts/check-setup.ps1`](scripts/check-setup.ps1) or [`scripts/check-setup.sh`](scripts/check-setup.sh) from the repo root to run the verify commands above.
+
 ## Config
 
 Primary configuration lives in:
@@ -56,7 +71,7 @@ it resolves under `soundRoot/<soundPack>/<soundSubdir>/`.
 
 ## Manifest workflow
 
-Dependencies and the virtualenv live under `soundpack_builder/` with **uv**; see that folder’s README for flags, paths, and tests. One-time setup from repo root:
+Dependencies and the virtualenv live under `soundpack_builder/` with **uv**; see that folder’s README for flags, paths, and tests. If you only need hook playback, see [Getting started](#getting-started) track A — you do not need this section. One-time setup from repo root:
 
 ```bash
 uv sync --project soundpack_builder
@@ -177,7 +192,7 @@ Several CLIs print **progress on stderr** so **stdout** stays clean for JSON (`c
 
 ## Manual test
 
-Run from repo root:
+Same as [Getting started](#getting-started) track A. From repo root:
 
 ```bash
 python .cursor/hooks/play-sound.py --test afterAgentResponse
