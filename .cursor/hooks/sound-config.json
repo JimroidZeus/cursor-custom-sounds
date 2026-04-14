@@ -5,20 +5,20 @@
   "soundSubdir": "orc-peon",
   "events": {
     "beforeSubmitPrompt": [
-      "PeonReady1.wav",
-      "PeonYes3.wav"
+      "PeonWarcry1.wav",
+      "PeonReady1.wav"
     ],
     "afterAgentThought": [
       "PeonWhat2.wav",
-      "PeonWarcry1.wav"
+      "PeonWhat3.wav"
     ],
     "afterAgentResponse": [
-      "PeonYes4.wav",
-      "PeonWhat2.wav"
+      "PeonReady1.wav",
+      "GruntYes4.wav"
     ],
-    "preToolUse": "PeonReady1.wav",
-    "postToolUse": "PeonWhat2.wav",
-    "postToolUseFailure": "PeonWhat2.wav",
-    "stop": "PeonWhat2.wav"
+    "preToolUse": "PeonYes4.wav",
+    "postToolUse": "PeonYes3.wav",
+    "postToolUseFailure": "PeonYesAttack3.wav",
+    "stop": "PeonWhat4.wav"
   }
 }
