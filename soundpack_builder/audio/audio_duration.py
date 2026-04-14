@@ -9,6 +9,8 @@ import wave
 from pathlib import Path
 from typing import Dict, List, TextIO, Tuple
 
+from soundpack_builder.core.console_progress import print_progress_line, print_status
+
 
 def read_wav_duration_seconds(path: Path) -> float:
     """
@@ -45,8 +47,6 @@ def validate_wav_durations(
     failures: List[Dict[str, object]] = []
 
     if progress and wav_files:
-        from .console_progress import print_status
-
         print_status(
             f"Checking WAV duration for {len(wav_files)} file{'s' if len(wav_files) != 1 else ''}...",
             file=progress_file,
@@ -54,8 +54,6 @@ def validate_wav_durations(
 
     for i, wav_path in enumerate(wav_files, start=1):
         if progress:
-            from .console_progress import print_progress_line
-
             rel = str(wav_path)
             if len(rel) > 56:
                 rel = "..." + rel[-53:]
