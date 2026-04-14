@@ -55,7 +55,7 @@ Game-archive rows come from the builder’s internal list (`archive_entries` →
 
 - **`python -m soundpack_builder.pipeline.search_hints`** — Prints **DuckDuckGo search URLs** for each hook-pack character × each verified site. Nothing is scraped automatically; open links in a browser, find clips, then paste URLs into the universe manifest.
 
-- **`python -m soundpack_builder.crawl`** — Optional site-specific crawler to collect discovery links into `manifests/candidates/<site-id>-crawl.json`; with `--apply`, appends deduped links into `universe-character-hook-candidates.json`. First implementation supports `spriters-resource-sounds`: search `browse/?name=<character>` → parse `/asset/<id>/` results → resolve `.zip` links from asset pages.
+- **`python -m soundpack_builder.crawl`** — Optional site-specific crawler to collect discovery links into `manifests/candidates/<site-id>-crawl.json`; with `--apply`, appends deduped links into `universe-character-hook-candidates.json`. First implementation supports `spriters-resource-sounds`: search `browse/?name=<character>` → parse `/asset/<id>/` results → resolve `.zip` links from asset pages. Step-by-step for adding another site: [`docs/plans/add-site-crawler.md`](plans/add-site-crawler.md).
 
 - **`python -m soundpack_builder.pipeline.candidates`** — Reads verified sites + sourcing config + universe manifest, classifies each candidate link (per-site **`discovery`** regexes with global fallback), and writes **`manifests/candidates/`** (`candidates.json`, `review.json`, `downloadable-all.json`). With **`--fetch-sound-pages`**, fetches sound-page URLs, parses HTML for audio links (including relative `src`/`href`), applies optional **`fetch`** retries/delay from **`sourcing-config.json`**, and falls back to regex rules when needed. Optional **`matchQuality`** on a **`candidateLinks`** entry is copied onto discovery rows for the downloader. Default **`--language-codes ENG`** filters discovery rows by explicit or path-inferred language (`--no-language-filter` to disable).
 
@@ -80,5 +80,6 @@ Game-archive rows come from the builder’s internal list (`archive_entries` →
 | **[`soundpack_builder/README.md`](../soundpack_builder/README.md)** | Module table, `--no-progress`, tests |
 | **[`manifests/README.md`](../manifests/README.md)** | Canonical vs generated paths under `manifests/` |
 | **[`hooks-setup.md`](hooks-setup.md)** | Cursor hook runtime (`play-sound.py`, `.cursor/hooks/`) — not the downloader pipeline |
+| **[`plans/add-site-crawler.md`](plans/add-site-crawler.md)** | How to implement and register a new `crawl` site module |
 
 **Utilities:** `python -m soundpack_builder.pipeline.workflow` (pipeline checklist), `workflow --sourcing-report`, `python -m soundpack_builder.tools.normalize_manifests` (schema v2 after bulk JSON edits), `python -m soundpack_builder.tools.archive_entries` (optional ZIP reference dump), `python -m soundpack_builder.tools.freesound_resolve` (Freesound API resolution for **`review.json`**).
