@@ -5,20 +5,20 @@
   "soundSubdir": "demoman",
   "events": {
     "beforeSubmitPrompt": [
-      "yes01.wav",
-      "yes02.wav"
+      "no01.wav",
+      "activatecharge03.wav"
     ],
     "afterAgentThought": [
-      "activatecharge01.wav",
-      "activatecharge02.wav"
+      "autocappedintelligence01.wav",
+      "autocappedintelligence02.wav"
     ],
     "afterAgentResponse": [
       "yes03.wav",
-      "activatecharge03.wav"
+      "activatecharge01.wav"
     ],
-    "preToolUse": "autocappedintelligence01.wav",
-    "postToolUse": "autocappedintelligence02.wav",
-    "postToolUseFailure": "no01.wav",
-    "stop": "battlecry01.wav"
+    "preToolUse": "activatecharge02.wav",
+    "postToolUse": "yes02.wav",
+    "postToolUseFailure": "battlecry01.wav",
+    "stop": "activatecharge03.wav"
   }
 }

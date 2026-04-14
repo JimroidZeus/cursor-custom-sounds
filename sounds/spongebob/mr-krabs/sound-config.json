@@ -5,20 +5,20 @@
   "soundSubdir": "mr-krabs",
   "events": {
     "beforeSubmitPrompt": [
-      "BOOT_nudge_Krabs.wav",
-      "CINE_1_KRABS_LINE1.wav"
+      "CINE_PB_SL04_KRABS_LINE1.wav",
+      "CINE_7_KRABS_LINE4.wav"
     ],
     "afterAgentThought": [
-      "CINE_1_KRABS_LINE2.wav",
-      "CINE_1_KRABS_LINE3.wav"
+      "CINE_7_KRABS_LINE2.wav",
+      "CINE_7_KRABS_LINE6.wav"
     ],
     "afterAgentResponse": [
-      "CINE_7_KRABS_LINE1.wav",
-      "CINE_7_KRABS_LINE2.wav"
+      "CINE_7_KRABS_LINE5.wav",
+      "CINE_7_KRABS_LINE4.wav"
     ],
-    "preToolUse": "CINE_7_KRABS_LINE4.wav",
-    "postToolUse": "CINE_7_KRABS_LINE5.wav",
-    "postToolUseFailure": "CINE_7_KRABS_LINE6.wav",
-    "stop": "CINE_PB_SL04_KRABS_LINE1.wav"
+    "preToolUse": "CINE_1_KRABS_LINE3.wav",
+    "postToolUse": "CINE_7_KRABS_LINE1.wav",
+    "postToolUseFailure": "CINE_1_KRABS_LINE1.wav",
+    "stop": "CINE_1_KRABS_LINE2.wav"
   }
 }

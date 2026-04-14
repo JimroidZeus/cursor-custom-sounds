@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "one-piece",
+  "soundSubdir": "_straw-hat-crew/monkey-d-luffy-one-piece-91a1d174",
+  "events": {
+    "beforeSubmitPrompt": [
+      "j_luf_070.wav",
+      "e_luf_025b.wav"
+    ],
+    "afterAgentThought": [
+      "j_luf_112.wav",
+      "e_luf_028.wav"
+    ],
+    "afterAgentResponse": [
+      "j_luf_118.wav",
+      "j_luf_142.wav"
+    ],
+    "preToolUse": "j_luf_131.wav",
+    "postToolUse": "j_luf_141.wav",
+    "postToolUseFailure": "j_luf_003.wav",
+    "stop": "j_luf_011.wav"
+  }
+}

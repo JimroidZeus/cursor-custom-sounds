@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "scores": {
+    "GruntYes4.wav": {
+      "beforeSubmitPrompt": 0.5546773411333561,
+      "afterAgentThought": 0.6097117811441422,
+      "afterAgentResponse": 0.6147466450929642,
+      "preToolUse": 0.5808655768632889,
+      "postToolUse": 0.575017087161541,
+      "postToolUseFailure": 0.5686222687363625,
+      "stop": 0.6380603015422821
+    },
+    "PeonReady1.wav": {
+      "beforeSubmitPrompt": 0.6299704015254974,
+      "afterAgentThought": 0.6424188315868378,
+      "afterAgentResponse": 0.6599794328212738,
+      "preToolUse": 0.6396358013153076,
+      "postToolUse": 0.6554398536682129,
+      "postToolUseFailure": 0.6253130435943604,
+      "stop": 0.6590353399515152
+    },
+    "PeonWarcry1.wav": {
+      "beforeSubmitPrompt": 0.5622006058692932,
+      "afterAgentThought": 0.6148541569709778,
+      "afterAgentResponse": 0.5948585942387581,
+      "preToolUse": 0.5581759512424469,
+      "postToolUse": 0.553904801607132,
+      "postToolUseFailure": 0.5686619132757187,
+      "stop": 0.6299910992383957
+    },
+    "PeonWhat2.wav": {
+      "beforeSubmitPrompt": 0.5860186517238617,
+      "afterAgentThought": 0.6699833273887634,
+      "afterAgentResponse": 0.6536673605442047,
+      "preToolUse": 0.6094462126493454,
+      "postToolUse": 0.5916458070278168,
+      "postToolUseFailure": 0.5903320014476776,
+      "stop": 0.6732438504695892
+    },
+    "PeonWhat3.wav": {
+      "beforeSubmitPrompt": 0.5729258060455322,
+      "afterAgentThought": 0.6269092410802841,
+      "afterAgentResponse": 0.6391246318817139,
+      "preToolUse": 0.5859638676047325,
+      "postToolUse": 0.5913666561245918,
+      "postToolUseFailure": 0.5667802020907402,
+      "stop": 0.6268391162157059
+    },
+    "PeonWhat4.wav": {
+      "beforeSubmitPrompt": 0.5956088751554489,
+      "afterAgentThought": 0.651689350605011,
+      "afterAgentResponse": 0.6512846797704697,
+      "preToolUse": 0.6252506524324417,
+      "postToolUse": 0.6338013112545013,
+      "postToolUseFailure": 0.6287272870540619,
+      "stop": 0.6489456295967102
+    },
+    "PeonYes3.wav": {
+      "beforeSubmitPrompt": 0.5705180317163467,
+      "afterAgentThought": 0.6318867206573486,
+      "afterAgentResponse": 0.6244089007377625,
+      "preToolUse": 0.6064132899045944,
+      "postToolUse": 0.6272337287664413,
+      "postToolUseFailure": 0.6086552515625954,
+      "stop": 0.6609882116317749
+    },
+    "PeonYes4.wav": {
+      "beforeSubmitPrompt": 0.5591344386339188,
+      "afterAgentThought": 0.6219942420721054,
+      "afterAgentResponse": 0.6372348666191101,
+      "preToolUse": 0.5689826682209969,
+      "postToolUse": 0.5878925621509552,
+      "postToolUseFailure": 0.569029912352562,
+      "stop": 0.6217644661664963
+    },
+    "PeonYesAttack3.wav": {
+      "beforeSubmitPrompt": 0.60896036028862,
+      "afterAgentThought": 0.642853632569313,
+      "afterAgentResponse": 0.6421948969364166,
+      "preToolUse": 0.6272271424531937,
+      "postToolUse": 0.6489871293306351,
+      "postToolUseFailure": 0.6412003934383392,
+      "stop": 0.6659528762102127
+    }
+  }
+}

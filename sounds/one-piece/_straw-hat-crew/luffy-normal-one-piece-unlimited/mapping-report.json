@@ -22,7 +22,7 @@
     },
     {
       "file": "Sample_0004.wav",
-      "transcript": "Aaaaaaah!",
+      "transcript": "AAAAAAAA!",
       "speechEligible": true
     },
     {
@@ -37,7 +37,7 @@
     },
     {
       "file": "Sample_0007.wav",
-      "transcript": "MEAT!",
+      "transcript": "NEED!",
       "speechEligible": true
     },
     {
@@ -72,12 +72,12 @@
     },
     {
       "file": "Sample_0014.wav",
-      "transcript": "No, no, no, no, no, no.",
+      "transcript": "La-la-la, la-la-la, la-la-la, la-la, la.",
       "speechEligible": true
     },
     {
       "file": "Sample_0015.wav",
-      "transcript": "Aaaaahhhh!",
+      "transcript": "Aaaaaaah!",
       "speechEligible": true
     },
     {
@@ -97,7 +97,7 @@
     },
     {
       "file": "Sample_0019.wav",
-      "transcript": "Caaaaaaaaaah!",
+      "transcript": "HAAAAAAA!",
       "speechEligible": true
     },
     {
@@ -152,18 +152,17 @@
     },
     {
       "file": "Sample_0030.wav",
-      "transcript": "Ho-ha-ha-ha!",
+      "transcript": "Whoah!",
       "speechEligible": true
     },
     {
       "file": "Sample_0031.wav",
-      "transcript": "S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S",
-      "speechEligible": false,
-      "exclusionReason": "non_lexical_only"
+      "transcript": "AHHHHHHHHHHHHHHHHHHHHHH",
+      "speechEligible": true
     },
     {
       "file": "Sample_0032.wav",
-      "transcript": "What?!",
+      "transcript": "What?",
       "speechEligible": true
     },
     {
@@ -173,7 +172,7 @@
     },
     {
       "file": "Sample_0034.wav",
-      "transcript": "Ta-!",
+      "transcript": "Duh!",
       "speechEligible": true
     },
     {
@@ -193,7 +192,7 @@
     },
     {
       "file": "Sample_0038.wav",
-      "transcript": "HAAA! HAAA?!",
+      "transcript": "HAAAAAAA!!!",
       "speechEligible": true
     },
     {
@@ -213,7 +212,7 @@
     },
     {
       "file": "Sample_0042.wav",
-      "transcript": "Yeah, yeah, yeah, yeah, yeah!",
+      "transcript": "Yeah, yeah, yeah, yeah!",
       "speechEligible": true
     },
     {
@@ -238,7 +237,7 @@
     },
     {
       "file": "Sample_0047.wav",
-      "transcript": "Haa!",
+      "transcript": "HAAA!",
       "speechEligible": true
     },
     {
@@ -258,7 +257,7 @@
     },
     {
       "file": "Sample_0051.wav",
-      "transcript": "Come, come, come!",
+      "transcript": "GUN GUM!",
       "speechEligible": true
     },
     {
@@ -303,7 +302,7 @@
     },
     {
       "file": "Sample_0060.wav",
-      "transcript": "Ahhhh",
+      "transcript": "Aaaaaaaaaa",
       "speechEligible": true
     },
     {
@@ -333,7 +332,7 @@
     },
     {
       "file": "Sample_0066.wav",
-      "transcript": "This'll be fun!",
+      "transcript": "This will be fun!",
       "speechEligible": true
     },
     {
@@ -443,15 +442,6 @@
           "transcript": "Come, come, come!"
         },
         {
-          "file": "Sample_0051.wav",
-          "score": 2.925630807876587,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5851261615753174,
-          "transcript": "Come, come, come!"
-        },
-        {
           "file": "Sample_0013.wav",
           "score": 2.9563664217789967,
           "rankingTier": "model",
@@ -479,13 +469,13 @@
           "transcript": "Leave it to me!"
         },
         {
-          "file": "Sample_0032.wav",
-          "score": 2.9459856182336805,
+          "file": "Sample_0007.wav",
+          "score": 2.9122696444392204,
           "rankingTier": "model",
-          "heuristicScore": 3.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5791971236467361,
-          "transcript": "What?!"
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5824539288878441,
+          "transcript": "NEED!"
         },
         {
           "file": "Sample_0052.wav",
@@ -524,6 +514,33 @@
           "transcript": "Go!"
         },
         {
+          "file": "Sample_0032.wav",
+          "score": 2.9175897419452665,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5735179483890533,
+          "transcript": "What?"
+        },
+        {
+          "file": "Sample_0066.wav",
+          "score": 2.8581351414322853,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5716270282864571,
+          "transcript": "This will be fun!"
+        },
+        {
+          "file": "Sample_0051.wav",
+          "score": 2.8561093285679817,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5712218657135963,
+          "transcript": "GUN GUM!"
+        },
+        {
           "file": "Sample_0028.wav",
           "score": 2.8477999567985535,
           "rankingTier": "model",
@@ -533,13 +550,13 @@
           "transcript": "You"
         },
         {
-          "file": "Sample_0014.wav",
-          "score": 2.8456055372953415,
+          "file": "Sample_0034.wav",
+          "score": 2.8424717113375664,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5691211074590683,
-          "transcript": "No, no, no, no, no, no."
+          "modelScore": 0.5684943422675133,
+          "transcript": "Duh!"
         },
         {
           "file": "Sample_0063.wav",
@@ -549,15 +566,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5684688687324524,
           "transcript": "I'm hungry!"
-        },
-        {
-          "file": "Sample_0066.wav",
-          "score": 2.8352531418204308,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5670506283640862,
-          "transcript": "This'll be fun!"
         },
         {
           "file": "Sample_0055.wav",
@@ -623,15 +631,6 @@
           "transcript": "OK!"
         },
         {
-          "file": "Sample_0030.wav",
-          "score": 2.8099623322486877,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5619924664497375,
-          "transcript": "Ho-ha-ha-ha!"
-        },
-        {
           "file": "Sample_0072.wav",
           "score": 2.8085490129888058,
           "rankingTier": "model",
@@ -677,15 +676,6 @@
           "transcript": "Fire!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 2.7895567938685417,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5579113587737083,
-          "transcript": "Caaaaaaaaaah!"
-        },
-        {
           "file": "Sample_0027.wav",
           "score": 2.7861909568309784,
           "rankingTier": "model",
@@ -722,16 +712,16 @@
           "transcript": "Gacha!"
         },
         {
-          "file": "Sample_0034.wav",
-          "score": 2.7696411311626434,
+          "file": "Sample_0030.wav",
+          "score": 2.7708030864596367,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5539282262325287,
-          "transcript": "Ta-!"
+          "modelScore": 0.5541606172919273,
+          "transcript": "Whoah!"
         },
         {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 2.768733687698841,
           "rankingTier": "model",
           "heuristicScore": 0.0,
@@ -740,22 +730,13 @@
           "transcript": "Aaaaaaah!"
         },
         {
-          "file": "Sample_0047.wav",
-          "score": 2.7654730901122093,
+          "file": "Sample_0004.wav",
+          "score": 2.7666789293289185,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5530946180224419,
-          "transcript": "Haa!"
-        },
-        {
-          "file": "Sample_0038.wav",
-          "score": 2.764000426977873,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5528000853955746,
-          "transcript": "HAAA! HAAA?!"
+          "modelScore": 0.5533357858657837,
+          "transcript": "AAAAAAAA!"
         },
         {
           "file": "Sample_0002.wav",
@@ -765,6 +746,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5518170706927776,
           "transcript": "Ow!"
+        },
+        {
+          "file": "Sample_0047.wav",
+          "score": 2.7581292763352394,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5516258552670479,
+          "transcript": "HAAA!"
         },
         {
           "file": "Sample_0021.wav",
@@ -812,13 +802,13 @@
           "transcript": "I can't move!"
         },
         {
-          "file": "Sample_0015.wav",
-          "score": 2.7442362904548645,
+          "file": "Sample_0019.wav",
+          "score": 2.7461374923586845,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5488472580909729,
-          "transcript": "Aaaaahhhh!"
+          "modelScore": 0.5492274984717369,
+          "transcript": "HAAAAAAA!"
         },
         {
           "file": "Sample_0008.wav",
@@ -855,6 +845,24 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5464419610798359,
           "transcript": "BAH!"
+        },
+        {
+          "file": "Sample_0038.wav",
+          "score": 2.726352773606777,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5452705547213554,
+          "transcript": "HAAAAAAA!!!"
+        },
+        {
+          "file": "Sample_0060.wav",
+          "score": 2.716897837817669,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5433795675635338,
+          "transcript": "Aaaaaaaaaa"
         },
         {
           "file": "Sample_0023.wav",
@@ -929,31 +937,13 @@
           "transcript": "Well..."
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 2.6665222458541393,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5333044491708279,
-          "transcript": "Ahhhh"
-        },
-        {
-          "file": "Sample_0007.wav",
-          "score": 2.660532668232918,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5321065336465836,
-          "transcript": "MEAT!"
-        },
-        {
           "file": "Sample_0042.wav",
-          "score": 2.6510982401669025,
+          "score": 2.6531183812767267,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5302196480333805,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.5306236762553453,
+          "transcript": "Yeah, yeah, yeah, yeah!"
         },
         {
           "file": "Sample_0024.wav",
@@ -974,6 +964,15 @@
           "transcript": "They got away!"
         },
         {
+          "file": "Sample_0031.wav",
+          "score": 2.642662553116679,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5285325106233358,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
+        },
+        {
           "file": "Sample_0058.wav",
           "score": 2.640697918832302,
           "rankingTier": "model",
@@ -981,13 +980,22 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5281395837664604,
           "transcript": "Incredible!"
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 2.6386193931102753,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.527723878622055,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         }
       ]
     },
     "afterAgentThought": {
       "selected": [
         "Sample_0028.wav",
-        "Sample_0034.wav"
+        "Sample_0007.wav"
       ],
       "candidates": [
         {
@@ -1000,13 +1008,13 @@
           "transcript": "You"
         },
         {
-          "file": "Sample_0034.wav",
-          "score": 3.2813745737075806,
+          "file": "Sample_0007.wav",
+          "score": 3.2823897898197174,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6562749147415161,
-          "transcript": "Ta-!"
+          "modelScore": 0.6564779579639435,
+          "transcript": "NEED!"
         },
         {
           "file": "Sample_0062.wav",
@@ -1061,15 +1069,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6431489884853363,
           "transcript": "Leave it to me!"
-        },
-        {
-          "file": "Sample_0032.wav",
-          "score": 3.2651044905185698,
-          "rankingTier": "model",
-          "heuristicScore": 3.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.643020898103714,
-          "transcript": "What?!"
         },
         {
           "file": "Sample_0022.wav",
@@ -1135,13 +1134,13 @@
           "transcript": "AAT!"
         },
         {
-          "file": "Sample_0014.wav",
-          "score": 3.181784451007843,
+          "file": "Sample_0032.wav",
+          "score": 3.2359223544597624,
           "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6363568902015686,
-          "transcript": "No, no, no, no, no, no."
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6371844708919525,
+          "transcript": "What?"
         },
         {
           "file": "Sample_0011.wav",
@@ -1216,6 +1215,33 @@
           "transcript": "Oh, better!"
         },
         {
+          "file": "Sample_0034.wav",
+          "score": 3.177243055899938,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.6287819445133209,
+          "transcript": "Duh!"
+        },
+        {
+          "file": "Sample_0004.wav",
+          "score": 3.1430111825466156,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6286022365093231,
+          "transcript": "AAAAAAAA!"
+        },
+        {
+          "file": "Sample_0051.wav",
+          "score": 3.1422974169254303,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6284594833850861,
+          "transcript": "GUN GUM!"
+        },
+        {
           "file": "Sample_0005.wav",
           "score": 3.141935020685196,
           "rankingTier": "model",
@@ -1234,16 +1260,7 @@
           "transcript": "Well..."
         },
         {
-          "file": "Sample_0007.wav",
-          "score": 3.141145631670952,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6282291263341904,
-          "transcript": "MEAT!"
-        },
-        {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 3.1409363448619843,
           "rankingTier": "model",
           "heuristicScore": 0.0,
@@ -1261,13 +1278,13 @@
           "transcript": "Come, come!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 3.1289829313755035,
+          "file": "Sample_0030.wav",
+          "score": 3.1356383115053177,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6257965862751007,
-          "transcript": "Ahhhh"
+          "modelScore": 0.6271276623010635,
+          "transcript": "Whoah!"
         },
         {
           "file": "Sample_0052.wav",
@@ -1313,6 +1330,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6246661618351936,
           "transcript": "Right fall!"
+        },
+        {
+          "file": "Sample_0060.wav",
+          "score": 3.1197357177734375,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6239471435546875,
+          "transcript": "Aaaaaaaaaa"
         },
         {
           "file": "Sample_0000.wav",
@@ -1387,33 +1413,6 @@
           "transcript": "Come, come, come!"
         },
         {
-          "file": "Sample_0051.wav",
-          "score": 3.102816492319107,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6205632984638214,
-          "transcript": "Come, come, come!"
-        },
-        {
-          "file": "Sample_0066.wav",
-          "score": 3.101884610950947,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6203769221901894,
-          "transcript": "This'll be fun!"
-        },
-        {
-          "file": "Sample_0015.wav",
-          "score": 3.101859949529171,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6203719899058342,
-          "transcript": "Aaaaahhhh!"
-        },
-        {
           "file": "Sample_0054.wav",
           "score": 3.1015322357416153,
           "rankingTier": "model",
@@ -1432,13 +1431,13 @@
           "transcript": "Fire!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 3.096625581383705,
+          "file": "Sample_0066.wav",
+          "score": 3.096354231238365,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.619325116276741,
-          "transcript": "Caaaaaaaaaah!"
+          "modelScore": 0.619270846247673,
+          "transcript": "This will be fun!"
         },
         {
           "file": "Sample_0050.wav",
@@ -1459,15 +1458,6 @@
           "transcript": "Power is start!"
         },
         {
-          "file": "Sample_0047.wav",
-          "score": 3.0845635756850243,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6169127151370049,
-          "transcript": "Haa!"
-        },
-        {
           "file": "Sample_0037.wav",
           "score": 3.0790510401129723,
           "rankingTier": "model",
@@ -1475,15 +1465,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6158102080225945,
           "transcript": "Whip!"
-        },
-        {
-          "file": "Sample_0030.wav",
-          "score": 3.0743156373500824,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6148631274700165,
-          "transcript": "Ho-ha-ha-ha!"
         },
         {
           "file": "Sample_0065.wav",
@@ -1504,6 +1485,15 @@
           "transcript": "Gacha!"
         },
         {
+          "file": "Sample_0047.wav",
+          "score": 3.0617649853229523,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6123529970645905,
+          "transcript": "HAAA!"
+        },
+        {
           "file": "Sample_0006.wav",
           "score": 3.059891276061535,
           "rankingTier": "model",
@@ -1522,13 +1512,22 @@
           "transcript": "I can't move!"
         },
         {
-          "file": "Sample_0038.wav",
-          "score": 3.050108104944229,
+          "file": "Sample_0019.wav",
+          "score": 3.0471785739064217,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6100216209888458,
-          "transcript": "HAAA! HAAA?!"
+          "modelScore": 0.6094357147812843,
+          "transcript": "HAAAAAAA!"
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 3.0430231243371964,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6086046248674393,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         },
         {
           "file": "Sample_0035.wav",
@@ -1538,6 +1537,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6017589494585991,
           "transcript": "SAAA!"
+        },
+        {
+          "file": "Sample_0038.wav",
+          "score": 3.007296808063984,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6014593616127968,
+          "transcript": "HAAAAAAA!!!"
         },
         {
           "file": "Sample_0059.wav",
@@ -1568,12 +1576,21 @@
         },
         {
           "file": "Sample_0042.wav",
-          "score": 2.9795149713754654,
+          "score": 2.9785627126693726,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5959029942750931,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.5957125425338745,
+          "transcript": "Yeah, yeah, yeah, yeah!"
+        },
+        {
+          "file": "Sample_0031.wav",
+          "score": 2.976483106613159,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5952966213226318,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
         },
         {
           "file": "Sample_0040.wav",
@@ -1692,6 +1709,15 @@
           "transcript": "Take this!"
         },
         {
+          "file": "Sample_0007.wav",
+          "score": 3.2288604229688644,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6457720845937729,
+          "transcript": "NEED!"
+        },
+        {
           "file": "Sample_0008.wav",
           "score": 3.227313756942749,
           "rankingTier": "model",
@@ -1746,24 +1772,6 @@
           "transcript": "Come, come, come!"
         },
         {
-          "file": "Sample_0051.wav",
-          "score": 3.2077932357788086,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6415586471557617,
-          "transcript": "Come, come, come!"
-        },
-        {
-          "file": "Sample_0047.wav",
-          "score": 3.2011593133211136,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6402318626642227,
-          "transcript": "Haa!"
-        },
-        {
           "file": "Sample_0001.wav",
           "score": 3.195335566997528,
           "rankingTier": "model",
@@ -1780,15 +1788,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6382727921009064,
           "transcript": "Alright!"
-        },
-        {
-          "file": "Sample_0032.wav",
-          "score": 3.174189254641533,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6348378509283066,
-          "transcript": "What?!"
         },
         {
           "file": "Sample_0017.wav",
@@ -1827,15 +1826,6 @@
           "transcript": "Bye, Zuka!"
         },
         {
-          "file": "Sample_0034.wav",
-          "score": 3.1647582352161407,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6329516470432281,
-          "transcript": "Ta-!"
-        },
-        {
           "file": "Sample_0065.wav",
           "score": 3.1634671241045,
           "rankingTier": "model",
@@ -1845,13 +1835,22 @@
           "transcript": "OK!"
         },
         {
-          "file": "Sample_0038.wav",
-          "score": 3.140024021267891,
+          "file": "Sample_0047.wav",
+          "score": 3.1616365164518356,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6280048042535782,
-          "transcript": "HAAA! HAAA?!"
+          "modelScore": 0.6323273032903671,
+          "transcript": "HAAA!"
+        },
+        {
+          "file": "Sample_0032.wav",
+          "score": 3.1601139903068542,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6320227980613708,
+          "transcript": "What?"
         },
         {
           "file": "Sample_0035.wav",
@@ -1863,22 +1862,22 @@
           "transcript": "SAAA!"
         },
         {
-          "file": "Sample_0014.wav",
-          "score": 3.1290289759635925,
+          "file": "Sample_0019.wav",
+          "score": 3.134731575846672,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6258057951927185,
-          "transcript": "No, no, no, no, no, no."
+          "modelScore": 0.6269463151693344,
+          "transcript": "HAAAAAAA!"
         },
         {
-          "file": "Sample_0007.wav",
-          "score": 3.1242992728948593,
+          "file": "Sample_0004.wav",
+          "score": 3.124515935778618,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6248598545789719,
-          "transcript": "MEAT!"
+          "modelScore": 0.6249031871557236,
+          "transcript": "AAAAAAAA!"
         },
         {
           "file": "Sample_0064.wav",
@@ -1899,16 +1898,7 @@
           "transcript": "Oh yours!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 3.115285336971283,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6230570673942566,
-          "transcript": "Ahhhh"
-        },
-        {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 3.115043342113495,
           "rankingTier": "model",
           "heuristicScore": 0.0,
@@ -1924,6 +1914,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6226326376199722,
           "transcript": "Gacha!"
+        },
+        {
+          "file": "Sample_0030.wav",
+          "score": 3.1122786179184914,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6224557235836983,
+          "transcript": "Whoah!"
         },
         {
           "file": "Sample_0002.wav",
@@ -1953,6 +1952,24 @@
           "transcript": "Whip!"
         },
         {
+          "file": "Sample_0034.wav",
+          "score": 3.1030140444636345,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6206028088927269,
+          "transcript": "Duh!"
+        },
+        {
+          "file": "Sample_0038.wav",
+          "score": 3.101724609732628,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6203449219465256,
+          "transcript": "HAAAAAAA!!!"
+        },
+        {
           "file": "Sample_0052.wav",
           "score": 3.097325898706913,
           "rankingTier": "model",
@@ -1971,13 +1988,22 @@
           "transcript": "UGH!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 3.0910049378871918,
+          "file": "Sample_0060.wav",
+          "score": 3.0913201719522476,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6182009875774384,
-          "transcript": "Caaaaaaaaaah!"
+          "modelScore": 0.6182640343904495,
+          "transcript": "Aaaaaaaaaa"
+        },
+        {
+          "file": "Sample_0042.wav",
+          "score": 3.087807297706604,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6175614595413208,
+          "transcript": "Yeah, yeah, yeah, yeah!"
         },
         {
           "file": "Sample_0011.wav",
@@ -1987,15 +2013,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.61751639097929,
           "transcript": "That was close!"
-        },
-        {
-          "file": "Sample_0042.wav",
-          "score": 3.0846692621707916,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6169338524341583,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
         },
         {
           "file": "Sample_0000.wav",
@@ -2034,24 +2051,6 @@
           "transcript": "Wow!"
         },
         {
-          "file": "Sample_0030.wav",
-          "score": 3.059411160647869,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6118822321295738,
-          "transcript": "Ho-ha-ha-ha!"
-        },
-        {
-          "file": "Sample_0015.wav",
-          "score": 3.0586107820272446,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6117221564054489,
-          "transcript": "Aaaaahhhh!"
-        },
-        {
           "file": "Sample_0033.wav",
           "score": 3.0565600097179413,
           "rankingTier": "model",
@@ -2080,12 +2079,12 @@
         },
         {
           "file": "Sample_0066.wav",
-          "score": 3.0356340482831,
+          "score": 3.0418426543474197,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.60712680965662,
-          "transcript": "This'll be fun!"
+          "modelScore": 0.608368530869484,
+          "transcript": "This will be fun!"
         },
         {
           "file": "Sample_0062.wav",
@@ -2113,6 +2112,24 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6028420329093933,
           "transcript": "Right fall!"
+        },
+        {
+          "file": "Sample_0031.wav",
+          "score": 3.0012470483779907,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6002494096755981,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
+        },
+        {
+          "file": "Sample_0051.wav",
+          "score": 2.9947107657790184,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5989421531558037,
+          "transcript": "GUN GUM!"
         },
         {
           "file": "Sample_0058.wav",
@@ -2203,6 +2220,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5818985626101494,
           "transcript": "I can't move!"
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 2.9010239616036415,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5802047923207283,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         }
       ]
     },
@@ -2219,6 +2245,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.6447873562574387,
           "transcript": "Time to switch!"
+        },
+        {
+          "file": "Sample_0051.wav",
+          "score": 3.1502731744732175,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6286260634660721,
+          "transcript": "GUN GUM!"
         },
         {
           "file": "Sample_0048.wav",
@@ -2257,6 +2292,15 @@
           "transcript": "Caddling!"
         },
         {
+          "file": "Sample_0007.wav",
+          "score": 3.052893788048199,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6091501861810684,
+          "transcript": "NEED!"
+        },
+        {
           "file": "Sample_0001.wav",
           "score": 3.080440016729491,
           "rankingTier": "model",
@@ -2264,15 +2308,6 @@
           "heuristicScoreNormalized": 0.7142857142857143,
           "modelScore": 0.6089451462030411,
           "transcript": "Go!"
-        },
-        {
-          "file": "Sample_0034.wav",
-          "score": 3.050981261261872,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.608767680823803,
-          "transcript": "Ta-!"
         },
         {
           "file": "Sample_0025.wav",
@@ -2303,12 +2338,12 @@
         },
         {
           "file": "Sample_0066.wav",
-          "score": 3.0344486836876188,
+          "score": 3.0310411606516157,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.6054611653089523,
-          "transcript": "This'll be fun!"
+          "modelScore": 0.6047796607017517,
+          "transcript": "This will be fun!"
         },
         {
           "file": "Sample_0010.wav",
@@ -2365,15 +2400,6 @@
           "transcript": "Come, come!"
         },
         {
-          "file": "Sample_0032.wav",
-          "score": 2.9824550677623067,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5950624421238899,
-          "transcript": "What?!"
-        },
-        {
           "file": "Sample_0026.wav",
           "score": 2.9817358259643827,
           "rankingTier": "model",
@@ -2401,25 +2427,16 @@
           "transcript": "Bazooka!"
         },
         {
-          "file": "Sample_0030.wav",
-          "score": 2.9648961727108274,
+          "file": "Sample_0034.wav",
+          "score": 2.974052824505738,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.591550663113594,
-          "transcript": "Ho-ha-ha-ha!"
+          "modelScore": 0.5933819934725761,
+          "transcript": "Duh!"
         },
         {
           "file": "Sample_0049.wav",
-          "score": 2.9641063739146505,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5913927033543587,
-          "transcript": "Come, come, come!"
-        },
-        {
-          "file": "Sample_0051.wav",
           "score": 2.9641063739146505,
           "rankingTier": "model",
           "heuristicScore": 0.5,
@@ -2482,13 +2499,13 @@
           "transcript": "Ow!"
         },
         {
-          "file": "Sample_0007.wav",
-          "score": 2.955049261876515,
+          "file": "Sample_0004.wav",
+          "score": 2.955107748934201,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5895812809467316,
-          "transcript": "MEAT!"
+          "modelScore": 0.5895929783582687,
+          "transcript": "AAAAAAAA!"
         },
         {
           "file": "Sample_0035.wav",
@@ -2509,15 +2526,6 @@
           "transcript": "Whip!"
         },
         {
-          "file": "Sample_0047.wav",
-          "score": 2.9494235519851957,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5884561389684677,
-          "transcript": "Haa!"
-        },
-        {
           "file": "Sample_0028.wav",
           "score": 2.947111711331776,
           "rankingTier": "model",
@@ -2527,7 +2535,16 @@
           "transcript": "You"
         },
         {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0032.wav",
+          "score": 2.9420991842235837,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5869912654161453,
+          "transcript": "What?"
+        },
+        {
+          "file": "Sample_0015.wav",
           "score": 2.9299533594931875,
           "rankingTier": "model",
           "heuristicScore": 0.5,
@@ -2545,13 +2562,31 @@
           "transcript": "AAT!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 2.9213625420417104,
+          "file": "Sample_0030.wav",
+          "score": 2.924325190910271,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5828439369797707,
-          "transcript": "Caaaaaaaaaah!"
+          "modelScore": 0.5834364667534828,
+          "transcript": "Whoah!"
+        },
+        {
+          "file": "Sample_0047.wav",
+          "score": 2.923085116275719,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5831884518265724,
+          "transcript": "HAAA!"
+        },
+        {
+          "file": "Sample_0060.wav",
+          "score": 2.9177608196224485,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5821235924959183,
+          "transcript": "Aaaaaaaaaa"
         },
         {
           "file": "Sample_0005.wav",
@@ -2570,6 +2605,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5812736824154854,
           "transcript": "I'll get ya!"
+        },
+        {
+          "file": "Sample_0019.wav",
+          "score": 2.9057283554758344,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5797170996665955,
+          "transcript": "HAAAAAAA!"
         },
         {
           "file": "Sample_0065.wav",
@@ -2606,15 +2650,6 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.578764908015728,
           "transcript": "What the?"
-        },
-        {
-          "file": "Sample_0014.wav",
-          "score": 2.8898103535175323,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5779620707035065,
-          "transcript": "No, no, no, no, no, no."
         },
         {
           "file": "Sample_0033.wav",
@@ -2662,15 +2697,6 @@
           "transcript": "Well..."
         },
         {
-          "file": "Sample_0015.wav",
-          "score": 2.8870468069400106,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5759807899594307,
-          "transcript": "Aaaaahhhh!"
-        },
-        {
           "file": "Sample_0006.wav",
           "score": 2.887040511199406,
           "rankingTier": "model",
@@ -2689,24 +2715,6 @@
           "transcript": "I can't move!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 2.88620504034417,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5758124366402626,
-          "transcript": "Ahhhh"
-        },
-        {
-          "file": "Sample_0038.wav",
-          "score": 2.8836390231336866,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5752992331981659,
-          "transcript": "HAAA! HAAA?!"
-        },
-        {
           "file": "Sample_0043.wav",
           "score": 2.8828571219529424,
           "rankingTier": "model",
@@ -2716,6 +2724,15 @@
           "transcript": "Bellowed!"
         },
         {
+          "file": "Sample_0038.wav",
+          "score": 2.8698073927845273,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.572532907128334,
+          "transcript": "HAAAAAAA!!!"
+        },
+        {
           "file": "Sample_0050.wav",
           "score": 2.8666656692113195,
           "rankingTier": "model",
@@ -2723,6 +2740,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5719045624136925,
           "transcript": "Bye, Zuka!"
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 2.863382086583546,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5712478458881378,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         },
         {
           "file": "Sample_0013.wav",
@@ -2788,6 +2814,15 @@
           "transcript": "Yeah!"
         },
         {
+          "file": "Sample_0031.wav",
+          "score": 2.7740258206214223,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.553376592695713,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
+        },
+        {
           "file": "Sample_0058.wav",
           "score": 2.765670255252293,
           "rankingTier": "model",
@@ -2807,12 +2842,12 @@
         },
         {
           "file": "Sample_0042.wav",
-          "score": 2.676938403823546,
+          "score": 2.6770347212042127,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5339591093361378,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.5339783728122711,
+          "transcript": "Yeah, yeah, yeah, yeah!"
         }
       ]
     },
@@ -2821,6 +2856,15 @@
         "Sample_0063.wav"
       ],
       "candidates": [
+        {
+          "file": "Sample_0007.wav",
+          "score": 3.1437465652823446,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.618749313056469,
+          "transcript": "NEED!"
+        },
         {
           "file": "Sample_0010.wav",
           "score": 3.1416660279035566,
@@ -2885,15 +2929,6 @@
           "transcript": "Come, come, come!"
         },
         {
-          "file": "Sample_0051.wav",
-          "score": 3.0890454828739164,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6078090965747833,
-          "transcript": "Come, come, come!"
-        },
-        {
           "file": "Sample_0037.wav",
           "score": 3.086842867732048,
           "rankingTier": "model",
@@ -2948,13 +2983,13 @@
           "transcript": "That was close!"
         },
         {
-          "file": "Sample_0034.wav",
-          "score": 3.0544896900653837,
+          "file": "Sample_0051.wav",
+          "score": 3.0567715048789976,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6008979380130768,
-          "transcript": "Ta-!"
+          "modelScore": 0.6013543009757996,
+          "transcript": "GUN GUM!"
         },
         {
           "file": "Sample_0052.wav",
@@ -2993,6 +3028,24 @@
           "transcript": "Yes!"
         },
         {
+          "file": "Sample_0034.wav",
+          "score": 3.021924878656864,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5943849757313728,
+          "transcript": "Duh!"
+        },
+        {
+          "file": "Sample_0066.wav",
+          "score": 3.0212184891104696,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.594243697822094,
+          "transcript": "This will be fun!"
+        },
+        {
           "file": "Sample_0012.wav",
           "score": 3.014811101555824,
           "rankingTier": "model",
@@ -3000,15 +3053,6 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5929622203111649,
           "transcript": "Alright!"
-        },
-        {
-          "file": "Sample_0066.wav",
-          "score": 3.0144661396741865,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5928932279348373,
-          "transcript": "This'll be fun!"
         },
         {
           "file": "Sample_0044.wav",
@@ -3027,15 +3071,6 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5903498232364655,
           "transcript": "You"
-        },
-        {
-          "file": "Sample_0030.wav",
-          "score": 2.998014289140701,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5896028578281403,
-          "transcript": "Ho-ha-ha-ha!"
         },
         {
           "file": "Sample_0056.wav",
@@ -3074,6 +3109,15 @@
           "transcript": "I'm awake!"
         },
         {
+          "file": "Sample_0004.wav",
+          "score": 2.9886590048670767,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5877318009734154,
+          "transcript": "AAAAAAAA!"
+        },
+        {
           "file": "Sample_0050.wav",
           "score": 2.9842634230852125,
           "rankingTier": "model",
@@ -3081,6 +3125,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5868526846170425,
           "transcript": "Bye, Zuka!"
+        },
+        {
+          "file": "Sample_0030.wav",
+          "score": 2.983572418987751,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5867144837975502,
+          "transcript": "Whoah!"
         },
         {
           "file": "Sample_0061.wav",
@@ -3092,16 +3145,7 @@
           "transcript": "Oh yours!"
         },
         {
-          "file": "Sample_0047.wav",
-          "score": 2.981613028049469,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5863226056098938,
-          "transcript": "Haa!"
-        },
-        {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 2.978984500467777,
           "rankingTier": "model",
           "heuristicScore": 0.5,
@@ -3182,15 +3226,6 @@
           "transcript": "Power is start!"
         },
         {
-          "file": "Sample_0032.wav",
-          "score": 2.964879210293293,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5829758420586586,
-          "transcript": "What?!"
-        },
-        {
           "file": "Sample_0054.wav",
           "score": 2.9646214202046393,
           "rankingTier": "model",
@@ -3209,31 +3244,22 @@
           "transcript": "Ow!"
         },
         {
-          "file": "Sample_0014.wav",
-          "score": 2.9107363894581795,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5821472778916359,
-          "transcript": "No, no, no, no, no, no."
-        },
-        {
-          "file": "Sample_0015.wav",
-          "score": 2.959658886492252,
+          "file": "Sample_0047.wav",
+          "score": 2.9616050153970717,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5819317772984505,
-          "transcript": "Aaaaahhhh!"
+          "modelScore": 0.5823210030794144,
+          "transcript": "HAAA!"
         },
         {
           "file": "Sample_0019.wav",
-          "score": 2.9596076637506483,
+          "score": 2.9539056226611136,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5819215327501297,
-          "transcript": "Caaaaaaaaaah!"
+          "modelScore": 0.5807811245322227,
+          "transcript": "HAAAAAAA!"
         },
         {
           "file": "Sample_0026.wav",
@@ -3254,6 +3280,15 @@
           "transcript": "AAT!"
         },
         {
+          "file": "Sample_0060.wav",
+          "score": 2.940980765223503,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5781961530447006,
+          "transcript": "Aaaaaaaaaa"
+        },
+        {
           "file": "Sample_0059.wav",
           "score": 2.939696508646011,
           "rankingTier": "model",
@@ -3264,12 +3299,12 @@
         },
         {
           "file": "Sample_0038.wav",
-          "score": 2.9394315659999846,
+          "score": 2.9367968916893004,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.577886313199997,
-          "transcript": "HAAA! HAAA?!"
+          "modelScore": 0.5773593783378601,
+          "transcript": "HAAAAAAA!!!"
         },
         {
           "file": "Sample_0025.wav",
@@ -3299,15 +3334,6 @@
           "transcript": "Gotcha!"
         },
         {
-          "file": "Sample_0007.wav",
-          "score": 2.9232730448246,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.57465460896492,
-          "transcript": "MEAT!"
-        },
-        {
           "file": "Sample_0035.wav",
           "score": 2.919761735200882,
           "rankingTier": "model",
@@ -3324,6 +3350,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.572452038526535,
           "transcript": "Torn!"
+        },
+        {
+          "file": "Sample_0032.wav",
+          "score": 2.9073319315910338,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5714663863182068,
+          "transcript": "What?"
         },
         {
           "file": "Sample_0033.wav",
@@ -3345,12 +3380,21 @@
         },
         {
           "file": "Sample_0042.wav",
-          "score": 2.8928509831428526,
+          "score": 2.894465114176273,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5685701966285706,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.5688930228352547,
+          "transcript": "Yeah, yeah, yeah, yeah!"
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 2.8878663212060927,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5675732642412186,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         },
         {
           "file": "Sample_0053.wav",
@@ -3398,15 +3442,6 @@
           "transcript": "Incredible!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 2.868649262189865,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.563729852437973,
-          "transcript": "Ahhhh"
-        },
-        {
           "file": "Sample_0021.wav",
           "score": 2.8624484233558176,
           "rankingTier": "model",
@@ -3414,6 +3449,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5624896846711636,
           "transcript": "What the?"
+        },
+        {
+          "file": "Sample_0031.wav",
+          "score": 2.8597553737461565,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5619510747492313,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
         },
         {
           "file": "Sample_0024.wav",
@@ -3439,6 +3483,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.6360000371932983,
           "transcript": "Miss me!"
+        },
+        {
+          "file": "Sample_0007.wav",
+          "score": 3.1314004812921796,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6248515248298645,
+          "transcript": "NEED!"
         },
         {
           "file": "Sample_0062.wav",
@@ -3531,6 +3584,15 @@
           "transcript": "Leave it to me!"
         },
         {
+          "file": "Sample_0051.wav",
+          "score": 2.9759938870157514,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5937702059745789,
+          "transcript": "GUN GUM!"
+        },
+        {
           "file": "Sample_0003.wav",
           "score": 2.9753111530627523,
           "rankingTier": "model",
@@ -3538,15 +3600,6 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.593633659183979,
           "transcript": "Torn!"
-        },
-        {
-          "file": "Sample_0034.wav",
-          "score": 2.974272318610123,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5934258922934532,
-          "transcript": "Ta-!"
         },
         {
           "file": "Sample_0006.wav",
@@ -3576,13 +3629,13 @@
           "transcript": "That was close!"
         },
         {
-          "file": "Sample_0032.wav",
-          "score": 2.96376599414008,
+          "file": "Sample_0034.wav",
+          "score": 2.964102201589516,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5913246273994446,
-          "transcript": "What?!"
+          "modelScore": 0.5913918688893318,
+          "transcript": "Duh!"
         },
         {
           "file": "Sample_0001.wav",
@@ -3621,13 +3674,13 @@
           "transcript": "I feel dizzy."
         },
         {
-          "file": "Sample_0047.wav",
-          "score": 2.9376501072730337,
+          "file": "Sample_0004.wav",
+          "score": 2.935309619137219,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5861014500260353,
-          "transcript": "Haa!"
+          "modelScore": 0.5856333523988724,
+          "transcript": "AAAAAAAA!"
         },
         {
           "file": "Sample_0026.wav",
@@ -3637,15 +3690,6 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5841519311070442,
           "transcript": "Fire!"
-        },
-        {
-          "file": "Sample_0030.wav",
-          "score": 2.925795674749783,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5837305635213852,
-          "transcript": "Ho-ha-ha-ha!"
         },
         {
           "file": "Sample_0017.wav",
@@ -3675,7 +3719,7 @@
           "transcript": "OK!"
         },
         {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 2.9158715759004865,
           "rankingTier": "model",
           "heuristicScore": 0.5,
@@ -3684,13 +3728,13 @@
           "transcript": "Aaaaaaah!"
         },
         {
-          "file": "Sample_0038.wav",
-          "score": 2.906325445004872,
+          "file": "Sample_0047.wav",
+          "score": 2.907383948990277,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.579836517572403,
-          "transcript": "HAAA! HAAA?!"
+          "modelScore": 0.580048218369484,
+          "transcript": "HAAA!"
         },
         {
           "file": "Sample_0012.wav",
@@ -3700,15 +3744,6 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5792058855295181,
           "transcript": "Alright!"
-        },
-        {
-          "file": "Sample_0014.wav",
-          "score": 2.922244721863951,
-          "rankingTier": "model",
-          "heuristicScore": 2.0,
-          "heuristicScoreNormalized": 0.5714285714285714,
-          "modelScore": 0.5787346586585045,
-          "transcript": "No, no, no, no, no, no."
         },
         {
           "file": "Sample_0061.wav",
@@ -3747,6 +3782,15 @@
           "transcript": "Bazooka!"
         },
         {
+          "file": "Sample_0019.wav",
+          "score": 2.8921477351869855,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5770009756088257,
+          "transcript": "HAAAAAAA!"
+        },
+        {
           "file": "Sample_0002.wav",
           "score": 2.8887381259884153,
           "rankingTier": "model",
@@ -3756,15 +3800,6 @@
           "transcript": "Ow!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 2.886456832715443,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5758627951145172,
-          "transcript": "Caaaaaaaaaah!"
-        },
-        {
           "file": "Sample_0027.wav",
           "score": 2.8863809112991605,
           "rankingTier": "model",
@@ -3772,6 +3807,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5758476108312607,
           "transcript": "AAT!"
+        },
+        {
+          "file": "Sample_0032.wav",
+          "score": 2.8855620179857526,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5756838321685791,
+          "transcript": "What?"
         },
         {
           "file": "Sample_0022.wav",
@@ -3792,22 +3836,13 @@
           "transcript": "Come, come, come!"
         },
         {
-          "file": "Sample_0051.wav",
-          "score": 2.8835694347109113,
+          "file": "Sample_0060.wav",
+          "score": 2.8794083972062383,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5752853155136108,
-          "transcript": "Come, come, come!"
-        },
-        {
-          "file": "Sample_0015.wav",
-          "score": 2.873709783383778,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5733133852481842,
-          "transcript": "Aaaaahhhh!"
+          "modelScore": 0.5744531080126762,
+          "transcript": "Aaaaaaaaaa"
         },
         {
           "file": "Sample_0020.wav",
@@ -3817,6 +3852,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.573180541396141,
           "transcript": "Ah!"
+        },
+        {
+          "file": "Sample_0038.wav",
+          "score": 2.872026473709515,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5729767233133316,
+          "transcript": "HAAAAAAA!!!"
         },
         {
           "file": "Sample_0035.wav",
@@ -3855,6 +3899,15 @@
           "transcript": "Thanks for watching!"
         },
         {
+          "file": "Sample_0066.wav",
+          "score": 2.851737797686032,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.568918988108635,
+          "transcript": "This will be fun!"
+        },
+        {
           "file": "Sample_0013.wav",
           "score": 2.8506483737911497,
           "rankingTier": "model",
@@ -3882,15 +3935,6 @@
           "transcript": "Gotcha!"
         },
         {
-          "file": "Sample_0066.wav",
-          "score": 2.8456381191100393,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5676990523934364,
-          "transcript": "This'll be fun!"
-        },
-        {
           "file": "Sample_0056.wav",
           "score": 2.832104102202824,
           "rankingTier": "model",
@@ -3907,15 +3951,6 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5648838132619858,
           "transcript": "Oh, better!"
-        },
-        {
-          "file": "Sample_0007.wav",
-          "score": 2.8297437210168157,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5645201727747917,
-          "transcript": "MEAT!"
         },
         {
           "file": "Sample_0000.wav",
@@ -3954,6 +3989,24 @@
           "transcript": "Bye, Zuka!"
         },
         {
+          "file": "Sample_0030.wav",
+          "score": 2.79837994320052,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5582474172115326,
+          "transcript": "Whoah!"
+        },
+        {
+          "file": "Sample_0031.wav",
+          "score": 2.7929772291864667,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5571668744087219,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
+        },
+        {
           "file": "Sample_0009.wav",
           "score": 2.7929059457566057,
           "rankingTier": "model",
@@ -3961,6 +4014,15 @@
           "heuristicScoreNormalized": 0.14285714285714285,
           "modelScore": 0.5571526177227497,
           "transcript": "Well..."
+        },
+        {
+          "file": "Sample_0014.wav",
+          "score": 2.7914253477539335,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5568564981222153,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
         },
         {
           "file": "Sample_0008.wav",
@@ -3999,15 +4061,6 @@
           "transcript": "Gacha!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 2.769765988418034,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.5525246262550354,
-          "transcript": "Ahhhh"
-        },
-        {
           "file": "Sample_0058.wav",
           "score": 2.726199016400746,
           "rankingTier": "model",
@@ -4027,12 +4080,12 @@
         },
         {
           "file": "Sample_0042.wav",
-          "score": 2.683847122320107,
+          "score": 2.688475534745625,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.53534085303545,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.5362665355205536,
+          "transcript": "Yeah, yeah, yeah, yeah!"
         }
       ]
     },
@@ -4076,15 +4129,6 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6801256239414215,
           "transcript": "That was close!"
-        },
-        {
-          "file": "Sample_0034.wav",
-          "score": 3.4208414435386656,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6741682887077332,
-          "transcript": "Ta-!"
         },
         {
           "file": "Sample_0006.wav",
@@ -4141,15 +4185,6 @@
           "transcript": "UGH!"
         },
         {
-          "file": "Sample_0032.wav",
-          "score": 3.364419612288475,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.662883922457695,
-          "transcript": "What?!"
-        },
-        {
           "file": "Sample_0020.wav",
           "score": 3.3582485944032667,
           "rankingTier": "model",
@@ -4177,13 +4212,22 @@
           "transcript": "Thanks for watching!"
         },
         {
-          "file": "Sample_0004.wav",
+          "file": "Sample_0015.wav",
           "score": 3.354050713777542,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6608101427555084,
           "transcript": "Aaaaaaah!"
+        },
+        {
+          "file": "Sample_0004.wav",
+          "score": 3.3530293136835096,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.660605862736702,
+          "transcript": "AAAAAAAA!"
         },
         {
           "file": "Sample_0002.wav",
@@ -4249,13 +4293,13 @@
           "transcript": "Miss me!"
         },
         {
-          "file": "Sample_0019.wav",
-          "score": 3.3246846228837965,
+          "file": "Sample_0030.wav",
+          "score": 3.3156753063201903,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6549369245767593,
-          "transcript": "Caaaaaaaaaah!"
+          "modelScore": 0.6531350612640381,
+          "transcript": "Whoah!"
         },
         {
           "file": "Sample_0037.wav",
@@ -4265,6 +4309,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6529602110385895,
           "transcript": "Whip!"
+        },
+        {
+          "file": "Sample_0060.wav",
+          "score": 3.3131780952215193,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6526356190443039,
+          "transcript": "Aaaaaaaaaa"
         },
         {
           "file": "Sample_0027.wav",
@@ -4321,13 +4374,13 @@
           "transcript": "Hi!"
         },
         {
-          "file": "Sample_0014.wav",
-          "score": 3.2308821380138397,
+          "file": "Sample_0034.wav",
+          "score": 3.286994594335556,
           "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6461764276027679,
-          "transcript": "No, no, no, no, no, no."
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6473989188671112,
+          "transcript": "Duh!"
         },
         {
           "file": "Sample_0041.wav",
@@ -4346,6 +4399,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6458471119403839,
           "transcript": "They got away!"
+        },
+        {
+          "file": "Sample_0007.wav",
+          "score": 3.2784922897815703,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6456984579563141,
+          "transcript": "NEED!"
         },
         {
           "file": "Sample_0053.wav",
@@ -4375,15 +4437,6 @@
           "transcript": "Come, come!"
         },
         {
-          "file": "Sample_0015.wav",
-          "score": 3.2712694734334944,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6442538946866989,
-          "transcript": "Aaaaahhhh!"
-        },
-        {
           "file": "Sample_0044.wav",
           "score": 3.268163251876831,
           "rankingTier": "model",
@@ -4391,6 +4444,24 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6436326503753662,
           "transcript": "BALL IT!"
+        },
+        {
+          "file": "Sample_0032.wav",
+          "score": 3.2659193605184553,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6431838721036911,
+          "transcript": "What?"
+        },
+        {
+          "file": "Sample_0019.wav",
+          "score": 3.259741860628128,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6419483721256256,
+          "transcript": "HAAAAAAA!"
         },
         {
           "file": "Sample_0000.wav",
@@ -4403,21 +4474,21 @@
         },
         {
           "file": "Sample_0047.wav",
-          "score": 3.255807954072952,
+          "score": 3.2582555443048475,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6411615908145905,
-          "transcript": "Haa!"
+          "modelScore": 0.6416511088609695,
+          "transcript": "HAAA!"
         },
         {
-          "file": "Sample_0030.wav",
-          "score": 3.254127699136734,
+          "file": "Sample_0051.wav",
+          "score": 3.2561462104320524,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6408255398273468,
-          "transcript": "Ho-ha-ha-ha!"
+          "modelScore": 0.6412292420864105,
+          "transcript": "GUN GUM!"
         },
         {
           "file": "Sample_0046.wav",
@@ -4456,25 +4527,7 @@
           "transcript": "Oh yours!"
         },
         {
-          "file": "Sample_0060.wav",
-          "score": 3.2400852918624876,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6380170583724976,
-          "transcript": "Ahhhh"
-        },
-        {
           "file": "Sample_0049.wav",
-          "score": 3.2352468848228453,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6370493769645691,
-          "transcript": "Come, come, come!"
-        },
-        {
-          "file": "Sample_0051.wav",
           "score": 3.2352468848228453,
           "rankingTier": "model",
           "heuristicScore": 0.5,
@@ -4492,15 +4545,6 @@
           "transcript": "Bazooka!"
         },
         {
-          "file": "Sample_0038.wav",
-          "score": 3.229953098297119,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6359906196594238,
-          "transcript": "HAAA! HAAA?!"
-        },
-        {
           "file": "Sample_0023.wav",
           "score": 3.223844516277313,
           "rankingTier": "model",
@@ -4508,15 +4552,6 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6347689032554626,
           "transcript": "Oh, better!"
-        },
-        {
-          "file": "Sample_0007.wav",
-          "score": 3.221853423118591,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6343706846237183,
-          "transcript": "MEAT!"
         },
         {
           "file": "Sample_0013.wav",
@@ -4544,6 +4579,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6327407360076904,
           "transcript": "What the?"
+        },
+        {
+          "file": "Sample_0038.wav",
+          "score": 3.209610778093338,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6319221556186676,
+          "transcript": "HAAAAAAA!!!"
         },
         {
           "file": "Sample_0008.wav",
@@ -4582,15 +4626,6 @@
           "transcript": "I feel dizzy."
         },
         {
-          "file": "Sample_0066.wav",
-          "score": 3.1952832370996473,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6290566474199295,
-          "transcript": "This'll be fun!"
-        },
-        {
           "file": "Sample_0009.wav",
           "score": 3.1904854357242582,
           "rankingTier": "model",
@@ -4598,6 +4633,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6280970871448517,
           "transcript": "Well..."
+        },
+        {
+          "file": "Sample_0066.wav",
+          "score": 3.1899205327033995,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6279841065406799,
+          "transcript": "This will be fun!"
         },
         {
           "file": "Sample_0003.wav",
@@ -4618,6 +4662,15 @@
           "transcript": "Here we go!"
         },
         {
+          "file": "Sample_0014.wav",
+          "score": 3.1765392154455183,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6253078430891037,
+          "transcript": "La-la-la, la-la-la, la-la-la, la-la, la."
+        },
+        {
           "file": "Sample_0058.wav",
           "score": 3.158737915754318,
           "rankingTier": "model",
@@ -4625,6 +4678,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6217475831508636,
           "transcript": "Incredible!"
+        },
+        {
+          "file": "Sample_0031.wav",
+          "score": 3.127469617128372,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6154939234256744,
+          "transcript": "AHHHHHHHHHHHHHHHHHHHHHH"
         },
         {
           "file": "Sample_0024.wav",
@@ -4637,12 +4699,12 @@
         },
         {
           "file": "Sample_0042.wav",
-          "score": 3.052045527100563,
+          "score": 3.052139441668987,
           "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.6004091054201126,
-          "transcript": "Yeah, yeah, yeah, yeah, yeah!"
+          "modelScore": 0.6004278883337975,
+          "transcript": "Yeah, yeah, yeah, yeah!"
         }
       ]
     }
@@ -4650,13 +4712,8 @@
   "speechVerification": {
     "mode": "whisper",
     "filter": "applied",
-    "eligibleCount": 67,
+    "eligibleCount": 68,
     "excludedClips": [
-      {
-        "file": "Sample_0031.wav",
-        "reason": "non_lexical_only",
-        "transcript": "S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S"
-      },
       {
         "file": "Sample_0067.wav",
         "reason": "empty",

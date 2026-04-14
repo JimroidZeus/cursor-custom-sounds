@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "GruntYes4.wav": "Soaks up!",
+    "PeonReady1.wav": "Ready to work!",
+    "PeonWarcry1.wav": "Why not?",
+    "PeonWhat2.wav": "hmm",
+    "PeonWhat3.wav": "What do you want?",
+    "PeonWhat4.wav": "Something you're doing?",
+    "PeonYes3.wav": "Let's work!",
+    "PeonYes4.wav": "Okay, doggie.",
+    "PeonYesAttack3.wav": "Don't try!"
+  }
+}

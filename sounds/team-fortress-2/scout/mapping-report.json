@@ -2,748 +2,750 @@
   "clips": [
     {
       "file": "activatecharge01.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Hit it, Doc!",
+      "speechEligible": true
     },
     {
       "file": "activatecharge02.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Come on, doctor with.",
+      "speechEligible": true
     },
     {
       "file": "activatecharge03.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Do it, Doc, do it!",
+      "speechEligible": true
     },
     {
       "file": "award01.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "I look at me, look at me!",
+      "speechEligible": true
     },
     {
       "file": "invinciblenotready01.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Come on, come on!",
+      "speechEligible": true
     },
     {
       "file": "invinciblenotready02.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Work, damn it!",
+      "speechEligible": true
     },
     {
       "file": "no01.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Ah, no!",
+      "speechEligible": true
     },
     {
       "file": "yes01.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Yeah!",
+      "speechEligible": true
     },
     {
       "file": "yes02.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Yeah, gotcha!",
+      "speechEligible": true
     },
     {
       "file": "yes03.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Gotcha!",
+      "speechEligible": true
     }
   ],
   "events": {
     "beforeSubmitPrompt": {
       "selected": [
-        "invinciblenotready01.wav",
-        "invinciblenotready02.wav"
+        "activatecharge02.wav",
+        "yes02.wav"
       ],
       "candidates": [
         {
-          "file": "invinciblenotready01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes03.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "activatecharge03.wav",
+          "score": 3.0854302644729614,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6170860528945923,
+          "transcript": "Do it, Doc, do it!"
         },
         {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.053738549351692,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6107477098703384,
+          "transcript": "Hit it, Doc!"
+        },
+        {
+          "file": "invinciblenotready01.wav",
+          "score": 3.0640959898630777,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6094858646392822,
+          "transcript": "Come on, come on!"
         },
         {
           "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.964184582233429,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5928369164466858,
+          "transcript": "Come on, doctor with."
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.912781307597955,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.5758895948529243,
+          "transcript": "I look at me, look at me!"
         },
         {
           "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.8334467485547066,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5666893497109413,
+          "transcript": "Ah, no!"
+        },
+        {
+          "file": "invinciblenotready02.wav",
+          "score": 2.847125546137492,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.566091775894165,
+          "transcript": "Work, damn it!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.879676531255245,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.565935306251049,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.802836402505636,
+          "rankingTier": "model",
+          "heuristicScore": 3.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5505672805011272,
+          "transcript": "Yeah, gotcha!"
+        },
+        {
+          "file": "yes01.wav",
+          "score": 2.7602248984078566,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.548711646348238,
+          "transcript": "Yeah!"
         }
       ]
     },
     "afterAgentThought": {
       "selected": [
-        "activatecharge01.wav",
-        "activatecharge02.wav"
+        "award01.wav",
+        "yes03.wav"
       ],
       "candidates": [
         {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.342198431491852,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6684396862983704,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2785379886627197,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.655707597732544,
+          "transcript": "Do it, Doc, do it!"
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2439272105693817,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6487854421138763,
+          "transcript": "I look at me, look at me!"
         },
         {
           "file": "yes03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.190685361623764,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6381370723247528,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 3.187265992164612,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6374531984329224,
+          "transcript": "Ah, no!"
+        },
+        {
+          "file": "invinciblenotready01.wav",
+          "score": 3.1690652668476105,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6338130533695221,
+          "transcript": "Come on, come on!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 3.139377236366272,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6278754472732544,
+          "transcript": "Yeah, gotcha!"
+        },
+        {
+          "file": "invinciblenotready02.wav",
+          "score": 3.123766966164112,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6247533932328224,
+          "transcript": "Work, damn it!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 3.1128550320863724,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6225710064172745,
+          "transcript": "Come on, doctor with."
+        },
+        {
+          "file": "yes01.wav",
+          "score": 3.110075891017914,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6220151782035828,
+          "transcript": "Yeah!"
         }
       ]
     },
     "afterAgentResponse": {
       "selected": [
-        "yes01.wav",
-        "yes02.wav"
+        "activatecharge03.wav",
+        "invinciblenotready01.wav"
       ],
       "candidates": [
         {
-          "file": "invinciblenotready01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes03.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.349762186408043,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6699524372816086,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.313473016023636,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6626946032047272,
+          "transcript": "Do it, Doc, do it!"
+        },
+        {
+          "file": "invinciblenotready01.wav",
+          "score": 3.312052312493324,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6524104624986649,
+          "transcript": "Come on, come on!"
+        },
+        {
+          "file": "yes01.wav",
+          "score": 3.277313756942749,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6454627513885498,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 3.2714242219924925,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6442848443984985,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 3.266131404042244,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6432262808084488,
+          "transcript": "Yeah, gotcha!"
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1750518083572388,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6350103616714478,
+          "transcript": "I look at me, look at me!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 3.1515122950077057,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6303024590015411,
+          "transcript": "Come on, doctor with."
         },
         {
           "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1455275416374207,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6291055083274841,
+          "transcript": "Ah, no!"
+        },
+        {
+          "file": "invinciblenotready02.wav",
+          "score": 3.1633342906832693,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6226668581366539,
+          "transcript": "Work, damn it!"
         }
       ]
     },
     "preToolUse": {
       "selected": [
-        "activatecharge03.wav"
+        "no01.wav"
       ],
       "candidates": [
         {
-          "file": "invinciblenotready01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.2091898772451612,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.6407268643379211,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.226124929719501,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 0.7777777777777778,
+          "modelScore": 0.6374472081661224,
+          "transcript": "Do it, Doc, do it!"
+        },
+        {
+          "file": "invinciblenotready02.wav",
+          "score": 3.1250684440135954,
+          "rankingTier": "model",
+          "heuristicScore": 4.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6150136888027191,
+          "transcript": "Work, damn it!"
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.0388272181153297,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.607765443623066,
+          "transcript": "I look at me, look at me!"
         },
         {
-          "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "invinciblenotready01.wav",
+          "score": 3.0527998665968576,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6072266399860382,
+          "transcript": "Come on, come on!"
         },
         {
           "file": "yes03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.9805433394180403,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 0.5555555555555556,
+          "modelScore": 0.5905531123280525,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "no01.wav",
+          "score": 2.956305995914671,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.5901500880718231,
+          "transcript": "Ah, no!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 2.933798909518454,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.5856486707925797,
+          "transcript": "Come on, doctor with."
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.8511026890741453,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 0.5555555555555556,
+          "modelScore": 0.5646649822592735,
+          "transcript": "Yeah, gotcha!"
+        },
+        {
+          "file": "yes01.wav",
+          "score": 2.786048624995682,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.5560986138880253,
+          "transcript": "Yeah!"
         }
       ]
     },
     "postToolUse": {
       "selected": [
-        "yes03.wav"
+        "invinciblenotready02.wav"
       ],
       "candidates": [
         {
-          "file": "invinciblenotready01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes03.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.326486215988795,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6619639098644257,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.2638561884562174,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.6494379043579102,
+          "transcript": "Do it, Doc, do it!"
+        },
+        {
+          "file": "invinciblenotready02.wav",
+          "score": 3.275284144282341,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6450568288564682,
+          "transcript": "Work, damn it!"
+        },
+        {
+          "file": "invinciblenotready01.wav",
+          "score": 3.075412634015083,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6050825268030167,
+          "transcript": "Come on, come on!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 3.0037152181069056,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.5974097102880478,
+          "transcript": "Come on, doctor with."
+        },
+        {
+          "file": "yes01.wav",
+          "score": 2.9704392060637472,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5840878412127495,
+          "transcript": "Yeah!"
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.911643646657467,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5823287293314934,
+          "transcript": "I look at me, look at me!"
         },
         {
           "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.921800666550795,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.5810267999768257,
+          "transcript": "Ah, no!"
+        },
+        {
+          "file": "yes03.wav",
+          "score": 2.9298652440309523,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5759730488061905,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.8944134443998335,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5688826888799667,
+          "transcript": "Yeah, gotcha!"
         }
       ]
     },
     "postToolUseFailure": {
       "selected": [
-        "no01.wav"
+        "yes01.wav"
       ],
       "candidates": [
         {
-          "file": "invinciblenotready01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "activatecharge01.wav",
+          "score": 3.2927082334245954,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6571130752563477,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "invinciblenotready02.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "no01.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.240110756243978,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.42857142857142855,
+          "modelScore": 0.6437364369630814,
+          "transcript": "Work, damn it!"
         },
         {
           "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.1487306807722364,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6283175647258759,
+          "transcript": "Do it, Doc, do it!"
         },
         {
           "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.904227487742901,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5808454975485802,
+          "transcript": "I look at me, look at me!"
         },
         {
-          "file": "yes01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "no01.wav",
+          "score": 2.943380597233772,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5786761194467545,
+          "transcript": "Ah, no!"
         },
         {
-          "file": "yes02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "activatecharge02.wav",
+          "score": 2.877408586868218,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5740531459450722,
+          "transcript": "Come on, doctor with."
+        },
+        {
+          "file": "invinciblenotready01.wav",
+          "score": 2.884210714484964,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.42857142857142855,
+          "modelScore": 0.5725564286112785,
+          "transcript": "Come on, come on!"
         },
         {
           "file": "yes03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.850625649520329,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5686965584754944,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "yes01.wav",
+          "score": 2.7888356749500547,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5563385635614395,
+          "transcript": "Yeah!"
+        },
+        {
+          "file": "yes02.wav",
+          "score": 2.764708646067551,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.5515131577849388,
+          "transcript": "Yeah, gotcha!"
         }
       ]
     },
     "stop": {
       "selected": [
-        "award01.wav"
+        "activatecharge01.wav"
       ],
       "candidates": [
         {
           "file": "activatecharge01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "activatecharge03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "award01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.3954463630914686,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6690892726182938,
+          "transcript": "Hit it, Doc!"
         },
         {
           "file": "invinciblenotready01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "invinciblenotready02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.3605285465717314,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6621057093143463,
+          "transcript": "Come on, come on!"
         },
         {
           "file": "no01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.3500656217336653,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6600131243467331,
+          "transcript": "Ah, no!"
         },
         {
-          "file": "yes01.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "yes02.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "invinciblenotready02.wav",
+          "score": 3.3451296120882033,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6590259224176407,
+          "transcript": "Work, damn it!"
         },
         {
           "file": "yes03.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.3377126336097716,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6575425267219543,
+          "transcript": "Gotcha!"
+        },
+        {
+          "file": "activatecharge03.wav",
+          "score": 3.3374394953250883,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6574878990650177,
+          "transcript": "Do it, Doc, do it!"
+        },
+        {
+          "file": "award01.wav",
+          "score": 3.267187476158142,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6534374952316284,
+          "transcript": "I look at me, look at me!"
+        },
+        {
+          "file": "activatecharge02.wav",
+          "score": 3.2469255208969114,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6393851041793823,
+          "transcript": "Come on, doctor with."
+        },
+        {
+          "file": "yes02.wav",
+          "score": 3.2279782474040983,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6355956494808197,
+          "transcript": "Yeah, gotcha!"
+        },
+        {
+          "file": "yes01.wav",
+          "score": 3.20170481801033,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.630340963602066,
+          "transcript": "Yeah!"
         }
       ]
     }
   },
   "speechVerification": {
-    "mode": "transcript_unavailable",
-    "detail": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version"
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 10,
+    "excludedClips": []
   },
-  "transcription": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version",
+  "transcription": "ok",
   "classifier": {
-    "status": "transcript-unavailable",
-    "backend": "zero-shot",
-    "model": "valhalla/distilbart-mnli-12-1",
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
     "weight": 5.0
   },
   "pack": {

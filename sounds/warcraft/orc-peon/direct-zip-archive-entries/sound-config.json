@@ -9,7 +9,7 @@
       "PeonReady1.wav"
     ],
     "afterAgentThought": [
-      "PeonWhat2.wav",
+      "PeonWhat4.wav",
       "PeonWhat3.wav"
     ],
     "afterAgentResponse": [
@@ -19,6 +19,6 @@
     "preToolUse": "PeonYes4.wav",
     "postToolUse": "PeonYes3.wav",
     "postToolUseFailure": "PeonYesAttack3.wav",
-    "stop": "PeonWhat4.wav"
+    "stop": "PeonWhat2.wav"
   }
 }

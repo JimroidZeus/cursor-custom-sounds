@@ -77,7 +77,7 @@
     },
     {
       "file": "DX_BATMAN_BANE_ENG.wav",
-      "transcript": "Thanks for watching!",
+      "transcript": "Thanks for watching, and I'll see you in the next video.",
       "speechEligible": true
     },
     {
@@ -1012,7 +1012,7 @@
     },
     {
       "file": "DX_BATMAN_WOOAAAAAH_ENG.wav",
-      "transcript": "the world!",
+      "transcript": "The World!",
       "speechEligible": true
     },
     {
@@ -1092,7 +1092,7 @@
     },
     {
       "file": "VO_BATMAN_DEATH3.wav",
-      "transcript": "Oh!",
+      "transcript": "UGH!",
       "speechEligible": true
     },
     {
@@ -1127,7 +1127,7 @@
     },
     {
       "file": "VO_BATMAN_EFFORTSMALL2.wav",
-      "transcript": "Hmm",
+      "transcript": "hmm",
       "speechEligible": true
     },
     {
@@ -1143,7 +1143,7 @@
     },
     {
       "file": "VO_BATMAN_HMM2.wav",
-      "transcript": "Who is this?",
+      "transcript": "I'm gonna do this.",
       "speechEligible": true
     },
     {
@@ -1206,7 +1206,7 @@
     },
     {
       "file": "VO_BATMAN_LAUGH1.wav",
-      "transcript": "HAHAHAHAHAHA",
+      "transcript": "haha",
       "speechEligible": true
     },
     {
@@ -1319,6 +1319,15 @@
           "heuristicScoreNormalized": 0.2857142857142857,
           "modelScore": 0.6092262864112854,
           "transcript": "Hmm, there may be trouble ahead."
+        },
+        {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.0504113891295024,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 0.2857142857142857,
+          "modelScore": 0.6072251349687576,
+          "transcript": "I'm gonna do this."
         },
         {
           "file": "DX_BATMAN_ITHINKTHERESAPEBBLE_ENG.wav",
@@ -1498,7 +1507,7 @@
           "heuristicScore": 2.0,
           "heuristicScoreNormalized": 0.2857142857142857,
           "modelScore": 0.5848284736275673,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_GOTTAGO_ENG.wav",
@@ -1852,6 +1861,15 @@
           "transcript": "Someone call for a robot plumber."
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 2.839575819671154,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5679151639342308,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_IFWECANREACHHIM_ENG.wav",
           "score": 2.8391138464212418,
           "rankingTier": "model",
@@ -2039,15 +2057,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5617605559527874,
           "transcript": "That should do it. Luxe Corp can't be far now."
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 2.8085490129888058,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5617098025977612,
-          "transcript": "Thanks for watching!"
         },
         {
           "file": "DX_BATMAN_WEVEGOTTOWIN_ENG.wav",
@@ -2275,13 +2284,13 @@
           "transcript": "Gravity is your trick, you're not the only one."
         },
         {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 2.7791015803813934,
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 2.779360841959715,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5558203160762787,
-          "transcript": "Oh!"
+          "modelScore": 0.555872168391943,
+          "transcript": "haha"
         },
         {
           "file": "DX_BATMAN_DEFENCEISHIS_ENG.wav",
@@ -2518,15 +2527,6 @@
           "transcript": "Huh?"
         },
         {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 2.752861175686121,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5505722351372242,
-          "transcript": "HAHAHAHAHAHA"
-        },
-        {
           "file": "DX_BATMAN_HEYWHOTURNEDOUTTHELIGHTS_ENG.wav",
           "score": 2.7462255023419857,
           "rankingTier": "model",
@@ -2534,15 +2534,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5492451004683971,
           "transcript": "Hey, who turned out the lights? Anything could jump out of the shadows, be on your guard."
-        },
-        {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 2.7456236630678177,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5491247326135635,
-          "transcript": "Who is this?"
         },
         {
           "file": "DX_BATMAN_THISHASGONEONLONGENOUGH_ENG.wav",
@@ -2842,6 +2833,15 @@
           "transcript": "Hmm, could this child be the elusive Bartman? No, that's just not possible."
         },
         {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 2.6978728361427784,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5395745672285557,
+          "transcript": "UGH!"
+        },
+        {
           "file": "DX_BATMAN_THEYREGETTINGCLOSER_ENG.wav",
           "score": 2.697195168584585,
           "rankingTier": "model",
@@ -2884,7 +2884,7 @@
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5385684184730053,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_HONESTLYWHOSTEALS_ENG.wav",
@@ -3513,7 +3513,7 @@
           "heuristicScore": 2.0,
           "heuristicScoreNormalized": 0.3333333333333333,
           "modelScore": 0.6680677980184555,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_LETSSEEWHATSINTHENEXTROOM_ENG.wav",
@@ -3795,6 +3795,15 @@
           "transcript": "You can barricade yourself in all you like, Riddler. I'm coming for you."
         },
         {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.1997428913911183,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.638281911611557,
+          "transcript": "I'm gonna do this."
+        },
+        {
           "file": "VO_BATMAN_DEATH2.wav",
           "score": 3.187698870897293,
           "rankingTier": "model",
@@ -3892,15 +3901,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6343745440244675,
           "transcript": "SHIT!"
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 3.1717392802238464,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6343478560447693,
-          "transcript": "Thanks for watching!"
         },
         {
           "file": "DX_BATMAN_SELFDESTUCTUHOH_ENG.wav",
@@ -4054,6 +4054,24 @@
           "heuristicScoreNormalized": 0.6666666666666666,
           "modelScore": 0.6285509765148163,
           "transcript": "Just what we needed."
+        },
+        {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 3.141935020685196,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6283870041370392,
+          "transcript": "UGH!"
+        },
+        {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 3.141450732946396,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6282901465892792,
+          "transcript": "haha"
         },
         {
           "file": "DX_BATMAN_NOWTHISISMOREMY_ENG.wav",
@@ -4254,6 +4272,15 @@
           "transcript": "HA!"
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 3.1149862706661224,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6229972541332245,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_HMMITSLOCKED_ENG.wav",
           "score": 3.1398158013820647,
           "rankingTier": "model",
@@ -4326,15 +4353,6 @@
           "transcript": "just when I thought today couldn't get any more strange."
         },
         {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 3.1001461297273636,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6200292259454727,
-          "transcript": "Oh!"
-        },
-        {
           "file": "DX_BATMAN_IDONTUNDERSTAND_ENG.wav",
           "score": 3.099847063422203,
           "rankingTier": "model",
@@ -4351,15 +4369,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6198946461081505,
           "transcript": "better watch our footing, who knows where the edges of this place are."
-        },
-        {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 3.0983493477106094,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6196698695421219,
-          "transcript": "HAHAHAHAHAHA"
         },
         {
           "file": "DX_BATMAN_THISGUYSEEMSTOHAVECOME_ENG.wav",
@@ -4623,15 +4632,6 @@
           "transcript": "Robin, snap out of it. This isn't who you are."
         },
         {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 3.0603741188844045,
-          "rankingTier": "model",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.6104081571102142,
-          "transcript": "Who is this?"
-        },
-        {
           "file": "DX_BATMAN_IMTIREDOFCHASING_ENG.wav",
           "score": 3.047499805688858,
           "rankingTier": "model",
@@ -4728,7 +4728,7 @@
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6069293469190598,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_THEJOKERBOTTHATOLDTHING_ENG.wav",
@@ -5753,16 +5753,7 @@
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6512832790613174,
-          "transcript": "Hmm"
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 3.238701820373535,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.647740364074707,
-          "transcript": "Thanks for watching!"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_YEAHTHATWORKED_ENG.wav",
@@ -5844,6 +5835,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6453837305307388,
           "transcript": "HA!"
+        },
+        {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 3.2109560072422028,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6421912014484406,
+          "transcript": "haha"
         },
         {
           "file": "DX_BATMAN_HEADSUP_ENG.wav",
@@ -5972,15 +5972,6 @@
           "transcript": "SHIT!"
         },
         {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 3.1640591472387314,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6328118294477463,
-          "transcript": "HAHAHAHAHAHA"
-        },
-        {
           "file": "DX_BATMAN_ROBINWILLBEJUSTAHEAD_ENG.wav",
           "score": 3.1633637100458145,
           "rankingTier": "model",
@@ -6006,6 +5997,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6318765580654144,
           "transcript": "I'll have to analyze this properly later."
+        },
+        {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.1485822051763535,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6297164410352707,
+          "transcript": "I'm gonna do this."
         },
         {
           "file": "DX_BATMAN_IVETAKENYOUDOWNBEFORE_ENG.wav",
@@ -6179,6 +6179,15 @@
           "transcript": "Whoah!"
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 3.109840750694275,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.621968150138855,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_ORACLEHOWDOIBEATTHISTHING_ENG.wav",
           "score": 3.1053246557712555,
           "rankingTier": "model",
@@ -6233,6 +6242,15 @@
           "transcript": "Robin, if you're still in there, you must stop this!"
         },
         {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 3.0941010639071465,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6188202127814293,
+          "transcript": "UGH!"
+        },
+        {
           "file": "DX_BATMAN_NEEDTOGETTHATTURRET_ENG.wav",
           "score": 3.0906453728675842,
           "rankingTier": "model",
@@ -6240,15 +6258,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6181290745735168,
           "transcript": "need to get that turret back online. It's our key to getting in."
-        },
-        {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 3.0890657007694244,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6178131401538849,
-          "transcript": "Oh!"
         },
         {
           "file": "DX_BATMAN_IFWECANREACHHIM_ENG.wav",
@@ -6330,15 +6339,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6095551624894142,
           "transcript": "I'm leaving this in your hands."
-        },
-        {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 3.0450400710105896,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6090080142021179,
-          "transcript": "Who is this?"
         },
         {
           "file": "VO_BATMAN_JUMP1.wav",
@@ -6761,7 +6761,7 @@
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5880482792854309,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_WELLTHATSJUSTGREAT_ENG.wav",
@@ -7959,6 +7959,15 @@
           "transcript": "Oracle, how do I beat this thing? Now I'll just keep hitting it."
         },
         {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.1767697870731353,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 0.5,
+          "modelScore": 0.6303539574146271,
+          "transcript": "I'm gonna do this."
+        },
+        {
           "file": "DX_BATMAN_HMMITHINKTHETOOL_ENG.wav",
           "score": 3.1438662856817245,
           "rankingTier": "model",
@@ -8028,7 +8037,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1,
           "modelScore": 0.6150344461202621,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_HMMTHEREMAYBETROUBLE_ENG.wav",
@@ -8238,15 +8247,6 @@
           "transcript": "Robin, if you're still in there, you must stop this!"
         },
         {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 2.996366535425186,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5982733070850372,
-          "transcript": "Oh!"
-        },
-        {
           "file": "DX_BATMAN_YOUCANBARRICADE_ENG.wav",
           "score": 2.989855296909809,
           "rankingTier": "model",
@@ -8362,15 +8362,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5907249003648758,
           "transcript": "That sounded like only part of the plan. We'll need to hack more terminals to find out more."
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 2.9576419937610625,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5905283987522125,
-          "transcript": "Thanks for watching!"
         },
         {
           "file": "DX_BATMAN_THISMAYBELOW_ENG.wav",
@@ -8499,6 +8490,15 @@
           "transcript": "No!"
         },
         {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 2.9437807473540305,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1,
+          "modelScore": 0.5877561494708061,
+          "transcript": "haha"
+        },
+        {
           "file": "DX_BATMAN_WHAT_ENG.wav",
           "score": 2.9399563270807265,
           "rankingTier": "model",
@@ -8560,15 +8560,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5857124328613281,
           "transcript": "We'll need to find a way to get past this roadblock. Let's look around."
-        },
-        {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 2.9305248233675956,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5851049646735191,
-          "transcript": "HAHAHAHAHAHA"
         },
         {
           "file": "VO_BATMAN_PAIN10.wav",
@@ -8679,6 +8670,15 @@
           "transcript": "Ugh, not again. Gotta hurry and deactivate the gateway."
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 2.9157779738307,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.58315559476614,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_THATTHINGTOOKOUTTHETERMINAL_ENG.wav",
           "score": 2.915716767311096,
           "rankingTier": "model",
@@ -8740,6 +8740,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5816572904586792,
           "transcript": "it's a test. We have to solve it to continue."
+        },
+        {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 2.9123601588606833,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1,
+          "modelScore": 0.5814720317721367,
+          "transcript": "UGH!"
         },
         {
           "file": "DX_BATMAN_THEFLOORINGHEREISGUIDING_ENG.wav",
@@ -9111,15 +9120,6 @@
           "transcript": "the city is in chaos. This, Sauron needs to be stopped right away."
         },
         {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 2.866451059579849,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5722902119159698,
-          "transcript": "Who is this?"
-        },
-        {
           "file": "DX_BATMAN_FLYINGMONKEYS_ENG.wav",
           "score": 2.8663318502902984,
           "rankingTier": "model",
@@ -9432,7 +9432,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1,
           "modelScore": 0.5626095086336136,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_WENEEDTOTAKEHERDOWN_ENG.wav",
@@ -10162,6 +10162,15 @@
           "transcript": "Oracle, how do I beat this thing? Now I'll just keep hitting it."
         },
         {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.141552910539839,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.6271994709968567,
+          "transcript": "I'm gonna do this."
+        },
+        {
           "file": "DX_BATMAN_YEAHTHATWORKED_ENG.wav",
           "score": 3.164134907060199,
           "rankingTier": "model",
@@ -10387,15 +10396,6 @@
           "transcript": "That's one step closer to getting out of this place."
         },
         {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 3.0227343666884634,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1111111111111111,
-          "modelScore": 0.6034357622265816,
-          "transcript": "Thanks for watching!"
-        },
-        {
           "file": "DX_BATMAN_HUHTHISSURESEEMSFAMILIAR_ENG.wav",
           "score": 3.012745678424835,
           "rankingTier": "model",
@@ -10495,6 +10495,15 @@
           "transcript": "Another track, give me a break here!"
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 2.997499257326126,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5994998514652252,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_THEFIRSTCHANCEIGET_ENG.wav",
           "score": 2.9895535483956337,
           "rankingTier": "model",
@@ -10564,7 +10573,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1111111111111111,
           "modelScore": 0.5933690518140793,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_THESHIELDSDOWN_ENG.wav",
@@ -10738,15 +10747,6 @@
           "transcript": "I'm tired of chasing. No more Mr. Nyspat."
         },
         {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 2.938201494846079,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1111111111111111,
-          "modelScore": 0.5865291878581047,
-          "transcript": "HAHAHAHAHAHA"
-        },
-        {
           "file": "DX_BATMAN_THEYREGETTINGCLOSER_ENG.wav",
           "score": 2.9381713199946615,
           "rankingTier": "model",
@@ -10763,15 +10763,6 @@
           "heuristicScoreNormalized": 0.6666666666666666,
           "modelScore": 0.5863858908414841,
           "transcript": "And this may be low tech, but it should get the job done."
-        },
-        {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 2.9313606697652075,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1111111111111111,
-          "modelScore": 0.5851610228419304,
-          "transcript": "Oh!"
         },
         {
           "file": "VO_BATMAN_PAIN10.wav",
@@ -10799,6 +10790,24 @@
           "heuristicScoreNormalized": 0.1111111111111111,
           "modelScore": 0.5849042981863022,
           "transcript": "No!"
+        },
+        {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 2.928440824482176,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.5845770537853241,
+          "transcript": "haha"
+        },
+        {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 2.927455634209845,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1111111111111111,
+          "modelScore": 0.5843800157308578,
+          "transcript": "UGH!"
         },
         {
           "file": "VO_BATMAN_ATTACK3.wav",
@@ -11581,7 +11590,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1111111111111111,
           "modelScore": 0.5587688758969307,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_IMBATMAN_ENG.wav",
@@ -11807,15 +11816,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5509535223245621,
           "transcript": "These blocks, they seem to focus energy, maybe they can be redirected."
-        },
-        {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 2.7567032653424475,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1111111111111111,
-          "modelScore": 0.5502295419573784,
-          "transcript": "Who is this?"
         },
         {
           "file": "DX_BATMAN_ROBINSNAPOUTOFIT_ENG.wav",
@@ -12617,6 +12617,15 @@
           "transcript": "Someone call for a robot plumber."
         },
         {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 2.9963366213440894,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1,
+          "modelScore": 0.5982673242688179,
+          "transcript": "UGH!"
+        },
+        {
           "file": "DX_BATMAN_ITHINKIMGOINGTONEED_ENG.wav",
           "score": 2.9876959323883057,
           "rankingTier": "model",
@@ -12821,7 +12830,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1,
           "modelScore": 0.5905928164720535,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "DX_BATMAN_ITSBACKFORMOREITSEEMS_ENG.wav",
@@ -12995,6 +13004,15 @@
           "transcript": "I'm leaving this in your hands."
         },
         {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 2.9392131689190863,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1,
+          "modelScore": 0.5868426337838173,
+          "transcript": "I'm gonna do this."
+        },
+        {
           "file": "DX_BATMAN_HMPHIVEFOUGHTTOUGHER_ENG.wav",
           "score": 2.932736538350582,
           "rankingTier": "model",
@@ -13056,15 +13074,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5817139595746994,
           "transcript": "The sheels down. Let's get the ridler."
-        },
-        {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 2.9123770344257354,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5814754068851471,
-          "transcript": "HAHAHAHAHAHA"
         },
         {
           "file": "DX_BATMAN_JUSTWHENITHOUGHT_ENG.wav",
@@ -13157,6 +13166,15 @@
           "transcript": "Ha ha ha ha ha ha ha ha ha ha"
         },
         {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 2.902970229387283,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.1,
+          "modelScore": 0.5795940458774567,
+          "transcript": "haha"
+        },
+        {
           "file": "DX_BATMAN_THERESOMESORTOFSPACEMAN_ENG.wav",
           "score": 2.897748053073883,
           "rankingTier": "model",
@@ -13173,15 +13191,6 @@
           "heuristicScoreNormalized": 0.6,
           "modelScore": 0.5792320817708969,
           "transcript": "Ugh, not again. Gotta hurry and deactivate the gateway."
-        },
-        {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 2.9009078341722487,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5791815668344498,
-          "transcript": "Oh!"
         },
         {
           "file": "DX_BATMAN_THEEFFECTOFTHOSE_ENG.wav",
@@ -13479,15 +13488,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5701760351657867,
           "transcript": "Gotta stay out of our way until there's a chance to attack."
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 2.853949357867241,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5697898715734482,
-          "transcript": "Thanks for watching!"
         },
         {
           "file": "DX_BATMAN_THISWHOLETHINGREEKS_ENG.wav",
@@ -13967,6 +13967,15 @@
           "transcript": "perhaps this can help take down two face."
         },
         {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 2.7860795333981514,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5572159066796303,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
+        },
+        {
           "file": "DX_BATMAN_GOTTABEAKEYSTONE_ENG.wav",
           "score": 2.784913592040539,
           "rankingTier": "model",
@@ -14288,7 +14297,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.1,
           "modelScore": 0.547815777361393,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_THEFLOORINGHEREISGUIDING_ENG.wav",
@@ -14298,15 +14307,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.54685989767313,
           "transcript": "The flooring here is guiding us. We must move slowly."
-        },
-        {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 2.7352388474345206,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.1,
-          "modelScore": 0.5460477694869041,
-          "transcript": "Who is this?"
         },
         {
           "file": "DX_BATMAN_WENEEDTOTAKEHERDOWN_ENG.wav",
@@ -14628,7 +14628,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.125,
           "modelScore": 0.6769799292087555,
-          "transcript": "Hmm"
+          "transcript": "hmm"
         },
         {
           "file": "VO_BATMAN_ATTACK1.wav",
@@ -14721,6 +14721,15 @@
           "transcript": "Watch out, move!"
         },
         {
+          "file": "VO_BATMAN_DEATH3.wav",
+          "score": 3.33345123231411,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.125,
+          "modelScore": 0.665440246462822,
+          "transcript": "UGH!"
+        },
+        {
           "file": "DX_BATMAN_THANKSXPO_ENG.wav",
           "score": 3.308670148253441,
           "rankingTier": "model",
@@ -14755,15 +14764,6 @@
           "heuristicScoreNormalized": 0.125,
           "modelScore": 0.661603718996048,
           "transcript": "You"
-        },
-        {
-          "file": "DX_BATMAN_BANE_ENG.wav",
-          "score": 3.3109805047512055,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.125,
-          "modelScore": 0.6609461009502411,
-          "transcript": "Thanks for watching!"
         },
         {
           "file": "DX_BATMAN_HMMITSLOCKED_ENG.wav",
@@ -14838,15 +14838,6 @@
           "transcript": "That's one step closer to getting out of this place."
         },
         {
-          "file": "VO_BATMAN_DEATH3.wav",
-          "score": 3.284353694319725,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.125,
-          "modelScore": 0.655620738863945,
-          "transcript": "Oh!"
-        },
-        {
           "file": "DX_BATMAN_HMPHNOPROBLEM_ENG.wav",
           "score": 3.280241197347641,
           "rankingTier": "model",
@@ -14854,6 +14845,15 @@
           "heuristicScoreNormalized": 0.125,
           "modelScore": 0.6547982394695282,
           "transcript": "Hmm, no problem."
+        },
+        {
+          "file": "VO_BATMAN_HMM2.wav",
+          "score": 3.2792978048324586,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.125,
+          "modelScore": 0.6546095609664917,
+          "transcript": "I'm gonna do this."
         },
         {
           "file": "DX_BATMAN_THISMIGHTLOOK_ENG.wav",
@@ -15027,15 +15027,6 @@
           "transcript": "You're mine. Get over here."
         },
         {
-          "file": "VO_BATMAN_LAUGH1.wav",
-          "score": 3.2268677711486817,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.125,
-          "modelScore": 0.6441235542297363,
-          "transcript": "HAHAHAHAHAHA"
-        },
-        {
           "file": "DX_BATMAN_OKAYTHISGHOSTTHING_ENG.wav",
           "score": 3.2171010971069336,
           "rankingTier": "model",
@@ -15108,6 +15099,15 @@
           "transcript": "Lex, this is low, even for you. Stop the charade."
         },
         {
+          "file": "VO_BATMAN_LAUGH1.wav",
+          "score": 3.2156398206949235,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.125,
+          "modelScore": 0.6418779641389847,
+          "transcript": "haha"
+        },
+        {
           "file": "VO_BATMAN_PAIN10.wav",
           "score": 3.214597335457802,
           "rankingTier": "model",
@@ -15151,6 +15151,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6393543034791946,
           "transcript": "the bad signal. Someone stole my bad signal. Now that's going too far."
+        },
+        {
+          "file": "DX_BATMAN_BANE_ENG.wav",
+          "score": 3.1916990876197815,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6383398175239563,
+          "transcript": "Thanks for watching, and I'll see you in the next video."
         },
         {
           "file": "DX_BATMAN_ITHINKTHERESAPEBBLE_ENG.wav",
@@ -15267,7 +15276,7 @@
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.125,
           "modelScore": 0.6321164220571518,
-          "transcript": "the world!"
+          "transcript": "The World!"
         },
         {
           "file": "DX_BATMAN_WELLNEEDTOFIND_ENG.wav",
@@ -15439,15 +15448,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6220749244093895,
           "transcript": "Looks like this is the right way."
-        },
-        {
-          "file": "VO_BATMAN_HMM2.wav",
-          "score": 3.1154424011707307,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.125,
-          "modelScore": 0.6218384802341461,
-          "transcript": "Who is this?"
         },
         {
           "file": "DX_BATMAN_PERHAPSTHISCANHELP_ENG.wav",

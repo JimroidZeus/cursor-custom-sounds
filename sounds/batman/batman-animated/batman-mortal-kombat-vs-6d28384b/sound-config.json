@@ -14,7 +14,7 @@
     ],
     "afterAgentResponse": [
       "batarang_hit01.wav",
-      "batarang_throw01.wav"
+      "cape_block02.wav"
     ],
     "preToolUse": "bod_land_med02.wav",
     "postToolUse": "jump03.wav",

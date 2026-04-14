@@ -49,356 +49,356 @@
   "events": {
     "beforeSubmitPrompt": {
       "selected": [
-        "PeonYes4.wav",
-        "PeonYes4.wav"
+        "PeonWarcry1.wav",
+        "PeonReady1.wav"
       ],
       "candidates": [
         {
-          "file": "PeonYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 6.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Okay, doggie."
-        },
-        {
           "file": "PeonReady1.wav",
-          "score": 0.6666666666666666,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1831853409608204,
+          "rankingTier": "model",
           "heuristicScore": 4.0,
           "heuristicScoreNormalized": 0.6666666666666666,
-          "modelScore": 0.0,
+          "modelScore": 0.6299704015254974,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonWhat3.wav",
-          "score": 0.6666666666666666,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 4.0,
-          "heuristicScoreNormalized": 0.6666666666666666,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
+          "file": "PeonYesAttack3.wav",
+          "score": 3.0956173395117124,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.6174568012356758,
+          "transcript": "Don't try!"
+        },
+        {
+          "file": "PeonWhat4.wav",
+          "score": 2.9671234716971715,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.5917580276727676,
+          "transcript": "Something you're doing?"
         },
         {
           "file": "PeonWhat2.wav",
-          "score": 0.5,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.9550932586193084,
+          "rankingTier": "model",
           "heuristicScore": 3.0,
           "heuristicScoreNormalized": 0.5,
-          "modelScore": 0.0,
+          "modelScore": 0.5860186517238617,
           "transcript": "Hmm?"
         },
         {
           "file": "GruntYes4.wav",
-          "score": 0.16666666666666666,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.916545428832372,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.0,
+          "modelScore": 0.5816424190998077,
           "transcript": "Soaks up!"
         },
         {
-          "file": "PeonWhat4.wav",
-          "score": 0.16666666666666666,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.0,
-          "transcript": "Something you're doing?"
-        },
-        {
           "file": "PeonYes3.wav",
-          "score": 0.16666666666666666,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.860923491915067,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.0,
+          "modelScore": 0.5705180317163467,
           "transcript": "Let's work!"
         },
         {
-          "file": "PeonYesAttack3.wav",
-          "score": 0.16666666666666666,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.0,
-          "transcript": "Don't try!"
+          "file": "PeonWhat3.wav",
+          "score": 2.8767695595820744,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 0.6666666666666666,
+          "modelScore": 0.5686872452497482,
+          "transcript": "What do you want?"
         },
         {
           "file": "PeonWarcry1.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.811003029346466,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.5622006058692932,
           "transcript": "Why not?"
+        },
+        {
+          "file": "PeonYes4.wav",
+          "score": 2.8456721931695936,
+          "rankingTier": "model",
+          "heuristicScore": 6.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5591344386339188,
+          "transcript": "Okay, doggie."
         }
       ]
     },
     "afterAgentThought": {
       "selected": [
-        "PeonWhat3.wav",
-        "PeonWhat4.wav"
+        "PeonWhat2.wav",
+        "PeonWhat3.wav"
       ],
       "candidates": [
         {
-          "file": "PeonWhat3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 4.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
-        },
-        {
           "file": "PeonWhat2.wav",
-          "score": 0.75,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.3874166369438172,
+          "rankingTier": "model",
           "heuristicScore": 3.0,
           "heuristicScoreNormalized": 0.75,
-          "modelScore": 0.0,
+          "modelScore": 0.6699833273887634,
           "transcript": "Hmm?"
         },
         {
           "file": "PeonWhat4.wav",
-          "score": 0.25,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.3159732937812807,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 0.25,
-          "modelScore": 0.0,
+          "modelScore": 0.6606946587562561,
           "transcript": "Something you're doing?"
         },
         {
           "file": "GruntYes4.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2171928882598877,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6434385776519775,
           "transcript": "Soaks up!"
         },
         {
           "file": "PeonReady1.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.212094157934189,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6424188315868378,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonWarcry1.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": "Why not?"
-        },
-        {
           "file": "PeonYes3.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.159433603286743,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6318867206573486,
           "transcript": "Let's work!"
         },
         {
-          "file": "PeonYes4.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonYesAttack3.wav",
+          "score": 3.147476390004158,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6294952780008316,
+          "transcript": "Don't try!"
+        },
+        {
+          "file": "PeonYes4.wav",
+          "score": 3.109971210360527,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6219942420721054,
           "transcript": "Okay, doggie."
         },
         {
-          "file": "PeonYesAttack3.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWarcry1.wav",
+          "score": 3.074270784854889,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": "Don't try!"
+          "modelScore": 0.6148541569709778,
+          "transcript": "Why not?"
+        },
+        {
+          "file": "PeonWhat3.wav",
+          "score": 3.1176449090242384,
+          "rankingTier": "model",
+          "heuristicScore": 4.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6135289818048477,
+          "transcript": "What do you want?"
         }
       ]
     },
     "afterAgentResponse": {
       "selected": [
-        "GruntYes4.wav",
-        "PeonReady1.wav"
+        "PeonReady1.wav",
+        "GruntYes4.wav"
       ],
       "candidates": [
         {
-          "file": "GruntYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.0,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Soaks up!"
-        },
-        {
           "file": "PeonReady1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.349897164106369,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6599794328212738,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonYes3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWhat4.wav",
+          "score": 3.2704101502895355,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6540820300579071,
+          "transcript": "Something you're doing?"
+        },
+        {
+          "file": "PeonWhat2.wav",
+          "score": 3.2683368027210236,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6536673605442047,
+          "transcript": "Hmm?"
+        },
+        {
+          "file": "GruntYes4.wav",
+          "score": 3.240907388925552,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Let's work!"
+          "modelScore": 0.6381814777851105,
+          "transcript": "Soaks up!"
         },
         {
           "file": "PeonYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2361743330955504,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6372348666191101,
           "transcript": "Okay, doggie."
         },
         {
-          "file": "PeonYesAttack3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWhat3.wav",
+          "score": 3.180222734808922,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6360445469617844,
+          "transcript": "What do you want?"
+        },
+        {
+          "file": "PeonYes3.wav",
+          "score": 3.172044503688812,
+          "rankingTier": "model",
           "heuristicScore": 1.0,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6244089007377625,
+          "transcript": "Let's work!"
+        },
+        {
+          "file": "PeonYesAttack3.wav",
+          "score": 3.1124981969594954,
+          "rankingTier": "model",
+          "heuristicScore": 1.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6124996393918991,
           "transcript": "Don't try!"
         },
         {
           "file": "PeonWarcry1.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.9742929711937904,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
+          "modelScore": 0.5948585942387581,
           "transcript": "Why not?"
-        },
-        {
-          "file": "PeonWhat2.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": "Hmm?"
-        },
-        {
-          "file": "PeonWhat3.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
-        },
-        {
-          "file": "PeonWhat4.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": "Something you're doing?"
         }
       ]
     },
     "preToolUse": {
       "selected": [
-        "PeonYesAttack3.wav"
+        "PeonYes4.wav"
       ],
       "candidates": [
         {
           "file": "PeonReady1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.248179006576538,
+          "rankingTier": "model",
           "heuristicScore": 7.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6396358013153076,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonYes3.wav",
-          "score": 0.4666666666666667,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 3.5,
-          "heuristicScoreNormalized": 0.4666666666666667,
-          "modelScore": 0.0,
-          "transcript": "Let's work!"
-        },
-        {
-          "file": "PeonWarcry1.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "Why not?"
-        },
-        {
           "file": "PeonYesAttack3.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1763452088832853,
+          "rankingTier": "model",
           "heuristicScore": 1.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
+          "modelScore": 0.6332690417766571,
           "transcript": "Don't try!"
         },
         {
-          "file": "GruntYes4.wav",
-          "score": 0.06666666666666667,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWhat4.wav",
+          "score": 3.162337634166082,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.06666666666666667,
-          "modelScore": 0.0,
+          "modelScore": 0.6318008601665497,
+          "transcript": "Something you're doing?"
+        },
+        {
+          "file": "GruntYes4.wav",
+          "score": 3.0593827175100645,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.06666666666666667,
+          "modelScore": 0.6112098768353462,
           "transcript": "Soaks up!"
         },
         {
           "file": "PeonWhat2.wav",
-          "score": 0.06666666666666667,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.0505643965800604,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.06666666666666667,
-          "modelScore": 0.0,
+          "modelScore": 0.6094462126493454,
           "transcript": "Hmm?"
         },
         {
+          "file": "PeonYes3.wav",
+          "score": 3.0553997828563055,
+          "rankingTier": "model",
+          "heuristicScore": 3.5,
+          "heuristicScoreNormalized": 0.4666666666666667,
+          "modelScore": 0.6064132899045944,
+          "transcript": "Let's work!"
+        },
+        {
           "file": "PeonWhat3.wav",
-          "score": 0.06666666666666667,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.8878687130411467,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.06666666666666667,
-          "modelScore": 0.0,
+          "modelScore": 0.5769070759415627,
           "transcript": "What do you want?"
         },
         {
-          "file": "PeonWhat4.wav",
-          "score": 0.06666666666666667,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonYes4.wav",
+          "score": 2.8482466744383177,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.06666666666666667,
-          "modelScore": 0.0,
-          "transcript": "Something you're doing?"
+          "modelScore": 0.5689826682209969,
+          "transcript": "Okay, doggie."
         },
         {
-          "file": "PeonYes4.wav",
-          "score": 0.06666666666666667,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.06666666666666667,
-          "modelScore": 0.0,
-          "transcript": "Okay, doggie."
+          "file": "PeonWarcry1.wav",
+          "score": 2.8008797562122343,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5581759512424469,
+          "transcript": "Why not?"
         }
       ]
     },
@@ -408,261 +408,261 @@
       ],
       "candidates": [
         {
-          "file": "GruntYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Soaks up!"
-        },
-        {
           "file": "PeonReady1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.3271992683410643,
+          "rankingTier": "model",
           "heuristicScore": 1.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6554398536682129,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonYes3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Let's work!"
-        },
-        {
-          "file": "PeonYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 1.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Okay, doggie."
-        },
-        {
           "file": "PeonYesAttack3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.203051137924194,
+          "rankingTier": "model",
           "heuristicScore": 1.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6306102275848389,
           "transcript": "Don't try!"
         },
         {
-          "file": "PeonWarcry1.wav",
-          "score": 0.3333333333333333,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.3333333333333333,
-          "modelScore": 0.0,
-          "transcript": "Why not?"
-        },
-        {
-          "file": "PeonWhat2.wav",
-          "score": 0.3333333333333333,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.3333333333333333,
-          "modelScore": 0.0,
-          "transcript": "Hmm?"
-        },
-        {
-          "file": "PeonWhat3.wav",
-          "score": 0.3333333333333333,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.3333333333333333,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
+          "file": "PeonYes3.wav",
+          "score": 3.1861686438322065,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6272337287664413,
+          "transcript": "Let's work!"
         },
         {
           "file": "PeonWhat4.wav",
-          "score": 0.3333333333333333,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1434416929880777,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.3333333333333333,
-          "modelScore": 0.0,
+          "modelScore": 0.6253550052642822,
           "transcript": "Something you're doing?"
+        },
+        {
+          "file": "GruntYes4.wav",
+          "score": 3.122173073887825,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.614434614777565,
+          "transcript": "Soaks up!"
+        },
+        {
+          "file": "PeonWhat2.wav",
+          "score": 2.9748957018057505,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.5916458070278168,
+          "transcript": "Hmm?"
+        },
+        {
+          "file": "PeonYes4.wav",
+          "score": 2.989462810754776,
+          "rankingTier": "model",
+          "heuristicScore": 1.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5878925621509552,
+          "transcript": "Okay, doggie."
+        },
+        {
+          "file": "PeonWhat3.wav",
+          "score": 2.9336217577258745,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.5833910182118416,
+          "transcript": "What do you want?"
+        },
+        {
+          "file": "PeonWarcry1.wav",
+          "score": 2.7861906747023264,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.3333333333333333,
+          "modelScore": 0.553904801607132,
+          "transcript": "Why not?"
         }
       ]
     },
     "postToolUseFailure": {
       "selected": [
-        "PeonWarcry1.wav"
+        "PeonYesAttack3.wav"
       ],
       "candidates": [
         {
-          "file": "PeonWarcry1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 2.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Why not?"
-        },
-        {
-          "file": "GruntYes4.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonYesAttack3.wav",
+          "score": 3.2984415984153745,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "Soaks up!"
+          "modelScore": 0.657688319683075,
+          "transcript": "Don't try!"
         },
         {
           "file": "PeonReady1.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1365652179718015,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
+          "modelScore": 0.6253130435943604,
           "transcript": "Ready to work!"
         },
         {
-          "file": "PeonWhat2.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "Hmm?"
-        },
-        {
-          "file": "PeonWhat3.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
-        },
-        {
-          "file": "PeonWhat4.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "Something you're doing?"
-        },
-        {
           "file": "PeonYes3.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.0532762578129766,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
+          "modelScore": 0.6086552515625954,
           "transcript": "Let's work!"
         },
         {
-          "file": "PeonYes4.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWhat4.wav",
+          "score": 3.0204168877005575,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
+          "modelScore": 0.6020833775401115,
+          "transcript": "Something you're doing?"
+        },
+        {
+          "file": "GruntYes4.wav",
+          "score": 2.997885735929012,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5975771471858025,
+          "transcript": "Soaks up!"
+        },
+        {
+          "file": "PeonWhat2.wav",
+          "score": 2.961660007238388,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5903320014476776,
+          "transcript": "Hmm?"
+        },
+        {
+          "file": "PeonYes4.wav",
+          "score": 2.8551495617628095,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.569029912352562,
           "transcript": "Okay, doggie."
         },
         {
-          "file": "PeonYesAttack3.wav",
-          "score": 0.2,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWarcry1.wav",
+          "score": 2.8933095663785933,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5686619132757187,
+          "transcript": "Why not?"
+        },
+        {
+          "file": "PeonWhat3.wav",
+          "score": 2.775885293483734,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.0,
-          "transcript": "Don't try!"
+          "modelScore": 0.5531770586967468,
+          "transcript": "What do you want?"
         }
       ]
     },
     "stop": {
       "selected": [
-        "PeonWhat2.wav"
+        "PeonWhat4.wav"
       ],
       "candidates": [
         {
-          "file": "GruntYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Soaks up!"
-        },
-        {
-          "file": "PeonReady1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Ready to work!"
-        },
-        {
-          "file": "PeonWarcry1.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Why not?"
-        },
-        {
-          "file": "PeonWhat2.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Hmm?"
-        },
-        {
-          "file": "PeonWhat3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "What do you want?"
-        },
-        {
           "file": "PeonWhat4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.432497727870941,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6764995455741882,
           "transcript": "Something you're doing?"
         },
         {
-          "file": "PeonYes3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonYesAttack3.wav",
+          "score": 3.4201462298631666,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6740292459726334,
+          "transcript": "Don't try!"
+        },
+        {
+          "file": "PeonWhat2.wav",
+          "score": 3.416219252347946,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6732438504695892,
+          "transcript": "Hmm?"
+        },
+        {
+          "file": "PeonYes3.wav",
+          "score": 3.3549410581588743,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6609882116317749,
           "transcript": "Let's work!"
         },
         {
-          "file": "PeonYes4.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonReady1.wav",
+          "score": 3.345176699757576,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
+          "modelScore": 0.6590353399515152,
+          "transcript": "Ready to work!"
+        },
+        {
+          "file": "GruntYes4.wav",
+          "score": 3.204732137918472,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6309464275836945,
+          "transcript": "Soaks up!"
+        },
+        {
+          "file": "PeonWarcry1.wav",
+          "score": 3.1999554961919783,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6299910992383957,
+          "transcript": "Why not?"
+        },
+        {
+          "file": "PeonYes4.wav",
+          "score": 3.158822330832481,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6217644661664963,
           "transcript": "Okay, doggie."
         },
         {
-          "file": "PeonYesAttack3.wav",
-          "score": 1.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "PeonWhat3.wav",
+          "score": 3.150871108472347,
+          "rankingTier": "model",
           "heuristicScore": 0.5,
           "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.0,
-          "transcript": "Don't try!"
+          "modelScore": 0.6201742216944695,
+          "transcript": "What do you want?"
         }
       ]
     }
@@ -675,9 +675,9 @@
   },
   "transcription": "ok",
   "classifier": {
-    "status": "disabled",
-    "backend": "",
-    "model": "",
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
     "weight": 5.0
   },
   "pack": {

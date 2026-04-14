@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "activatecharge01.wav": "Hit it, doc!",
+    "activatecharge02.wav": "Charge it, Doc!",
+    "activatecharge03.wav": "Go on, then duck!",
+    "autocappedintelligence01.wav": "Ah, that's the way you do it!",
+    "autocappedintelligence02.wav": "Time to get blotered!",
+    "battlecry01.wav": "FLEED UP!",
+    "no01.wav": "NO!",
+    "yes01.wav": "I-",
+    "yes02.wav": "Yeah!",
+    "yes03.wav": "Yes!"
+  }
+}

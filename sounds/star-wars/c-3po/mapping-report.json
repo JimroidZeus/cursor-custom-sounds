@@ -3,747 +3,579 @@
     {
       "file": "THP0101.wav",
       "transcript": "",
-      "speechStatus": "notAssessed"
+      "speechEligible": false,
+      "exclusionReason": "empty"
     },
     {
       "file": "THP0102.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Thank you.",
+      "speechEligible": true
     },
     {
       "file": "THP0103.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "You",
+      "speechEligible": true
     },
     {
       "file": "THP0104.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "That's it.",
+      "speechEligible": true
     },
     {
       "file": "THP0105.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Yeah.",
+      "speechEligible": true
     },
     {
       "file": "THP0107.wav",
       "transcript": "",
-      "speechStatus": "notAssessed"
+      "speechEligible": false,
+      "exclusionReason": "empty"
     },
     {
       "file": "THP0108.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Mmm-hmm!",
+      "speechEligible": true
     },
     {
       "file": "THP0109.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "So, that's it!",
+      "speechEligible": true
     },
     {
       "file": "THP0110.wav",
       "transcript": "",
-      "speechStatus": "notAssessed"
+      "speechEligible": false,
+      "exclusionReason": "empty"
     },
     {
       "file": "THP0111.wav",
-      "transcript": "",
-      "speechStatus": "notAssessed"
+      "transcript": "Ha ha ha ha ha ha ha ha ha",
+      "speechEligible": true
     }
   ],
   "events": {
     "beforeSubmitPrompt": {
       "selected": [
-        "THP0101.wav",
-        "THP0102.wav"
+        "THP0108.wav",
+        "THP0108.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0108.wav",
+          "score": 3.0007864639163015,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5901572927832603,
+          "transcript": "Mmm-hmm!"
         },
         {
           "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.931366115808487,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5862732231616974,
+          "transcript": "Thank you."
         },
         {
           "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.881331518292427,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5762663036584854,
+          "transcript": "That's it."
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.870439402759075,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.574087880551815,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "THP0103.wav",
+          "score": 2.8477999567985535,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5695599913597107,
+          "transcript": "You"
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.8078844025731087,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5615768805146217,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 2.701944187283516,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5403888374567032,
+          "transcript": "Yeah."
         }
       ]
     },
     "afterAgentThought": {
       "selected": [
         "THP0103.wav",
-        "THP0104.wav"
+        "THP0109.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.3142175525426865,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6628435105085373,
+          "transcript": "You"
         },
         {
           "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.343338119983673,
+          "rankingTier": "model",
+          "heuristicScore": 2.0,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6586676239967346,
+          "transcript": "Mmm-hmm!"
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2914651930332184,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6582930386066437,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "THP0104.wav",
+          "score": 3.254006654024124,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6508013308048248,
+          "transcript": "That's it."
+        },
+        {
+          "file": "THP0102.wav",
+          "score": 3.1946496665477753,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.638929933309555,
+          "transcript": "Thank you."
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 3.0934665724635124,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6186933144927025,
+          "transcript": "Yeah."
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.030097857117653,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6060195714235306,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
         }
       ]
     },
     "afterAgentResponse": {
       "selected": [
-        "THP0105.wav",
-        "THP0107.wav"
+        "THP0102.wav",
+        "THP0105.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.4435073286294937,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6887014657258987,
+          "transcript": "Thank you."
         },
         {
           "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2665832340717316,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6533166468143463,
+          "transcript": "You"
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.2615406066179276,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6523081213235855,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "file": "THP0108.wav",
+          "score": 3.2408135384321213,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6481627076864243,
+          "transcript": "Mmm-hmm!"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 3.177555724978447,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6355111449956894,
+          "transcript": "Yeah."
+        },
+        {
+          "file": "THP0104.wav",
+          "score": 3.1384845823049545,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6276969164609909,
+          "transcript": "That's it."
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.110812045633793,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6221624091267586,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
         }
       ]
     },
     "preToolUse": {
       "selected": [
-        "THP0108.wav"
+        "THP0104.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0108.wav",
+          "score": 3.1199405074119566,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6139881014823914,
+          "transcript": "Mmm-hmm!"
         },
         {
           "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.042182299494743,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5984364598989487,
+          "transcript": "That's it."
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.009698513150215,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.591939702630043,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0103.wav",
+          "score": 2.989968854188919,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5879937708377838,
+          "transcript": "You"
+        },
+        {
+          "file": "THP0102.wav",
+          "score": 2.955411571264267,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5810823142528534,
+          "transcript": "Thank you."
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.900173142552376,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5800346285104752,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 2.771576653420925,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.544315330684185,
+          "transcript": "Yeah."
         }
       ]
     },
     "postToolUse": {
       "selected": [
-        "THP0109.wav"
+        "THP0111.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.1502817302942274,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6200563460588455,
+          "transcript": "Thank you."
         },
         {
           "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.073654446005821,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6047308892011642,
+          "transcript": "Mmm-hmm!"
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.0399053275585173,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5979810655117035,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0103.wav",
+          "score": 3.001749116182327,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5903498232364655,
+          "transcript": "You"
+        },
+        {
+          "file": "THP0104.wav",
+          "score": 2.991717505455017,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5883435010910034,
+          "transcript": "That's it."
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.9222213476896286,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5844442695379257,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 2.920233617722988,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5740467235445976,
+          "transcript": "Yeah."
         }
       ]
     },
     "postToolUseFailure": {
       "selected": [
-        "THP0110.wav"
+        "THP0109.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0109.wav",
+          "score": 3.0002897709608076,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5900579541921616,
+          "transcript": "So, that's it!"
         },
         {
           "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.994892682135105,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.588978536427021,
+          "transcript": "That's it."
         },
         {
           "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 2.988651256263256,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5877302512526512,
+          "transcript": "Mmm-hmm!"
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 2.9087337106466293,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.5817467421293259,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
+        },
+        {
+          "file": "THP0102.wav",
+          "score": 2.9484969481825827,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5796993896365166,
+          "transcript": "Thank you."
+        },
+        {
+          "file": "THP0103.wav",
+          "score": 2.938164296746254,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5776328593492508,
+          "transcript": "You"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 2.7767733961343763,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5453546792268753,
+          "transcript": "Yeah."
         }
       ]
     },
     "stop": {
       "selected": [
-        "THP0111.wav"
+        "THP0108.wav"
       ],
       "candidates": [
         {
-          "file": "THP0101.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
           "file": "THP0102.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0103.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0104.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0105.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
-        },
-        {
-          "file": "THP0107.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.385769474506378,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6671538949012756,
+          "transcript": "Thank you."
         },
         {
           "file": "THP0108.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.3615860819816588,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6623172163963318,
+          "transcript": "Mmm-hmm!"
+        },
+        {
+          "file": "THP0103.wav",
+          "score": 3.3580185949802397,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.661603718996048,
+          "transcript": "You"
         },
         {
           "file": "THP0109.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "score": 3.3093414187431334,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6518682837486267,
+          "transcript": "So, that's it!"
         },
         {
-          "file": "THP0110.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "file": "THP0104.wav",
+          "score": 3.276964473724365,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.645392894744873,
+          "transcript": "That's it."
         },
         {
           "file": "THP0111.wav",
-          "score": 0.0,
-          "rankingTier": "heuristic_fallback",
+          "score": 3.1722264736890793,
+          "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.0,
-          "transcript": ""
+          "modelScore": 0.6344452947378159,
+          "transcript": "Ha ha ha ha ha ha ha ha ha"
+        },
+        {
+          "file": "THP0105.wav",
+          "score": 3.1110221996903418,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.6122044399380684,
+          "transcript": "Yeah."
         }
       ]
     }
   },
   "speechVerification": {
-    "mode": "transcript_unavailable",
-    "detail": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version"
+    "mode": "whisper",
+    "filter": "applied",
+    "eligibleCount": 7,
+    "excludedClips": [
+      {
+        "file": "THP0101.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "THP0107.wav",
+        "reason": "empty",
+        "transcript": ""
+      },
+      {
+        "file": "THP0110.wav",
+        "reason": "empty",
+        "transcript": ""
+      }
+    ]
   },
-  "transcription": "fallback: CUDA failed with error CUDA driver version is insufficient for CUDA runtime version",
+  "transcription": "ok",
   "classifier": {
-    "status": "transcript-unavailable",
-    "backend": "zero-shot",
-    "model": "valhalla/distilbart-mnli-12-1",
+    "status": "ok (sentence-embedding: sentence-transformers/all-MiniLM-L6-v2)",
+    "backend": "sentence-embedding",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
     "weight": 5.0
   },
   "pack": {

@@ -327,7 +327,7 @@
     },
     {
       "file": "377568504.wav",
-      "transcript": "I'm...",
+      "transcript": "H-H-H-H-H-H-H-H-H-H-H!",
       "speechEligible": false,
       "exclusionReason": "non_lexical_only"
     },
@@ -843,7 +843,7 @@
     },
     {
       "file": "377568996.wav",
-      "transcript": "No, no, no, no, no.",
+      "transcript": "Oh, it's not...",
       "speechEligible": true
     },
     {
@@ -1767,15 +1767,6 @@
           "transcript": "I did what you couldn't."
         },
         {
-          "file": "377568996.wav",
-          "score": 2.843797989189625,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.568759597837925,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377568993.wav",
           "score": 2.8424717113375664,
           "rankingTier": "model",
@@ -2224,6 +2215,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.5478294044733047,
           "transcript": "Possibly due to the psychoactive nerve agent."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 2.7388085424900055,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5477617084980011,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377549220.wav",
@@ -3539,15 +3539,6 @@
           "transcript": "What did this?"
         },
         {
-          "file": "377568996.wav",
-          "score": 3.1749484688043594,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6349896937608719,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377549782.wav",
           "score": 3.174366056919098,
           "rankingTier": "model",
@@ -3978,6 +3969,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6173136159777641,
           "transcript": "Don't try me."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 3.08601014316082,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.617202028632164,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377568821.wav",
@@ -5437,15 +5437,6 @@
           "transcript": "Thalconi was behind this."
         },
         {
-          "file": "377568996.wav",
-          "score": 3.1132859364151955,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6226571872830391,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377568623.wav",
           "score": 3.1117426604032516,
           "rankingTier": "model",
@@ -6236,6 +6227,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.58866186439991,
           "transcript": "Seems like it arrived in this container."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 2.940342202782631,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.5880684405565262,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377568651.wav",
@@ -8036,15 +8036,6 @@
           "transcript": "Both targets could have been shot from here."
         },
         {
-          "file": "377568996.wav",
-          "score": 2.8857393233613533,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.09090909090909091,
-          "modelScore": 0.5762387737631798,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377623363.wav",
           "score": 2.8791971877217293,
           "rankingTier": "model",
@@ -8304,6 +8295,15 @@
           "heuristicScoreNormalized": 0.36363636363636365,
           "modelScore": 0.5662415623664856,
           "transcript": "Good to see you too Gordon."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 2.8336820794777435,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.09090909090909091,
+          "modelScore": 0.5658273249864578,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377623048.wav",
@@ -9825,15 +9825,6 @@
           "transcript": "too many to sneak past."
         },
         {
-          "file": "377568996.wav",
-          "score": 2.9089706843098004,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.16666666666666666,
-          "modelScore": 0.5801274701952934,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377568990.wav",
           "score": 2.908575021227201,
           "rankingTier": "model",
@@ -10471,6 +10462,15 @@
           "heuristicScoreNormalized": 0.16666666666666666,
           "modelScore": 0.5540381669998169,
           "transcript": "Skyline Club."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 2.778453350563844,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.16666666666666666,
+          "modelScore": 0.5540240034461021,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377568273.wav",
@@ -11893,15 +11893,6 @@
           "transcript": "Don't make me add your corpse to this graveyard."
         },
         {
-          "file": "377568996.wav",
-          "score": 2.937693680822849,
-          "rankingTier": "model",
-          "heuristicScore": 2.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5775387361645699,
-          "transcript": "No, no, no, no, no."
-        },
-        {
           "file": "377569009.wav",
           "score": 2.9275235468149186,
           "rankingTier": "model",
@@ -12044,6 +12035,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5732172057032585,
           "transcript": "Nothing left to bury."
+        },
+        {
+          "file": "377568996.wav",
+          "score": 2.9141027584671972,
+          "rankingTier": "model",
+          "heuristicScore": 2.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5728205516934395,
+          "transcript": "Oh, it's not..."
         },
         {
           "file": "377549827.wav",
@@ -13403,6 +13403,15 @@
           "transcript": "Clear Vantage Point."
         },
         {
+          "file": "377568996.wav",
+          "score": 3.2288977359022413,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.14285714285714285,
+          "modelScore": 0.6443509757518768,
+          "transcript": "Oh, it's not..."
+        },
+        {
           "file": "377568991.wav",
           "score": 3.221520334482193,
           "rankingTier": "model",
@@ -13437,15 +13446,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6437092274427414,
           "transcript": "Looks like a bullet started this."
-        },
-        {
-          "file": "377568996.wav",
-          "score": 3.2239179168428693,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.14285714285714285,
-          "modelScore": 0.6433550119400024,
-          "transcript": "No, no, no, no, no."
         },
         {
           "file": "377568994.wav",
@@ -14961,7 +14961,7 @@
       {
         "file": "377568504.wav",
         "reason": "non_lexical_only",
-        "transcript": "I'm..."
+        "transcript": "H-H-H-H-H-H-H-H-H-H-H!"
       }
     ]
   },

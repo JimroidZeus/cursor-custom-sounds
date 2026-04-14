@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "clips": {
+    "activatecharge01.wav": "Hit it, Doc!",
+    "activatecharge02.wav": "Come on, doctor with.",
+    "activatecharge03.wav": "Do it, Doc, do it!",
+    "award01.wav": "I look at me, look at me!",
+    "invinciblenotready01.wav": "Come on, come on!",
+    "invinciblenotready02.wav": "Work, damn it!",
+    "no01.wav": "Ah, no!",
+    "yes01.wav": "Yeah!",
+    "yes02.wav": "Yeah, gotcha!",
+    "yes03.wav": "Gotcha!"
+  }
+}

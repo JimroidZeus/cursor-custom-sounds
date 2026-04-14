@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "portal",
+  "soundSubdir": "glados/portal-2-glados-lines-pi-aafcf217",
+  "events": {
+    "beforeSubmitPrompt": [
+      "00_part2_success-1.wav",
+      "15_part1_partyreminder-1.wav"
+    ],
+    "afterAgentThought": [
+      "escape_02_miscbabble-16.wav",
+      "escape_02_spheredestroy1-09.wav"
+    ],
+    "afterAgentResponse": [
+      "escape_02_miscbabble-19.wav",
+      "06_part1_entry-1.wav"
+    ],
+    "preToolUse": "escape_02_spheredestroy2-04.wav",
+    "postToolUse": "escape_02_miscbabble-21.wav",
+    "postToolUseFailure": "08_part1_success-2.wav",
+    "stop": "escape_02_ spheredestroy2-00.wav"
+  }
+}

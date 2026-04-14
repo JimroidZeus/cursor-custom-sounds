@@ -1,0 +1,24 @@
+{
+  "enabled": true,
+  "soundRoot": "sounds",
+  "soundPack": "portal",
+  "soundSubdir": "glados/portal-2-glados-asset-bu-d07c0c06",
+  "events": {
+    "beforeSubmitPrompt": [
+      "potatos_sp_a4_finale4_buttonnags10.wav",
+      "potatos_sp_a4_finale4_buttonnags02.wav"
+    ],
+    "afterAgentThought": [
+      "taunt_trickfire_handstand02.wav",
+      "potatos_sp_a3_end_see_paradox_poster01.wav"
+    ],
+    "afterAgentResponse": [
+      "potatos_sp_a4_tb_trust_drop_thanks02.wav",
+      "potatos_a4_wegetit01.wav"
+    ],
+    "preToolUse": "dlc1_mp_coop_portal_bts_enterbreaker02.wav",
+    "postToolUse": "mp_credits40.wav",
+    "postToolUseFailure": "mp_coop_fling_1end01_01.wav",
+    "stop": "anti_taunt01.wav"
+  }
+}

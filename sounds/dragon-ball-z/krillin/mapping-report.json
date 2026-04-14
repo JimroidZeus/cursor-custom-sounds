@@ -7,8 +7,9 @@
     },
     {
       "file": "BCKLLSND_00009.wav",
-      "transcript": "AAAAAAAA!",
-      "speechEligible": true
+      "transcript": "H-H-H-H!",
+      "speechEligible": false,
+      "exclusionReason": "non_lexical_only"
     },
     {
       "file": "BCKLLSND_00010.wav",
@@ -22,15 +23,14 @@
     },
     {
       "file": "BCKLLSND_00012.wav",
-      "transcript": "D-D-D-D-D!",
+      "transcript": "D-D-D!",
       "speechEligible": false,
       "exclusionReason": "non_lexical_only"
     },
     {
       "file": "BCKLLSND_00013.wav",
-      "transcript": "D-D-D-D!",
-      "speechEligible": false,
-      "exclusionReason": "non_lexical_only"
+      "transcript": "Yeah!",
+      "speechEligible": true
     },
     {
       "file": "BCKLLSND_00014.wav",
@@ -115,13 +115,13 @@
           "transcript": "Got me!"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 2.7666789293289185,
+          "file": "BCKLLSND_00013.wav",
+          "score": 2.74355823174119,
           "rankingTier": "model",
           "heuristicScore": 0.0,
           "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.5533357858657837,
-          "transcript": "AAAAAAAA!"
+          "modelScore": 0.548711646348238,
+          "transcript": "Yeah!"
         },
         {
           "file": "BCKLLSND_00011.wav",
@@ -137,7 +137,7 @@
     "afterAgentThought": {
       "selected": [
         "BCKLLSND_00015.wav",
-        "BCKLLSND_00014.wav"
+        "BCKLLSND_00016.wav"
       ],
       "candidates": [
         {
@@ -195,15 +195,6 @@
           "transcript": "Got me!"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 3.1430111825466156,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6286022365093231,
-          "transcript": "AAAAAAAA!"
-        },
-        {
           "file": "BCKLLSND_00011.wav",
           "score": 3.1158388033509254,
           "rankingTier": "model",
@@ -211,13 +202,22 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6231677606701851,
           "transcript": "BAH!"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 3.110075891017914,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6220151782035828,
+          "transcript": "Yeah!"
         }
       ]
     },
     "afterAgentResponse": {
       "selected": [
-        "BCKLLSND_00010.wav",
-        "BCKLLSND_00016.wav"
+        "BCKLLSND_00013.wav",
+        "BCKLLSND_00010.wav"
       ],
       "candidates": [
         {
@@ -228,6 +228,15 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6533166468143463,
           "transcript": "You"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 3.227313756942749,
+          "rankingTier": "model",
+          "heuristicScore": 0.0,
+          "heuristicScoreNormalized": 0.0,
+          "modelScore": 0.6454627513885498,
+          "transcript": "Yeah!"
         },
         {
           "file": "BCKLLSND2_00000.wav",
@@ -273,15 +282,6 @@
           "heuristicScoreNormalized": 0.0,
           "modelScore": 0.6256429702043533,
           "transcript": "NO!"
-        },
-        {
-          "file": "BCKLLSND_00009.wav",
-          "score": 3.124515935778618,
-          "rankingTier": "model",
-          "heuristicScore": 0.0,
-          "heuristicScoreNormalized": 0.0,
-          "modelScore": 0.6249031871557236,
-          "transcript": "AAAAAAAA!"
         },
         {
           "file": "BCKLLSND_00011.wav",
@@ -336,15 +336,6 @@
           "transcript": "Got me!"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 2.9579648917913435,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.5895929783582687,
-          "transcript": "AAAAAAAA!"
-        },
-        {
           "file": "BCKLLSND_00015.wav",
           "score": 2.949968854188919,
           "rankingTier": "model",
@@ -370,12 +361,21 @@
           "heuristicScoreNormalized": 0.2,
           "modelScore": 0.5774410739541054,
           "transcript": "BAH!"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 2.790493069440126,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5560986138880253,
+          "transcript": "Yeah!"
         }
       ]
     },
     "postToolUse": {
       "selected": [
-        "BCKLLSND_00009.wav"
+        "BCKLLSND_00011.wav"
       ],
       "candidates": [
         {
@@ -415,15 +415,6 @@
           "transcript": "You"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 2.9886590048670767,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.5877318009734154,
-          "transcript": "AAAAAAAA!"
-        },
-        {
           "file": "BCKLLSND_00014.wav",
           "score": 2.9745214909315107,
           "rankingTier": "model",
@@ -431,6 +422,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.5849042981863022,
           "transcript": "NO!"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 2.9704392060637472,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.5840878412127495,
+          "transcript": "Yeah!"
         },
         {
           "file": "BCKLLSND_00017.wav",
@@ -454,7 +454,7 @@
     },
     "postToolUseFailure": {
       "selected": [
-        "BCKLLSND_00011.wav"
+        "BCKLLSND_00014.wav"
       ],
       "candidates": [
         {
@@ -494,15 +494,6 @@
           "transcript": "GO!"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 2.9381667619943617,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 0.2,
-          "modelScore": 0.5856333523988724,
-          "transcript": "AAAAAAAA!"
-        },
-        {
           "file": "BCKLLSND_00015.wav",
           "score": 2.8981642967462538,
           "rankingTier": "model",
@@ -528,6 +519,15 @@
           "heuristicScoreNormalized": 0.2,
           "modelScore": 0.5689461529254913,
           "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 2.7916928178071974,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 0.2,
+          "modelScore": 0.5563385635614395,
+          "transcript": "Yeah!"
         }
       ]
     },
@@ -582,15 +582,6 @@
           "transcript": "You"
         },
         {
-          "file": "BCKLLSND_00009.wav",
-          "score": 3.3530293136835096,
-          "rankingTier": "model",
-          "heuristicScore": 0.5,
-          "heuristicScoreNormalized": 1.0,
-          "modelScore": 0.660605862736702,
-          "transcript": "AAAAAAAA!"
-        },
-        {
           "file": "BCKLLSND_00011.wav",
           "score": 3.3025708526372908,
           "rankingTier": "model",
@@ -607,6 +598,15 @@
           "heuristicScoreNormalized": 1.0,
           "modelScore": 0.6473878473043442,
           "transcript": "Got me!"
+        },
+        {
+          "file": "BCKLLSND_00013.wav",
+          "score": 3.20170481801033,
+          "rankingTier": "model",
+          "heuristicScore": 0.5,
+          "heuristicScoreNormalized": 1.0,
+          "modelScore": 0.630340963602066,
+          "transcript": "Yeah!"
         }
       ]
     }
@@ -617,14 +617,14 @@
     "eligibleCount": 8,
     "excludedClips": [
       {
-        "file": "BCKLLSND_00012.wav",
+        "file": "BCKLLSND_00009.wav",
         "reason": "non_lexical_only",
-        "transcript": "D-D-D-D-D!"
+        "transcript": "H-H-H-H!"
       },
       {
-        "file": "BCKLLSND_00013.wav",
+        "file": "BCKLLSND_00012.wav",
         "reason": "non_lexical_only",
-        "transcript": "D-D-D-D!"
+        "transcript": "D-D-D!"
       }
     ]
   },

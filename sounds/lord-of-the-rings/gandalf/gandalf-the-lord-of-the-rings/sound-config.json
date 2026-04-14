@@ -10,15 +10,15 @@
     ],
     "afterAgentThought": [
       "DX_GANDALF_SOMEOUTSIDETHEBOX_ENG.wav",
-      "VO_GANDALF_IDLE1.wav"
+      "VO_GANDALF_IDLE3.wav"
     ],
     "afterAgentResponse": [
-      "VO_GANDALF_ATTACK4.wav",
-      "VO_GANDALF_ATTACK7.wav"
+      "VO_GANDALF_ATTACK7.wav",
+      "VO_GANDALF_DEATH5.wav"
     ],
     "preToolUse": "DX_GANDALF_BECAREFUL_ENG.wav",
     "postToolUse": "DX_GANDALF_AHYESTHISMIGHTJUSTDO_ENG.wav",
     "postToolUseFailure": "DX_GANDALF_TROLLSTROLLSARENEVER_ENG.wav",
-    "stop": "VO_GANDALF_DEATH3.wav"
+    "stop": "VO_GANDALF_ATTACK4.wav"
   }
 }

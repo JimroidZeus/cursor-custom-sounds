@@ -5,20 +5,20 @@
   "soundSubdir": "scout",
   "events": {
     "beforeSubmitPrompt": [
-      "invinciblenotready01.wav",
-      "invinciblenotready02.wav"
-    ],
-    "afterAgentThought": [
-      "activatecharge01.wav",
-      "activatecharge02.wav"
-    ],
-    "afterAgentResponse": [
-      "yes01.wav",
+      "activatecharge02.wav",
       "yes02.wav"
     ],
-    "preToolUse": "activatecharge03.wav",
-    "postToolUse": "yes03.wav",
-    "postToolUseFailure": "no01.wav",
-    "stop": "award01.wav"
+    "afterAgentThought": [
+      "award01.wav",
+      "yes03.wav"
+    ],
+    "afterAgentResponse": [
+      "activatecharge03.wav",
+      "invinciblenotready01.wav"
+    ],
+    "preToolUse": "no01.wav",
+    "postToolUse": "invinciblenotready02.wav",
+    "postToolUseFailure": "yes01.wav",
+    "stop": "activatecharge01.wav"
   }
 }

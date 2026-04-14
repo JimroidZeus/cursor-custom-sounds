@@ -5,20 +5,20 @@
   "soundSubdir": "c-3po",
   "events": {
     "beforeSubmitPrompt": [
-      "THP0101.wav",
-      "THP0102.wav"
+      "THP0108.wav",
+      "THP0108.wav"
     ],
     "afterAgentThought": [
       "THP0103.wav",
-      "THP0104.wav"
+      "THP0109.wav"
     ],
     "afterAgentResponse": [
-      "THP0105.wav",
-      "THP0107.wav"
+      "THP0102.wav",
+      "THP0105.wav"
     ],
-    "preToolUse": "THP0108.wav",
-    "postToolUse": "THP0109.wav",
-    "postToolUseFailure": "THP0110.wav",
-    "stop": "THP0111.wav"
+    "preToolUse": "THP0104.wav",
+    "postToolUse": "THP0111.wav",
+    "postToolUseFailure": "THP0109.wav",
+    "stop": "THP0108.wav"
   }
 }
